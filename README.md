@@ -1,11 +1,11 @@
 <div align="center">
 
-<a href="#conversion-path-pending"><img src="images/en.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="#quick-start"><img src="images/en.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](#conversion-path-pending)
-[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Pending-orange)](#conversion-path-pending)
-[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Pending-blue)](#conversion-path-pending)
+[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](#quick-start)
+[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Pending-orange)](#quick-start)
+[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Pending-blue)](#quick-start)
 
 [![English](https://img.shields.io/badge/English-111111)](README.md)
 [![Español](https://img.shields.io/badge/Espa%C3%B1ol-ffb703)](README_es.md)
@@ -29,7 +29,7 @@ Welcome to the Blender + Seedance usecase repository.
 
 The current collection is curated from user-provided X/Twitter source data. Each case links to the original post and creator profile.
 
-Primary landing page is pending. The intended conversion path is MCP install, EvoLink skill install, recharge, then run inside an agent.
+The Quick Start below walks users through Blender MCP setup, EvoLink skill installation, API key setup, and running the workflow inside an agent.
 
 ## 📊 Overview
 
@@ -42,34 +42,44 @@ Primary landing page is pending. The intended conversion path is MCP install, Ev
 > [!NOTE]
 > The collection favors concrete workflow evidence over hype: source-backed steps, reference-video methods, agent/MCP usage, reproducible constraints, and clearly stated limits.
 
-<a id="-quick-api-access"></a>
-## ⚡ Quick API Access
+<a id="quick-start"></a>
+## ⚡ Quick Start Workflow
 
-For repository scaffolding, this section records the expected Seedance reference-to-video model path. Replace the pending landing link once the owner provides the final page.
+Set up the local Blender control path first, then install the EvoLink skills your agent will call.
+
+### 1. Install Blender MCP
+
+Follow the official Blender MCP setup guide, open Blender, and make sure your agent can connect to the Blender MCP server before generating references.
+
+- Official setup: [Blender MCP setup](https://projects.blender.org/lab/blender_mcp/wiki/Setup)
+
+### 2. Install EvoLink skills
+
+Install the Seedance generation skill and the Topaz upscaling skill in the agent workspace.
 
 ```bash
-curl --request POST \
-  --url https://direct.evolink.ai/v1/messages \
-  --header 'Authorization: Bearer <token>' \
-  --header 'Content-Type: application/json' \
-  --data '
-{
-  "model": "seedance-2.0-reference-to-video",
-  "max_tokens": 1024,
-  "messages": [
-    {
-      "role": "user",
-      "content": "Plan a Blender reference-video workflow for a Seedance shot."
-    }
-  ]
-}
-'
+npm i evolink-seedance
+npm i evolink-topaz-video-upscale
 ```
 
-<a id="conversion-path-pending"></a>
-## 🚧 Conversion Path Pending
+### 3. Get an API key
 
-The final landing page is still pending. This draft records the intended path: MCP installation, EvoLink skill installation, recharge, and agent usage. Replace this section with the final CTA before calling the repository release-ready.
+Create an EvoLink API key from your account, then expose it to the agent runtime.
+
+```bash
+export EVOLINK_API_KEY="<your-evolink-api-key>"
+```
+
+### 4. Run it inside your agent
+
+After MCP, skills, and API key are ready, ask your agent to build a Blender blockout, export the reference video, generate with Seedance, and upscale the final clip when needed.
+
+```text
+Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.
+```
+
+> [!NOTE]
+> The Blender MCP setup page is the source of truth for Blender-side installation details.
 
 ## 📑 Menu
 

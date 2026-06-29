@@ -1,11 +1,11 @@
 <div align="center">
 
-<a href="#conversion-path-pending"><img src="images/tr.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="#quick-start"><img src="images/tr.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](#conversion-path-pending)
-[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Pending-orange)](#conversion-path-pending)
-[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Pending-blue)](#conversion-path-pending)
+[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](#quick-start)
+[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Pending-orange)](#quick-start)
+[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Pending-blue)](#quick-start)
 
 [![English](https://img.shields.io/badge/English-111111)](README.md)
 [![Español](https://img.shields.io/badge/Espa%C3%B1ol-ffb703)](README_es.md)
@@ -29,7 +29,7 @@ Blender + Seedance kullanım örnekleri deposu.
 
 Mevcut koleksiyon, sahibin sağladığı X/Twitter verilerinden seçildi. Her vaka orijinal gönderiye ve yaratıcı profiline bağlanır.
 
-Ana landing sayfası beklemede; hedef yol MCP kurulumu, EvoLink skill kurulumu, bakiye yükleme ve agent içinde kullanımdır.
+Aşağıdaki Quick Start, Blender MCP setup, EvoLink skill kurulumu, API key ayarı ve agent içinde çalıştırma akışını gösterir.
 
 ## 📊 Overview
 
@@ -42,34 +42,44 @@ Ana landing sayfası beklemede; hedef yol MCP kurulumu, EvoLink skill kurulumu, 
 > [!NOTE]
 > Koleksiyon abartı yerine somut kanıtı öne çıkarır: adımlar, referans videolar, agent/MCP kullanımı, yeniden üretilebilir koşullar ve net sınırlar.
 
-<a id="-quick-api-access"></a>
-## ⚡ Hızlı API erişimi
+<a id="quick-start"></a>
+## ⚡ Hızlı başlangıç workflow'u
 
-Final landing gelene kadar bu bölüm Seedance reference-to-video model yolunu kaydeder.
+Önce yerel Blender kontrol yolunu kurun, ardından agent'ın çağıracağı EvoLink skill'lerini yükleyin.
+
+### 1. Blender MCP kurulumu
+
+Resmi Blender MCP setup rehberini izleyin, Blender'ı açın ve referans üretmeden önce agent'ın Blender MCP server'a bağlanabildiğini doğrulayın.
+
+- Resmi setup: [Blender MCP setup](https://projects.blender.org/lab/blender_mcp/wiki/Setup)
+
+### 2. EvoLink skill'lerini kurun
+
+Agent workspace içinde Seedance üretim skill'ini ve Topaz upscale skill'ini kurun.
 
 ```bash
-curl --request POST \
-  --url https://direct.evolink.ai/v1/messages \
-  --header 'Authorization: Bearer <token>' \
-  --header 'Content-Type: application/json' \
-  --data '
-{
-  "model": "seedance-2.0-reference-to-video",
-  "max_tokens": 1024,
-  "messages": [
-    {
-      "role": "user",
-      "content": "Plan a Blender reference-video workflow for a Seedance shot."
-    }
-  ]
-}
-'
+npm i evolink-seedance
+npm i evolink-topaz-video-upscale
 ```
 
-<a id="conversion-path-pending"></a>
-## 🚧 Dönüşüm yolu beklemede
+### 3. API key alın
 
-Final landing sayfası hâlâ beklemede. Depoyu release-ready saymadan önce bu bölümü final CTA ile değiştirin.
+EvoLink hesabınızdan bir API key oluşturun ve agent runtime'a tanıtın.
+
+```bash
+export EVOLINK_API_KEY="<your-evolink-api-key>"
+```
+
+### 4. Agent içinde çalıştırın
+
+MCP, skill'ler ve API key hazır olduğunda agent'tan Blender blockout oluşturmasını, reference video export etmesini, Seedance ile üretmesini ve gerekirse Topaz ile upscale yapmasını isteyin.
+
+```text
+Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.
+```
+
+> [!NOTE]
+> Blender tarafındaki kurulum ayrıntıları için Blender MCP setup sayfası esas kaynaktır.
 
 ## 📑 Menü
 

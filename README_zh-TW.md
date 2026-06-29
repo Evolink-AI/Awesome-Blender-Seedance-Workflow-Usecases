@@ -1,11 +1,11 @@
 <div align="center">
 
-<a href="#conversion-path-pending"><img src="images/zh-tw.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="#quick-start"><img src="images/zh-tw.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](#conversion-path-pending)
-[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Pending-orange)](#conversion-path-pending)
-[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Pending-blue)](#conversion-path-pending)
+[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](#quick-start)
+[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Pending-orange)](#quick-start)
+[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Pending-blue)](#quick-start)
 
 [![English](https://img.shields.io/badge/English-111111)](README.md)
 [![Español](https://img.shields.io/badge/Espa%C3%B1ol-ffb703)](README_es.md)
@@ -29,7 +29,7 @@ Blender + Seedance 使用案例倉庫。
 
 目前集合來自使用者提供的 X/Twitter 精選資料。每個案例都連結到原帖和創作者主頁。
 
-主落地頁暫缺。預期轉化路徑是安裝 MCP、安裝 EvoLink skill、儲值，然後在 Agent 裡使用。
+下面的 Quick Start 會引導使用者完成 Blender MCP setup、安裝 EvoLink skills、配置 API key，並在自己的 agent 裡執行。
 
 ## 📊 Overview
 
@@ -42,34 +42,44 @@ Blender + Seedance 使用案例倉庫。
 > [!NOTE]
 > 這個集合優先保留具體證據：步驟、參考影片、agent/MCP 用法、可重現條件和明確限制，而不是空泛宣傳。
 
-<a id="-quick-api-access"></a>
-## ⚡ 快速 API 入口
+<a id="quick-start"></a>
+## ⚡ Quick Start 工作流
 
-在最終落地頁提供之前，這裡記錄 Seedance reference-to-video 的預期模型路徑。
+先把本地 Blender 控制鏈路搭好，再安裝 agent 會呼叫的 EvoLink skills。
+
+### 1. 安裝 Blender MCP
+
+按照官方 Blender MCP setup 頁面完成配置，開啟 Blender，並在生成參考影片之前確認 agent 能連接到 Blender MCP server。
+
+- 官方 setup: [Blender MCP setup](https://projects.blender.org/lab/blender_mcp/wiki/Setup)
+
+### 2. 安裝 EvoLink skills
+
+在 agent workspace 裡安裝 Seedance 生成 skill 和 Topaz 影片放大 skill。
 
 ```bash
-curl --request POST \
-  --url https://direct.evolink.ai/v1/messages \
-  --header 'Authorization: Bearer <token>' \
-  --header 'Content-Type: application/json' \
-  --data '
-{
-  "model": "seedance-2.0-reference-to-video",
-  "max_tokens": 1024,
-  "messages": [
-    {
-      "role": "user",
-      "content": "Plan a Blender reference-video workflow for a Seedance shot."
-    }
-  ]
-}
-'
+npm i evolink-seedance
+npm i evolink-topaz-video-upscale
 ```
 
-<a id="conversion-path-pending"></a>
-## 🚧 轉化路徑待補齊
+### 3. 取得 API key
 
-最終落地頁仍待補齊。把倉庫標記為 release-ready 之前，需要把這一節替換成最終 CTA。
+在 EvoLink 帳號裡建立 API key，然後把它暴露給 agent runtime。
+
+```bash
+export EVOLINK_API_KEY="<your-evolink-api-key>"
+```
+
+### 4. 在自己的 agent 裡執行
+
+MCP、skills 和 API key 都準備好之後，就可以讓 agent 建立 Blender blockout、匯出參考影片、呼叫 Seedance 生成，並在需要時用 Topaz 放大最終影片。
+
+```text
+Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.
+```
+
+> [!NOTE]
+> Blender 側安裝細節以 Blender MCP setup 頁面為準。
 
 ## 📑 目錄
 

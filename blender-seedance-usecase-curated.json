@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-29T15:38:26Z",
+    "generated_at": "2026-06-29T15:44:53Z",
     "source": "data/primary-use-case-posts.json",
     "repo": "Awesome-Blender-Seedance-Workflow-Usecases",
     "selected_count": 20,
@@ -16,7 +16,7 @@
       "production-pipeline": 4,
       "limitations": 2
     },
-    "cta_status": "pending owner-provided landing page",
+    "cta_status": "quick-start workflow published; final landing page still pending",
     "publication_status": "local scaffold; push to cheercheung/Awesome-Blender-Seedance-Workflow-Usecases approved after local verification; no remote creation approved",
     "audit": "docs/usecase-originality-audit.md"
   },

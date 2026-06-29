@@ -19,7 +19,7 @@ REPO = "Awesome-Blender-Seedance-Workflow-Usecases"
 OWNER = "cheercheung"
 MODEL = "Blender + Seedance"
 MODEL_ID = "seedance-2.0-reference-to-video"
-CTA_ANCHOR = "#conversion-path-pending"
+CTA_ANCHOR = "#quick-start"
 
 LANGS = [
     ("en", "README.md", "English", "images/en.png"),
@@ -409,12 +409,12 @@ LOCALE = {
         "intro": "Welcome to the Blender + Seedance usecase repository.",
         "value": "We collect real-world Blender, Blender MCP, viewport, previs, FBX, Mixamo, ComfyUI, and agent-assisted workflows that creators used to control Seedance video generation.",
         "source": "The current collection is curated from user-provided X/Twitter source data. Each case links to the original post and creator profile.",
-        "cta": "Primary landing page is pending. The intended conversion path is MCP install, EvoLink skill install, recharge, then run inside an agent.",
+        "cta": "The Quick Start below walks users through Blender MCP setup, EvoLink skill installation, API key setup, and running the workflow inside an agent.",
         "overview_note": "The collection favors concrete workflow evidence over hype: source-backed steps, reference-video methods, agent/MCP usage, reproducible constraints, and clearly stated limits.",
-        "quick": "Quick API Access",
-        "quick_text": "For repository scaffolding, this section records the expected Seedance reference-to-video model path. Replace the pending landing link once the owner provides the final page.",
-        "pending": "Conversion Path Pending",
-        "pending_body": "The final landing page is still pending. This draft records the intended path: MCP installation, EvoLink skill installation, recharge, and agent usage. Replace this section with the final CTA before calling the repository release-ready.",
+        "quick": "Quick Start Workflow",
+        "quick_text": "Set up Blender MCP, install EvoLink skills, configure the API key, and run the workflow inside an agent.",
+        "pending": "Final Landing Page Pending",
+        "pending_body": "The final landing page is still pending. Until then, the Quick Start workflow is the primary conversion path.",
         "menu": "Menu",
         "ack": "Acknowledge",
         "what": "What it shows",
@@ -430,7 +430,7 @@ LOCALE = {
         "intro": "Repositorio de casos de uso Blender + Seedance.",
         "value": "Reunimos flujos reales de Blender, Blender MCP, viewport, previs, FBX, Mixamo, ComfyUI y agentes para controlar la generación de video con Seedance.",
         "source": "La colección actual se deriva de datos X/Twitter proporcionados por el propietario. Cada caso enlaza la publicación original y el perfil del creador.",
-        "cta": "La landing principal está pendiente; la ruta prevista es instalar MCP, instalar la skill de EvoLink, recargar y usarla dentro de un agente.",
+        "cta": "El Quick Start de abajo guía la instalación de Blender MCP, las skills de EvoLink, la API key y la ejecución dentro de un agente.",
         "overview_note": "La colección prioriza evidencia concreta: pasos, referencias de video, uso de agentes/MCP, restricciones reproducibles y límites claros.",
         "quick": "Acceso rápido a API",
         "quick_text": "Esta sección conserva la ruta esperada del modelo Seedance reference-to-video hasta que exista la landing final.",
@@ -451,7 +451,7 @@ LOCALE = {
         "intro": "Repositório de casos de uso Blender + Seedance.",
         "value": "Reunimos fluxos reais com Blender, Blender MCP, viewport, previs, FBX, Mixamo, ComfyUI e agentes para controlar a geração de vídeo no Seedance.",
         "source": "A coleção vem dos dados X/Twitter fornecidos pelo proprietário. Cada caso aponta para o post original e o criador.",
-        "cta": "A landing principal está pendente; a rota prevista é instalar MCP, instalar a skill EvoLink, recarregar e usar no agente.",
+        "cta": "O Quick Start abaixo guia a instalação do Blender MCP, das skills EvoLink, da API key e a execução dentro de um agente.",
         "overview_note": "A coleção prioriza evidência concreta: passos, vídeos de referência, uso de agente/MCP, restrições reproduzíveis e limites claros.",
         "quick": "Acesso rápido à API",
         "quick_text": "Esta seção registra o caminho esperado do modelo Seedance reference-to-video até a landing final existir.",
@@ -472,7 +472,7 @@ LOCALE = {
         "intro": "Blender + Seedance のユースケース集です。",
         "value": "Blender、Blender MCP、viewport、previs、FBX、Mixamo、ComfyUI、agent 支援で Seedance 動画生成を制御する実例を集めています。",
         "source": "現在のコレクションは、所有者提供の X/Twitter データから整理されています。各ケースは元投稿と作者プロフィールにリンクします。",
-        "cta": "主要ランディングページは未確定です。想定経路は MCP 導入、EvoLink skill 導入、チャージ、agent 内での利用です。",
+        "cta": "下の Quick Start で、Blender MCP setup、EvoLink skill、API key、agent 内での実行まで案内します。",
         "overview_note": "このコレクションは宣伝よりも具体的な証拠を優先します。手順、参照動画、agent/MCP 利用、再現条件、明確な制限を重視します。",
         "quick": "API クイックアクセス",
         "quick_text": "最終 landing が提供されるまで、ここには Seedance reference-to-video の想定モデル経路を記録します。",
@@ -493,7 +493,7 @@ LOCALE = {
         "intro": "Blender + Seedance 유스케이스 저장소입니다.",
         "value": "Blender, Blender MCP, viewport, previs, FBX, Mixamo, ComfyUI, agent 기반 워크플로로 Seedance 비디오 생성을 제어한 실제 사례를 모았습니다.",
         "source": "현재 컬렉션은 소유자가 제공한 X/Twitter 데이터에서 선별했습니다. 각 사례는 원본 게시물과 제작자 프로필로 연결됩니다.",
-        "cta": "주요 랜딩 페이지는 아직 미정입니다. 예정 경로는 MCP 설치, EvoLink skill 설치, 충전, agent 안에서 사용입니다.",
+        "cta": "아래 Quick Start에서 Blender MCP setup, EvoLink skill 설치, API key 설정, 에이전트 안에서 실행하는 흐름을 안내합니다.",
         "overview_note": "이 컬렉션은 과장보다 구체적 근거를 우선합니다: 단계, reference video, agent/MCP 사용, 재현 조건, 명확한 한계.",
         "quick": "API 빠른 접근",
         "quick_text": "최종 landing 이 제공되기 전까지 Seedance reference-to-video 모델 경로를 기록합니다.",
@@ -514,7 +514,7 @@ LOCALE = {
         "intro": "Usecase-Repository für Blender + Seedance.",
         "value": "Wir sammeln reale Workflows mit Blender, Blender MCP, Viewport, Previs, FBX, Mixamo, ComfyUI und Agentensteuerung für Seedance-Videogenerierung.",
         "source": "Die aktuelle Sammlung stammt aus vom Owner bereitgestellten X/Twitter-Daten. Jeder Fall verlinkt Quelle und Creator-Profil.",
-        "cta": "Die primäre Landingpage fehlt noch; der geplante Pfad ist MCP installieren, EvoLink Skill installieren, aufladen und im Agenten nutzen.",
+        "cta": "Der Quick Start unten führt durch Blender MCP Setup, EvoLink Skill Installation, API key Einrichtung und Ausführung im Agenten.",
         "overview_note": "Die Sammlung bevorzugt konkrete Evidenz: Schritte, Referenzvideos, Agent/MCP-Nutzung, reproduzierbare Bedingungen und klare Grenzen.",
         "quick": "Schneller API-Zugang",
         "quick_text": "Bis zur finalen Landingpage dokumentiert dieser Abschnitt den erwarteten Seedance reference-to-video Modellpfad.",
@@ -535,7 +535,7 @@ LOCALE = {
         "intro": "Dépôt de cas d'usage Blender + Seedance.",
         "value": "Nous réunissons des workflows réels avec Blender, Blender MCP, viewport, previs, FBX, Mixamo, ComfyUI et agents pour contrôler la génération vidéo Seedance.",
         "source": "La collection actuelle vient des données X/Twitter fournies par le propriétaire. Chaque cas renvoie vers la source et le profil du créateur.",
-        "cta": "La landing principale est en attente; le chemin prévu est installer MCP, installer la skill EvoLink, recharger, puis utiliser dans un agent.",
+        "cta": "Le Quick Start ci-dessous couvre le setup Blender MCP, les skills EvoLink, l'API key et l'exécution dans un agent.",
         "overview_note": "La collection privilégie les preuves concrètes: étapes, vidéos de référence, usage agent/MCP, contraintes reproductibles et limites explicites.",
         "quick": "Accès API rapide",
         "quick_text": "Cette section conserve le chemin attendu du modèle Seedance reference-to-video jusqu'à la landing finale.",
@@ -556,7 +556,7 @@ LOCALE = {
         "intro": "Blender + Seedance kullanım örnekleri deposu.",
         "value": "Seedance video üretimini kontrol etmek için Blender, Blender MCP, viewport, previs, FBX, Mixamo, ComfyUI ve agent destekli gerçek iş akışlarını topluyoruz.",
         "source": "Mevcut koleksiyon, sahibin sağladığı X/Twitter verilerinden seçildi. Her vaka orijinal gönderiye ve yaratıcı profiline bağlanır.",
-        "cta": "Ana landing sayfası beklemede; hedef yol MCP kurulumu, EvoLink skill kurulumu, bakiye yükleme ve agent içinde kullanımdır.",
+        "cta": "Aşağıdaki Quick Start, Blender MCP setup, EvoLink skill kurulumu, API key ayarı ve agent içinde çalıştırma akışını gösterir.",
         "overview_note": "Koleksiyon abartı yerine somut kanıtı öne çıkarır: adımlar, referans videolar, agent/MCP kullanımı, yeniden üretilebilir koşullar ve net sınırlar.",
         "quick": "Hızlı API erişimi",
         "quick_text": "Final landing gelene kadar bu bölüm Seedance reference-to-video model yolunu kaydeder.",
@@ -577,7 +577,7 @@ LOCALE = {
         "intro": "Blender + Seedance 使用案例仓库。",
         "value": "这里收集真实的 Blender、Blender MCP、viewport、previs、FBX、Mixamo、ComfyUI 和 agent 辅助工作流，用来控制 Seedance 视频生成。",
         "source": "当前集合来自用户提供的 X/Twitter 精选数据。每个案例都链接到原帖和创作者主页。",
-        "cta": "主落地页暂缺。预期转化路径是安装 MCP、安装 EvoLink skill、充值，然后在 Agent 里使用。",
+        "cta": "下面的 Quick Start 会引导用户完成 Blender MCP setup、安装 EvoLink skills、配置 API key，并在自己的 agent 里运行。",
         "overview_note": "这个集合优先保留具体证据：步骤、参考视频、agent/MCP 用法、可复现条件和明确限制，而不是空泛宣传。",
         "quick": "快速 API 入口",
         "quick_text": "在最终落地页提供之前，这里记录 Seedance reference-to-video 的预期模型路径。",
@@ -598,7 +598,7 @@ LOCALE = {
         "intro": "Blender + Seedance 使用案例倉庫。",
         "value": "這裡收集真實的 Blender、Blender MCP、viewport、previs、FBX、Mixamo、ComfyUI 和 agent 輔助工作流，用來控制 Seedance 影片生成。",
         "source": "目前集合來自使用者提供的 X/Twitter 精選資料。每個案例都連結到原帖和創作者主頁。",
-        "cta": "主落地頁暫缺。預期轉化路徑是安裝 MCP、安裝 EvoLink skill、儲值，然後在 Agent 裡使用。",
+        "cta": "下面的 Quick Start 會引導使用者完成 Blender MCP setup、安裝 EvoLink skills、配置 API key，並在自己的 agent 裡執行。",
         "overview_note": "這個集合優先保留具體證據：步驟、參考影片、agent/MCP 用法、可重現條件和明確限制，而不是空泛宣傳。",
         "quick": "快速 API 入口",
         "quick_text": "在最終落地頁提供之前，這裡記錄 Seedance reference-to-video 的預期模型路徑。",
@@ -619,7 +619,7 @@ LOCALE = {
         "intro": "Репозиторий use cases Blender + Seedance.",
         "value": "Мы собираем реальные workflow с Blender, Blender MCP, viewport, previs, FBX, Mixamo, ComfyUI и агентами для управления генерацией видео Seedance.",
         "source": "Текущая коллекция основана на X/Twitter данных, предоставленных владельцем. Каждый кейс ведет к исходному посту и профилю автора.",
-        "cta": "Основная landing page ожидается; планируемый путь: установить MCP, установить EvoLink skill, пополнить баланс и использовать внутри агента.",
+        "cta": "Quick Start ниже показывает setup Blender MCP, установку EvoLink skills, настройку API key и запуск внутри агента.",
         "overview_note": "Коллекция ставит конкретные доказательства выше хайпа: шаги, reference video, agent/MCP, воспроизводимые условия и явные ограничения.",
         "quick": "Быстрый доступ к API",
         "quick_text": "До финальной landing page этот раздел фиксирует ожидаемый путь модели Seedance reference-to-video.",
@@ -635,6 +635,174 @@ LOCALE = {
         "cases": "Кейсы",
         "takeaway_prefix": "Используйте этот кейс, чтобы",
         "notes_prefix": "Заметки источника",
+    },
+}
+
+QUICK_START = {
+    "en": {
+        "title": "Quick Start Workflow",
+        "intro": "Set up the local Blender control path first, then install the EvoLink skills your agent will call.",
+        "mcp_title": "Install Blender MCP",
+        "mcp_body": "Follow the official Blender MCP setup guide, open Blender, and make sure your agent can connect to the Blender MCP server before generating references.",
+        "setup_label": "Official setup",
+        "skill_title": "Install EvoLink skills",
+        "skill_body": "Install the Seedance generation skill and the Topaz upscaling skill in the agent workspace.",
+        "key_title": "Get an API key",
+        "key_body": "Create an EvoLink API key from your account, then expose it to the agent runtime.",
+        "run_title": "Run it inside your agent",
+        "run_body": "After MCP, skills, and API key are ready, ask your agent to build a Blender blockout, export the reference video, generate with Seedance, and upscale the final clip when needed.",
+        "agent_prompt": "Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.",
+        "note": "The Blender MCP setup page is the source of truth for Blender-side installation details.",
+    },
+    "es": {
+        "title": "Workflow de inicio rápido",
+        "intro": "Primero prepara el control local de Blender; después instala las skills de EvoLink que llamará tu agente.",
+        "mcp_title": "Instala Blender MCP",
+        "mcp_body": "Sigue la guía oficial de Blender MCP, abre Blender y verifica que tu agente pueda conectarse al servidor Blender MCP antes de generar referencias.",
+        "setup_label": "Setup oficial",
+        "skill_title": "Instala las skills de EvoLink",
+        "skill_body": "Instala la skill de generación Seedance y la skill de escalado Topaz en el workspace del agente.",
+        "key_title": "Obtén una API key",
+        "key_body": "Crea una API key de EvoLink en tu cuenta y exponla al runtime del agente.",
+        "run_title": "Ejecútalo dentro de tu agente",
+        "run_body": "Cuando MCP, skills y API key estén listos, pide al agente que construya un blockout en Blender, exporte el video de referencia, genere con Seedance y escale el clip final si hace falta.",
+        "agent_prompt": "Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.",
+        "note": "La página de setup de Blender MCP es la fuente principal para los detalles de instalación del lado de Blender.",
+    },
+    "pt": {
+        "title": "Workflow de início rápido",
+        "intro": "Configure primeiro o controle local do Blender; depois instale as skills EvoLink que o agente vai chamar.",
+        "mcp_title": "Instale o Blender MCP",
+        "mcp_body": "Siga o guia oficial de setup do Blender MCP, abra o Blender e confirme que o agente consegue se conectar ao servidor Blender MCP antes de gerar referências.",
+        "setup_label": "Setup oficial",
+        "skill_title": "Instale as skills EvoLink",
+        "skill_body": "Instale a skill de geração Seedance e a skill de upscale Topaz no workspace do agente.",
+        "key_title": "Obtenha uma API key",
+        "key_body": "Crie uma API key da EvoLink na sua conta e exponha essa chave ao runtime do agente.",
+        "run_title": "Execute dentro do seu agente",
+        "run_body": "Com MCP, skills e API key prontos, peça ao agente para criar um blockout no Blender, exportar o vídeo de referência, gerar com Seedance e fazer upscale do resultado quando necessário.",
+        "agent_prompt": "Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.",
+        "note": "A página de setup do Blender MCP é a fonte principal para os detalhes de instalação no Blender.",
+    },
+    "ja": {
+        "title": "Quick Start Workflow",
+        "intro": "まず Blender を agent から制御できる状態にし、その後 agent が呼び出す EvoLink skill を入れます。",
+        "mcp_title": "Blender MCP をインストール",
+        "mcp_body": "公式の Blender MCP setup ガイドに従い、Blender を開いて、参照動画を作る前に agent が Blender MCP server に接続できることを確認します。",
+        "setup_label": "公式 setup",
+        "skill_title": "EvoLink skill をインストール",
+        "skill_body": "agent workspace に Seedance 生成 skill と Topaz upscale skill をインストールします。",
+        "key_title": "API key を取得",
+        "key_body": "EvoLink アカウントで API key を作成し、agent runtime から参照できるようにします。",
+        "run_title": "agent 内で実行",
+        "run_body": "MCP、skill、API key が揃ったら、Blender blockout の作成、reference video の export、Seedance 生成、必要に応じた Topaz upscale を agent に依頼します。",
+        "agent_prompt": "Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.",
+        "note": "Blender 側のインストール詳細は Blender MCP setup ページを正とします。",
+    },
+    "ko": {
+        "title": "Quick Start Workflow",
+        "intro": "먼저 에이전트가 로컬 Blender를 제어할 수 있게 만들고, 그다음 에이전트가 호출할 EvoLink skill을 설치합니다.",
+        "mcp_title": "Blender MCP 설치",
+        "mcp_body": "공식 Blender MCP setup 가이드를 따르고, Blender를 연 뒤 레퍼런스를 만들기 전에 에이전트가 Blender MCP server에 연결되는지 확인합니다.",
+        "setup_label": "공식 setup",
+        "skill_title": "EvoLink skill 설치",
+        "skill_body": "에이전트 workspace에 Seedance 생성 skill과 Topaz 업스케일 skill을 설치합니다.",
+        "key_title": "API key 받기",
+        "key_body": "EvoLink 계정에서 API key를 만들고 에이전트 runtime에서 읽을 수 있게 설정합니다.",
+        "run_title": "에이전트 안에서 실행",
+        "run_body": "MCP, skill, API key가 준비되면 에이전트에게 Blender blockout 생성, reference video export, Seedance 생성, 필요한 경우 Topaz upscale까지 맡깁니다.",
+        "agent_prompt": "Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.",
+        "note": "Blender 쪽 설치 세부사항은 Blender MCP setup 페이지를 기준으로 합니다.",
+    },
+    "de": {
+        "title": "Quick Start Workflow",
+        "intro": "Richte zuerst die lokale Blender-Steuerung ein, danach installierst du die EvoLink Skills, die dein Agent aufruft.",
+        "mcp_title": "Blender MCP installieren",
+        "mcp_body": "Folge dem offiziellen Blender MCP Setup, öffne Blender und prüfe vor der Referenzgenerierung, dass dein Agent den Blender MCP Server erreicht.",
+        "setup_label": "Offizielles Setup",
+        "skill_title": "EvoLink Skills installieren",
+        "skill_body": "Installiere den Seedance-Generierungsskill und den Topaz-Upscaling-Skill im Agent-Workspace.",
+        "key_title": "API key holen",
+        "key_body": "Erstelle in deinem EvoLink Account einen API key und stelle ihn der Agent Runtime bereit.",
+        "run_title": "Im Agent ausführen",
+        "run_body": "Wenn MCP, Skills und API key bereit sind, lässt du den Agent ein Blender Blockout bauen, das Reference Video exportieren, mit Seedance generieren und bei Bedarf mit Topaz hochskalieren.",
+        "agent_prompt": "Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.",
+        "note": "Die Blender MCP Setup-Seite bleibt die maßgebliche Quelle für Blender-seitige Installationsdetails.",
+    },
+    "fr": {
+        "title": "Workflow de démarrage rapide",
+        "intro": "Configurez d'abord le contrôle local de Blender, puis installez les skills EvoLink que votre agent appellera.",
+        "mcp_title": "Installer Blender MCP",
+        "mcp_body": "Suivez le guide officiel Blender MCP, ouvrez Blender et vérifiez que votre agent peut se connecter au serveur Blender MCP avant de générer des références.",
+        "setup_label": "Setup officiel",
+        "skill_title": "Installer les skills EvoLink",
+        "skill_body": "Installez la skill de génération Seedance et la skill d'upscale Topaz dans le workspace de l'agent.",
+        "key_title": "Obtenir une API key",
+        "key_body": "Créez une API key EvoLink depuis votre compte, puis exposez-la au runtime de l'agent.",
+        "run_title": "Lancer dans votre agent",
+        "run_body": "Une fois MCP, skills et API key prêts, demandez à l'agent de créer un blockout Blender, d'exporter la vidéo de référence, de générer avec Seedance et d'upscaler le clip final si nécessaire.",
+        "agent_prompt": "Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.",
+        "note": "La page de setup Blender MCP reste la source de vérité pour les détails d'installation côté Blender.",
+    },
+    "tr": {
+        "title": "Hızlı başlangıç workflow'u",
+        "intro": "Önce yerel Blender kontrol yolunu kurun, ardından agent'ın çağıracağı EvoLink skill'lerini yükleyin.",
+        "mcp_title": "Blender MCP kurulumu",
+        "mcp_body": "Resmi Blender MCP setup rehberini izleyin, Blender'ı açın ve referans üretmeden önce agent'ın Blender MCP server'a bağlanabildiğini doğrulayın.",
+        "setup_label": "Resmi setup",
+        "skill_title": "EvoLink skill'lerini kurun",
+        "skill_body": "Agent workspace içinde Seedance üretim skill'ini ve Topaz upscale skill'ini kurun.",
+        "key_title": "API key alın",
+        "key_body": "EvoLink hesabınızdan bir API key oluşturun ve agent runtime'a tanıtın.",
+        "run_title": "Agent içinde çalıştırın",
+        "run_body": "MCP, skill'ler ve API key hazır olduğunda agent'tan Blender blockout oluşturmasını, reference video export etmesini, Seedance ile üretmesini ve gerekirse Topaz ile upscale yapmasını isteyin.",
+        "agent_prompt": "Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.",
+        "note": "Blender tarafındaki kurulum ayrıntıları için Blender MCP setup sayfası esas kaynaktır.",
+    },
+    "zh-CN": {
+        "title": "Quick Start 工作流",
+        "intro": "先把本地 Blender 控制链路搭好，再安装 agent 会调用的 EvoLink skills。",
+        "mcp_title": "安装 Blender MCP",
+        "mcp_body": "按照官方 Blender MCP setup 页面完成配置，打开 Blender，并在生成参考视频之前确认 agent 能连接到 Blender MCP server。",
+        "setup_label": "官方 setup",
+        "skill_title": "安装 EvoLink skills",
+        "skill_body": "在 agent workspace 里安装 Seedance 生成 skill 和 Topaz 视频放大 skill。",
+        "key_title": "获取 API key",
+        "key_body": "在 EvoLink 账号里创建 API key，然后把它暴露给 agent runtime。",
+        "run_title": "在自己的 agent 里运行",
+        "run_body": "MCP、skills 和 API key 都准备好之后，就可以让 agent 创建 Blender blockout、导出参考视频、调用 Seedance 生成，并在需要时用 Topaz 放大最终视频。",
+        "agent_prompt": "Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.",
+        "note": "Blender 侧安装细节以 Blender MCP setup 页面为准。",
+    },
+    "zh-TW": {
+        "title": "Quick Start 工作流",
+        "intro": "先把本地 Blender 控制鏈路搭好，再安裝 agent 會呼叫的 EvoLink skills。",
+        "mcp_title": "安裝 Blender MCP",
+        "mcp_body": "按照官方 Blender MCP setup 頁面完成配置，開啟 Blender，並在生成參考影片之前確認 agent 能連接到 Blender MCP server。",
+        "setup_label": "官方 setup",
+        "skill_title": "安裝 EvoLink skills",
+        "skill_body": "在 agent workspace 裡安裝 Seedance 生成 skill 和 Topaz 影片放大 skill。",
+        "key_title": "取得 API key",
+        "key_body": "在 EvoLink 帳號裡建立 API key，然後把它暴露給 agent runtime。",
+        "run_title": "在自己的 agent 裡執行",
+        "run_body": "MCP、skills 和 API key 都準備好之後，就可以讓 agent 建立 Blender blockout、匯出參考影片、呼叫 Seedance 生成，並在需要時用 Topaz 放大最終影片。",
+        "agent_prompt": "Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.",
+        "note": "Blender 側安裝細節以 Blender MCP setup 頁面為準。",
+    },
+    "ru": {
+        "title": "Quick Start Workflow",
+        "intro": "Сначала настройте локальное управление Blender, затем установите EvoLink skills, которые будет вызывать агент.",
+        "mcp_title": "Установить Blender MCP",
+        "mcp_body": "Следуйте официальному setup Blender MCP, откройте Blender и проверьте, что агент подключается к Blender MCP server до генерации references.",
+        "setup_label": "Официальный setup",
+        "skill_title": "Установить EvoLink skills",
+        "skill_body": "Установите skill для генерации Seedance и skill для Topaz upscale в workspace агента.",
+        "key_title": "Получить API key",
+        "key_body": "Создайте API key в аккаунте EvoLink и передайте его в runtime агента.",
+        "run_title": "Запустить внутри агента",
+        "run_body": "Когда MCP, skills и API key готовы, попросите агента создать Blender blockout, экспортировать reference video, сгенерировать результат через Seedance и при необходимости улучшить финальный клип через Topaz.",
+        "agent_prompt": "Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.",
+        "note": "Страница Blender MCP setup остается главным источником деталей установки со стороны Blender.",
     },
 }
 
@@ -834,35 +1002,46 @@ def render_overview(labels: dict, records: list[dict], lang: str) -> str:
 > {labels["overview_note"]}"""
 
 
-def render_quick(labels: dict) -> str:
-    return f"""<a id="-quick-api-access"></a>
-## ⚡ {labels["quick"]}
+def render_quick(labels: dict, lang: str) -> str:
+    quick = QUICK_START[lang]
+    return f"""<a id="quick-start"></a>
+## ⚡ {quick["title"]}
 
-{labels["quick_text"]}
+{quick["intro"]}
+
+### 1. {quick["mcp_title"]}
+
+{quick["mcp_body"]}
+
+- {quick["setup_label"]}: [Blender MCP setup](https://projects.blender.org/lab/blender_mcp/wiki/Setup)
+
+### 2. {quick["skill_title"]}
+
+{quick["skill_body"]}
 
 ```bash
-curl --request POST \\
-  --url https://direct.evolink.ai/v1/messages \\
-  --header 'Authorization: Bearer <token>' \\
-  --header 'Content-Type: application/json' \\
-  --data '
-{{
-  "model": "{MODEL_ID}",
-  "max_tokens": 1024,
-  "messages": [
-    {{
-      "role": "user",
-      "content": "Plan a Blender reference-video workflow for a Seedance shot."
-    }}
-  ]
-}}
-'
+npm i evolink-seedance
+npm i evolink-topaz-video-upscale
 ```
 
-<a id="conversion-path-pending"></a>
-## 🚧 {labels["pending"]}
+### 3. {quick["key_title"]}
 
-{labels["pending_body"]}"""
+{quick["key_body"]}
+
+```bash
+export EVOLINK_API_KEY="<your-evolink-api-key>"
+```
+
+### 4. {quick["run_title"]}
+
+{quick["run_body"]}
+
+```text
+{quick["agent_prompt"]}
+```
+
+> [!NOTE]
+> {quick["note"]}"""
 
 
 def grouped_records(records: list[dict]) -> dict[str, list[dict]]:
@@ -977,7 +1156,7 @@ def render_readme(lang: str, filename: str, img_path: str, items: list[dict], re
         render_badges(img_path),
         render_intro(labels),
         render_overview(labels, records, lang),
-        render_quick(labels),
+        render_quick(labels, lang),
         render_menu(labels, records, lang),
         render_cases(labels, items, lang),
         render_ack(labels, records),
@@ -1094,7 +1273,7 @@ def write_static_files(records: list[dict]) -> None:
 
             - Selected public cases: {len(records)}
             - Candidate pool before audit: 35
-            - Primary CTA: pending owner-provided landing page
+            - Primary CTA: Quick Start workflow with Blender MCP, EvoLink skills, API key, and agent usage
             - Public push: not approved
             - GitHub repository creation: not approved; push target approved after local verification
 
@@ -1122,7 +1301,7 @@ def write_static_files(records: list[dict]) -> None:
 
             ## Release Blockers
 
-            Replace `#conversion-path-pending` with the final landing page before claiming release-ready. The landing page should explain MCP installation, EvoLink skill installation, recharge, and agent usage.
+            Replace the Quick Start destination with the final landing page once the owner provides it. Until then, `#quick-start` is the primary conversion anchor and should explain Blender MCP setup, EvoLink skill installation, API key setup, and agent usage.
             """
         )
     )
@@ -1232,7 +1411,7 @@ def main() -> None:
             "selected_count": len(records),
             "tier_counts": dict(Counter(record["quality_tier"] for record in records)),
             "category_counts": dict(Counter(record["category"] for record in records)),
-            "cta_status": "pending owner-provided landing page",
+            "cta_status": "quick-start workflow published; final landing page still pending",
             "publication_status": "local scaffold; push to cheercheung/Awesome-Blender-Seedance-Workflow-Usecases approved after local verification; no remote creation approved",
             "audit": "docs/usecase-originality-audit.md",
         },

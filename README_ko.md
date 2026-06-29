@@ -1,11 +1,11 @@
 <div align="center">
 
-<a href="#conversion-path-pending"><img src="images/ko.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="#quick-start"><img src="images/ko.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](#conversion-path-pending)
-[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Pending-orange)](#conversion-path-pending)
-[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Pending-blue)](#conversion-path-pending)
+[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](#quick-start)
+[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Pending-orange)](#quick-start)
+[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Pending-blue)](#quick-start)
 
 [![English](https://img.shields.io/badge/English-111111)](README.md)
 [![Español](https://img.shields.io/badge/Espa%C3%B1ol-ffb703)](README_es.md)
@@ -29,7 +29,7 @@ Blender + Seedance 유스케이스 저장소입니다.
 
 현재 컬렉션은 소유자가 제공한 X/Twitter 데이터에서 선별했습니다. 각 사례는 원본 게시물과 제작자 프로필로 연결됩니다.
 
-주요 랜딩 페이지는 아직 미정입니다. 예정 경로는 MCP 설치, EvoLink skill 설치, 충전, agent 안에서 사용입니다.
+아래 Quick Start에서 Blender MCP setup, EvoLink skill 설치, API key 설정, 에이전트 안에서 실행하는 흐름을 안내합니다.
 
 ## 📊 Overview
 
@@ -42,34 +42,44 @@ Blender + Seedance 유스케이스 저장소입니다.
 > [!NOTE]
 > 이 컬렉션은 과장보다 구체적 근거를 우선합니다: 단계, reference video, agent/MCP 사용, 재현 조건, 명확한 한계.
 
-<a id="-quick-api-access"></a>
-## ⚡ API 빠른 접근
+<a id="quick-start"></a>
+## ⚡ Quick Start Workflow
 
-최종 landing 이 제공되기 전까지 Seedance reference-to-video 모델 경로를 기록합니다.
+먼저 에이전트가 로컬 Blender를 제어할 수 있게 만들고, 그다음 에이전트가 호출할 EvoLink skill을 설치합니다.
+
+### 1. Blender MCP 설치
+
+공식 Blender MCP setup 가이드를 따르고, Blender를 연 뒤 레퍼런스를 만들기 전에 에이전트가 Blender MCP server에 연결되는지 확인합니다.
+
+- 공식 setup: [Blender MCP setup](https://projects.blender.org/lab/blender_mcp/wiki/Setup)
+
+### 2. EvoLink skill 설치
+
+에이전트 workspace에 Seedance 생성 skill과 Topaz 업스케일 skill을 설치합니다.
 
 ```bash
-curl --request POST \
-  --url https://direct.evolink.ai/v1/messages \
-  --header 'Authorization: Bearer <token>' \
-  --header 'Content-Type: application/json' \
-  --data '
-{
-  "model": "seedance-2.0-reference-to-video",
-  "max_tokens": 1024,
-  "messages": [
-    {
-      "role": "user",
-      "content": "Plan a Blender reference-video workflow for a Seedance shot."
-    }
-  ]
-}
-'
+npm i evolink-seedance
+npm i evolink-topaz-video-upscale
 ```
 
-<a id="conversion-path-pending"></a>
-## 🚧 전환 경로 대기 중
+### 3. API key 받기
 
-최종 landing 은 아직 미정입니다. release-ready 로 표시하기 전에 이 섹션을 최종 CTA 로 교체하세요.
+EvoLink 계정에서 API key를 만들고 에이전트 runtime에서 읽을 수 있게 설정합니다.
+
+```bash
+export EVOLINK_API_KEY="<your-evolink-api-key>"
+```
+
+### 4. 에이전트 안에서 실행
+
+MCP, skill, API key가 준비되면 에이전트에게 Blender blockout 생성, reference video export, Seedance 생성, 필요한 경우 Topaz upscale까지 맡깁니다.
+
+```text
+Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.
+```
+
+> [!NOTE]
+> Blender 쪽 설치 세부사항은 Blender MCP setup 페이지를 기준으로 합니다.
 
 ## 📑 메뉴
 

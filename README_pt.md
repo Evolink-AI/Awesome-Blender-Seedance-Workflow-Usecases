@@ -1,11 +1,11 @@
 <div align="center">
 
-<a href="#conversion-path-pending"><img src="images/pt.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="#quick-start"><img src="images/pt.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](#conversion-path-pending)
-[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Pending-orange)](#conversion-path-pending)
-[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Pending-blue)](#conversion-path-pending)
+[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](#quick-start)
+[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Pending-orange)](#quick-start)
+[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Pending-blue)](#quick-start)
 
 [![English](https://img.shields.io/badge/English-111111)](README.md)
 [![Español](https://img.shields.io/badge/Espa%C3%B1ol-ffb703)](README_es.md)
@@ -29,7 +29,7 @@ Repositório de casos de uso Blender + Seedance.
 
 A coleção vem dos dados X/Twitter fornecidos pelo proprietário. Cada caso aponta para o post original e o criador.
 
-A landing principal está pendente; a rota prevista é instalar MCP, instalar a skill EvoLink, recarregar e usar no agente.
+O Quick Start abaixo guia a instalação do Blender MCP, das skills EvoLink, da API key e a execução dentro de um agente.
 
 ## 📊 Overview
 
@@ -42,34 +42,44 @@ A landing principal está pendente; a rota prevista é instalar MCP, instalar a 
 > [!NOTE]
 > A coleção prioriza evidência concreta: passos, vídeos de referência, uso de agente/MCP, restrições reproduzíveis e limites claros.
 
-<a id="-quick-api-access"></a>
-## ⚡ Acesso rápido à API
+<a id="quick-start"></a>
+## ⚡ Workflow de início rápido
 
-Esta seção registra o caminho esperado do modelo Seedance reference-to-video até a landing final existir.
+Configure primeiro o controle local do Blender; depois instale as skills EvoLink que o agente vai chamar.
+
+### 1. Instale o Blender MCP
+
+Siga o guia oficial de setup do Blender MCP, abra o Blender e confirme que o agente consegue se conectar ao servidor Blender MCP antes de gerar referências.
+
+- Setup oficial: [Blender MCP setup](https://projects.blender.org/lab/blender_mcp/wiki/Setup)
+
+### 2. Instale as skills EvoLink
+
+Instale a skill de geração Seedance e a skill de upscale Topaz no workspace do agente.
 
 ```bash
-curl --request POST \
-  --url https://direct.evolink.ai/v1/messages \
-  --header 'Authorization: Bearer <token>' \
-  --header 'Content-Type: application/json' \
-  --data '
-{
-  "model": "seedance-2.0-reference-to-video",
-  "max_tokens": 1024,
-  "messages": [
-    {
-      "role": "user",
-      "content": "Plan a Blender reference-video workflow for a Seedance shot."
-    }
-  ]
-}
-'
+npm i evolink-seedance
+npm i evolink-topaz-video-upscale
 ```
 
-<a id="conversion-path-pending"></a>
-## 🚧 Caminho de conversão pendente
+### 3. Obtenha uma API key
 
-A landing final ainda está pendente. Substitua esta seção pelo CTA final antes de marcar o repositório como pronto para release.
+Crie uma API key da EvoLink na sua conta e exponha essa chave ao runtime do agente.
+
+```bash
+export EVOLINK_API_KEY="<your-evolink-api-key>"
+```
+
+### 4. Execute dentro do seu agente
+
+Com MCP, skills e API key prontos, peça ao agente para criar um blockout no Blender, exportar o vídeo de referência, gerar com Seedance e fazer upscale do resultado quando necessário.
+
+```text
+Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.
+```
+
+> [!NOTE]
+> A página de setup do Blender MCP é a fonte principal para os detalhes de instalação no Blender.
 
 ## 📑 Menu
 

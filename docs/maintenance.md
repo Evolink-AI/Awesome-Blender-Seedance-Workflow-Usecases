@@ -12,7 +12,7 @@
 
 - Selected public cases: 20
 - Candidate pool before audit: 35
-- Primary CTA: pending owner-provided landing page
+- Primary CTA: Quick Start workflow with Blender MCP, EvoLink skills, API key, and agent usage
 - Public push: not approved
 - GitHub repository creation: not approved; push target approved after local verification
 
@@ -40,4 +40,4 @@ git diff --check
 
 ## Release Blockers
 
-Replace `#conversion-path-pending` with the final landing page before claiming release-ready. The landing page should explain MCP installation, EvoLink skill installation, recharge, and agent usage.
+Replace the Quick Start destination with the final landing page once the owner provides it. Until then, `#quick-start` is the primary conversion anchor and should explain Blender MCP setup, EvoLink skill installation, API key setup, and agent usage.
