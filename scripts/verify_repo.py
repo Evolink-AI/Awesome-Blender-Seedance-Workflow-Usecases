@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
+import json
 from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
 FILES = ['README.md', 'README_es.md', 'README_pt.md', 'README_ja.md', 'README_ko.md', 'README_de.md', 'README_fr.md', 'README_tr.md', 'README_zh-TW.md', 'README_zh-CN.md', 'README_ru.md']
-EXPECTED_CASES = 35
+EXPECTED_CASES = 20
 EXPECTED_IMAGES = ['images/en.png', 'images/es.png', 'images/pt.png', 'images/ja.png', 'images/ko.png', 'images/de.png', 'images/fr.png', 'images/tr.png', 'images/zh-tw.png', 'images/zh.png', 'images/ru.png']
 
 def fail(msg):
@@ -36,4 +37,21 @@ for required in ["LICENSE", "CONTRIBUTING.md", "docs/maintenance.md", ".github/P
     if not (ROOT / required).exists():
         fail(f"missing {required}")
 
-print(f"PASS: {len(FILES)} README files, {EXPECTED_CASES} cases each, required assets present")
+curated = json.loads((ROOT / "blender-seedance-usecase-curated.json").read_text())
+if curated["metadata"].get("selected_count") != EXPECTED_CASES:
+    fail("curated selected_count does not match README case count")
+
+media_paths = []
+for item in curated["items"]:
+    for rel in item.get("local_media", []):
+        media_paths.append(rel)
+        if not (ROOT / rel).exists():
+            fail(f"missing local media {rel}")
+
+for file in FILES:
+    text = (ROOT / file).read_text()
+    for rel in media_paths:
+        if rel not in text:
+            fail(f"{file} missing local media link {rel}")
+
+print(f"PASS: {len(FILES)} README files, {EXPECTED_CASES} cases each, {len(media_paths)} media files linked")

@@ -56,6 +56,200 @@ CATEGORY_META = {
     "limitations": ("🧪", "Limits, Tests & Troubleshooting"),
 }
 
+CATEGORY_DISPLAY = {
+    "en": {
+        "camera-control": "Camera Control & Previs",
+        "character-action": "Character & Action Blocking",
+        "agentic-mcp": "Agentic Blender MCP",
+        "reference-prompt": "Reference, Prompt & Multi-Input Mapping",
+        "production-pipeline": "Production Pipelines & Toolchains",
+        "limitations": "Limits, Tests & Troubleshooting",
+    },
+    "es": {
+        "camera-control": "Camera Control & Previs / Control de cámara y previs",
+        "character-action": "Character & Action Blocking / Bloqueo de personajes y acción",
+        "agentic-mcp": "Agentic Blender MCP / Blender MCP con agentes",
+        "reference-prompt": "Reference, Prompt & Multi-Input Mapping / Referencias, prompts y entradas múltiples",
+        "production-pipeline": "Production Pipelines & Toolchains / Pipelines y herramientas de producción",
+        "limitations": "Limits, Tests & Troubleshooting / Límites, pruebas y diagnóstico",
+    },
+    "pt": {
+        "camera-control": "Camera Control & Previs / Controle de câmera e previs",
+        "character-action": "Character & Action Blocking / Bloqueio de personagens e ação",
+        "agentic-mcp": "Agentic Blender MCP / Blender MCP com agentes",
+        "reference-prompt": "Reference, Prompt & Multi-Input Mapping / Referências, prompts e múltiplas entradas",
+        "production-pipeline": "Production Pipelines & Toolchains / Pipelines e ferramentas de produção",
+        "limitations": "Limits, Tests & Troubleshooting / Limites, testes e diagnóstico",
+    },
+    "ja": {
+        "camera-control": "Camera Control & Previs / カメラ制御とプリビズ",
+        "character-action": "Character & Action Blocking / キャラクターとアクションのブロッキング",
+        "agentic-mcp": "Agentic Blender MCP / エージェント型 Blender MCP",
+        "reference-prompt": "Reference, Prompt & Multi-Input Mapping / 参照、プロンプト、複数入力の対応付け",
+        "production-pipeline": "Production Pipelines & Toolchains / 制作パイプラインとツールチェーン",
+        "limitations": "Limits, Tests & Troubleshooting / 制限、検証、トラブルシュート",
+    },
+    "ko": {
+        "camera-control": "Camera Control & Previs / 카메라 제어와 프리비즈",
+        "character-action": "Character & Action Blocking / 캐릭터와 액션 블로킹",
+        "agentic-mcp": "Agentic Blender MCP / 에이전트 기반 Blender MCP",
+        "reference-prompt": "Reference, Prompt & Multi-Input Mapping / 레퍼런스, 프롬프트, 다중 입력 매핑",
+        "production-pipeline": "Production Pipelines & Toolchains / 제작 파이프라인과 툴체인",
+        "limitations": "Limits, Tests & Troubleshooting / 한계, 테스트, 문제 해결",
+    },
+    "de": {
+        "camera-control": "Camera Control & Previs / Kamerasteuerung und Previs",
+        "character-action": "Character & Action Blocking / Figuren- und Action-Blocking",
+        "agentic-mcp": "Agentic Blender MCP / Agentisches Blender MCP",
+        "reference-prompt": "Reference, Prompt & Multi-Input Mapping / Referenzen, Prompts und Multi-Input-Mapping",
+        "production-pipeline": "Production Pipelines & Toolchains / Produktionspipelines und Toolchains",
+        "limitations": "Limits, Tests & Troubleshooting / Grenzen, Tests und Fehlersuche",
+    },
+    "fr": {
+        "camera-control": "Camera Control & Previs / Contrôle caméra et prévisualisation",
+        "character-action": "Character & Action Blocking / Blocking personnages et action",
+        "agentic-mcp": "Agentic Blender MCP / Blender MCP avec agents",
+        "reference-prompt": "Reference, Prompt & Multi-Input Mapping / Références, prompts et entrées multiples",
+        "production-pipeline": "Production Pipelines & Toolchains / Pipelines et outils de production",
+        "limitations": "Limits, Tests & Troubleshooting / Limites, tests et dépannage",
+    },
+    "tr": {
+        "camera-control": "Camera Control & Previs / Kamera kontrolü ve previs",
+        "character-action": "Character & Action Blocking / Karakter ve aksiyon blocking",
+        "agentic-mcp": "Agentic Blender MCP / Agent destekli Blender MCP",
+        "reference-prompt": "Reference, Prompt & Multi-Input Mapping / Referans, prompt ve çoklu girdi eşleme",
+        "production-pipeline": "Production Pipelines & Toolchains / Üretim pipeline'ları ve araç zinciri",
+        "limitations": "Limits, Tests & Troubleshooting / Sınırlar, testler ve sorun giderme",
+    },
+    "zh-CN": {
+        "camera-control": "Camera Control & Previs / 相机控制与预演",
+        "character-action": "Character & Action Blocking / 角色与动作 blocking",
+        "agentic-mcp": "Agentic Blender MCP / Agent 辅助 Blender MCP",
+        "reference-prompt": "Reference, Prompt & Multi-Input Mapping / 参考、prompt 与多输入映射",
+        "production-pipeline": "Production Pipelines & Toolchains / 生产管线与工具链",
+        "limitations": "Limits, Tests & Troubleshooting / 限制、测试与排查",
+    },
+    "zh-TW": {
+        "camera-control": "Camera Control & Previs / 相機控制與預演",
+        "character-action": "Character & Action Blocking / 角色與動作 blocking",
+        "agentic-mcp": "Agentic Blender MCP / Agent 輔助 Blender MCP",
+        "reference-prompt": "Reference, Prompt & Multi-Input Mapping / 參考、prompt 與多輸入映射",
+        "production-pipeline": "Production Pipelines & Toolchains / 生產管線與工具鏈",
+        "limitations": "Limits, Tests & Troubleshooting / 限制、測試與排查",
+    },
+    "ru": {
+        "camera-control": "Camera Control & Previs / Управление камерой и превиз",
+        "character-action": "Character & Action Blocking / Блокинг персонажей и экшена",
+        "agentic-mcp": "Agentic Blender MCP / Агентный Blender MCP",
+        "reference-prompt": "Reference, Prompt & Multi-Input Mapping / Референсы, промпты и multi-input mapping",
+        "production-pipeline": "Production Pipelines & Toolchains / Производственные пайплайны и инструменты",
+        "limitations": "Limits, Tests & Troubleshooting / Ограничения, тесты и разбор ошибок",
+    },
+}
+
+OVERVIEW_LINES = {
+    "en": [
+        "**{count} selected Blender + Seedance cases** from public creator posts in the owner-provided source dataset.",
+        "Covers camera control, Blender previs, multi-character blocking, action choreography, Blender MCP, Codex/Claude-assisted blockouts, FBX/Mixamo references, ComfyUI/style transfer, and known limitations.",
+        "Each case includes the original source, creator attribution, a concise takeaway, evidence type, and publication date.",
+        "The public list was reduced from 35 candidates to 20 primary cases after manual duplicate and originality review.",
+        "Use this repo to inspect practical workflows before routing users to the final EvoLink MCP + skill landing page.",
+    ],
+    "es": [
+        "**{count} casos Blender + Seedance seleccionados** a partir de publicaciones públicas de creadores en el dataset proporcionado por el propietario.",
+        "Cubre control de cámara, previs en Blender, blocking de varios personajes, coreografía de acción, Blender MCP, blockouts asistidos por Codex/Claude, referencias FBX/Mixamo, ComfyUI/style transfer y límites conocidos.",
+        "Cada caso incluye fuente original, atribución al creador, aprendizaje breve, tipo de evidencia y fecha de publicación.",
+        "La lista pública se redujo de 35 candidatos a 20 casos primarios tras una revisión manual de duplicados y originalidad.",
+        "Usa este repo para revisar workflows prácticos antes de enviar usuarios a la landing final de EvoLink MCP + skill.",
+    ],
+    "pt": [
+        "**{count} casos Blender + Seedance selecionados** a partir de posts públicos de criadores no dataset fornecido pelo proprietário.",
+        "Cobre controle de câmera, previs no Blender, blocking de múltiplos personagens, coreografia de ação, Blender MCP, blockouts assistidos por Codex/Claude, referências FBX/Mixamo, ComfyUI/style transfer e limites conhecidos.",
+        "Cada caso inclui fonte original, crédito ao criador, resumo acionável, tipo de evidência e data de publicação.",
+        "A lista pública foi reduzida de 35 candidatos para 20 casos primários após revisão manual de duplicidade e originalidade.",
+        "Use este repo para avaliar workflows práticos antes de direcionar usuários à landing final de EvoLink MCP + skill.",
+    ],
+    "ja": [
+        "**{count} 件の Blender + Seedance ケース** を、所有者提供の公開クリエイター投稿データから選定しました。",
+        "カメラ制御、Blender previs、複数キャラクターのブロッキング、アクション設計、Blender MCP、Codex/Claude 支援 blockout、FBX/Mixamo 参照、ComfyUI/style transfer、既知の制限を扱います。",
+        "各ケースには元ソース、作者クレジット、短い要点、証拠タイプ、公開日を含めています。",
+        "公開リストは、重複とオリジナリティの手動レビュー後に 35 件から 20 件へ絞りました。",
+        "最終的な EvoLink MCP + skill landing に誘導する前に、実用 workflow を確認するための repo です。",
+    ],
+    "ko": [
+        "소유자가 제공한 공개 제작자 게시물 데이터에서 **{count}개의 Blender + Seedance 사례**를 선별했습니다.",
+        "카메라 제어, Blender 프리비즈, 다중 캐릭터 블로킹, 액션 안무, Blender MCP, Codex/Claude 지원 blockout, FBX/Mixamo 레퍼런스, ComfyUI/style transfer, 알려진 한계를 다룹니다.",
+        "각 사례에는 원본 출처, 제작자 표기, 간단한 takeaway, 증거 유형, 게시일이 포함됩니다.",
+        "공개 목록은 중복성과 원작성 수동 검토를 거쳐 35개 후보에서 20개 주요 사례로 줄였습니다.",
+        "최종 EvoLink MCP + skill 랜딩으로 보내기 전에 실제 workflow를 검토하기 위한 repo입니다.",
+    ],
+    "de": [
+        "**{count} ausgewählte Blender + Seedance Fälle** aus öffentlichen Creator-Posts im vom Owner bereitgestellten Datensatz.",
+        "Behandelt Kamerasteuerung, Blender-Previs, Multi-Character-Blocking, Action-Choreografie, Blender MCP, Codex/Claude-gestützte Blockouts, FBX/Mixamo-Referenzen, ComfyUI/style transfer und bekannte Grenzen.",
+        "Jeder Fall enthält Originalquelle, Creator-Zuordnung, kompaktes Takeaway, Evidenztyp und Veröffentlichungsdatum.",
+        "Die öffentliche Liste wurde nach manueller Prüfung auf Duplikate und Originalität von 35 Kandidaten auf 20 Primärfälle reduziert.",
+        "Nutze dieses Repo, um praktische Workflows zu prüfen, bevor Nutzer zur finalen EvoLink MCP + Skill Landingpage geführt werden.",
+    ],
+    "fr": [
+        "**{count} cas Blender + Seedance sélectionnés** depuis des publications publiques de créateurs dans le dataset fourni par le propriétaire.",
+        "Couvre contrôle caméra, previs Blender, blocking multi-personnages, chorégraphie d'action, Blender MCP, blockouts assistés par Codex/Claude, références FBX/Mixamo, ComfyUI/style transfer et limites connues.",
+        "Chaque cas inclut la source originale, l'attribution créateur, un résumé exploitable, le type de preuve et la date de publication.",
+        "La liste publique a été réduite de 35 candidats à 20 cas principaux après revue manuelle des doublons et de l'originalité.",
+        "Utilisez ce repo pour examiner des workflows pratiques avant de diriger les utilisateurs vers la landing EvoLink MCP + skill finale.",
+    ],
+    "tr": [
+        "Sahibin sağladığı herkese açık creator postlarından **{count} Blender + Seedance vakası** seçildi.",
+        "Kamera kontrolü, Blender previs, çok karakterli blocking, aksiyon koreografisi, Blender MCP, Codex/Claude destekli blockout'lar, FBX/Mixamo referansları, ComfyUI/style transfer ve bilinen sınırları kapsar.",
+        "Her vaka orijinal kaynak, creator atfı, kısa takeaway, kanıt tipi ve yayın tarihini içerir.",
+        "Herkese açık liste, manuel tekrar ve özgünlük incelemesinden sonra 35 adaydan 20 ana vakaya indirildi.",
+        "Bu repo, kullanıcıları final EvoLink MCP + skill landing sayfasına yönlendirmeden önce pratik workflow'ları incelemek içindir.",
+    ],
+    "zh-CN": [
+        "**{count} 个精选 Blender + Seedance 案例**，来自用户提供数据集中公开创作者帖子。",
+        "覆盖相机控制、Blender previs、多角色 blocking、动作编排、Blender MCP、Codex/Claude 辅助 blockout、FBX/Mixamo 参考、ComfyUI/style transfer 和已知限制。",
+        "每个案例都包含原始来源、创作者署名、简明 takeaway、证据类型和发布日期。",
+        "公开列表已经过人工重复与原创性审计，从 35 个候选收敛为 20 个主案例。",
+        "这个仓库用于先展示真实工作流，再把用户引导到最终 EvoLink MCP + skill 落地页。",
+    ],
+    "zh-TW": [
+        "**{count} 個精選 Blender + Seedance 案例**，來自使用者提供資料集中公開創作者貼文。",
+        "涵蓋相機控制、Blender previs、多角色 blocking、動作編排、Blender MCP、Codex/Claude 輔助 blockout、FBX/Mixamo 參考、ComfyUI/style transfer 和已知限制。",
+        "每個案例都包含原始來源、創作者署名、簡明 takeaway、證據類型和發布日期。",
+        "公開列表已經過人工重複與原創性審計，從 35 個候選收斂為 20 個主案例。",
+        "這個倉庫用於先展示真實工作流，再把使用者引導到最終 EvoLink MCP + skill 落地頁。",
+    ],
+    "ru": [
+        "**{count} отобранных кейсов Blender + Seedance** из публичных постов авторов в датасете владельца.",
+        "Охватывает управление камерой, Blender previs, блокинг нескольких персонажей, постановку экшена, Blender MCP, blockout с Codex/Claude, FBX/Mixamo references, ComfyUI/style transfer и известные ограничения.",
+        "Каждый кейс содержит исходный пост, автора, краткий вывод, тип доказательства и дату публикации.",
+        "Публичный список был сокращен с 35 кандидатов до 20 основных кейсов после ручной проверки дубликатов и оригинальности.",
+        "Этот repo помогает изучить реальные workflows перед переходом к финальной landing page EvoLink MCP + skill.",
+    ],
+}
+
+SELECTED_SOURCE_INDICES = [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    14,
+    19,
+    20,
+    21,
+    23,
+    24,
+    25,
+    28,
+    29,
+    31,
+    32,
+]
+
 CATEGORY_FOR_CASE = {
     1: "camera-control",
     2: "camera-control",
@@ -130,6 +324,75 @@ EN_TITLES = {
     33: "Mixamo Multi-Character Storyboard Experiment",
     34: "Codex MCP Direct Blender Export",
     35: "Composition Reference with Person and Vehicle Refs",
+}
+
+EN_TAKEAWAYS = {
+    1: "A complete direction workflow: create a start frame, block the shot with gray boxes in Blender, animate only the camera and timing, then use that blockout as Seedance's motion reference.",
+    2: "A compact precision-camera recipe: Blender supplies the camera move, Midjourney supplies the start frame, and Seedance follows the motion reference.",
+    3: "A dialogue-shot workflow where Blender is used to match character poses and camera motion before Seedance generates the performed scene.",
+    5: "An action-previs case showing how rough timing, speed, camera shake, and spatial choreography can be planned in Blender before Seedance renders the shot.",
+    6: "A handheld-follow case where Blender controls how a character travels through space and Seedance carries the gritty camera move into the final video.",
+    7: "A reproducible prompt case with the start frame, Blender reference video, Seedance version, duration, and movement constraints all spelled out.",
+    8: "A limitation case: Blender successfully controls camera, rhythm, and subject path, while natural foot motion still needs better handling.",
+    9: "An agentic Blender MCP case where Codex builds a simple 3D market, cat motion, camera framing, and an MP4 reference for Seedance.",
+    10: "A reference-mapping case that uses Blender blocking plus multiple character and environment references to tell Seedance which figure should become which character.",
+    14: "A ComfyUI control case where Blender previz is combined with separate upright and upside-down reference frames to test motion adherence.",
+    19: "A tactical blocking case where Blender directs camera orbit, lens choice, cover positions, gunfire beats, and character movement before generation.",
+    20: "A multi-tool agent pipeline where Hermes installs and connects Krea, ComfyUI, Blender MCP, and Seedance to produce both image and physical references.",
+    21: "A viewport-to-style-transfer case: Blender MCP provides camera and element control, then Seedance/Magnific add texture and lighting.",
+    23: "A beginner-friendly motion-source case: use Mixamo motion in Blender as the controllable movement base before sending the reference to Seedance.",
+    24: "A Codex-assisted beginner case where architecture and camera work are generated in Blender and then tested as Seedance reference motion.",
+    25: "A 3D-previs-to-anime case showing how camera moves and motion can be preserved while Seedance changes the render style.",
+    28: "A short viewport-preview tutorial: block out the scene, export the preview, turn the first frame realistic, then provide both references to Seedance.",
+    29: "An FBX clay-pass workflow where Blender imports the motion, Claude helps keyframe camera moves, and the rendered pass becomes Seedance reference video.",
+    31: "A no-start-frame variant showing that Blender blockout plus detailed environment references can work when the workflow cannot rely on a starter frame.",
+    32: "A style/world-variation case where the same Blender reference video drives different generated worlds in Seedance.",
+}
+
+EN_NOTES = {
+    1: "The post describes the whole loop from image-model start frame to crude Blender camera blockout and Seedance motion-reference generation.",
+    2: "The source gives a clear three-step workflow and reports that the generated video tracks the Blender camera move closely.",
+    3: "The source adds multi-character dialogue and pose matching, making it distinct from single-character camera-control demos.",
+    5: "The source focuses on action timing, speed, rough camera shake, and spatial choreography rather than only camera path.",
+    6: "The source moves the character through the scene while the camera follows, which makes it useful for handheld movement shots.",
+    7: "The post includes setup conditions and prompt constraints, so it can be reused as a reproducible reference-video case.",
+    8: "This is kept as a troubleshooting case because it names what Blender controlled well and where the motion still failed.",
+    9: "The author says the test was inspired by another creator, but the described scene, motion, camera, and export process are their own experiment.",
+    10: "The source explains how to pair a blocking reference with multiple still references so Seedance maps the moving figures correctly.",
+    14: "The case is useful because it combines Blender previz with multiple still references inside a ComfyUI-style control setup.",
+    19: "The source shows simultaneous camera and character blocking, which is stronger than a simple camera-only reference.",
+    20: "The case demonstrates a broader agent-built creative stack, not just manual Blender previs.",
+    21: "This is the stronger techhalla source because it explains the viewport animation and downstream style/lighting step.",
+    23: "The source is useful for beginners because it names Mixamo as a practical motion source for Blender reference videos.",
+    24: "The post is valuable as a beginner Codex workflow: the user delegates architecture and camera work to Codex before Seedance.",
+    25: "The source directly frames the workflow as Blender 3D previz transformed into an anime render while keeping camera motion.",
+    28: "The post gives a concise workflow with concrete artifacts: viewport preview, first-frame image, and Seedance reference video.",
+    29: "The source gives a specific FBX-to-clay-pass process and includes camera keyframing before reference export.",
+    31: "This case covers an important variant where reference images replace the usual start-frame dependency.",
+    32: "The source is useful because it separates motion control from world/style variation using the same reference video.",
+}
+
+ZH_TAKEAWAYS = {
+    1: "完整导演流程：先做起始帧，再用 Blender 灰盒搭镜头、只动画相机和节奏，最后把 blockout 作为 Seedance motion reference。",
+    2: "精确运镜的三步配方：Blender 负责相机运动，Midjourney 负责起始帧，Seedance 按参考运动生成视频。",
+    3: "多角色对话镜头：先在 Blender 里匹配角色姿势和相机运动，再让 Seedance 生成表演结果。",
+    5: "动作戏预演：用 Blender 规划粗略时序、速度、抖动和空间调度，再交给 Seedance 渲染成片。",
+    6: "手持跟拍：Blender 控制角色穿越空间和相机跟随，Seedance 把这种粗粝跟拍感带到最终视频。",
+    7: "可复现 prompt 案例：起始帧、Blender 参考视频、Seedance 版本、时长和运动约束都写清楚。",
+    8: "限制排查案例：Blender 能控制相机、节奏和移动路径，但自然脚步动作仍然容易出问题。",
+    9: "Agentic Blender MCP 案例：Codex 生成简易市场、猫的动作、相机构图，并导出给 Seedance 的 MP4 参考。",
+    10: "参考映射案例：用 Blender blocking 加多张角色/环境参考，告诉 Seedance 哪个运动物体对应哪个角色。",
+    14: "ComfyUI 控制案例：Blender previz 搭配 upright/upside-down 参考帧，测试 Seedance 的运动遵循能力。",
+    19: "战术动作 blocking：在生成前用 Blender 规划相机环绕、镜头、掩体位置、枪火节奏和角色移动。",
+    20: "多工具 agent 管线：Hermes 安装并连接 Krea、ComfyUI、Blender MCP 和 Seedance，生成图像与物理参考。",
+    21: "Viewport 到风格化案例：Blender MCP 提供相机和元素控制，再用 Seedance/Magnific 加纹理和光照。",
+    23: "新手运动来源案例：从 Mixamo 拿动作导入 Blender，作为可控运动基础后再送入 Seedance。",
+    24: "Codex 辅助新手案例：建筑和 camera work 由 Codex 在 Blender 中生成，再测试 Seedance 参考运动。",
+    25: "3D previz 到动画渲染：用 Seedance 改变画面风格，同时保留 Blender 里的相机运动和动作。",
+    28: "Viewport preview 教程：blockout 场景、导出预览、把首帧转成真实图，再把两类参考交给 Seedance。",
+    29: "FBX clay pass 流程：Blender 导入动作，Claude 辅助关键帧相机，渲染后的 clay pass 成为 Seedance 参考视频。",
+    31: "无起始帧变体：当不能依赖 starter frame 时，用 Blender blockout 加详细环境参考也能工作。",
+    32: "同一参考视频生成不同世界：用同一段 Blender reference 锁定运动，再让 Seedance 改变世界和风格。",
 }
 
 TYPE_FOR_CATEGORY = {
@@ -440,30 +703,54 @@ def local_case_title(item: dict, index: int, lang: str) -> str:
 
 
 def usage_takeaway(item: dict, index: int, lang: str) -> str:
-    title = local_case_title(item, index, lang)
     if lang == "en":
-        return f"Use this case to adapt {title.lower()} into a Blender-guided Seedance workflow."
+        return EN_TAKEAWAYS[index]
     if lang in {"zh-CN", "zh-TW"}:
-        verb = LOCALE[lang]["takeaway_prefix"]
-        return f"{verb}把「{title}」改造成 Blender 参考视频驱动的 Seedance 工作流。"
-    prefix = LOCALE[lang]["takeaway_prefix"]
-    return f"{prefix} adapt '{title}' into a Blender-guided Seedance workflow."
+        text = ZH_TAKEAWAYS[index]
+        return zh_tw(text) if lang == "zh-TW" else text
+    return EN_TAKEAWAYS[index]
 
 
 def source_notes(item: dict, index: int, lang: str) -> str:
     why = clean(item.get("why_selected_zh", ""))
     reuse = clean(item.get("reuse_angle_zh", ""))
-    source_text = clean(item.get("text", ""))
-    short_source = source_text[:260].rsplit(" ", 1)[0] + ("..." if len(source_text) > 260 else "")
+    note = EN_NOTES[index]
     if lang == "zh-CN":
         return f"- {LOCALE[lang]['notes_prefix']}：{why}\n- 复用角度：{reuse}"
     if lang == "zh-TW":
         return f"- {LOCALE[lang]['notes_prefix']}：{zh_tw(why)}\n- 複用角度：{zh_tw(reuse)}"
     return (
-        f"- {LOCALE[lang]['notes_prefix']}: curated because the source describes a concrete Blender + Seedance workflow rather than a generic showcase.\n"
-        f"- Reuse angle: {reuse}\n"
-        f"- Context summary: {short_source}"
+        f"- {LOCALE[lang]['notes_prefix']}: {note}\n"
+        f"- Audit status: kept after manual duplicate and originality review."
     )
+
+
+def local_media_links(case_idx: int) -> list[str]:
+    media_dir = ROOT / "media" / f"case-{case_idx:02d}"
+    if not media_dir.exists():
+        return []
+    return [str(path.relative_to(ROOT)) for path in sorted(media_dir.iterdir()) if path.is_file()]
+
+
+def media_notes(case_idx: int, lang: str) -> str:
+    links = local_media_links(case_idx)
+    if not links:
+        return ""
+    label = {
+        "en": "Local media",
+        "es": "Media local",
+        "pt": "Mídia local",
+        "ja": "ローカルメディア",
+        "ko": "로컬 미디어",
+        "de": "Lokale Medien",
+        "fr": "Médias locaux",
+        "tr": "Yerel medya",
+        "zh-CN": "本地媒体",
+        "zh-TW": "本地媒體",
+        "ru": "Локальные медиа",
+    }[lang]
+    rendered = ", ".join(f"[{Path(path).name}]({path})" for path in links)
+    return f"- {label}: {rendered}"
 
 
 def author_link(item: dict) -> str:
@@ -474,7 +761,8 @@ def author_link(item: dict) -> str:
 def curated_records(items: list[dict]) -> list[dict]:
     records = []
     staged = []
-    for source_idx, item in enumerate(items, 1):
+    for source_idx in SELECTED_SOURCE_INDICES:
+        item = items[source_idx - 1]
         cat = CATEGORY_FOR_CASE[source_idx]
         staged.append((cat, source_idx, item))
     order = {cat: pos for pos, cat in enumerate(CATEGORY_META)}
@@ -499,6 +787,7 @@ def curated_records(items: list[dict]) -> list[dict]:
                 "why_selected_zh": item.get("why_selected_zh"),
                 "reuse_angle_zh": item.get("reuse_angle_zh"),
                 "source_text": item.get("text"),
+                "local_media": local_media_links(idx),
             }
         )
     return records
@@ -531,13 +820,15 @@ def render_intro(labels: dict) -> str:
 {labels["cta"]}"""
 
 
-def render_overview(labels: dict, records: list[dict]) -> str:
+def category_display(cat: str, lang: str) -> str:
+    return CATEGORY_DISPLAY.get(lang, CATEGORY_DISPLAY["en"])[cat]
+
+
+def render_overview(labels: dict, records: list[dict], lang: str) -> str:
+    bullets = "\n".join(f"- {line.format(count=len(records))}" for line in OVERVIEW_LINES[lang])
     return f"""## 📊 Overview
 
-- **{len(records)} selected Blender + Seedance cases** from public creator posts in the owner-provided source dataset.
-- Covers camera control, Blender previs, multi-character blocking, action choreography, Blender MCP, Codex/Claude-assisted blockouts, FBX/Mixamo references, ComfyUI/style transfer, and known limitations.
-- Each case includes the original source, creator attribution, a concise takeaway, evidence type, and publication date.
-- Use this repo to inspect practical workflows before routing users to the final EvoLink MCP + skill landing page.
+{bullets}
 
 > [!NOTE]
 > {labels["overview_note"]}"""
@@ -591,14 +882,17 @@ def render_menu(labels: dict, records: list[dict], lang: str) -> str:
     ]
     for cat, recs in grouped.items():
         emoji, name = CATEGORY_META[cat]
-        lines.append(f"| [{emoji} {name}](#{slug(name)}) | Case {recs[0]['case']}-{recs[-1]['case']} |")
+        display = category_display(cat, lang)
+        lines.append(f"| [{emoji} {display}](#{slug(name)}) | Case {recs[0]['case']}-{recs[-1]['case']} |")
     lines.append(f"| [🙏 {labels['ack']}](#acknowledge) | Credits and correction policy |")
     lines.append("")
     for cat, recs in grouped.items():
         emoji, name = CATEGORY_META[cat]
+        display = category_display(cat, lang)
         lines.extend(
             [
-                f"### [{emoji} {name}](#{slug(name)})",
+                f'<a id="{slug(name)}"></a>',
+                f"### {emoji} {display}",
                 "",
                 f"| {labels['case']} | {labels['what']} | {labels['type']} |",
                 "|---|---|---|",
@@ -627,7 +921,9 @@ def render_cases(labels: dict, items: list[dict], lang: str) -> str:
     chunks = []
     for cat, recs in grouped.items():
         emoji, name = CATEGORY_META[cat]
-        chunks.append(f"## {emoji} {name}")
+        display = category_display(cat, lang)
+        chunks.append(f'<a id="{slug(name)}-cases"></a>')
+        chunks.append(f"## {emoji} {display}")
         chunks.append("")
         for rec in recs:
             idx = rec["case"]
@@ -643,6 +939,7 @@ def render_cases(labels: dict, items: list[dict], lang: str) -> str:
                     f"**{usage_takeaway(item, source_idx, lang)}**",
                     "",
                     source_notes(item, source_idx, lang),
+                    media_notes(idx, lang),
                     "",
                     f"{labels['type']}: {rec['evidence_type']} | {labels['date']}: {rec['date']}",
                     "",
@@ -679,7 +976,7 @@ def render_readme(lang: str, filename: str, img_path: str, items: list[dict], re
     parts = [
         render_badges(img_path),
         render_intro(labels),
-        render_overview(labels, records),
+        render_overview(labels, records, lang),
         render_quick(labels),
         render_menu(labels, records, lang),
         render_cases(labels, items, lang),
@@ -790,10 +1087,13 @@ def write_static_files(records: list[dict]) -> None:
             - Public curated source: `blender-seedance-usecase-curated.json`
             - Human-readable curated source: `blender-seedance-usecase-curated.md`
             - Owner-provided input: `data/primary-use-case-posts.json`
+            - Manual originality audit: `docs/usecase-originality-audit.md`
+            - Downloaded public media: `media/case-XX/`
 
             ## Current State
 
             - Selected public cases: {len(records)}
+            - Candidate pool before audit: 35
             - Primary CTA: pending owner-provided landing page
             - Public push: not approved
             - GitHub repository creation: not approved; push target approved after local verification
@@ -807,9 +1107,11 @@ def write_static_files(records: list[dict]) -> None:
             - Creator attribution
             - Bold usage takeaway
             - Source-grounded notes
+            - Local media links when the source data exposes media
             - `Type: ... | Date: YYYY-MM-DD`
 
             Never invent prompts, results, benchmark claims, availability, pricing, or creator attribution.
+            Do not re-add removed candidates without updating the audit file.
 
             ## Validation
 
@@ -852,6 +1154,7 @@ def write_static_files(records: list[dict]) -> None:
 
 def write_verify_script(records: list[dict]) -> None:
     script = f'''#!/usr/bin/env python3
+import json
 from pathlib import Path
 import re
 
@@ -889,7 +1192,24 @@ for required in ["LICENSE", "CONTRIBUTING.md", "docs/maintenance.md", ".github/P
     if not (ROOT / required).exists():
         fail(f"missing {{required}}")
 
-print(f"PASS: {{len(FILES)}} README files, {{EXPECTED_CASES}} cases each, required assets present")
+curated = json.loads((ROOT / "blender-seedance-usecase-curated.json").read_text())
+if curated["metadata"].get("selected_count") != EXPECTED_CASES:
+    fail("curated selected_count does not match README case count")
+
+media_paths = []
+for item in curated["items"]:
+    for rel in item.get("local_media", []):
+        media_paths.append(rel)
+        if not (ROOT / rel).exists():
+            fail(f"missing local media {{rel}}")
+
+for file in FILES:
+    text = (ROOT / file).read_text()
+    for rel in media_paths:
+        if rel not in text:
+            fail(f"{{file}} missing local media link {{rel}}")
+
+print(f"PASS: {{len(FILES)}} README files, {{EXPECTED_CASES}} cases each, {{len(media_paths)}} media files linked")
 '''
     path = ROOT / "scripts" / "verify_repo.py"
     path.write_text(script)
@@ -914,6 +1234,7 @@ def main() -> None:
             "category_counts": dict(Counter(record["category"] for record in records)),
             "cta_status": "pending owner-provided landing page",
             "publication_status": "local scaffold; push to cheercheung/Awesome-Blender-Seedance-Workflow-Usecases approved after local verification; no remote creation approved",
+            "audit": "docs/usecase-originality-audit.md",
         },
         "items": records,
     }

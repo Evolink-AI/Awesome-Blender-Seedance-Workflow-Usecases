@@ -5,10 +5,13 @@
 - Public curated source: `blender-seedance-usecase-curated.json`
 - Human-readable curated source: `blender-seedance-usecase-curated.md`
 - Owner-provided input: `data/primary-use-case-posts.json`
+- Manual originality audit: `docs/usecase-originality-audit.md`
+- Downloaded public media: `media/case-XX/`
 
 ## Current State
 
-- Selected public cases: 35
+- Selected public cases: 20
+- Candidate pool before audit: 35
 - Primary CTA: pending owner-provided landing page
 - Public push: not approved
 - GitHub repository creation: not approved; push target approved after local verification
@@ -22,9 +25,11 @@ Each public case must include:
 - Creator attribution
 - Bold usage takeaway
 - Source-grounded notes
+- Local media links when the source data exposes media
 - `Type: ... | Date: YYYY-MM-DD`
 
 Never invent prompts, results, benchmark claims, availability, pricing, or creator attribution.
+Do not re-add removed candidates without updating the audit file.
 
 ## Validation
 
