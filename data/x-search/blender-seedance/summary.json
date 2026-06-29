@@ -1,0 +1,152 @@
+{
+  "keyword": "blender seedance",
+  "query_type": "Latest",
+  "queries": [
+    "blender seedance since:2026-06-22 until:2026-06-30"
+  ],
+  "filters": {
+    "min_likes": -1,
+    "min_views": 0,
+    "min_retweets": 0,
+    "min_bookmarks": 0,
+    "min_replies": 0,
+    "must_include": [
+      "blender",
+      "seedance"
+    ],
+    "exclude": [],
+    "lang": []
+  },
+  "target_count": 10000,
+  "count": 171,
+  "raw_post_count": 172,
+  "page_count": 10,
+  "collected_at": "2026-06-29T13:32:27.390065+00:00",
+  "date_span": {
+    "start": "2026-06-22T15:06:18+00:00",
+    "end": "2026-06-29T13:21:34+00:00"
+  },
+  "query_stats": {
+    "blender seedance since:2026-06-22 until:2026-06-30": {
+      "pages": 10,
+      "returned": 172,
+      "accepted": 171
+    }
+  },
+  "language_counts": {
+    "en": 126,
+    "ja": 32,
+    "zh": 6,
+    "tr": 2,
+    "fa": 2,
+    "es": 1,
+    "et": 1,
+    "fr": 1
+  },
+  "month_counts": {
+    "2026-06": 171
+  },
+  "engagement_stats": {
+    "like_count": {
+      "median": 7.5,
+      "mean": 145.65,
+      "max": 4353
+    },
+    "view_count": {
+      "median": 250,
+      "mean": 10844.65,
+      "max": 481743
+    },
+    "retweet_count": {
+      "median": 5.5,
+      "mean": 32.59,
+      "max": 382
+    },
+    "bookmark_count": {
+      "median": 13,
+      "mean": 193.92,
+      "max": 3603
+    }
+  },
+  "outputs": {
+    "posts": "/Users/evolink/Desktop/github-repo/awesome-blender-seedance-use-cases/data/x-search/blender-seedance/posts.json",
+    "compact": "/Users/evolink/Desktop/github-repo/awesome-blender-seedance-use-cases/data/x-search/blender-seedance/id-link-text.json",
+    "summary": "/Users/evolink/Desktop/github-repo/awesome-blender-seedance-use-cases/data/x-search/blender-seedance/summary.json",
+    "archived_posts": "/Users/evolink/Desktop/github-repo/awesome-blender-seedance-use-cases/data/x-search/blender-seedance/20260629-213204-like-any-must-blender-seedance-posts.json",
+    "archived_compact": "/Users/evolink/Desktop/github-repo/awesome-blender-seedance-use-cases/data/x-search/blender-seedance/20260629-213204-like-any-must-blender-seedance-id-link-text.json",
+    "archived_summary": "/Users/evolink/Desktop/github-repo/awesome-blender-seedance-use-cases/data/x-search/blender-seedance/20260629-213204-like-any-must-blender-seedance-summary.json",
+    "raw_dir": "/Users/evolink/Desktop/github-repo/awesome-blender-seedance-use-cases/data/x-search/blender-seedance/raw/20260629-213204-like-any-must-blender-seedance"
+  },
+  "pages_read": [
+    {
+      "query": "blender seedance since:2026-06-22 until:2026-06-30",
+      "page": 1,
+      "returned": 20,
+      "accepted": 20,
+      "has_next_page": true
+    },
+    {
+      "query": "blender seedance since:2026-06-22 until:2026-06-30",
+      "page": 2,
+      "returned": 20,
+      "accepted": 20,
+      "has_next_page": true
+    },
+    {
+      "query": "blender seedance since:2026-06-22 until:2026-06-30",
+      "page": 3,
+      "returned": 20,
+      "accepted": 19,
+      "has_next_page": true
+    },
+    {
+      "query": "blender seedance since:2026-06-22 until:2026-06-30",
+      "page": 4,
+      "returned": 20,
+      "accepted": 20,
+      "has_next_page": true
+    },
+    {
+      "query": "blender seedance since:2026-06-22 until:2026-06-30",
+      "page": 5,
+      "returned": 20,
+      "accepted": 20,
+      "has_next_page": true
+    },
+    {
+      "query": "blender seedance since:2026-06-22 until:2026-06-30",
+      "page": 6,
+      "returned": 19,
+      "accepted": 19,
+      "has_next_page": true
+    },
+    {
+      "query": "blender seedance since:2026-06-22 until:2026-06-30",
+      "page": 7,
+      "returned": 20,
+      "accepted": 20,
+      "has_next_page": true
+    },
+    {
+      "query": "blender seedance since:2026-06-22 until:2026-06-30",
+      "page": 8,
+      "returned": 20,
+      "accepted": 20,
+      "has_next_page": true
+    },
+    {
+      "query": "blender seedance since:2026-06-22 until:2026-06-30",
+      "page": 9,
+      "returned": 13,
+      "accepted": 13,
+      "has_next_page": true
+    },
+    {
+      "query": "blender seedance since:2026-06-22 until:2026-06-30",
+      "page": 10,
+      "returned": 0,
+      "accepted": 0,
+      "has_next_page": false
+    }
+  ]
+}
