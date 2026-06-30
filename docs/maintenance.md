@@ -14,7 +14,7 @@
 - Selected public cases: 25
 - Owner-provided video rows: 26
 - Candidate pool before audit: 35
-- Primary CTA: Quick Start workflow with Blender MCP, EvoLink skills, API key, and agent usage
+- Primary CTA: EvoLink Blender-to-video cookbook (`https://evolink.ai/cookbook/blender-to-video`)
 - Public push: approved to the existing target repository after local verification
 - GitHub repository creation: not approved and not needed for this repo
 - GitHub About metadata: drafted in `docs/github-about.md`; applying it requires repository settings permission
@@ -44,4 +44,4 @@ git diff --check
 
 ## Release Blockers
 
-Replace the Quick Start destination with the final landing page once the owner provides it. Until then, `#quick-start` is the primary conversion anchor and should explain Blender MCP setup, EvoLink skill installation, API key setup, and agent usage.
+The primary CTA is set to the EvoLink Blender-to-video cookbook. Keep `#quick-start` as the repository-local workflow reference for Blender MCP setup, EvoLink skill installation, API key setup, and agent usage.

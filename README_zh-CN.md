@@ -1,11 +1,11 @@
 <div align="center">
 
-<a href="#quick-start"><img src="images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="https://evolink.ai/cookbook/blender-to-video"><img src="images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](#quick-start)
-[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Pending-orange)](#quick-start)
-[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Pending-blue)](#quick-start)
+[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](https://evolink.ai/cookbook/blender-to-video)
+[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Cookbook-orange)](https://evolink.ai/cookbook/blender-to-video)
+[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Guide-blue)](https://evolink.ai/cookbook/blender-to-video)
 
 [![English](https://img.shields.io/badge/English-111111)](README.md)
 [![Español](https://img.shields.io/badge/Espa%C3%B1ol-ffb703)](README_es.md)
@@ -29,7 +29,7 @@ Blender + Seedance 使用案例仓库。
 
 当前集合来自用户提供的 X/Twitter 精选数据。每个案例都链接到原帖和创作者主页。
 
-下面的 Quick Start 会引导用户完成 Blender MCP setup、安装 EvoLink skills、配置 API key，并在自己的 agent 里运行。
+先从 EvoLink Blender-to-video cookbook 开始，再把下面的 Quick Start 作为仓库内 workflow 参考。
 
 ## 📊 Overview
 
@@ -37,7 +37,7 @@ Blender + Seedance 使用案例仓库。
 - 覆盖相机控制、Blender previs、多角色 blocking、动作编排、Blender MCP、Codex/Claude 辅助 blockout、FBX/Mixamo 参考、ComfyUI/style transfer 和已知限制。
 - 每个案例都包含原始来源、创作者署名、简明 takeaway、证据类型和发布日期。
 - 公开列表基于 35 个候选审计结果和这次新增链接，重建为 25 个主案例。
-- 这个仓库用于先展示真实工作流，再把用户引导到最终 EvoLink MCP + skill 落地页。
+- 这个仓库用于先展示真实工作流，再把用户引导到 EvoLink Blender-to-video cookbook。
 
 > [!NOTE]
 > 这个集合优先保留具体证据：步骤、参考视频、agent/MCP 用法、可复现条件和明确限制，而不是空泛宣传。

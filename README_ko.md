@@ -1,11 +1,11 @@
 <div align="center">
 
-<a href="#quick-start"><img src="images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="https://evolink.ai/cookbook/blender-to-video"><img src="images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](#quick-start)
-[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Pending-orange)](#quick-start)
-[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Pending-blue)](#quick-start)
+[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](https://evolink.ai/cookbook/blender-to-video)
+[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Cookbook-orange)](https://evolink.ai/cookbook/blender-to-video)
+[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Guide-blue)](https://evolink.ai/cookbook/blender-to-video)
 
 [![English](https://img.shields.io/badge/English-111111)](README.md)
 [![Español](https://img.shields.io/badge/Espa%C3%B1ol-ffb703)](README_es.md)
@@ -29,7 +29,7 @@ Blender + Seedance 유스케이스 저장소입니다.
 
 현재 컬렉션은 소유자가 제공한 X/Twitter 데이터에서 선별했습니다. 각 사례는 원본 게시물과 제작자 프로필로 연결됩니다.
 
-아래 Quick Start에서 Blender MCP setup, EvoLink skill 설치, API key 설정, 에이전트 안에서 실행하는 흐름을 안내합니다.
+EvoLink Blender-to-video cookbook에서 시작하고, 아래 Quick Start는 저장소 내 workflow 참고로 사용합니다.
 
 ## 📊 Overview
 
@@ -37,7 +37,7 @@ Blender + Seedance 유스케이스 저장소입니다.
 - 카메라 제어, Blender 프리비즈, 다중 캐릭터 블로킹, 액션 안무, Blender MCP, Codex/Claude 지원 blockout, FBX/Mixamo 레퍼런스, ComfyUI/style transfer, 알려진 한계를 다룹니다.
 - 각 사례에는 원본 출처, 제작자 표기, 간단한 takeaway, 증거 유형, 게시일이 포함됩니다.
 - 공개 목록은 35개 후보 감사와 요청된 신규 링크를 반영해 25개 주요 사례로 재구성했습니다.
-- 최종 EvoLink MCP + skill 랜딩으로 보내기 전에 실제 workflow를 검토하기 위한 repo입니다.
+- 실제 workflow를 검토한 뒤 EvoLink Blender-to-video cookbook으로 안내하기 위한 repo입니다.
 
 > [!NOTE]
 > 이 컬렉션은 과장보다 구체적 근거를 우선합니다: 단계, reference video, agent/MCP 사용, 재현 조건, 명확한 한계.

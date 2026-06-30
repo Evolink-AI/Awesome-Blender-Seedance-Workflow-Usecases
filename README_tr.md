@@ -1,11 +1,11 @@
 <div align="center">
 
-<a href="#quick-start"><img src="images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="https://evolink.ai/cookbook/blender-to-video"><img src="images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](#quick-start)
-[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Pending-orange)](#quick-start)
-[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Pending-blue)](#quick-start)
+[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](https://evolink.ai/cookbook/blender-to-video)
+[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Cookbook-orange)](https://evolink.ai/cookbook/blender-to-video)
+[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Guide-blue)](https://evolink.ai/cookbook/blender-to-video)
 
 [![English](https://img.shields.io/badge/English-111111)](README.md)
 [![Español](https://img.shields.io/badge/Espa%C3%B1ol-ffb703)](README_es.md)
@@ -29,7 +29,7 @@ Blender + Seedance kullanım örnekleri deposu.
 
 Mevcut koleksiyon, sahibin sağladığı X/Twitter verilerinden seçildi. Her vaka orijinal gönderiye ve yaratıcı profiline bağlanır.
 
-Aşağıdaki Quick Start, Blender MCP setup, EvoLink skill kurulumu, API key ayarı ve agent içinde çalıştırma akışını gösterir.
+EvoLink Blender-to-video cookbook ile başlayın; aşağıdaki Quick Start'ı repo içi workflow referansı olarak kullanın.
 
 ## 📊 Overview
 
@@ -37,7 +37,7 @@ Aşağıdaki Quick Start, Blender MCP setup, EvoLink skill kurulumu, API key aya
 - Kamera kontrolü, Blender previs, çok karakterli blocking, aksiyon koreografisi, Blender MCP, Codex/Claude destekli blockout'lar, FBX/Mixamo referansları, ComfyUI/style transfer ve bilinen sınırları kapsar.
 - Her vaka orijinal kaynak, creator atfı, kısa takeaway, kanıt tipi ve yayın tarihini içerir.
 - Herkese açık liste, 35 adaylık denetim ve istenen yeni linklerle 25 ana vaka olarak yeniden kuruldu.
-- Bu repo, kullanıcıları final EvoLink MCP + skill landing sayfasına yönlendirmeden önce pratik workflow'ları incelemek içindir.
+- Bu repo, pratik workflow'ları inceletip kullanıcıları EvoLink Blender-to-video cookbook sayfasına yönlendirmek içindir.
 
 > [!NOTE]
 > Koleksiyon abartı yerine somut kanıtı öne çıkarır: adımlar, referans videolar, agent/MCP kullanımı, yeniden üretilebilir koşullar ve net sınırlar.

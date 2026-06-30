@@ -1,11 +1,11 @@
 <div align="center">
 
-<a href="#quick-start"><img src="images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="https://evolink.ai/cookbook/blender-to-video"><img src="images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](#quick-start)
-[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Pending-orange)](#quick-start)
-[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Pending-blue)](#quick-start)
+[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](https://evolink.ai/cookbook/blender-to-video)
+[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Cookbook-orange)](https://evolink.ai/cookbook/blender-to-video)
+[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Guide-blue)](https://evolink.ai/cookbook/blender-to-video)
 
 [![English](https://img.shields.io/badge/English-111111)](README.md)
 [![Español](https://img.shields.io/badge/Espa%C3%B1ol-ffb703)](README_es.md)
@@ -29,7 +29,7 @@ Blender + Seedance のユースケース集です。
 
 現在のコレクションは、所有者提供の X/Twitter データから整理されています。各ケースは元投稿と作者プロフィールにリンクします。
 
-下の Quick Start で、Blender MCP setup、EvoLink skill、API key、agent 内での実行まで案内します。
+EvoLink の Blender-to-video cookbook から始め、下の Quick Start を repo 内 workflow リファレンスとして使います。
 
 ## 📊 Overview
 
@@ -37,7 +37,7 @@ Blender + Seedance のユースケース集です。
 - カメラ制御、Blender previs、複数キャラクターのブロッキング、アクション設計、Blender MCP、Codex/Claude 支援 blockout、FBX/Mixamo 参照、ComfyUI/style transfer、既知の制限を扱います。
 - 各ケースには元ソース、作者クレジット、短い要点、証拠タイプ、公開日を含めています。
 - 公開リストは、35 件の監査結果と追加依頼されたリンクから 25 件の主要ケースとして再構成しました。
-- 最終的な EvoLink MCP + skill landing に誘導する前に、実用 workflow を確認するための repo です。
+- 実用 workflow を確認したうえで、EvoLink の Blender-to-video cookbook に誘導するための repo です。
 
 > [!NOTE]
 > このコレクションは宣伝よりも具体的な証拠を優先します。手順、参照動画、agent/MCP 利用、再現条件、明確な制限を重視します。

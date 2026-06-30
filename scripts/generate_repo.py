@@ -19,7 +19,7 @@ REPO = "Awesome-Blender-Seedance-Workflow-Usecases"
 OWNER = "cheercheung"
 MODEL = "Blender + Seedance"
 MODEL_ID = "seedance-2.0-reference-to-video"
-CTA_ANCHOR = "#quick-start"
+CTA_URL = "https://evolink.ai/cookbook/blender-to-video"
 RAW_MEDIA_BASE = f"https://github.com/{OWNER}/{REPO}/raw/main/"
 BANNER_SOURCE = ROOT / "images" / "banner.png"
 
@@ -155,77 +155,77 @@ OVERVIEW_LINES = {
         "Covers camera control, Blender previs, multi-character blocking, action choreography, Blender MCP, Codex/Claude-assisted blockouts, FBX/Mixamo references, ComfyUI/style transfer, and known limitations.",
         "Each case includes the original source, creator attribution, a concise takeaway, evidence type, and publication date.",
         "The public list was rebuilt from the 35-candidate audit plus the requested new links into {count} primary cases.",
-        "Use this repo to inspect practical workflows before routing users to the final EvoLink MCP + skill landing page.",
+        "Use this repo to inspect practical workflows, then send users to the EvoLink Blender-to-video cookbook for setup and execution.",
     ],
     "es": [
         "**{count} casos Blender + Seedance seleccionados** a partir de publicaciones públicas de creadores en el dataset proporcionado por el propietario.",
         "Cubre control de cámara, previs en Blender, blocking de varios personajes, coreografía de acción, Blender MCP, blockouts asistidos por Codex/Claude, referencias FBX/Mixamo, ComfyUI/style transfer y límites conocidos.",
         "Cada caso incluye fuente original, atribución al creador, aprendizaje breve, tipo de evidencia y fecha de publicación.",
         "La lista pública se reconstruyó desde la auditoría de 35 candidatos y los nuevos enlaces solicitados hasta {count} casos primarios.",
-        "Usa este repo para revisar workflows prácticos antes de enviar usuarios a la landing final de EvoLink MCP + skill.",
+        "Usa este repo para revisar workflows prácticos y luego enviar usuarios al cookbook Blender-to-video de EvoLink.",
     ],
     "pt": [
         "**{count} casos Blender + Seedance selecionados** a partir de posts públicos de criadores no dataset fornecido pelo proprietário.",
         "Cobre controle de câmera, previs no Blender, blocking de múltiplos personagens, coreografia de ação, Blender MCP, blockouts assistidos por Codex/Claude, referências FBX/Mixamo, ComfyUI/style transfer e limites conhecidos.",
         "Cada caso inclui fonte original, crédito ao criador, resumo acionável, tipo de evidência e data de publicação.",
         "A lista pública foi reconstruída a partir da auditoria de 35 candidatos e dos novos links solicitados até {count} casos primários.",
-        "Use este repo para avaliar workflows práticos antes de direcionar usuários à landing final de EvoLink MCP + skill.",
+        "Use este repo para avaliar workflows práticos e depois direcionar usuários ao cookbook Blender-to-video da EvoLink.",
     ],
     "ja": [
         "**{count} 件の Blender + Seedance ケース** を、所有者提供の公開クリエイター投稿データから選定しました。",
         "カメラ制御、Blender previs、複数キャラクターのブロッキング、アクション設計、Blender MCP、Codex/Claude 支援 blockout、FBX/Mixamo 参照、ComfyUI/style transfer、既知の制限を扱います。",
         "各ケースには元ソース、作者クレジット、短い要点、証拠タイプ、公開日を含めています。",
         "公開リストは、35 件の監査結果と追加依頼されたリンクから {count} 件の主要ケースとして再構成しました。",
-        "最終的な EvoLink MCP + skill landing に誘導する前に、実用 workflow を確認するための repo です。",
+        "実用 workflow を確認したうえで、EvoLink の Blender-to-video cookbook に誘導するための repo です。",
     ],
     "ko": [
         "소유자가 제공한 공개 제작자 게시물 데이터에서 **{count}개의 Blender + Seedance 사례**를 선별했습니다.",
         "카메라 제어, Blender 프리비즈, 다중 캐릭터 블로킹, 액션 안무, Blender MCP, Codex/Claude 지원 blockout, FBX/Mixamo 레퍼런스, ComfyUI/style transfer, 알려진 한계를 다룹니다.",
         "각 사례에는 원본 출처, 제작자 표기, 간단한 takeaway, 증거 유형, 게시일이 포함됩니다.",
         "공개 목록은 35개 후보 감사와 요청된 신규 링크를 반영해 {count}개 주요 사례로 재구성했습니다.",
-        "최종 EvoLink MCP + skill 랜딩으로 보내기 전에 실제 workflow를 검토하기 위한 repo입니다.",
+        "실제 workflow를 검토한 뒤 EvoLink Blender-to-video cookbook으로 안내하기 위한 repo입니다.",
     ],
     "de": [
         "**{count} ausgewählte Blender + Seedance Fälle** aus öffentlichen Creator-Posts im vom Owner bereitgestellten Datensatz.",
         "Behandelt Kamerasteuerung, Blender-Previs, Multi-Character-Blocking, Action-Choreografie, Blender MCP, Codex/Claude-gestützte Blockouts, FBX/Mixamo-Referenzen, ComfyUI/style transfer und bekannte Grenzen.",
         "Jeder Fall enthält Originalquelle, Creator-Zuordnung, kompaktes Takeaway, Evidenztyp und Veröffentlichungsdatum.",
         "Die öffentliche Liste wurde aus dem 35-Kandidaten-Audit und den angefragten neuen Links zu {count} Primärfällen neu aufgebaut.",
-        "Nutze dieses Repo, um praktische Workflows zu prüfen, bevor Nutzer zur finalen EvoLink MCP + Skill Landingpage geführt werden.",
+        "Nutze dieses Repo, um praktische Workflows zu prüfen und Nutzer anschließend zum EvoLink Blender-to-video Cookbook zu führen.",
     ],
     "fr": [
         "**{count} cas Blender + Seedance sélectionnés** depuis des publications publiques de créateurs dans le dataset fourni par le propriétaire.",
         "Couvre contrôle caméra, previs Blender, blocking multi-personnages, chorégraphie d'action, Blender MCP, blockouts assistés par Codex/Claude, références FBX/Mixamo, ComfyUI/style transfer et limites connues.",
         "Chaque cas inclut la source originale, l'attribution créateur, un résumé exploitable, le type de preuve et la date de publication.",
         "La liste publique a été reconstruite depuis l'audit des 35 candidats et les nouveaux liens demandés en {count} cas principaux.",
-        "Utilisez ce repo pour examiner des workflows pratiques avant de diriger les utilisateurs vers la landing EvoLink MCP + skill finale.",
+        "Utilisez ce repo pour examiner des workflows pratiques, puis diriger les utilisateurs vers le cookbook Blender-to-video d'EvoLink.",
     ],
     "tr": [
         "Sahibin sağladığı herkese açık creator postlarından **{count} Blender + Seedance vakası** seçildi.",
         "Kamera kontrolü, Blender previs, çok karakterli blocking, aksiyon koreografisi, Blender MCP, Codex/Claude destekli blockout'lar, FBX/Mixamo referansları, ComfyUI/style transfer ve bilinen sınırları kapsar.",
         "Her vaka orijinal kaynak, creator atfı, kısa takeaway, kanıt tipi ve yayın tarihini içerir.",
         "Herkese açık liste, 35 adaylık denetim ve istenen yeni linklerle {count} ana vaka olarak yeniden kuruldu.",
-        "Bu repo, kullanıcıları final EvoLink MCP + skill landing sayfasına yönlendirmeden önce pratik workflow'ları incelemek içindir.",
+        "Bu repo, pratik workflow'ları inceletip kullanıcıları EvoLink Blender-to-video cookbook sayfasına yönlendirmek içindir.",
     ],
     "zh-CN": [
         "**{count} 个精选 Blender + Seedance 案例**，来自用户提供数据集中公开创作者帖子。",
         "覆盖相机控制、Blender previs、多角色 blocking、动作编排、Blender MCP、Codex/Claude 辅助 blockout、FBX/Mixamo 参考、ComfyUI/style transfer 和已知限制。",
         "每个案例都包含原始来源、创作者署名、简明 takeaway、证据类型和发布日期。",
         "公开列表基于 35 个候选审计结果和这次新增链接，重建为 {count} 个主案例。",
-        "这个仓库用于先展示真实工作流，再把用户引导到最终 EvoLink MCP + skill 落地页。",
+        "这个仓库用于先展示真实工作流，再把用户引导到 EvoLink Blender-to-video cookbook。",
     ],
     "zh-TW": [
         "**{count} 個精選 Blender + Seedance 案例**，來自使用者提供資料集中公開創作者貼文。",
         "涵蓋相機控制、Blender previs、多角色 blocking、動作編排、Blender MCP、Codex/Claude 輔助 blockout、FBX/Mixamo 參考、ComfyUI/style transfer 和已知限制。",
         "每個案例都包含原始來源、創作者署名、簡明 takeaway、證據類型和發布日期。",
         "公開列表基於 35 個候選審計結果和這次新增連結，重建為 {count} 個主案例。",
-        "這個倉庫用於先展示真實工作流，再把使用者引導到最終 EvoLink MCP + skill 落地頁。",
+        "這個倉庫用於先展示真實工作流，再把使用者引導到 EvoLink Blender-to-video cookbook。",
     ],
     "ru": [
         "**{count} отобранных кейсов Blender + Seedance** из публичных постов авторов в датасете владельца.",
         "Охватывает управление камерой, Blender previs, блокинг нескольких персонажей, постановку экшена, Blender MCP, blockout с Codex/Claude, FBX/Mixamo references, ComfyUI/style transfer и известные ограничения.",
         "Каждый кейс содержит исходный пост, автора, краткий вывод, тип доказательства и дату публикации.",
         "Публичный список пересобран из аудита 35 кандидатов и новых ссылок в {count} основных кейсов.",
-        "Этот repo помогает изучить реальные workflows перед переходом к финальной landing page EvoLink MCP + skill.",
+        "Этот repo помогает изучить реальные workflows, а затем перейти к EvoLink Blender-to-video cookbook.",
     ],
 }
 
@@ -657,12 +657,12 @@ LOCALE = {
         "intro": "Welcome to the Blender + Seedance usecase repository.",
         "value": "We collect real-world Blender, Blender MCP, viewport, previs, FBX, Mixamo, ComfyUI, and agent-assisted workflows that creators used to control Seedance video generation.",
         "source": "The current collection is curated from user-provided X/Twitter source data. Each case links to the original post and creator profile.",
-        "cta": "The Quick Start below walks users through Blender MCP setup, EvoLink skill installation, API key setup, and running the workflow inside an agent.",
+        "cta": "Start from the EvoLink Blender-to-video cookbook, then use the Quick Start below as the repository-local workflow reference.",
         "overview_note": "The collection favors concrete workflow evidence over hype: source-backed steps, reference-video methods, agent/MCP usage, reproducible constraints, and clearly stated limits.",
         "quick": "Quick Start Workflow",
         "quick_text": "Set up Blender MCP, install EvoLink skills, configure the API key, and run the workflow inside an agent.",
-        "pending": "Final Landing Page Pending",
-        "pending_body": "The final landing page is still pending. Until then, the Quick Start workflow is the primary conversion path.",
+        "pending": "EvoLink Cookbook CTA",
+        "pending_body": "The primary CTA now points to the EvoLink Blender-to-video cookbook. Keep Quick Start as the repository-local workflow reference.",
         "menu": "Menu",
         "ack": "Acknowledge",
         "what": "What it shows",
@@ -678,12 +678,12 @@ LOCALE = {
         "intro": "Repositorio de casos de uso Blender + Seedance.",
         "value": "Reunimos flujos reales de Blender, Blender MCP, viewport, previs, FBX, Mixamo, ComfyUI y agentes para controlar la generación de video con Seedance.",
         "source": "La colección actual se deriva de datos X/Twitter proporcionados por el propietario. Cada caso enlaza la publicación original y el perfil del creador.",
-        "cta": "El Quick Start de abajo guía la instalación de Blender MCP, las skills de EvoLink, la API key y la ejecución dentro de un agente.",
+        "cta": "Empieza desde el cookbook Blender-to-video de EvoLink y usa el Quick Start de abajo como referencia local del workflow.",
         "overview_note": "La colección prioriza evidencia concreta: pasos, referencias de video, uso de agentes/MCP, restricciones reproducibles y límites claros.",
         "quick": "Acceso rápido a API",
-        "quick_text": "Esta sección conserva la ruta esperada del modelo Seedance reference-to-video hasta que exista la landing final.",
-        "pending": "Ruta de conversión pendiente",
-        "pending_body": "La landing final sigue pendiente. Sustituye esta sección por el CTA final antes de marcar el repositorio como listo para release.",
+        "quick_text": "Esta sección conserva la ruta operativa del modelo Seedance reference-to-video para el repositorio.",
+        "pending": "CTA al cookbook de EvoLink",
+        "pending_body": "El CTA principal apunta al cookbook Blender-to-video de EvoLink. Mantén Quick Start como referencia local del workflow.",
         "menu": "Menú",
         "ack": "Agradecimientos",
         "what": "Qué muestra",
@@ -699,12 +699,12 @@ LOCALE = {
         "intro": "Repositório de casos de uso Blender + Seedance.",
         "value": "Reunimos fluxos reais com Blender, Blender MCP, viewport, previs, FBX, Mixamo, ComfyUI e agentes para controlar a geração de vídeo no Seedance.",
         "source": "A coleção vem dos dados X/Twitter fornecidos pelo proprietário. Cada caso aponta para o post original e o criador.",
-        "cta": "O Quick Start abaixo guia a instalação do Blender MCP, das skills EvoLink, da API key e a execução dentro de um agente.",
+        "cta": "Comece pelo cookbook Blender-to-video da EvoLink e use o Quick Start abaixo como referência local do workflow.",
         "overview_note": "A coleção prioriza evidência concreta: passos, vídeos de referência, uso de agente/MCP, restrições reproduzíveis e limites claros.",
         "quick": "Acesso rápido à API",
-        "quick_text": "Esta seção registra o caminho esperado do modelo Seedance reference-to-video até a landing final existir.",
-        "pending": "Caminho de conversão pendente",
-        "pending_body": "A landing final ainda está pendente. Substitua esta seção pelo CTA final antes de marcar o repositório como pronto para release.",
+        "quick_text": "Esta seção registra o caminho operacional do modelo Seedance reference-to-video no repositório.",
+        "pending": "CTA para o cookbook EvoLink",
+        "pending_body": "O CTA principal aponta para o cookbook Blender-to-video da EvoLink. Mantenha o Quick Start como referência local do workflow.",
         "menu": "Menu",
         "ack": "Agradecimentos",
         "what": "O que mostra",
@@ -720,12 +720,12 @@ LOCALE = {
         "intro": "Blender + Seedance のユースケース集です。",
         "value": "Blender、Blender MCP、viewport、previs、FBX、Mixamo、ComfyUI、agent 支援で Seedance 動画生成を制御する実例を集めています。",
         "source": "現在のコレクションは、所有者提供の X/Twitter データから整理されています。各ケースは元投稿と作者プロフィールにリンクします。",
-        "cta": "下の Quick Start で、Blender MCP setup、EvoLink skill、API key、agent 内での実行まで案内します。",
+        "cta": "EvoLink の Blender-to-video cookbook から始め、下の Quick Start を repo 内 workflow リファレンスとして使います。",
         "overview_note": "このコレクションは宣伝よりも具体的な証拠を優先します。手順、参照動画、agent/MCP 利用、再現条件、明確な制限を重視します。",
         "quick": "API クイックアクセス",
-        "quick_text": "最終 landing が提供されるまで、ここには Seedance reference-to-video の想定モデル経路を記録します。",
-        "pending": "コンバージョン経路は未確定",
-        "pending_body": "最終 landing はまだ未確定です。release-ready と呼ぶ前に、この節を最終 CTA に置き換えてください。",
+        "quick_text": "このセクションは、repo 内で使う Seedance reference-to-video の運用経路を記録します。",
+        "pending": "EvoLink cookbook CTA",
+        "pending_body": "主 CTA は EvoLink の Blender-to-video cookbook を指します。Quick Start は repo 内 workflow リファレンスとして維持します。",
         "menu": "メニュー",
         "ack": "謝辞",
         "what": "内容",
@@ -741,12 +741,12 @@ LOCALE = {
         "intro": "Blender + Seedance 유스케이스 저장소입니다.",
         "value": "Blender, Blender MCP, viewport, previs, FBX, Mixamo, ComfyUI, agent 기반 워크플로로 Seedance 비디오 생성을 제어한 실제 사례를 모았습니다.",
         "source": "현재 컬렉션은 소유자가 제공한 X/Twitter 데이터에서 선별했습니다. 각 사례는 원본 게시물과 제작자 프로필로 연결됩니다.",
-        "cta": "아래 Quick Start에서 Blender MCP setup, EvoLink skill 설치, API key 설정, 에이전트 안에서 실행하는 흐름을 안내합니다.",
+        "cta": "EvoLink Blender-to-video cookbook에서 시작하고, 아래 Quick Start는 저장소 내 workflow 참고로 사용합니다.",
         "overview_note": "이 컬렉션은 과장보다 구체적 근거를 우선합니다: 단계, reference video, agent/MCP 사용, 재현 조건, 명확한 한계.",
         "quick": "API 빠른 접근",
-        "quick_text": "최종 landing 이 제공되기 전까지 Seedance reference-to-video 모델 경로를 기록합니다.",
-        "pending": "전환 경로 대기 중",
-        "pending_body": "최종 landing 은 아직 미정입니다. release-ready 로 표시하기 전에 이 섹션을 최종 CTA 로 교체하세요.",
+        "quick_text": "이 섹션은 저장소에서 사용하는 Seedance reference-to-video 운영 경로를 기록합니다.",
+        "pending": "EvoLink cookbook CTA",
+        "pending_body": "기본 CTA는 EvoLink Blender-to-video cookbook으로 연결됩니다. Quick Start는 저장소 내 workflow 참고로 유지합니다.",
         "menu": "메뉴",
         "ack": "감사의 말",
         "what": "보여주는 것",
@@ -762,12 +762,12 @@ LOCALE = {
         "intro": "Usecase-Repository für Blender + Seedance.",
         "value": "Wir sammeln reale Workflows mit Blender, Blender MCP, Viewport, Previs, FBX, Mixamo, ComfyUI und Agentensteuerung für Seedance-Videogenerierung.",
         "source": "Die aktuelle Sammlung stammt aus vom Owner bereitgestellten X/Twitter-Daten. Jeder Fall verlinkt Quelle und Creator-Profil.",
-        "cta": "Der Quick Start unten führt durch Blender MCP Setup, EvoLink Skill Installation, API key Einrichtung und Ausführung im Agenten.",
+        "cta": "Starte mit dem EvoLink Blender-to-video Cookbook und nutze den Quick Start unten als lokale Workflow-Referenz.",
         "overview_note": "Die Sammlung bevorzugt konkrete Evidenz: Schritte, Referenzvideos, Agent/MCP-Nutzung, reproduzierbare Bedingungen und klare Grenzen.",
         "quick": "Schneller API-Zugang",
-        "quick_text": "Bis zur finalen Landingpage dokumentiert dieser Abschnitt den erwarteten Seedance reference-to-video Modellpfad.",
-        "pending": "Conversion-Pfad ausstehend",
-        "pending_body": "Die finale Landingpage steht noch aus. Ersetze diesen Abschnitt durch den finalen CTA, bevor das Repository als release-ready gilt.",
+        "quick_text": "Dieser Abschnitt dokumentiert den operativen Seedance reference-to-video Modellpfad im Repository.",
+        "pending": "EvoLink Cookbook CTA",
+        "pending_body": "Der primäre CTA zeigt auf das EvoLink Blender-to-video Cookbook. Quick Start bleibt die lokale Workflow-Referenz.",
         "menu": "Menü",
         "ack": "Danksagung",
         "what": "Was es zeigt",
@@ -783,12 +783,12 @@ LOCALE = {
         "intro": "Dépôt de cas d'usage Blender + Seedance.",
         "value": "Nous réunissons des workflows réels avec Blender, Blender MCP, viewport, previs, FBX, Mixamo, ComfyUI et agents pour contrôler la génération vidéo Seedance.",
         "source": "La collection actuelle vient des données X/Twitter fournies par le propriétaire. Chaque cas renvoie vers la source et le profil du créateur.",
-        "cta": "Le Quick Start ci-dessous couvre le setup Blender MCP, les skills EvoLink, l'API key et l'exécution dans un agent.",
+        "cta": "Commencez par le cookbook Blender-to-video d'EvoLink, puis utilisez le Quick Start ci-dessous comme référence locale du workflow.",
         "overview_note": "La collection privilégie les preuves concrètes: étapes, vidéos de référence, usage agent/MCP, contraintes reproductibles et limites explicites.",
         "quick": "Accès API rapide",
-        "quick_text": "Cette section conserve le chemin attendu du modèle Seedance reference-to-video jusqu'à la landing finale.",
-        "pending": "Chemin de conversion en attente",
-        "pending_body": "La landing finale est encore en attente. Remplacez cette section par le CTA final avant de qualifier le dépôt de release-ready.",
+        "quick_text": "Cette section conserve le chemin opérationnel du modèle Seedance reference-to-video dans le dépôt.",
+        "pending": "CTA vers le cookbook EvoLink",
+        "pending_body": "Le CTA principal pointe vers le cookbook Blender-to-video d'EvoLink. Gardez Quick Start comme référence locale du workflow.",
         "menu": "Menu",
         "ack": "Remerciements",
         "what": "Ce que cela montre",
@@ -804,12 +804,12 @@ LOCALE = {
         "intro": "Blender + Seedance kullanım örnekleri deposu.",
         "value": "Seedance video üretimini kontrol etmek için Blender, Blender MCP, viewport, previs, FBX, Mixamo, ComfyUI ve agent destekli gerçek iş akışlarını topluyoruz.",
         "source": "Mevcut koleksiyon, sahibin sağladığı X/Twitter verilerinden seçildi. Her vaka orijinal gönderiye ve yaratıcı profiline bağlanır.",
-        "cta": "Aşağıdaki Quick Start, Blender MCP setup, EvoLink skill kurulumu, API key ayarı ve agent içinde çalıştırma akışını gösterir.",
+        "cta": "EvoLink Blender-to-video cookbook ile başlayın; aşağıdaki Quick Start'ı repo içi workflow referansı olarak kullanın.",
         "overview_note": "Koleksiyon abartı yerine somut kanıtı öne çıkarır: adımlar, referans videolar, agent/MCP kullanımı, yeniden üretilebilir koşullar ve net sınırlar.",
         "quick": "Hızlı API erişimi",
-        "quick_text": "Final landing gelene kadar bu bölüm Seedance reference-to-video model yolunu kaydeder.",
-        "pending": "Dönüşüm yolu beklemede",
-        "pending_body": "Final landing sayfası hâlâ beklemede. Depoyu release-ready saymadan önce bu bölümü final CTA ile değiştirin.",
+        "quick_text": "Bu bölüm repodaki Seedance reference-to-video operasyon yolunu kaydeder.",
+        "pending": "EvoLink cookbook CTA",
+        "pending_body": "Birincil CTA EvoLink Blender-to-video cookbook sayfasına gider. Quick Start repo içi workflow referansı olarak kalır.",
         "menu": "Menü",
         "ack": "Teşekkür",
         "what": "Ne gösteriyor",
@@ -825,12 +825,12 @@ LOCALE = {
         "intro": "Blender + Seedance 使用案例仓库。",
         "value": "这里收集真实的 Blender、Blender MCP、viewport、previs、FBX、Mixamo、ComfyUI 和 agent 辅助工作流，用来控制 Seedance 视频生成。",
         "source": "当前集合来自用户提供的 X/Twitter 精选数据。每个案例都链接到原帖和创作者主页。",
-        "cta": "下面的 Quick Start 会引导用户完成 Blender MCP setup、安装 EvoLink skills、配置 API key，并在自己的 agent 里运行。",
+        "cta": "先从 EvoLink Blender-to-video cookbook 开始，再把下面的 Quick Start 作为仓库内 workflow 参考。",
         "overview_note": "这个集合优先保留具体证据：步骤、参考视频、agent/MCP 用法、可复现条件和明确限制，而不是空泛宣传。",
         "quick": "快速 API 入口",
-        "quick_text": "在最终落地页提供之前，这里记录 Seedance reference-to-video 的预期模型路径。",
-        "pending": "转化路径待补齐",
-        "pending_body": "最终落地页仍待补齐。把仓库标记为 release-ready 之前，需要把这一节替换成最终 CTA。",
+        "quick_text": "这里记录仓库内 Seedance reference-to-video 的实际 workflow 路径。",
+        "pending": "EvoLink cookbook CTA",
+        "pending_body": "主 CTA 已指向 EvoLink Blender-to-video cookbook。Quick Start 保留为仓库内 workflow 参考。",
         "menu": "目录",
         "ack": "致谢",
         "what": "展示内容",
@@ -846,12 +846,12 @@ LOCALE = {
         "intro": "Blender + Seedance 使用案例倉庫。",
         "value": "這裡收集真實的 Blender、Blender MCP、viewport、previs、FBX、Mixamo、ComfyUI 和 agent 輔助工作流，用來控制 Seedance 影片生成。",
         "source": "目前集合來自使用者提供的 X/Twitter 精選資料。每個案例都連結到原帖和創作者主頁。",
-        "cta": "下面的 Quick Start 會引導使用者完成 Blender MCP setup、安裝 EvoLink skills、配置 API key，並在自己的 agent 裡執行。",
+        "cta": "先從 EvoLink Blender-to-video cookbook 開始，再把下面的 Quick Start 作為倉庫內 workflow 參考。",
         "overview_note": "這個集合優先保留具體證據：步驟、參考影片、agent/MCP 用法、可重現條件和明確限制，而不是空泛宣傳。",
         "quick": "快速 API 入口",
-        "quick_text": "在最終落地頁提供之前，這裡記錄 Seedance reference-to-video 的預期模型路徑。",
-        "pending": "轉化路徑待補齊",
-        "pending_body": "最終落地頁仍待補齊。把倉庫標記為 release-ready 之前，需要把這一節替換成最終 CTA。",
+        "quick_text": "這裡記錄倉庫內 Seedance reference-to-video 的實際 workflow 路徑。",
+        "pending": "EvoLink cookbook CTA",
+        "pending_body": "主 CTA 已指向 EvoLink Blender-to-video cookbook。Quick Start 保留為倉庫內 workflow 參考。",
         "menu": "目錄",
         "ack": "致謝",
         "what": "展示內容",
@@ -867,12 +867,12 @@ LOCALE = {
         "intro": "Репозиторий use cases Blender + Seedance.",
         "value": "Мы собираем реальные workflow с Blender, Blender MCP, viewport, previs, FBX, Mixamo, ComfyUI и агентами для управления генерацией видео Seedance.",
         "source": "Текущая коллекция основана на X/Twitter данных, предоставленных владельцем. Каждый кейс ведет к исходному посту и профилю автора.",
-        "cta": "Quick Start ниже показывает setup Blender MCP, установку EvoLink skills, настройку API key и запуск внутри агента.",
+        "cta": "Начните с EvoLink Blender-to-video cookbook, затем используйте Quick Start ниже как локальную workflow-справку репозитория.",
         "overview_note": "Коллекция ставит конкретные доказательства выше хайпа: шаги, reference video, agent/MCP, воспроизводимые условия и явные ограничения.",
         "quick": "Быстрый доступ к API",
-        "quick_text": "До финальной landing page этот раздел фиксирует ожидаемый путь модели Seedance reference-to-video.",
-        "pending": "Путь конверсии ожидается",
-        "pending_body": "Финальная landing page пока ожидается. Замените этот раздел финальным CTA перед статусом release-ready.",
+        "quick_text": "Этот раздел фиксирует рабочий путь модели Seedance reference-to-video внутри репозитория.",
+        "pending": "EvoLink cookbook CTA",
+        "pending_body": "Основной CTA ведет на EvoLink Blender-to-video cookbook. Quick Start остается локальной workflow-справкой репозитория.",
         "menu": "Меню",
         "ack": "Благодарности",
         "what": "Что показывает",
@@ -1293,12 +1293,12 @@ def video_source_records(records: list[dict]) -> list[dict]:
 def render_badges(img_path: str) -> str:
     return f"""<div align="center">
 
-<a href="{CTA_ANCHOR}"><img src="{img_path}" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="{CTA_URL}"><img src="{img_path}" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)]({CTA_ANCHOR})
-[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Pending-orange)]({CTA_ANCHOR})
-[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Pending-blue)]({CTA_ANCHOR})
+[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)]({CTA_URL})
+[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Cookbook-orange)]({CTA_URL})
+[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Guide-blue)]({CTA_URL})
 
 {LANG_BADGES}
 
@@ -1593,7 +1593,7 @@ def write_static_files(records: list[dict]) -> None:
             - Selected public cases: {len(records)}
             - Owner-provided video rows: {len(VIDEO_SOURCE_ROWS)}
             - Candidate pool before audit: 35
-            - Primary CTA: Quick Start workflow with Blender MCP, EvoLink skills, API key, and agent usage
+            - Primary CTA: EvoLink Blender-to-video cookbook (`{CTA_URL}`)
             - Public push: approved to the existing target repository after local verification
             - GitHub repository creation: not approved and not needed for this repo
             - GitHub About metadata: drafted in `docs/github-about.md`; applying it requires repository settings permission
@@ -1623,7 +1623,7 @@ def write_static_files(records: list[dict]) -> None:
 
             ## Release Blockers
 
-            Replace the Quick Start destination with the final landing page once the owner provides it. Until then, `#quick-start` is the primary conversion anchor and should explain Blender MCP setup, EvoLink skill installation, API key setup, and agent usage.
+            The primary CTA is set to the EvoLink Blender-to-video cookbook. Keep `#quick-start` as the repository-local workflow reference for Blender MCP setup, EvoLink skill installation, API key setup, and agent usage.
             """
         )
     )
@@ -1744,6 +1744,7 @@ FILES = {[filename for _, filename, _, _ in LANGS]!r}
 EXPECTED_CASES = {len(records)}
 EXPECTED_IMAGES = {sorted({img for _, _, _, img in LANGS})!r}
 EXPECTED_VIDEO_LABELS = {[label for label, _ in VIDEO_SOURCE_ROWS]!r}
+EXPECTED_CTA = {CTA_URL!r}
 
 def fail(msg):
     raise SystemExit(f"FAIL: {{msg}}")
@@ -1775,6 +1776,8 @@ for file in FILES:
         fail(f"{{file}} missing Type/Date metadata lines")
     if ".github/ISSUE_TEMPLATE/use-case.yml" not in text or ".github/PULL_REQUEST_TEMPLATE.md" not in text:
         fail(f"{{file}} missing issue or PR template links")
+    if EXPECTED_CTA not in text:
+        fail(f"{{file}} missing primary CTA link")
 
 for img in EXPECTED_IMAGES:
     if not (ROOT / img).exists():
@@ -1836,7 +1839,7 @@ def main() -> None:
             "selected_count": len(records),
             "tier_counts": dict(Counter(record["quality_tier"] for record in records)),
             "category_counts": dict(Counter(record["category"] for record in records)),
-            "cta_status": "quick-start workflow published; final landing page still pending",
+            "cta_status": f"primary CTA set to {CTA_URL}",
             "publication_status": "existing target repository; push to cheercheung/Awesome-Blender-Seedance-Workflow-Usecases approved after local verification; no new repository creation approved",
             "audit": "docs/usecase-originality-audit.md",
             "video_source_map": "data/usecase-video-sources.json",

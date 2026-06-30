@@ -8,6 +8,7 @@ FILES = ['README.md', 'README_es.md', 'README_pt.md', 'README_ja.md', 'README_ko
 EXPECTED_CASES = 25
 EXPECTED_IMAGES = ['images/banner.png']
 EXPECTED_VIDEO_LABELS = ['case1', 'case2', 'case3', 'case4', 'case5', 'case6', 'case8', 'case9', 'case10', 'case11', 'case13', 'case14', 'case15', 'case16', 'case17', 'case18', 'case19', 'case20', 'case21', 'case22', 'case23', 'case24', 'case25', 'case26', 'case27', 'case28']
+EXPECTED_CTA = 'https://evolink.ai/cookbook/blender-to-video'
 
 def fail(msg):
     raise SystemExit(f"FAIL: {msg}")
@@ -39,6 +40,8 @@ for file in FILES:
         fail(f"{file} missing Type/Date metadata lines")
     if ".github/ISSUE_TEMPLATE/use-case.yml" not in text or ".github/PULL_REQUEST_TEMPLATE.md" not in text:
         fail(f"{file} missing issue or PR template links")
+    if EXPECTED_CTA not in text:
+        fail(f"{file} missing primary CTA link")
 
 for img in EXPECTED_IMAGES:
     if not (ROOT / img).exists():

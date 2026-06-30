@@ -1,11 +1,11 @@
 <div align="center">
 
-<a href="#quick-start"><img src="images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="https://evolink.ai/cookbook/blender-to-video"><img src="images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](#quick-start)
-[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Pending-orange)](#quick-start)
-[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Pending-blue)](#quick-start)
+[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](https://evolink.ai/cookbook/blender-to-video)
+[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Cookbook-orange)](https://evolink.ai/cookbook/blender-to-video)
+[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Guide-blue)](https://evolink.ai/cookbook/blender-to-video)
 
 [![English](https://img.shields.io/badge/English-111111)](README.md)
 [![Español](https://img.shields.io/badge/Espa%C3%B1ol-ffb703)](README_es.md)
@@ -29,7 +29,7 @@ Repositorio de casos de uso Blender + Seedance.
 
 La colección actual se deriva de datos X/Twitter proporcionados por el propietario. Cada caso enlaza la publicación original y el perfil del creador.
 
-El Quick Start de abajo guía la instalación de Blender MCP, las skills de EvoLink, la API key y la ejecución dentro de un agente.
+Empieza desde el cookbook Blender-to-video de EvoLink y usa el Quick Start de abajo como referencia local del workflow.
 
 ## 📊 Overview
 
@@ -37,7 +37,7 @@ El Quick Start de abajo guía la instalación de Blender MCP, las skills de EvoL
 - Cubre control de cámara, previs en Blender, blocking de varios personajes, coreografía de acción, Blender MCP, blockouts asistidos por Codex/Claude, referencias FBX/Mixamo, ComfyUI/style transfer y límites conocidos.
 - Cada caso incluye fuente original, atribución al creador, aprendizaje breve, tipo de evidencia y fecha de publicación.
 - La lista pública se reconstruyó desde la auditoría de 35 candidatos y los nuevos enlaces solicitados hasta 25 casos primarios.
-- Usa este repo para revisar workflows prácticos antes de enviar usuarios a la landing final de EvoLink MCP + skill.
+- Usa este repo para revisar workflows prácticos y luego enviar usuarios al cookbook Blender-to-video de EvoLink.
 
 > [!NOTE]
 > La colección prioriza evidencia concreta: pasos, referencias de video, uso de agentes/MCP, restricciones reproducibles y límites claros.
