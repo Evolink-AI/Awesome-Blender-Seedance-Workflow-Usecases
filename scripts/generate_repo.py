@@ -1465,13 +1465,14 @@ def render_ack(labels: dict, records: list[dict]) -> str:
     for record in records:
         if record["author"] not in seen:
             seen.add(record["author"])
-            creators.append(f"- [{record['author']}]({record['author_url']})")
+            creators.append(f"[{record['author']}]({record['author_url']})")
+    creator_line = ", ".join(creators)
     return f"""<a id="acknowledge"></a>
 ## 🙏 {labels["ack"]}
 
 This repository was inspired by creators who publicly shared Blender + Seedance workflows, tests, prompts, reference videos, and production notes.
 
-{chr(10).join(creators)}
+{creator_line}
 
 *We cannot guarantee that every case is attributed to the original creator. If anything needs to be corrected, please contact us and we will update it.*
 

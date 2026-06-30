@@ -554,26 +554,7 @@ Type: Limit | Date: 2026-06-26
 
 This repository was inspired by creators who publicly shared Blender + Seedance workflows, tests, prompts, reference videos, and production notes.
 
-- [@noman23761](https://x.com/noman23761)
-- [@reidhannaford](https://x.com/reidhannaford)
-- [@JMSvid](https://x.com/JMSvid)
-- [@DiabloNemesis](https://x.com/DiabloNemesis)
-- [@koldo2k](https://x.com/koldo2k)
-- [@SamJWasserman](https://x.com/SamJWasserman)
-- [@akiyoshisan](https://x.com/akiyoshisan)
-- [@6_KAKUU](https://x.com/6_KAKUU)
-- [@aidoga_lab](https://x.com/aidoga_lab)
-- [@tanabe_fragm](https://x.com/tanabe_fragm)
-- [@techhalla](https://x.com/techhalla)
-- [@restofart](https://x.com/restofart)
-- [@Viggle_PINOC](https://x.com/Viggle_PINOC)
-- [@magneticskiff](https://x.com/magneticskiff)
-- [@JoshDaws](https://x.com/JoshDaws)
-- [@kan_mi_no9](https://x.com/kan_mi_no9)
-- [@gcduncombe](https://x.com/gcduncombe)
-- [@tea_story_hoshi](https://x.com/tea_story_hoshi)
-- [@craftcapitallab](https://x.com/craftcapitallab)
-- [@fatboypink](https://x.com/fatboypink)
+[@noman23761](https://x.com/noman23761), [@reidhannaford](https://x.com/reidhannaford), [@JMSvid](https://x.com/JMSvid), [@DiabloNemesis](https://x.com/DiabloNemesis), [@koldo2k](https://x.com/koldo2k), [@SamJWasserman](https://x.com/SamJWasserman), [@akiyoshisan](https://x.com/akiyoshisan), [@6_KAKUU](https://x.com/6_KAKUU), [@aidoga_lab](https://x.com/aidoga_lab), [@tanabe_fragm](https://x.com/tanabe_fragm), [@techhalla](https://x.com/techhalla), [@restofart](https://x.com/restofart), [@Viggle_PINOC](https://x.com/Viggle_PINOC), [@magneticskiff](https://x.com/magneticskiff), [@JoshDaws](https://x.com/JoshDaws), [@kan_mi_no9](https://x.com/kan_mi_no9), [@gcduncombe](https://x.com/gcduncombe), [@tea_story_hoshi](https://x.com/tea_story_hoshi), [@craftcapitallab](https://x.com/craftcapitallab), [@fatboypink](https://x.com/fatboypink)
 
 *We cannot guarantee that every case is attributed to the original creator. If anything needs to be corrected, please contact us and we will update it.*
 
