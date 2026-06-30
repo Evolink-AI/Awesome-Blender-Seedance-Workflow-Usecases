@@ -207,13 +207,11 @@ Tür: Demo | Tarih: 2026-06-25
 
 **A short viewport-preview tutorial: block out the scene, export the preview, turn the first frame realistic, then provide both references to Seedance.**
 
-- Kaynak notları: The post gives a concise workflow with concrete artifacts: viewport preview, first-frame image, and Seedance reference video. The requested case 29 media is an exact duplicate of this video, so it is linked here instead of becoming a second public case.
+- Kaynak notları: The post gives a concise workflow with concrete artifacts: viewport preview, first-frame image, and Seedance reference video. The duplicate case 29 media was removed so the public case shows only one copy of the same video.
 - Audit status: kept after manual duplicate and originality review.
 - Video önizleme:
 
 https://github.com/user-attachments/assets/5b39d216-e84a-4372-83e6-a636bcf9d2fe
-
-https://github.com/user-attachments/assets/42a88ef9-9328-4ffc-9134-9f29152af6a8
 
 Tür: Demo | Tarih: 2026-06-26
 

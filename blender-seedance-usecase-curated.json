@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-30T09:22:35Z",
+    "generated_at": "2026-06-30T09:25:25Z",
     "source": "data/primary-use-case-posts.json",
     "repo": "Awesome-Blender-Seedance-Workflow-Usecases",
     "selected_count": 25,
@@ -117,10 +117,9 @@
       "source_text": "prompting is the old way. this is directing. – block out the scene in blender – export the viewport preview – extract the first frame → turn it into a realistic image in @morphic – drop it into as reference to video – Seedance 2.0 does the rest https://t.co/gg25Iu9VgF",
       "takeaway_en": "A short viewport-preview tutorial: block out the scene, export the preview, turn the first frame realistic, then provide both references to Seedance.",
       "takeaway_zh": "Viewport preview 教程：blockout 场景、导出预览、把首帧转成真实图，再把两类参考交给 Seedance。",
-      "note_en": "The post gives a concise workflow with concrete artifacts: viewport preview, first-frame image, and Seedance reference video. The requested case 29 media is an exact duplicate of this video, so it is linked here instead of becoming a second public case.",
+      "note_en": "The post gives a concise workflow with concrete artifacts: viewport preview, first-frame image, and Seedance reference video. The duplicate case 29 media was removed so the public case shows only one copy of the same video.",
       "local_media": [
-        "media/case4.mp4",
-        "media/case29.mp4"
+        "media/case4.mp4"
       ]
     },
     {

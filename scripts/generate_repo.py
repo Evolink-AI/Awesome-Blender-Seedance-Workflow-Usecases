@@ -272,7 +272,7 @@ MEDIA_BY_SOURCE_INDEX = {
     1: ["media/case1.mp4"],
     2: ["media/case2.mp4"],
     14: ["media/case3.mp4"],
-    28: ["media/case4.mp4", "media/case29.mp4"],
+    28: ["media/case4.mp4"],
     32: ["media/case5.mp4"],
     3: ["media/case6.mp4"],
     19: ["media/case9.mp4"],
@@ -313,7 +313,6 @@ VIDEO_SOURCE_ROWS = [
     ("case26", "https://github.com/user-attachments/assets/e63c102e-11cf-4381-87fe-8cfe0d96702b"),
     ("case27", "https://github.com/user-attachments/assets/71221c71-a7eb-428f-90e5-4a6111aaf890"),
     ("case28", "https://github.com/user-attachments/assets/3ab561b2-ef3e-47a5-b2c4-8378a521e491"),
-    ("case29", "https://github.com/user-attachments/assets/42a88ef9-9328-4ffc-9134-9f29152af6a8"),
 ]
 VIDEO_ATTACHMENT_BY_LOCAL_MEDIA = {f"media/{label}.mp4": url for label, url in VIDEO_SOURCE_ROWS}
 
@@ -433,7 +432,7 @@ EN_NOTES = {
     23: "The source is useful for beginners because it names Mixamo as a practical motion source for Blender reference videos.",
     24: "The post is valuable as a beginner Codex workflow: the user delegates architecture and camera work to Codex before Seedance.",
     25: "The source directly frames the workflow as Blender 3D previz transformed into an anime render while keeping camera motion.",
-    28: "The post gives a concise workflow with concrete artifacts: viewport preview, first-frame image, and Seedance reference video. The requested case 29 media is an exact duplicate of this video, so it is linked here instead of becoming a second public case.",
+    28: "The post gives a concise workflow with concrete artifacts: viewport preview, first-frame image, and Seedance reference video. The duplicate case 29 media was removed so the public case shows only one copy of the same video.",
     29: "The source gives a specific FBX-to-clay-pass process and includes camera keyframing before reference export.",
     31: "This case covers an important variant where reference images replace the usual start-frame dependency.",
     32: "The source is useful because it separates motion control from world/style variation using the same reference video.",
@@ -1771,7 +1770,7 @@ def main() -> None:
             "generated_at": curated["metadata"]["generated_at"],
             "source_workbook": "Book1.xlsx",
             "source_rows": len(video_records),
-            "localization_policy": "README files render owner-provided GitHub attachment URLs as direct video previews and keep repository-local media URLs as backups.",
+            "localization_policy": "README files render owner-provided GitHub attachment URLs as direct video previews and keep repository-local media files as backups.",
         },
         "items": video_records,
     }
