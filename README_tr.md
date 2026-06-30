@@ -164,7 +164,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - Kaynak notları: Merged with former case 7: together these sources show the full gray-box workflow and the action-previs variant with rough timing, speed, shake, and spatial choreography.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case1.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case1.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/c56d8da8-6ebf-430b-b012-0a85e28c092b
+
+- Yerel medya yedeği: [case1.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case1.mp4)
 
 Tür: Demo | Tarih: 2026-06-29
 
@@ -177,7 +181,11 @@ Tür: Demo | Tarih: 2026-06-29
 
 - Kaynak notları: The source gives a clear three-step workflow and reports that the generated video tracks the Blender camera move closely.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case2.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case2.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/4bbd421d-dc83-4cae-927d-caa0f7aa143a
+
+- Yerel medya yedeği: [case2.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case2.mp4)
 
 Tür: Demo | Tarih: 2026-06-22
 
@@ -190,7 +198,11 @@ Tür: Demo | Tarih: 2026-06-22
 
 - Kaynak notları: The case is useful because it combines Blender previz with multiple still references inside a ComfyUI-style control setup.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case3.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case3.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/987cf30d-de8b-4cf1-809a-5deaea8ceff0
+
+- Yerel medya yedeği: [case3.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case3.mp4)
 
 Tür: Demo | Tarih: 2026-06-25
 
@@ -203,7 +215,13 @@ Tür: Demo | Tarih: 2026-06-25
 
 - Kaynak notları: The post gives a concise workflow with concrete artifacts: viewport preview, first-frame image, and Seedance reference video. The requested case 29 media is an exact duplicate of this video, so it is linked here instead of becoming a second public case.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case4.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case4.mp4), [case29.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case29.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/5b39d216-e84a-4372-83e6-a636bcf9d2fe
+
+https://github.com/user-attachments/assets/42a88ef9-9328-4ffc-9134-9f29152af6a8
+
+- Yerel medya yedeği: [case4.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case4.mp4), [case29.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case29.mp4)
 
 Tür: Demo | Tarih: 2026-06-26
 
@@ -216,7 +234,11 @@ Tür: Demo | Tarih: 2026-06-26
 
 - Kaynak notları: The source is useful because it separates motion control from world/style variation using the same reference video.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case5.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case5.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/a6304e6a-d431-4cf7-9dd2-f664594e34c5
+
+- Yerel medya yedeği: [case5.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case5.mp4)
 
 Tür: Demo | Tarih: 2026-06-28
 
@@ -232,7 +254,11 @@ Tür: Demo | Tarih: 2026-06-28
 
 - Kaynak notları: The source adds multi-character dialogue and pose matching, making it distinct from single-character camera-control demos.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case6.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case6.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/8f92ed66-1c9f-4fc1-885e-71240add8f56
+
+- Yerel medya yedeği: [case6.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case6.mp4)
 
 Tür: Demo | Tarih: 2026-06-23
 
@@ -258,7 +284,11 @@ Tür: Demo | Tarih: 2026-06-26
 
 - Kaynak notları: The source shows simultaneous camera and character blocking, which is stronger than a simple camera-only reference.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case9.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case9.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/e92e6c44-3fef-4690-bce3-85de50ecf547
+
+- Yerel medya yedeği: [case9.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case9.mp4)
 
 Tür: Demo | Tarih: 2026-06-27
 
@@ -271,7 +301,11 @@ Tür: Demo | Tarih: 2026-06-27
 
 - Kaynak notları: Requested as case 21. Kept as a distinct Reid Hannaford example because it pushes the workflow beyond a simple camera move into scene staging.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case21.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case21.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/a254edb3-245d-4bc0-87cc-45bd17e82b99
+
+- Yerel medya yedeği: [case21.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case21.mp4)
 
 Tür: Demo | Tarih: 2026-06-29
 
@@ -287,7 +321,11 @@ Tür: Demo | Tarih: 2026-06-29
 
 - Kaynak notları: The author says the test was inspired by another creator, but the described scene, motion, camera, and export process are their own experiment.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case10.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case10.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/cff81cc4-0f72-49d8-881f-aee6ded2d5cf
+
+- Yerel medya yedeği: [case10.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case10.mp4)
 
 Tür: Integration | Tarih: 2026-06-28
 
@@ -300,7 +338,11 @@ Tür: Integration | Tarih: 2026-06-28
 
 - Kaynak notları: The post is valuable as a beginner Codex workflow: the user delegates architecture and camera work to Codex before Seedance.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case11.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case11.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/247ccf17-4652-4c11-b8dc-efdba1567707
+
+- Yerel medya yedeği: [case11.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case11.mp4)
 
 Tür: Integration | Tarih: 2026-06-28
 
@@ -313,7 +355,11 @@ Tür: Integration | Tarih: 2026-06-28
 
 - Kaynak notları: Requested as case 22. Kept because it demonstrates speed and agent control rather than manual Blender work.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case22.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case22.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/e9c22c6f-690f-4b3b-984c-a18506580c38
+
+- Yerel medya yedeği: [case22.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case22.mp4)
 
 Tür: Integration | Tarih: 2026-06-29
 
@@ -329,7 +375,13 @@ Tür: Integration | Tarih: 2026-06-29
 
 - Kaynak notları: Merged with former case 19: the pair keeps both the reproducible setup and the limitation note about foot sliding.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case13.jpg](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case13.jpg), [case13.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case13.mp4), [case19.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case19.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/2dabc892-946a-4879-9af0-0e21386b16a5
+
+https://github.com/user-attachments/assets/222be6cc-82c7-4953-9abe-70618f6d499b
+
+- Yerel medya yedeği: [case13.jpg](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case13.jpg), [case13.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case13.mp4), [case19.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case19.mp4)
 
 Tür: Tutorial | Tarih: 2026-06-27
 
@@ -342,7 +394,11 @@ Tür: Tutorial | Tarih: 2026-06-27
 
 - Kaynak notları: The source is useful for beginners because it names Mixamo as a practical motion source for Blender reference videos.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case14.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case14.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/3f04e458-a43f-4860-af2b-88eb6dd397cc
+
+- Yerel medya yedeği: [case14.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case14.mp4)
 
 Tür: Tutorial | Tarih: 2026-06-27
 
@@ -355,7 +411,11 @@ Tür: Tutorial | Tarih: 2026-06-27
 
 - Kaynak notları: Requested as case 23. Kept with the paired kan_mi_no9 test as a distinct reference-control variant.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case23.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case23.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/91721f79-eeaf-4309-bc4a-11e8136c6dba
+
+- Yerel medya yedeği: [case23.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case23.mp4)
 
 Tür: Tutorial | Tarih: 2026-06-28
 
@@ -368,7 +428,11 @@ Tür: Tutorial | Tarih: 2026-06-28
 
 - Kaynak notları: Requested as case 24. Kept because it expands the reference-video idea beyond software-only previs.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case24.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case24.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/b6a3f37b-ef8c-46c1-ad53-a822797a7c09
+
+- Yerel medya yedeği: [case24.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case24.mp4)
 
 Tür: Demo | Tarih: 2026-06-26
 
@@ -381,7 +445,11 @@ Tür: Demo | Tarih: 2026-06-26
 
 - Kaynak notları: Requested as case 26. Kept as the practical counterpart to the later kan_mi_no9 variation case.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case26.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case26.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/e63c102e-11cf-4381-87fe-8cfe0d96702b
+
+- Yerel medya yedeği: [case26.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case26.mp4)
 
 Tür: Demo | Tarih: 2026-06-28
 
@@ -394,7 +462,11 @@ Tür: Demo | Tarih: 2026-06-28
 
 - Kaynak notları: Requested as case 27. Kept because it offers specific, reusable setup advice.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case27.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case27.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/71221c71-a7eb-428f-90e5-4a6111aaf890
+
+- Yerel medya yedeği: [case27.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case27.mp4)
 
 Tür: Tutorial | Tarih: 2026-06-26
 
@@ -410,7 +482,11 @@ Tür: Tutorial | Tarih: 2026-06-26
 
 - Kaynak notları: The case demonstrates a broader agent-built creative stack, not just manual Blender previs.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case15.jpg](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case15.jpg), [case15.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case15.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/e1df0f87-e93e-4339-b25a-a7ac4c4f8c4e
+
+- Yerel medya yedeği: [case15.jpg](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case15.jpg), [case15.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case15.mp4)
 
 Tür: Integration | Tarih: 2026-06-24
 
@@ -423,7 +499,11 @@ Tür: Integration | Tarih: 2026-06-24
 
 - Kaynak notları: This is the stronger techhalla source because it explains the viewport animation and downstream style/lighting step.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case16.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case16.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/80143b32-352b-4e86-8c1f-85826d940ba7
+
+- Yerel medya yedeği: [case16.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case16.mp4)
 
 Tür: Integration | Tarih: 2026-06-27
 
@@ -436,7 +516,11 @@ Tür: Integration | Tarih: 2026-06-27
 
 - Kaynak notları: The source directly frames the workflow as Blender 3D previz transformed into an anime render while keeping camera motion.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case17.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case17.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/13ba8e79-0b0a-44b9-be29-9c850bdeb95a
+
+- Yerel medya yedeği: [case17.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case17.mp4)
 
 Tür: Integration | Tarih: 2026-06-25
 
@@ -449,7 +533,11 @@ Tür: Integration | Tarih: 2026-06-25
 
 - Kaynak notları: The source gives a specific FBX-to-clay-pass process and includes camera keyframing before reference export.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case18.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case18.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/bccdbf9a-b816-403f-ae1f-6e43b1e295a3
+
+- Yerel medya yedeği: [case18.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case18.mp4)
 
 Tür: Integration | Tarih: 2026-06-25
 
@@ -465,7 +553,11 @@ Tür: Integration | Tarih: 2026-06-25
 
 - Kaynak notları: This case covers an important variant where reference images replace the usual start-frame dependency.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case20.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case20.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/dfa129d8-f06b-4018-a5bb-c1ed9e78d0d3
+
+- Yerel medya yedeği: [case20.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case20.mp4)
 
 Tür: Limit | Tarih: 2026-06-27
 
@@ -478,7 +570,11 @@ Tür: Limit | Tarih: 2026-06-27
 
 - Kaynak notları: Requested as case 25. Kept because it includes both working examples and a failed comparison.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case25.jpg](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case25.jpg), [case25.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case25.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/d333d2d0-8317-49f0-8815-86db783cb578
+
+- Yerel medya yedeği: [case25.jpg](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case25.jpg), [case25.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case25.mp4)
 
 Tür: Limit | Tarih: 2026-06-27
 
@@ -491,7 +587,11 @@ Tür: Limit | Tarih: 2026-06-27
 
 - Kaynak notları: Requested as case 28. Kept as a concrete limitation/stress-test case.
 - Audit status: kept after manual duplicate and originality review.
-- Yerel medya: [case28.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case28.mp4)
+- Video önizleme:
+
+https://github.com/user-attachments/assets/3ab561b2-ef3e-47a5-b2c4-8378a521e491
+
+- Yerel medya yedeği: [case28.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case28.mp4)
 
 Tür: Limit | Tarih: 2026-06-26
 

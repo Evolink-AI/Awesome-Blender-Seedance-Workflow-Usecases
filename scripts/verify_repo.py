@@ -73,5 +73,8 @@ for file in FILES:
     for rel in media_paths:
         if rel not in text:
             fail(f"{file} missing local media link {rel}")
+    for row in video_sources["items"]:
+        if row["attachment_url"] not in text:
+            fail(f"{file} missing direct video attachment URL {row['case_label']}")
 
-print(f"PASS: {len(FILES)} README files, {EXPECTED_CASES} cases each, {len(media_paths)} media files linked")
+print(f"PASS: {len(FILES)} README files, {EXPECTED_CASES} cases each, {len(media_paths)} media files linked, {len(video_sources['items'])} direct video URLs embedded")

@@ -164,7 +164,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：完整说明从 image model 起始幀、Blender 灰盒場景/相机動画，到 Seedance 參考影片生成的端到端流程。
 - 複用角度：可直接改寫成“用 Blender blockout 精准導演 AI 鏡头”的主 use case。
-- 本地媒體: [case1.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case1.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/c56d8da8-6ebf-430b-b012-0a85e28c092b
+
+- 本地媒體備份: [case1.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case1.mp4)
 
 類型: Demo | 日期: 2026-06-29
 
@@ -177,7 +181,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：列出 3 步 workflow：Blender block camera、Midjourney start frame、两者送入 Seedance。
 - 複用角度：适合做 precision camera control 的基础案例。
-- 本地媒體: [case2.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case2.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/4bbd421d-dc83-4cae-927d-caa0f7aa143a
+
+- 本地媒體備份: [case2.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case2.mp4)
 
 類型: Demo | 日期: 2026-06-22
 
@@ -190,7 +198,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：说明用 Blender previz 作为 guide，并配 upright/upside-down reference frames。
 - 複用角度：适合做多輸入相机控制 case。
-- 本地媒體: [case3.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case3.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/987cf30d-de8b-4cf1-809a-5deaea8ceff0
+
+- 本地媒體備份: [case3.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case3.mp4)
 
 類型: Demo | 日期: 2026-06-25
 
@@ -203,7 +215,13 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：明确流程：Blender block out scene、export viewport preview、抽第一幀轉真實圖、作为 reference 送 Seedance。
 - 複用角度：适合做 viewport preview → Seedance 的短教程案例。
-- 本地媒體: [case4.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case4.mp4), [case29.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case29.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/5b39d216-e84a-4372-83e6-a636bcf9d2fe
+
+https://github.com/user-attachments/assets/42a88ef9-9328-4ffc-9134-9f29152af6a8
+
+- 本地媒體備份: [case4.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case4.mp4), [case29.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case29.mp4)
 
 類型: Demo | 日期: 2026-06-26
 
@@ -216,7 +234,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：说明用 Blender 控制、Seedance 想象，同一 reference video 生成不同 worlds，并提到 prompt。
 - 複用角度：适合做 style/world variation case。
-- 本地媒體: [case5.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case5.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/a6304e6a-d431-4cf7-9dd2-f664594e34c5
+
+- 本地媒體備份: [case5.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case5.mp4)
 
 類型: Demo | 日期: 2026-06-28
 
@@ -232,7 +254,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：说明用 Midjourney 起始幀、Blender pose/camera，再交给 Seedance，實現两個一致角色和對話鏡头。
 - 複用角度：适合做多角色表演/對話場景 use case。
-- 本地媒體: [case6.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case6.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/8f92ed66-1c9f-4fc1-885e-71240add8f56
+
+- 本地媒體備份: [case6.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case6.mp4)
 
 類型: Demo | 日期: 2026-06-23
 
@@ -258,7 +284,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：明确實現 camera orbit、lens choice、gunfire/cover positions/pop-outs，并说 prompt below。
 - 複用角度：适合做動作場景 tactical blocking case。
-- 本地媒體: [case9.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case9.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/e92e6c44-3fef-4690-bce3-85de50ecf547
+
+- 本地媒體備份: [case9.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case9.mp4)
 
 類型: Demo | 日期: 2026-06-27
 
@@ -271,7 +301,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：明确把 Midjourney 起始圖、Blender blocking/相机動画和 Seedance 組合，用于複杂伏击場景而不只是簡单运鏡。
 - 複用角度：适合做複杂場景先解决 staging、timing 和 camera movement，再生成鏡头的案例。
-- 本地媒體: [case21.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case21.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/a254edb3-245d-4bc0-87cc-45bd17e82b99
+
+- 本地媒體備份: [case21.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case21.mp4)
 
 類型: Demo | 日期: 2026-06-29
 
@@ -287,7 +321,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：列出 Blender MCP 連接 Codex、生成貓/市場/屋台、15 秒 motion、camera work、導出 MP4 reference 的完整流程。
 - 複用角度：适合做 Agentic Blender MCP + Seedance use case。
-- 本地媒體: [case10.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case10.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/cff81cc4-0f72-49d8-881f-aee6ded2d5cf
+
+- 本地媒體備份: [case10.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case10.mp4)
 
 類型: Integration | 日期: 2026-06-28
 
@@ -300,7 +338,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：说明 Blender 初学第 3 天，建筑到 camera work 都由 Codex 完成，Seedance 能跟随。
 - 複用角度：适合做 Codex-assisted camera work case。
-- 本地媒體: [case11.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case11.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/247ccf17-4652-4c11-b8dc-efdba1567707
+
+- 本地媒體備份: [case11.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case11.mp4)
 
 類型: Integration | 日期: 2026-06-28
 
@@ -313,7 +355,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：说明 Claude 通过 Blender MCP 为鏡头创建 previs，并强调 2-3 分钟完成。
 - 複用角度：适合做 agent 快速搭建鏡头預演的短案例。
-- 本地媒體: [case22.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case22.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/e9c22c6f-690f-4b3b-984c-a18506580c38
+
+- 本地媒體備份: [case22.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case22.mp4)
 
 類型: Integration | 日期: 2026-06-29
 
@@ -329,7 +375,13 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：给出 start frame、Blender reference video、Seedance 2.0、5s、以及长 prompt。
 - 複用角度：适合做可複現 prompt/source case。
-- 本地媒體: [case13.jpg](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case13.jpg), [case13.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case13.mp4), [case19.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case19.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/2dabc892-946a-4879-9af0-0e21386b16a5
+
+https://github.com/user-attachments/assets/222be6cc-82c7-4953-9abe-70618f6d499b
+
+- 本地媒體備份: [case13.jpg](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case13.jpg), [case13.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case13.mp4), [case19.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case19.mp4)
 
 類型: Tutorial | 日期: 2026-06-27
 
@@ -342,7 +394,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：测試 Blender x Seedance，并建议初学者下载 Mixamo motion 導入 Blender。
 - 複用角度：适合做 beginner motion-source case。
-- 本地媒體: [case14.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case14.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/3f04e458-a43f-4860-af2b-88eb6dd397cc
+
+- 本地媒體備份: [case14.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case14.mp4)
 
 類型: Tutorial | 日期: 2026-06-27
 
@@ -355,7 +411,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：说明通过调低參考影片對動作的约束、聚焦位置关系，补回 Seedance 的速度感和動态感。
 - 複用角度：适合做 reference adherence 调参案例。
-- 本地媒體: [case23.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case23.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/91721f79-eeaf-4309-bc4a-11e8136c6dba
+
+- 本地媒體備份: [case23.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case23.mp4)
 
 類型: Tutorial | 日期: 2026-06-28
 
@@ -368,7 +428,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：提出不打开 3D 软件时也可以用玩具拍攝运動/構圖參考，作为 Blender+AI render 讨论的替代路径。
 - 複用角度：适合做 physical previs / toy reference 的轻量替代案例。
-- 本地媒體: [case24.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case24.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/b6a3f37b-ef8c-46c1-ad53-a822797a7c09
+
+- 本地媒體備份: [case24.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case24.mp4)
 
 類型: Demo | 日期: 2026-06-26
 
@@ -381,7 +445,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：说明虽然会损失部分 Seedance 自由运鏡和動态，但在必须得到特定画面的場景里很有用。
 - 複用角度：适合做“prompt 失败时用 reference 兜底”的案例。
-- 本地媒體: [case26.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case26.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/e63c102e-11cf-4381-87fe-8cfe0d96702b
+
+- 本地媒體備份: [case26.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case26.mp4)
 
 類型: Demo | 日期: 2026-06-28
 
@@ -394,7 +462,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：总结了让參考更稳定的具体技巧：figure 不只调头身，还要让手脚体积贴合角色设计；不需要對齐的背景尽量簡单。
 - 複用角度：适合做 Blender/參考影片的稳定性 checklist。
-- 本地媒體: [case27.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case27.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/71221c71-a7eb-428f-90e5-4a6111aaf890
+
+- 本地媒體備份: [case27.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case27.mp4)
 
 類型: Tutorial | 日期: 2026-06-26
 
@@ -410,7 +482,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：说明 agent 安装 Krea2、連接 ComfyUI 和 Blender MCP，生成 reference image + physical ref vid 后送 Seedance。
 - 複用角度：适合做 multi-agent creative pipeline 候选。
-- 本地媒體: [case15.jpg](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case15.jpg), [case15.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case15.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/e1df0f87-e93e-4339-b25a-a7ac4c4f8c4e
+
+- 本地媒體備份: [case15.jpg](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case15.jpg), [case15.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case15.mp4)
 
 類型: Integration | 日期: 2026-06-24
 
@@ -423,7 +499,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：说明 adding 3D gives camera/element control，并声称 exactly how I did it。
 - 複用角度：适合做 Blender MCP + style transfer 主案例。
-- 本地媒體: [case16.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case16.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/80143b32-352b-4e86-8c1f-85826d940ba7
+
+- 本地媒體備份: [case16.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case16.mp4)
 
 類型: Integration | 日期: 2026-06-27
 
@@ -436,7 +516,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：说明 full camera moves and motion preserved，定位 previz → AI-render pipeline。
 - 複用角度：适合作为 anime/render pipeline case。
-- 本地媒體: [case17.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case17.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/13ba8e79-0b0a-44b9-be29-9c850bdeb95a
+
+- 本地媒體備份: [case17.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case17.mp4)
 
 類型: Integration | 日期: 2026-06-25
 
@@ -449,7 +533,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：具体 step：Blender 導入 FBX 到 clay model、设置 camera、Claude keyframe camera moves、導出 mp4 给 Seedance refs。
 - 複用角度：适合做 FBX/Mixamo 動画參考流程。
-- 本地媒體: [case18.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case18.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/bccdbf9a-b816-403f-ae1f-6e43b1e295a3
+
+- 本地媒體備份: [case18.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case18.mp4)
 
 類型: Integration | 日期: 2026-06-25
 
@@ -465,7 +553,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：说明 Seedance + Blender blockout 可以使用 references 而非 starter frames，环境參考有足够细節时效果较好。
 - 複用角度：适合做 reference-only variant 候选。
-- 本地媒體: [case20.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case20.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/dfa129d8-f06b-4018-a5bb-c1ed9e78d0d3
+
+- 本地媒體備份: [case20.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case20.mp4)
 
 類型: Limit | 日期: 2026-06-27
 
@@ -478,7 +570,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：同时给出成功例和 NG 例：解析參考影片并用 prompt 补强会更自然，直接忠實參考则動作和姿势容易僵硬。
 - 複用角度：适合做 reference video troubleshooting 与 prompt reinforcement 案例。
-- 本地媒體: [case25.jpg](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case25.jpg), [case25.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case25.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/d333d2d0-8317-49f0-8815-86db783cb578
+
+- 本地媒體備份: [case25.jpg](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case25.jpg), [case25.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case25.mp4)
 
 類型: Limit | 日期: 2026-06-27
 
@@ -491,7 +587,11 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 - 來源筆記：明确把目标设为测試 Seedance 對 cloth physics 的处理能力，并说明这是较难解决的輸出。
 - 複用角度：适合做 cloth physics / complex motion stress test 案例。
-- 本地媒體: [case28.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case28.mp4)
+- 影片預覽:
+
+https://github.com/user-attachments/assets/3ab561b2-ef3e-47a5-b2c4-8378a521e491
+
+- 本地媒體備份: [case28.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case28.mp4)
 
 類型: Limit | 日期: 2026-06-26
 

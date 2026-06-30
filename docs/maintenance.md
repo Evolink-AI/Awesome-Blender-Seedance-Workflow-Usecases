@@ -30,6 +30,7 @@ Each public case must include:
 - Bold usage takeaway
 - Source-grounded notes
 - Local media links when the source data exposes media
+- Direct GitHub attachment video URLs when the owner-provided video map exposes playable previews
 - `Type: ... | Date: YYYY-MM-DD`
 
 Never invent prompts, results, benchmark claims, availability, pricing, or creator attribution.

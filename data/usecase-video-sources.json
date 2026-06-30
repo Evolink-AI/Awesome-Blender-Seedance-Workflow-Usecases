@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "generated_at": "2026-06-30T08:38:28Z",
+    "generated_at": "2026-06-30T09:20:06Z",
     "source_workbook": "Book1.xlsx",
     "source_rows": 26,
-    "localization_policy": "README files use repository-local media URLs; attachment URLs are retained as owner-provided source mapping only."
+    "localization_policy": "README files render owner-provided GitHub attachment URLs as direct video previews and keep repository-local media URLs as backups."
   },
   "items": [
     {

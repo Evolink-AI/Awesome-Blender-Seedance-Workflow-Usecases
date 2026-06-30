@@ -315,6 +315,7 @@ VIDEO_SOURCE_ROWS = [
     ("case28", "https://github.com/user-attachments/assets/3ab561b2-ef3e-47a5-b2c4-8378a521e491"),
     ("case29", "https://github.com/user-attachments/assets/42a88ef9-9328-4ffc-9134-9f29152af6a8"),
 ]
+VIDEO_ATTACHMENT_BY_LOCAL_MEDIA = {f"media/{label}.mp4": url for label, url in VIDEO_SOURCE_ROWS}
 
 CATEGORY_FOR_CASE = {
     1: "camera-control",
@@ -1187,21 +1188,43 @@ def record_notes(record: dict, lang: str) -> str:
 def media_notes(links: list[str], lang: str) -> str:
     if not links:
         return ""
-    label = {
-        "en": "Local media",
-        "es": "Media local",
-        "pt": "Mídia local",
-        "ja": "ローカルメディア",
-        "ko": "로컬 미디어",
-        "de": "Lokale Medien",
-        "fr": "Médias locaux",
-        "tr": "Yerel medya",
-        "zh-CN": "本地媒体",
-        "zh-TW": "本地媒體",
-        "ru": "Локальные медиа",
+    preview_label = {
+        "en": "Video preview",
+        "es": "Vista previa de video",
+        "pt": "Prévia do vídeo",
+        "ja": "動画プレビュー",
+        "ko": "비디오 미리보기",
+        "de": "Videovorschau",
+        "fr": "Aperçu vidéo",
+        "tr": "Video önizleme",
+        "zh-CN": "视频预览",
+        "zh-TW": "影片預覽",
+        "ru": "Предпросмотр видео",
     }[lang]
-    rendered = ", ".join(f"[{Path(path).name}]({RAW_MEDIA_BASE}{path})" for path in links)
-    return f"- {label}: {rendered}"
+    backup_label = {
+        "en": "Local media backup",
+        "es": "Copia local de medios",
+        "pt": "Backup de mídia local",
+        "ja": "ローカルメディアのバックアップ",
+        "ko": "로컬 미디어 백업",
+        "de": "Lokales Medien-Backup",
+        "fr": "Sauvegarde média locale",
+        "tr": "Yerel medya yedeği",
+        "zh-CN": "本地媒体备份",
+        "zh-TW": "本地媒體備份",
+        "ru": "Локальная резервная копия медиа",
+    }[lang]
+    video_urls = [VIDEO_ATTACHMENT_BY_LOCAL_MEDIA[path] for path in links if path in VIDEO_ATTACHMENT_BY_LOCAL_MEDIA]
+    local_links = ", ".join(f"[{Path(path).name}]({RAW_MEDIA_BASE}{path})" for path in links)
+    parts = []
+    if video_urls:
+        parts.append(f"- {preview_label}:")
+        parts.append("")
+        for url in video_urls:
+            parts.append(url)
+            parts.append("")
+    parts.append(f"- {backup_label}: {local_links}")
+    return "\n".join(parts).rstrip()
 
 
 def author_link(item: dict) -> str:
@@ -1604,6 +1627,7 @@ def write_static_files(records: list[dict]) -> None:
             - Bold usage takeaway
             - Source-grounded notes
             - Local media links when the source data exposes media
+            - Direct GitHub attachment video URLs when the owner-provided video map exposes playable previews
             - `Type: ... | Date: YYYY-MM-DD`
 
             Never invent prompts, results, benchmark claims, availability, pricing, or creator attribution.
@@ -1724,8 +1748,11 @@ for file in FILES:
     for rel in media_paths:
         if rel not in text:
             fail(f"{{file}} missing local media link {{rel}}")
+    for row in video_sources["items"]:
+        if row["attachment_url"] not in text:
+            fail(f"{{file}} missing direct video attachment URL {{row['case_label']}}")
 
-print(f"PASS: {{len(FILES)}} README files, {{EXPECTED_CASES}} cases each, {{len(media_paths)}} media files linked")
+print(f"PASS: {{len(FILES)}} README files, {{EXPECTED_CASES}} cases each, {{len(media_paths)}} media files linked, {{len(video_sources['items'])}} direct video URLs embedded")
 '''
     path = ROOT / "scripts" / "verify_repo.py"
     path.write_text(script)
@@ -1762,7 +1789,7 @@ def main() -> None:
             "generated_at": curated["metadata"]["generated_at"],
             "source_workbook": "Book1.xlsx",
             "source_rows": len(video_records),
-            "localization_policy": "README files use repository-local media URLs; attachment URLs are retained as owner-provided source mapping only.",
+            "localization_policy": "README files render owner-provided GitHub attachment URLs as direct video previews and keep repository-local media URLs as backups.",
         },
         "items": video_records,
     }
