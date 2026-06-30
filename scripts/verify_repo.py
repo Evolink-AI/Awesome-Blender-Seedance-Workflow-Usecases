@@ -70,9 +70,6 @@ for item in curated["items"]:
 
 for file in FILES:
     text = (ROOT / file).read_text()
-    for rel in media_paths:
-        if rel not in text:
-            fail(f"{file} missing local media link {rel}")
     for row in video_sources["items"]:
         if row["attachment_url"] not in text:
             fail(f"{file} missing direct video attachment URL {row['case_label']}")

@@ -168,8 +168,6 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 https://github.com/user-attachments/assets/c56d8da8-6ebf-430b-b012-0a85e28c092b
 
-- 本地媒体备份: [case1.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case1.mp4)
-
 类型: Demo | 日期: 2026-06-29
 
 ---
@@ -185,8 +183,6 @@ https://github.com/user-attachments/assets/c56d8da8-6ebf-430b-b012-0a85e28c092b
 
 https://github.com/user-attachments/assets/4bbd421d-dc83-4cae-927d-caa0f7aa143a
 
-- 本地媒体备份: [case2.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case2.mp4)
-
 类型: Demo | 日期: 2026-06-22
 
 ---
@@ -201,8 +197,6 @@ https://github.com/user-attachments/assets/4bbd421d-dc83-4cae-927d-caa0f7aa143a
 - 视频预览:
 
 https://github.com/user-attachments/assets/987cf30d-de8b-4cf1-809a-5deaea8ceff0
-
-- 本地媒体备份: [case3.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case3.mp4)
 
 类型: Demo | 日期: 2026-06-25
 
@@ -221,8 +215,6 @@ https://github.com/user-attachments/assets/5b39d216-e84a-4372-83e6-a636bcf9d2fe
 
 https://github.com/user-attachments/assets/42a88ef9-9328-4ffc-9134-9f29152af6a8
 
-- 本地媒体备份: [case4.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case4.mp4), [case29.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case29.mp4)
-
 类型: Demo | 日期: 2026-06-26
 
 ---
@@ -237,8 +229,6 @@ https://github.com/user-attachments/assets/42a88ef9-9328-4ffc-9134-9f29152af6a8
 - 视频预览:
 
 https://github.com/user-attachments/assets/a6304e6a-d431-4cf7-9dd2-f664594e34c5
-
-- 本地媒体备份: [case5.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case5.mp4)
 
 类型: Demo | 日期: 2026-06-28
 
@@ -257,8 +247,6 @@ https://github.com/user-attachments/assets/a6304e6a-d431-4cf7-9dd2-f664594e34c5
 - 视频预览:
 
 https://github.com/user-attachments/assets/8f92ed66-1c9f-4fc1-885e-71240add8f56
-
-- 本地媒体备份: [case6.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case6.mp4)
 
 类型: Demo | 日期: 2026-06-23
 
@@ -288,8 +276,6 @@ https://github.com/user-attachments/assets/8f92ed66-1c9f-4fc1-885e-71240add8f56
 
 https://github.com/user-attachments/assets/e92e6c44-3fef-4690-bce3-85de50ecf547
 
-- 本地媒体备份: [case9.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case9.mp4)
-
 类型: Demo | 日期: 2026-06-27
 
 ---
@@ -304,8 +290,6 @@ https://github.com/user-attachments/assets/e92e6c44-3fef-4690-bce3-85de50ecf547
 - 视频预览:
 
 https://github.com/user-attachments/assets/a254edb3-245d-4bc0-87cc-45bd17e82b99
-
-- 本地媒体备份: [case21.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case21.mp4)
 
 类型: Demo | 日期: 2026-06-29
 
@@ -325,8 +309,6 @@ https://github.com/user-attachments/assets/a254edb3-245d-4bc0-87cc-45bd17e82b99
 
 https://github.com/user-attachments/assets/cff81cc4-0f72-49d8-881f-aee6ded2d5cf
 
-- 本地媒体备份: [case10.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case10.mp4)
-
 类型: Integration | 日期: 2026-06-28
 
 ---
@@ -342,8 +324,6 @@ https://github.com/user-attachments/assets/cff81cc4-0f72-49d8-881f-aee6ded2d5cf
 
 https://github.com/user-attachments/assets/247ccf17-4652-4c11-b8dc-efdba1567707
 
-- 本地媒体备份: [case11.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case11.mp4)
-
 类型: Integration | 日期: 2026-06-28
 
 ---
@@ -358,8 +338,6 @@ https://github.com/user-attachments/assets/247ccf17-4652-4c11-b8dc-efdba1567707
 - 视频预览:
 
 https://github.com/user-attachments/assets/e9c22c6f-690f-4b3b-984c-a18506580c38
-
-- 本地媒体备份: [case22.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case22.mp4)
 
 类型: Integration | 日期: 2026-06-29
 
@@ -381,8 +359,6 @@ https://github.com/user-attachments/assets/2dabc892-946a-4879-9af0-0e21386b16a5
 
 https://github.com/user-attachments/assets/222be6cc-82c7-4953-9abe-70618f6d499b
 
-- 本地媒体备份: [case13.jpg](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case13.jpg), [case13.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case13.mp4), [case19.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case19.mp4)
-
 类型: Tutorial | 日期: 2026-06-27
 
 ---
@@ -397,8 +373,6 @@ https://github.com/user-attachments/assets/222be6cc-82c7-4953-9abe-70618f6d499b
 - 视频预览:
 
 https://github.com/user-attachments/assets/3f04e458-a43f-4860-af2b-88eb6dd397cc
-
-- 本地媒体备份: [case14.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case14.mp4)
 
 类型: Tutorial | 日期: 2026-06-27
 
@@ -415,8 +389,6 @@ https://github.com/user-attachments/assets/3f04e458-a43f-4860-af2b-88eb6dd397cc
 
 https://github.com/user-attachments/assets/91721f79-eeaf-4309-bc4a-11e8136c6dba
 
-- 本地媒体备份: [case23.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case23.mp4)
-
 类型: Tutorial | 日期: 2026-06-28
 
 ---
@@ -431,8 +403,6 @@ https://github.com/user-attachments/assets/91721f79-eeaf-4309-bc4a-11e8136c6dba
 - 视频预览:
 
 https://github.com/user-attachments/assets/b6a3f37b-ef8c-46c1-ad53-a822797a7c09
-
-- 本地媒体备份: [case24.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case24.mp4)
 
 类型: Demo | 日期: 2026-06-26
 
@@ -449,8 +419,6 @@ https://github.com/user-attachments/assets/b6a3f37b-ef8c-46c1-ad53-a822797a7c09
 
 https://github.com/user-attachments/assets/e63c102e-11cf-4381-87fe-8cfe0d96702b
 
-- 本地媒体备份: [case26.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case26.mp4)
-
 类型: Demo | 日期: 2026-06-28
 
 ---
@@ -465,8 +433,6 @@ https://github.com/user-attachments/assets/e63c102e-11cf-4381-87fe-8cfe0d96702b
 - 视频预览:
 
 https://github.com/user-attachments/assets/71221c71-a7eb-428f-90e5-4a6111aaf890
-
-- 本地媒体备份: [case27.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case27.mp4)
 
 类型: Tutorial | 日期: 2026-06-26
 
@@ -486,8 +452,6 @@ https://github.com/user-attachments/assets/71221c71-a7eb-428f-90e5-4a6111aaf890
 
 https://github.com/user-attachments/assets/e1df0f87-e93e-4339-b25a-a7ac4c4f8c4e
 
-- 本地媒体备份: [case15.jpg](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case15.jpg), [case15.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case15.mp4)
-
 类型: Integration | 日期: 2026-06-24
 
 ---
@@ -502,8 +466,6 @@ https://github.com/user-attachments/assets/e1df0f87-e93e-4339-b25a-a7ac4c4f8c4e
 - 视频预览:
 
 https://github.com/user-attachments/assets/80143b32-352b-4e86-8c1f-85826d940ba7
-
-- 本地媒体备份: [case16.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case16.mp4)
 
 类型: Integration | 日期: 2026-06-27
 
@@ -520,8 +482,6 @@ https://github.com/user-attachments/assets/80143b32-352b-4e86-8c1f-85826d940ba7
 
 https://github.com/user-attachments/assets/13ba8e79-0b0a-44b9-be29-9c850bdeb95a
 
-- 本地媒体备份: [case17.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case17.mp4)
-
 类型: Integration | 日期: 2026-06-25
 
 ---
@@ -536,8 +496,6 @@ https://github.com/user-attachments/assets/13ba8e79-0b0a-44b9-be29-9c850bdeb95a
 - 视频预览:
 
 https://github.com/user-attachments/assets/bccdbf9a-b816-403f-ae1f-6e43b1e295a3
-
-- 本地媒体备份: [case18.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case18.mp4)
 
 类型: Integration | 日期: 2026-06-25
 
@@ -557,8 +515,6 @@ https://github.com/user-attachments/assets/bccdbf9a-b816-403f-ae1f-6e43b1e295a3
 
 https://github.com/user-attachments/assets/dfa129d8-f06b-4018-a5bb-c1ed9e78d0d3
 
-- 本地媒体备份: [case20.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case20.mp4)
-
 类型: Limit | 日期: 2026-06-27
 
 ---
@@ -574,8 +530,6 @@ https://github.com/user-attachments/assets/dfa129d8-f06b-4018-a5bb-c1ed9e78d0d3
 
 https://github.com/user-attachments/assets/d333d2d0-8317-49f0-8815-86db783cb578
 
-- 本地媒体备份: [case25.jpg](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case25.jpg), [case25.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case25.mp4)
-
 类型: Limit | 日期: 2026-06-27
 
 ---
@@ -590,8 +544,6 @@ https://github.com/user-attachments/assets/d333d2d0-8317-49f0-8815-86db783cb578
 - 视频预览:
 
 https://github.com/user-attachments/assets/3ab561b2-ef3e-47a5-b2c4-8378a521e491
-
-- 本地媒体备份: [case28.mp4](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/raw/main/media/case28.mp4)
 
 类型: Limit | 日期: 2026-06-26
 

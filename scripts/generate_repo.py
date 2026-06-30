@@ -1201,21 +1201,7 @@ def media_notes(links: list[str], lang: str) -> str:
         "zh-TW": "影片預覽",
         "ru": "Предпросмотр видео",
     }[lang]
-    backup_label = {
-        "en": "Local media backup",
-        "es": "Copia local de medios",
-        "pt": "Backup de mídia local",
-        "ja": "ローカルメディアのバックアップ",
-        "ko": "로컬 미디어 백업",
-        "de": "Lokales Medien-Backup",
-        "fr": "Sauvegarde média locale",
-        "tr": "Yerel medya yedeği",
-        "zh-CN": "本地媒体备份",
-        "zh-TW": "本地媒體備份",
-        "ru": "Локальная резервная копия медиа",
-    }[lang]
     video_urls = [VIDEO_ATTACHMENT_BY_LOCAL_MEDIA[path] for path in links if path in VIDEO_ATTACHMENT_BY_LOCAL_MEDIA]
-    local_links = ", ".join(f"[{Path(path).name}]({RAW_MEDIA_BASE}{path})" for path in links)
     parts = []
     if video_urls:
         parts.append(f"- {preview_label}:")
@@ -1223,7 +1209,6 @@ def media_notes(links: list[str], lang: str) -> str:
         for url in video_urls:
             parts.append(url)
             parts.append("")
-    parts.append(f"- {backup_label}: {local_links}")
     return "\n".join(parts).rstrip()
 
 
@@ -1745,9 +1730,6 @@ for item in curated["items"]:
 
 for file in FILES:
     text = (ROOT / file).read_text()
-    for rel in media_paths:
-        if rel not in text:
-            fail(f"{{file}} missing local media link {{rel}}")
     for row in video_sources["items"]:
         if row["attachment_url"] not in text:
             fail(f"{{file}} missing direct video attachment URL {{row['case_label']}}")
