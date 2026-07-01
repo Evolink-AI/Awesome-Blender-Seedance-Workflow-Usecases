@@ -19,9 +19,33 @@ REPO = "Awesome-Blender-Seedance-Workflow-Usecases"
 OWNER = "cheercheung"
 MODEL = "Blender + Seedance"
 MODEL_ID = "seedance-2.0-reference-to-video"
-CTA_URL = "https://evolink.ai/cookbook/blender-to-video"
+EVOLINK_SCHEME = "https"
+EVOLINK_DOMAIN = "evolink.ai"
+EVOLINK_HOST = f"{EVOLINK_SCHEME}://{EVOLINK_DOMAIN}"
+CTA_PATH = "/cookbook/blender-to-video"
+UTM_CAMPAIGN = "awesome-blender-seedance-workflow-usecases"
 RAW_MEDIA_BASE = f"https://github.com/{OWNER}/{REPO}/raw/main/"
 BANNER_SOURCE = ROOT / "images" / "banner.png"
+
+
+def evolink_url(path: str = "", *, medium: str, content: str) -> str:
+    return (
+        f"{EVOLINK_HOST}{path}?utm_source=github"
+        f"&utm_medium={medium}"
+        f"&utm_campaign={UTM_CAMPAIGN}"
+        f"&utm_content={content}"
+    )
+
+
+CTA_URLS = {
+    "banner": evolink_url(CTA_PATH, medium="readme", content="banner"),
+    "use_on_evolink": evolink_url(CTA_PATH, medium="readme", content="use_on_evolink_badge"),
+    "mcp_skill": evolink_url(CTA_PATH, medium="readme", content="mcp_skill_badge"),
+    "agent_workflow": evolink_url(CTA_PATH, medium="readme", content="agent_workflow_badge"),
+    "maintenance": evolink_url(CTA_PATH, medium="docs", content="maintenance_primary_cta"),
+    "metadata": evolink_url(CTA_PATH, medium="metadata", content="curated_json"),
+    "issue_contact": evolink_url("", medium="issue_template", content="contact_link"),
+}
 
 LANGS = [
     ("en", "README.md", "English", "images/banner.png"),
@@ -1293,12 +1317,12 @@ def video_source_records(records: list[dict]) -> list[dict]:
 def render_badges(img_path: str) -> str:
     return f"""<div align="center">
 
-<a href="{CTA_URL}"><img src="{img_path}" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="{CTA_URLS['banner']}"><img src="{img_path}" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)]({CTA_URL})
-[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Cookbook-orange)]({CTA_URL})
-[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Guide-blue)]({CTA_URL})
+[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)]({CTA_URLS['use_on_evolink']})
+[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Cookbook-orange)]({CTA_URLS['mcp_skill']})
+[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Guide-blue)]({CTA_URLS['agent_workflow']})
 
 {LANG_BADGES}
 
@@ -1593,7 +1617,7 @@ def write_static_files(records: list[dict]) -> None:
             - Selected public cases: {len(records)}
             - Owner-provided video rows: {len(VIDEO_SOURCE_ROWS)}
             - Candidate pool before audit: 35
-            - Primary CTA: EvoLink Blender-to-video cookbook (`{CTA_URL}`)
+            - Primary CTA: EvoLink Blender-to-video cookbook (`{CTA_URLS['maintenance']}`)
             - Public push: approved to the existing target repository after local verification
             - GitHub repository creation: not approved and not needed for this repo
             - GitHub About metadata: drafted in `docs/github-about.md`; applying it requires repository settings permission
@@ -1655,11 +1679,11 @@ def write_static_files(records: list[dict]) -> None:
     issue_dir.mkdir(parents=True, exist_ok=True)
     (issue_dir / "config.yml").write_text(
         textwrap.dedent(
-            """\
+            f"""\
             blank_issues_enabled: false
             contact_links:
               - name: EvoLink
-                url: https://evolink.ai
+                url: {CTA_URLS['issue_contact']}
                 about: Use EvoLink for model access, API keys, and agent workflows.
             """
         )
@@ -1744,7 +1768,14 @@ FILES = {[filename for _, filename, _, _ in LANGS]!r}
 EXPECTED_CASES = {len(records)}
 EXPECTED_IMAGES = {sorted({img for _, _, _, img in LANGS})!r}
 EXPECTED_VIDEO_LABELS = {[label for label, _ in VIDEO_SOURCE_ROWS]!r}
-EXPECTED_CTA = {CTA_URL!r}
+EXPECTED_README_CTAS = {[
+        CTA_URLS["banner"],
+        CTA_URLS["use_on_evolink"],
+        CTA_URLS["mcp_skill"],
+        CTA_URLS["agent_workflow"],
+    ]!r}
+EXPECTED_ISSUE_CONTACT = {CTA_URLS["issue_contact"]!r}
+UTM_CAMPAIGN = {UTM_CAMPAIGN!r}
 
 def fail(msg):
     raise SystemExit(f"FAIL: {{msg}}")
@@ -1776,8 +1807,12 @@ for file in FILES:
         fail(f"{{file}} missing Type/Date metadata lines")
     if ".github/ISSUE_TEMPLATE/use-case.yml" not in text or ".github/PULL_REQUEST_TEMPLATE.md" not in text:
         fail(f"{{file}} missing issue or PR template links")
-    if EXPECTED_CTA not in text:
-        fail(f"{{file}} missing primary CTA link")
+    for expected_cta in EXPECTED_README_CTAS:
+        if expected_cta not in text:
+            fail(f"{{file}} missing primary CTA link {{expected_cta}}")
+    for url in re.findall(r'https://evolink\\.ai[^\\s)>"`]+', text):
+        if "utm_source=github" not in url or "utm_medium=readme" not in url or f"utm_campaign={{UTM_CAMPAIGN}}" not in url:
+            fail(f"{{file}} has EvoLink URL without required README UTM: {{url}}")
 
 for img in EXPECTED_IMAGES:
     if not (ROOT / img).exists():
@@ -1786,6 +1821,14 @@ for img in EXPECTED_IMAGES:
 for required in ["LICENSE", "CONTRIBUTING.md", "docs/maintenance.md", ".github/PULL_REQUEST_TEMPLATE.md", ".github/ISSUE_TEMPLATE/config.yml", ".github/ISSUE_TEMPLATE/use-case.yml", "blender-seedance-usecase-curated.json", "data/usecase-video-sources.json", "images/banner.png"]:
     if not (ROOT / required).exists():
         fail(f"missing {{required}}")
+
+for rel in ["docs/maintenance.md", ".github/ISSUE_TEMPLATE/config.yml", "blender-seedance-usecase-curated.json"]:
+    text = (ROOT / rel).read_text()
+    for url in re.findall(r'https://evolink\\.ai[^\\s)>"`]+', text):
+        if "utm_source=github" not in url or "utm_medium=" not in url or f"utm_campaign={{UTM_CAMPAIGN}}" not in url:
+            fail(f"{{rel}} has EvoLink URL without required UTM: {{url}}")
+if EXPECTED_ISSUE_CONTACT not in (ROOT / ".github" / "ISSUE_TEMPLATE" / "config.yml").read_text():
+    fail("issue template config missing tracked EvoLink contact URL")
 
 video_sources = json.loads((ROOT / "data" / "usecase-video-sources.json").read_text())
 if video_sources["metadata"].get("source_rows") != len(EXPECTED_VIDEO_LABELS):
@@ -1839,7 +1882,7 @@ def main() -> None:
             "selected_count": len(records),
             "tier_counts": dict(Counter(record["quality_tier"] for record in records)),
             "category_counts": dict(Counter(record["category"] for record in records)),
-            "cta_status": f"primary CTA set to {CTA_URL}",
+            "cta_status": f"primary CTA set to {CTA_URLS['metadata']}",
             "publication_status": "existing target repository; push to cheercheung/Awesome-Blender-Seedance-Workflow-Usecases approved after local verification; no new repository creation approved",
             "audit": "docs/usecase-originality-audit.md",
             "video_source_map": "data/usecase-video-sources.json",

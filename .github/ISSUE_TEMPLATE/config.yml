@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: EvoLink
-    url: https://evolink.ai
+    url: https://evolink.ai?utm_source=github&utm_medium=issue_template&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=contact_link
     about: Use EvoLink for model access, API keys, and agent workflows.

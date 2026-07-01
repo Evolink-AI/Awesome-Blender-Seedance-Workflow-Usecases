@@ -1,11 +1,11 @@
 <div align="center">
 
-<a href="https://evolink.ai/cookbook/blender-to-video"><img src="images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=banner"><img src="images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](https://evolink.ai/cookbook/blender-to-video)
-[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Cookbook-orange)](https://evolink.ai/cookbook/blender-to-video)
-[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Guide-blue)](https://evolink.ai/cookbook/blender-to-video)
+[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=use_on_evolink_badge)
+[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Cookbook-orange)](https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=mcp_skill_badge)
+[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Guide-blue)](https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=agent_workflow_badge)
 
 [![English](https://img.shields.io/badge/English-111111)](README.md)
 [![Español](https://img.shields.io/badge/Espa%C3%B1ol-ffb703)](README_es.md)

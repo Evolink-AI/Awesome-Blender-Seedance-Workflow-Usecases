@@ -8,7 +8,9 @@ FILES = ['README.md', 'README_es.md', 'README_pt.md', 'README_ja.md', 'README_ko
 EXPECTED_CASES = 25
 EXPECTED_IMAGES = ['images/banner.png']
 EXPECTED_VIDEO_LABELS = ['case1', 'case2', 'case3', 'case4', 'case5', 'case6', 'case8', 'case9', 'case10', 'case11', 'case13', 'case14', 'case15', 'case16', 'case17', 'case18', 'case19', 'case20', 'case21', 'case22', 'case23', 'case24', 'case25', 'case26', 'case27', 'case28']
-EXPECTED_CTA = 'https://evolink.ai/cookbook/blender-to-video'
+EXPECTED_README_CTAS = ['https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=banner', 'https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=use_on_evolink_badge', 'https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=mcp_skill_badge', 'https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=agent_workflow_badge']
+EXPECTED_ISSUE_CONTACT = 'https://evolink.ai?utm_source=github&utm_medium=issue_template&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=contact_link'
+UTM_CAMPAIGN = 'awesome-blender-seedance-workflow-usecases'
 
 def fail(msg):
     raise SystemExit(f"FAIL: {msg}")
@@ -40,8 +42,12 @@ for file in FILES:
         fail(f"{file} missing Type/Date metadata lines")
     if ".github/ISSUE_TEMPLATE/use-case.yml" not in text or ".github/PULL_REQUEST_TEMPLATE.md" not in text:
         fail(f"{file} missing issue or PR template links")
-    if EXPECTED_CTA not in text:
-        fail(f"{file} missing primary CTA link")
+    for expected_cta in EXPECTED_README_CTAS:
+        if expected_cta not in text:
+            fail(f"{file} missing primary CTA link {expected_cta}")
+    for url in re.findall(r'https://evolink\.ai[^\s)>"`]+', text):
+        if "utm_source=github" not in url or "utm_medium=readme" not in url or f"utm_campaign={UTM_CAMPAIGN}" not in url:
+            fail(f"{file} has EvoLink URL without required README UTM: {url}")
 
 for img in EXPECTED_IMAGES:
     if not (ROOT / img).exists():
@@ -50,6 +56,14 @@ for img in EXPECTED_IMAGES:
 for required in ["LICENSE", "CONTRIBUTING.md", "docs/maintenance.md", ".github/PULL_REQUEST_TEMPLATE.md", ".github/ISSUE_TEMPLATE/config.yml", ".github/ISSUE_TEMPLATE/use-case.yml", "blender-seedance-usecase-curated.json", "data/usecase-video-sources.json", "images/banner.png"]:
     if not (ROOT / required).exists():
         fail(f"missing {required}")
+
+for rel in ["docs/maintenance.md", ".github/ISSUE_TEMPLATE/config.yml", "blender-seedance-usecase-curated.json"]:
+    text = (ROOT / rel).read_text()
+    for url in re.findall(r'https://evolink\.ai[^\s)>"`]+', text):
+        if "utm_source=github" not in url or "utm_medium=" not in url or f"utm_campaign={UTM_CAMPAIGN}" not in url:
+            fail(f"{rel} has EvoLink URL without required UTM: {url}")
+if EXPECTED_ISSUE_CONTACT not in (ROOT / ".github" / "ISSUE_TEMPLATE" / "config.yml").read_text():
+    fail("issue template config missing tracked EvoLink contact URL")
 
 video_sources = json.loads((ROOT / "data" / "usecase-video-sources.json").read_text())
 if video_sources["metadata"].get("source_rows") != len(EXPECTED_VIDEO_LABELS):

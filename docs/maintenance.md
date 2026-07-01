@@ -14,7 +14,7 @@
 - Selected public cases: 25
 - Owner-provided video rows: 26
 - Candidate pool before audit: 35
-- Primary CTA: EvoLink Blender-to-video cookbook (`https://evolink.ai/cookbook/blender-to-video`)
+- Primary CTA: EvoLink Blender-to-video cookbook (`https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=docs&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=maintenance_primary_cta`)
 - Public push: approved to the existing target repository after local verification
 - GitHub repository creation: not approved and not needed for this repo
 - GitHub About metadata: drafted in `docs/github-about.md`; applying it requires repository settings permission
