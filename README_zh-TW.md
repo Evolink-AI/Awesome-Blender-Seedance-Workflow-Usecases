@@ -62,7 +62,7 @@ npm i evolink-seedance
 npm i evolink-topaz-video-upscale
 ```
 
-### 3. 取得 API key
+### 3. [取得 API key](https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=quick_start_api_key)
 
 在 EvoLink 帳號裡建立 API key，然後把它暴露給 agent runtime。
 

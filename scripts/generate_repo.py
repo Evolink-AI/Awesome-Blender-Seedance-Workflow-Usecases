@@ -45,6 +45,7 @@ CTA_URLS = {
     "maintenance": evolink_url(CTA_PATH, medium="docs", content="maintenance_primary_cta"),
     "metadata": evolink_url(CTA_PATH, medium="metadata", content="curated_json"),
     "issue_contact": evolink_url("", medium="issue_template", content="contact_link"),
+    "api_key_quick_start": evolink_url("/signup", medium="readme", content="quick_start_api_key"),
 }
 
 LANGS = [
@@ -1377,7 +1378,7 @@ npm i evolink-seedance
 npm i evolink-topaz-video-upscale
 ```
 
-### 3. {quick["key_title"]}
+### 3. [{quick["key_title"]}]({CTA_URLS['api_key_quick_start']})
 
 {quick["key_body"]}
 
@@ -1773,6 +1774,7 @@ EXPECTED_README_CTAS = {[
         CTA_URLS["use_on_evolink"],
         CTA_URLS["mcp_skill"],
         CTA_URLS["agent_workflow"],
+        CTA_URLS["api_key_quick_start"],
     ]!r}
 EXPECTED_ISSUE_CONTACT = {CTA_URLS["issue_contact"]!r}
 UTM_CAMPAIGN = {UTM_CAMPAIGN!r}
