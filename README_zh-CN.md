@@ -166,7 +166,7 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 - 复用角度：可直接改写成“用 Blender blockout 精准导演 AI 镜头”的主 use case。
 - 视频预览:
 
-https://github.com/user-attachments/assets/c56d8da8-6ebf-430b-b012-0a85e28c092b
+media/case1.mp4
 
 类型: Demo | 日期: 2026-06-29
 
@@ -181,7 +181,7 @@ https://github.com/user-attachments/assets/c56d8da8-6ebf-430b-b012-0a85e28c092b
 - 复用角度：适合做 precision camera control 的基础案例。
 - 视频预览:
 
-https://github.com/user-attachments/assets/4bbd421d-dc83-4cae-927d-caa0f7aa143a
+media/case2.mp4
 
 类型: Demo | 日期: 2026-06-22
 
@@ -196,7 +196,7 @@ https://github.com/user-attachments/assets/4bbd421d-dc83-4cae-927d-caa0f7aa143a
 - 复用角度：适合做多输入相机控制 case。
 - 视频预览:
 
-https://github.com/user-attachments/assets/987cf30d-de8b-4cf1-809a-5deaea8ceff0
+media/case3.mp4
 
 类型: Demo | 日期: 2026-06-25
 
@@ -211,7 +211,7 @@ https://github.com/user-attachments/assets/987cf30d-de8b-4cf1-809a-5deaea8ceff0
 - 复用角度：适合做 viewport preview → Seedance 的短教程案例。
 - 视频预览:
 
-https://github.com/user-attachments/assets/5b39d216-e84a-4372-83e6-a636bcf9d2fe
+media/case4.mp4
 
 类型: Demo | 日期: 2026-06-26
 
@@ -226,7 +226,7 @@ https://github.com/user-attachments/assets/5b39d216-e84a-4372-83e6-a636bcf9d2fe
 - 复用角度：适合做 style/world variation case。
 - 视频预览:
 
-https://github.com/user-attachments/assets/a6304e6a-d431-4cf7-9dd2-f664594e34c5
+media/case5.mp4
 
 类型: Demo | 日期: 2026-06-28
 
@@ -244,7 +244,7 @@ https://github.com/user-attachments/assets/a6304e6a-d431-4cf7-9dd2-f664594e34c5
 - 复用角度：适合做多角色表演/对话场景 use case。
 - 视频预览:
 
-https://github.com/user-attachments/assets/8f92ed66-1c9f-4fc1-885e-71240add8f56
+media/case6.mp4
 
 类型: Demo | 日期: 2026-06-23
 
@@ -259,7 +259,7 @@ https://github.com/user-attachments/assets/8f92ed66-1c9f-4fc1-885e-71240add8f56
 - 复用角度：适合做手持跟拍、角色移动穿越空间的案例。
 - 视频预览:
 
-https://github.com/user-attachments/assets/598b62bd-246c-4699-8a5c-4735b536c380
+Preview unavailable: the original GitHub attachment is no longer publicly accessible.
 
 类型: Demo | 日期: 2026-06-26
 
@@ -274,7 +274,7 @@ https://github.com/user-attachments/assets/598b62bd-246c-4699-8a5c-4735b536c380
 - 复用角度：适合做动作场景 tactical blocking case。
 - 视频预览:
 
-https://github.com/user-attachments/assets/e92e6c44-3fef-4690-bce3-85de50ecf547
+media/case9.mp4
 
 类型: Demo | 日期: 2026-06-27
 
@@ -289,7 +289,7 @@ https://github.com/user-attachments/assets/e92e6c44-3fef-4690-bce3-85de50ecf547
 - 复用角度：适合做复杂场景先解决 staging、timing 和 camera movement，再生成镜头的案例。
 - 视频预览:
 
-https://github.com/user-attachments/assets/a254edb3-245d-4bc0-87cc-45bd17e82b99
+media/case21.mp4
 
 类型: Demo | 日期: 2026-06-29
 
@@ -307,7 +307,7 @@ https://github.com/user-attachments/assets/a254edb3-245d-4bc0-87cc-45bd17e82b99
 - 复用角度：适合做 Agentic Blender MCP + Seedance use case。
 - 视频预览:
 
-https://github.com/user-attachments/assets/cff81cc4-0f72-49d8-881f-aee6ded2d5cf
+media/case10.mp4
 
 类型: Integration | 日期: 2026-06-28
 
@@ -322,7 +322,7 @@ https://github.com/user-attachments/assets/cff81cc4-0f72-49d8-881f-aee6ded2d5cf
 - 复用角度：适合做 Codex-assisted camera work case。
 - 视频预览:
 
-https://github.com/user-attachments/assets/247ccf17-4652-4c11-b8dc-efdba1567707
+media/case11.mp4
 
 类型: Integration | 日期: 2026-06-28
 
@@ -337,7 +337,7 @@ https://github.com/user-attachments/assets/247ccf17-4652-4c11-b8dc-efdba1567707
 - 复用角度：适合做 agent 快速搭建镜头预演的短案例。
 - 视频预览:
 
-https://github.com/user-attachments/assets/e9c22c6f-690f-4b3b-984c-a18506580c38
+media/case22.mp4
 
 类型: Integration | 日期: 2026-06-29
 
@@ -355,9 +355,9 @@ https://github.com/user-attachments/assets/e9c22c6f-690f-4b3b-984c-a18506580c38
 - 复用角度：适合做可复现 prompt/source case。
 - 视频预览:
 
-https://github.com/user-attachments/assets/2dabc892-946a-4879-9af0-0e21386b16a5
+media/case13.mp4
 
-https://github.com/user-attachments/assets/222be6cc-82c7-4953-9abe-70618f6d499b
+media/case13.jpg
 
 类型: Tutorial | 日期: 2026-06-27
 
@@ -372,7 +372,7 @@ https://github.com/user-attachments/assets/222be6cc-82c7-4953-9abe-70618f6d499b
 - 复用角度：适合做 beginner motion-source case。
 - 视频预览:
 
-https://github.com/user-attachments/assets/3f04e458-a43f-4860-af2b-88eb6dd397cc
+media/case14.mp4
 
 类型: Tutorial | 日期: 2026-06-27
 
@@ -387,7 +387,7 @@ https://github.com/user-attachments/assets/3f04e458-a43f-4860-af2b-88eb6dd397cc
 - 复用角度：适合做 reference adherence 调参案例。
 - 视频预览:
 
-https://github.com/user-attachments/assets/91721f79-eeaf-4309-bc4a-11e8136c6dba
+media/case23.mp4
 
 类型: Tutorial | 日期: 2026-06-28
 
@@ -402,7 +402,7 @@ https://github.com/user-attachments/assets/91721f79-eeaf-4309-bc4a-11e8136c6dba
 - 复用角度：适合做 physical previs / toy reference 的轻量替代案例。
 - 视频预览:
 
-https://github.com/user-attachments/assets/b6a3f37b-ef8c-46c1-ad53-a822797a7c09
+media/case24.mp4
 
 类型: Demo | 日期: 2026-06-26
 
@@ -417,7 +417,7 @@ https://github.com/user-attachments/assets/b6a3f37b-ef8c-46c1-ad53-a822797a7c09
 - 复用角度：适合做“prompt 失败时用 reference 兜底”的案例。
 - 视频预览:
 
-https://github.com/user-attachments/assets/e63c102e-11cf-4381-87fe-8cfe0d96702b
+media/case26.mp4
 
 类型: Demo | 日期: 2026-06-28
 
@@ -432,7 +432,7 @@ https://github.com/user-attachments/assets/e63c102e-11cf-4381-87fe-8cfe0d96702b
 - 复用角度：适合做 Blender/参考视频的稳定性 checklist。
 - 视频预览:
 
-https://github.com/user-attachments/assets/71221c71-a7eb-428f-90e5-4a6111aaf890
+media/case27.mp4
 
 类型: Tutorial | 日期: 2026-06-26
 
@@ -450,7 +450,7 @@ https://github.com/user-attachments/assets/71221c71-a7eb-428f-90e5-4a6111aaf890
 - 复用角度：适合做 multi-agent creative pipeline 候选。
 - 视频预览:
 
-https://github.com/user-attachments/assets/e1df0f87-e93e-4339-b25a-a7ac4c4f8c4e
+media/case15.mp4
 
 类型: Integration | 日期: 2026-06-24
 
@@ -465,7 +465,7 @@ https://github.com/user-attachments/assets/e1df0f87-e93e-4339-b25a-a7ac4c4f8c4e
 - 复用角度：适合做 Blender MCP + style transfer 主案例。
 - 视频预览:
 
-https://github.com/user-attachments/assets/80143b32-352b-4e86-8c1f-85826d940ba7
+media/case16.mp4
 
 类型: Integration | 日期: 2026-06-27
 
@@ -480,7 +480,7 @@ https://github.com/user-attachments/assets/80143b32-352b-4e86-8c1f-85826d940ba7
 - 复用角度：适合作为 anime/render pipeline case。
 - 视频预览:
 
-https://github.com/user-attachments/assets/13ba8e79-0b0a-44b9-be29-9c850bdeb95a
+media/case17.mp4
 
 类型: Integration | 日期: 2026-06-25
 
@@ -495,7 +495,7 @@ https://github.com/user-attachments/assets/13ba8e79-0b0a-44b9-be29-9c850bdeb95a
 - 复用角度：适合做 FBX/Mixamo 动画参考流程。
 - 视频预览:
 
-https://github.com/user-attachments/assets/bccdbf9a-b816-403f-ae1f-6e43b1e295a3
+media/case18.mp4
 
 类型: Integration | 日期: 2026-06-25
 
@@ -513,7 +513,7 @@ https://github.com/user-attachments/assets/bccdbf9a-b816-403f-ae1f-6e43b1e295a3
 - 复用角度：适合做 reference-only variant 候选。
 - 视频预览:
 
-https://github.com/user-attachments/assets/dfa129d8-f06b-4018-a5bb-c1ed9e78d0d3
+media/case20.mp4
 
 类型: Limit | 日期: 2026-06-27
 
@@ -528,7 +528,7 @@ https://github.com/user-attachments/assets/dfa129d8-f06b-4018-a5bb-c1ed9e78d0d3
 - 复用角度：适合做 reference video troubleshooting 与 prompt reinforcement 案例。
 - 视频预览:
 
-https://github.com/user-attachments/assets/d333d2d0-8317-49f0-8815-86db783cb578
+media/case25.mp4
 
 类型: Limit | 日期: 2026-06-27
 
@@ -543,7 +543,7 @@ https://github.com/user-attachments/assets/d333d2d0-8317-49f0-8815-86db783cb578
 - 复用角度：适合做 cloth physics / complex motion stress test 案例。
 - 视频预览:
 
-https://github.com/user-attachments/assets/3ab561b2-ef3e-47a5-b2c4-8378a521e491
+media/case28.mp4
 
 类型: Limit | 日期: 2026-06-26
 

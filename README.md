@@ -166,7 +166,7 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/c56d8da8-6ebf-430b-b012-0a85e28c092b
+media/case1.mp4
 
 Type: Demo | Date: 2026-06-29
 
@@ -181,7 +181,7 @@ Type: Demo | Date: 2026-06-29
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/4bbd421d-dc83-4cae-927d-caa0f7aa143a
+media/case2.mp4
 
 Type: Demo | Date: 2026-06-22
 
@@ -196,7 +196,7 @@ Type: Demo | Date: 2026-06-22
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/987cf30d-de8b-4cf1-809a-5deaea8ceff0
+media/case3.mp4
 
 Type: Demo | Date: 2026-06-25
 
@@ -211,7 +211,7 @@ Type: Demo | Date: 2026-06-25
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/5b39d216-e84a-4372-83e6-a636bcf9d2fe
+media/case4.mp4
 
 Type: Demo | Date: 2026-06-26
 
@@ -226,7 +226,7 @@ Type: Demo | Date: 2026-06-26
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/a6304e6a-d431-4cf7-9dd2-f664594e34c5
+media/case5.mp4
 
 Type: Demo | Date: 2026-06-28
 
@@ -244,7 +244,7 @@ Type: Demo | Date: 2026-06-28
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/8f92ed66-1c9f-4fc1-885e-71240add8f56
+media/case6.mp4
 
 Type: Demo | Date: 2026-06-23
 
@@ -259,7 +259,7 @@ Type: Demo | Date: 2026-06-23
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/598b62bd-246c-4699-8a5c-4735b536c380
+Preview unavailable: the original GitHub attachment is no longer publicly accessible.
 
 Type: Demo | Date: 2026-06-26
 
@@ -274,7 +274,7 @@ Type: Demo | Date: 2026-06-26
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/e92e6c44-3fef-4690-bce3-85de50ecf547
+media/case9.mp4
 
 Type: Demo | Date: 2026-06-27
 
@@ -289,7 +289,7 @@ Type: Demo | Date: 2026-06-27
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/a254edb3-245d-4bc0-87cc-45bd17e82b99
+media/case21.mp4
 
 Type: Demo | Date: 2026-06-29
 
@@ -307,7 +307,7 @@ Type: Demo | Date: 2026-06-29
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/cff81cc4-0f72-49d8-881f-aee6ded2d5cf
+media/case10.mp4
 
 Type: Integration | Date: 2026-06-28
 
@@ -322,7 +322,7 @@ Type: Integration | Date: 2026-06-28
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/247ccf17-4652-4c11-b8dc-efdba1567707
+media/case11.mp4
 
 Type: Integration | Date: 2026-06-28
 
@@ -337,7 +337,7 @@ Type: Integration | Date: 2026-06-28
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/e9c22c6f-690f-4b3b-984c-a18506580c38
+media/case22.mp4
 
 Type: Integration | Date: 2026-06-29
 
@@ -355,9 +355,9 @@ Type: Integration | Date: 2026-06-29
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/2dabc892-946a-4879-9af0-0e21386b16a5
+media/case13.mp4
 
-https://github.com/user-attachments/assets/222be6cc-82c7-4953-9abe-70618f6d499b
+media/case13.jpg
 
 Type: Tutorial | Date: 2026-06-27
 
@@ -372,7 +372,7 @@ Type: Tutorial | Date: 2026-06-27
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/3f04e458-a43f-4860-af2b-88eb6dd397cc
+media/case14.mp4
 
 Type: Tutorial | Date: 2026-06-27
 
@@ -387,7 +387,7 @@ Type: Tutorial | Date: 2026-06-27
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/91721f79-eeaf-4309-bc4a-11e8136c6dba
+media/case23.mp4
 
 Type: Tutorial | Date: 2026-06-28
 
@@ -402,7 +402,7 @@ Type: Tutorial | Date: 2026-06-28
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/b6a3f37b-ef8c-46c1-ad53-a822797a7c09
+media/case24.mp4
 
 Type: Demo | Date: 2026-06-26
 
@@ -417,7 +417,7 @@ Type: Demo | Date: 2026-06-26
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/e63c102e-11cf-4381-87fe-8cfe0d96702b
+media/case26.mp4
 
 Type: Demo | Date: 2026-06-28
 
@@ -432,7 +432,7 @@ Type: Demo | Date: 2026-06-28
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/71221c71-a7eb-428f-90e5-4a6111aaf890
+media/case27.mp4
 
 Type: Tutorial | Date: 2026-06-26
 
@@ -450,7 +450,7 @@ Type: Tutorial | Date: 2026-06-26
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/e1df0f87-e93e-4339-b25a-a7ac4c4f8c4e
+media/case15.mp4
 
 Type: Integration | Date: 2026-06-24
 
@@ -465,7 +465,7 @@ Type: Integration | Date: 2026-06-24
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/80143b32-352b-4e86-8c1f-85826d940ba7
+media/case16.mp4
 
 Type: Integration | Date: 2026-06-27
 
@@ -480,7 +480,7 @@ Type: Integration | Date: 2026-06-27
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/13ba8e79-0b0a-44b9-be29-9c850bdeb95a
+media/case17.mp4
 
 Type: Integration | Date: 2026-06-25
 
@@ -495,7 +495,7 @@ Type: Integration | Date: 2026-06-25
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/bccdbf9a-b816-403f-ae1f-6e43b1e295a3
+media/case18.mp4
 
 Type: Integration | Date: 2026-06-25
 
@@ -513,7 +513,7 @@ Type: Integration | Date: 2026-06-25
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/dfa129d8-f06b-4018-a5bb-c1ed9e78d0d3
+media/case20.mp4
 
 Type: Limit | Date: 2026-06-27
 
@@ -528,7 +528,7 @@ Type: Limit | Date: 2026-06-27
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/d333d2d0-8317-49f0-8815-86db783cb578
+media/case25.mp4
 
 Type: Limit | Date: 2026-06-27
 
@@ -543,7 +543,7 @@ Type: Limit | Date: 2026-06-27
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-https://github.com/user-attachments/assets/3ab561b2-ef3e-47a5-b2c4-8378a521e491
+media/case28.mp4
 
 Type: Limit | Date: 2026-06-26
 
