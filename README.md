@@ -43,7 +43,7 @@ Start from the EvoLink Blender-to-video cookbook, then use the Quick Start below
 > The collection favors concrete workflow evidence over hype: source-backed steps, reference-video methods, agent/MCP usage, reproducible constraints, and clearly stated limits.
 
 <a id="quick-start"></a>
-## ⚡ Quick Start Workflow
+## ⚡ Quick Start
 
 Set up the local Blender control path first, then install the EvoLink skills your agent will call.
 

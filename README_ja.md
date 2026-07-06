@@ -43,7 +43,7 @@ EvoLink の Blender-to-video cookbook から始め、下の Quick Start を repo
 > このコレクションは宣伝よりも具体的な証拠を優先します。手順、参照動画、agent/MCP 利用、再現条件、明確な制限を重視します。
 
 <a id="quick-start"></a>
-## ⚡ Quick Start Workflow
+## ⚡ Quick Start
 
 まず Blender を agent から制御できる状態にし、その後 agent が呼び出す EvoLink skill を入れます。
 

@@ -43,7 +43,7 @@ EvoLink Blender-to-video cookbook ile başlayın; aşağıdaki Quick Start'ı re
 > Koleksiyon abartı yerine somut kanıtı öne çıkarır: adımlar, referans videolar, agent/MCP kullanımı, yeniden üretilebilir koşullar ve net sınırlar.
 
 <a id="quick-start"></a>
-## ⚡ Hızlı başlangıç workflow'u
+## ⚡ Quick Start
 
 Önce yerel Blender kontrol yolunu kurun, ardından agent'ın çağıracağı EvoLink skill'lerini yükleyin.
 

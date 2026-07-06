@@ -43,7 +43,7 @@ Blender + Seedance 使用案例仓库。
 > 这个集合优先保留具体证据：步骤、参考视频、agent/MCP 用法、可复现条件和明确限制，而不是空泛宣传。
 
 <a id="quick-start"></a>
-## ⚡ Quick Start 工作流
+## ⚡ Quick Start
 
 先把本地 Blender 控制链路搭好，再安装 agent 会调用的 EvoLink skills。
 

@@ -43,7 +43,7 @@ Commencez par le cookbook Blender-to-video d'EvoLink, puis utilisez le Quick Sta
 > La collection privilégie les preuves concrètes: étapes, vidéos de référence, usage agent/MCP, contraintes reproductibles et limites explicites.
 
 <a id="quick-start"></a>
-## ⚡ Workflow de démarrage rapide
+## ⚡ Quick Start
 
 Configurez d'abord le contrôle local de Blender, puis installez les skills EvoLink que votre agent appellera.
 
