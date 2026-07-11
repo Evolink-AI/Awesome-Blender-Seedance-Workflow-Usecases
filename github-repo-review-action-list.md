@@ -48,7 +48,7 @@ Review mode: Review + Fix + weekly automation readiness
   - Owner: Repository maintainer
   - Expected result: Readers can move from examples to verified execution surfaces.
 
-- [ ] Expand GitHub topics with Blender and workflow discovery terms.
+- [x] Expand GitHub topics with Blender and workflow discovery terms.
   - Why: Current topics cover Seedance variants but omit `blender`, `blender-mcp`, `ai-filmmaking`, `previs`, and `video-workflow`.
   - Owner: Repository maintainer
   - Expected result: Repository metadata aligns with its description and user search intent.
@@ -62,7 +62,7 @@ Review mode: Review + Fix + weekly automation readiness
 
 ## Notes
 
-- Blockers: final public-surface and rendered GitHub/camo audit after push.
+- Blockers: none; the final public-surface and rendered GitHub/camo audit passed after push.
 - Out of scope: API/Skill release work and changes to model availability or pricing.
-- Follow-up check: Activate the weekly schedule only after every P0 item passes.
+- Follow-up check: weekly schedule may be activated; every P0/P1 readiness item has passed.
 - Link copy issues: The Quick Start API-key action is clear; old-owner repository links were corrected locally.
