@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=banner"><img src="images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
 [![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=use_on_evolink_badge)
@@ -166,7 +166,7 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case1.mp4
+[![Play demo video — Case 1](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case1.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case1.mp4)
 
 Type: Demo | Date: 2026-06-29
 
@@ -181,7 +181,7 @@ Type: Demo | Date: 2026-06-29
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case2.mp4
+[![Play demo video — Case 2](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case2.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case2.mp4)
 
 Type: Demo | Date: 2026-06-22
 
@@ -196,7 +196,7 @@ Type: Demo | Date: 2026-06-22
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case3.mp4
+[![Play demo video — Case 3](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case3.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case3.mp4)
 
 Type: Demo | Date: 2026-06-25
 
@@ -211,7 +211,7 @@ Type: Demo | Date: 2026-06-25
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case4.mp4
+[![Play demo video — Case 4](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case4.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case4.mp4)
 
 Type: Demo | Date: 2026-06-26
 
@@ -226,7 +226,7 @@ Type: Demo | Date: 2026-06-26
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case5.mp4
+[![Play demo video — Case 5](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case5.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case5.mp4)
 
 Type: Demo | Date: 2026-06-28
 
@@ -244,7 +244,7 @@ Type: Demo | Date: 2026-06-28
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case6.mp4
+[![Play demo video — Case 6](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case6.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case6.mp4)
 
 Type: Demo | Date: 2026-06-23
 
@@ -274,7 +274,7 @@ Type: Demo | Date: 2026-06-26
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case9.mp4
+[![Play demo video — Case 9](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case9.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case9.mp4)
 
 Type: Demo | Date: 2026-06-27
 
@@ -289,7 +289,7 @@ Type: Demo | Date: 2026-06-27
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case21.mp4
+[![Play demo video — Case 21](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case21.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case21.mp4)
 
 Type: Demo | Date: 2026-06-29
 
@@ -307,7 +307,7 @@ Type: Demo | Date: 2026-06-29
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case10.mp4
+[![Play demo video — Case 10](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case10.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case10.mp4)
 
 Type: Integration | Date: 2026-06-28
 
@@ -322,7 +322,7 @@ Type: Integration | Date: 2026-06-28
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case11.mp4
+[![Play demo video — Case 11](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case11.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case11.mp4)
 
 Type: Integration | Date: 2026-06-28
 
@@ -337,7 +337,7 @@ Type: Integration | Date: 2026-06-28
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case22.mp4
+[![Play demo video — Case 22](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case22.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case22.mp4)
 
 Type: Integration | Date: 2026-06-29
 
@@ -355,9 +355,9 @@ Type: Integration | Date: 2026-06-29
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case13.mp4
+[![Play demo video — Case 13](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case13.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case13.mp4)
 
-media/case13.jpg
+![Reference image — Case 13](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case13.jpg)
 
 Type: Tutorial | Date: 2026-06-27
 
@@ -372,7 +372,7 @@ Type: Tutorial | Date: 2026-06-27
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case14.mp4
+[![Play demo video — Case 14](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case14.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case14.mp4)
 
 Type: Tutorial | Date: 2026-06-27
 
@@ -387,7 +387,7 @@ Type: Tutorial | Date: 2026-06-27
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case23.mp4
+[![Play demo video — Case 23](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case23.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case23.mp4)
 
 Type: Tutorial | Date: 2026-06-28
 
@@ -402,7 +402,7 @@ Type: Tutorial | Date: 2026-06-28
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case24.mp4
+[![Play demo video — Case 24](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case24.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case24.mp4)
 
 Type: Demo | Date: 2026-06-26
 
@@ -417,7 +417,7 @@ Type: Demo | Date: 2026-06-26
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case26.mp4
+[![Play demo video — Case 26](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case26.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case26.mp4)
 
 Type: Demo | Date: 2026-06-28
 
@@ -432,7 +432,7 @@ Type: Demo | Date: 2026-06-28
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case27.mp4
+[![Play demo video — Case 27](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case27.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case27.mp4)
 
 Type: Tutorial | Date: 2026-06-26
 
@@ -450,7 +450,7 @@ Type: Tutorial | Date: 2026-06-26
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case15.mp4
+[![Play demo video — Case 15](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case15.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case15.mp4)
 
 Type: Integration | Date: 2026-06-24
 
@@ -465,7 +465,7 @@ Type: Integration | Date: 2026-06-24
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case16.mp4
+[![Play demo video — Case 16](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case16.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case16.mp4)
 
 Type: Integration | Date: 2026-06-27
 
@@ -480,7 +480,7 @@ Type: Integration | Date: 2026-06-27
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case17.mp4
+[![Play demo video — Case 17](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case17.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case17.mp4)
 
 Type: Integration | Date: 2026-06-25
 
@@ -495,7 +495,7 @@ Type: Integration | Date: 2026-06-25
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case18.mp4
+[![Play demo video — Case 18](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case18.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case18.mp4)
 
 Type: Integration | Date: 2026-06-25
 
@@ -513,7 +513,7 @@ Type: Integration | Date: 2026-06-25
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case20.mp4
+[![Play demo video — Case 20](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case20.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case20.mp4)
 
 Type: Limit | Date: 2026-06-27
 
@@ -528,7 +528,7 @@ Type: Limit | Date: 2026-06-27
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case25.mp4
+[![Play demo video — Case 25](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case25.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case25.mp4)
 
 Type: Limit | Date: 2026-06-27
 
@@ -543,11 +543,18 @@ Type: Limit | Date: 2026-06-27
 - Audit status: kept after manual duplicate and originality review.
 - Video preview:
 
-media/case28.mp4
+[![Play demo video — Case 28](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case28.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case28.mp4)
 
 Type: Limit | Date: 2026-06-26
 
 ---
+
+<a id="related-repositories"></a>
+## 🔗 Related Repositories
+
+- [Browse Seedance 2.0 prompts](https://github.com/Evolink-AI/awesome-seedance-2.0-prompts)
+- [Install the Seedance 2 agent skill](https://github.com/Evolink-AI/seedance2-video-gen-skill-for-openclaw)
+- [Explore the GPT Image 2 to Seedance 2 workflow](https://github.com/Evolink-AI/GPT-Image-2-Seedance2-Workflow)
 
 <a id="acknowledge"></a>
 ## 🙏 Acknowledge
@@ -558,7 +565,7 @@ This repository was inspired by creators who publicly shared Blender + Seedance 
 
 *We cannot guarantee that every case is attributed to the original creator. If anything needs to be corrected, please contact us and we will update it.*
 
-Have a Blender + Seedance workflow to add? [Open a use case issue](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/issues/new?template=use-case.yml) with the [issue template file](.github/ISSUE_TEMPLATE/use-case.yml), or open a pull request with the [PR template](.github/PULL_REQUEST_TEMPLATE.md).
+Have a Blender + Seedance workflow to add? [Open a use case issue](https://github.com/Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases/issues/new?template=use-case.yml) with the [issue template file](.github/ISSUE_TEMPLATE/use-case.yml), or open a pull request with the [PR template](.github/PULL_REQUEST_TEMPLATE.md).
 
-[![Star History Chart](https://api.star-history.com/svg?repos=cheercheung/Awesome-Blender-Seedance-Workflow-Usecases&type=Date)](https://www.star-history.com/#cheercheung/Awesome-Blender-Seedance-Workflow-Usecases&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases&type=Date)](https://www.star-history.com/#Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases&Date)
 

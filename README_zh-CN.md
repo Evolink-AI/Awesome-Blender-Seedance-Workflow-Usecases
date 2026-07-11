@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=banner"><img src="images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
 [![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=use_on_evolink_badge)
@@ -166,7 +166,7 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 - 复用角度：可直接改写成“用 Blender blockout 精准导演 AI 镜头”的主 use case。
 - 视频预览:
 
-media/case1.mp4
+[![播放演示视频 — Case 1](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case1.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case1.mp4)
 
 类型: Demo | 日期: 2026-06-29
 
@@ -181,7 +181,7 @@ media/case1.mp4
 - 复用角度：适合做 precision camera control 的基础案例。
 - 视频预览:
 
-media/case2.mp4
+[![播放演示视频 — Case 2](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case2.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case2.mp4)
 
 类型: Demo | 日期: 2026-06-22
 
@@ -196,7 +196,7 @@ media/case2.mp4
 - 复用角度：适合做多输入相机控制 case。
 - 视频预览:
 
-media/case3.mp4
+[![播放演示视频 — Case 3](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case3.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case3.mp4)
 
 类型: Demo | 日期: 2026-06-25
 
@@ -211,7 +211,7 @@ media/case3.mp4
 - 复用角度：适合做 viewport preview → Seedance 的短教程案例。
 - 视频预览:
 
-media/case4.mp4
+[![播放演示视频 — Case 4](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case4.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case4.mp4)
 
 类型: Demo | 日期: 2026-06-26
 
@@ -226,7 +226,7 @@ media/case4.mp4
 - 复用角度：适合做 style/world variation case。
 - 视频预览:
 
-media/case5.mp4
+[![播放演示视频 — Case 5](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case5.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case5.mp4)
 
 类型: Demo | 日期: 2026-06-28
 
@@ -244,7 +244,7 @@ media/case5.mp4
 - 复用角度：适合做多角色表演/对话场景 use case。
 - 视频预览:
 
-media/case6.mp4
+[![播放演示视频 — Case 6](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case6.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case6.mp4)
 
 类型: Demo | 日期: 2026-06-23
 
@@ -259,7 +259,7 @@ media/case6.mp4
 - 复用角度：适合做手持跟拍、角色移动穿越空间的案例。
 - 视频预览:
 
-Preview unavailable: the original GitHub attachment is no longer publicly accessible.
+预览不可用：原始 GitHub 附件已无法公开访问。
 
 类型: Demo | 日期: 2026-06-26
 
@@ -274,7 +274,7 @@ Preview unavailable: the original GitHub attachment is no longer publicly access
 - 复用角度：适合做动作场景 tactical blocking case。
 - 视频预览:
 
-media/case9.mp4
+[![播放演示视频 — Case 9](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case9.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case9.mp4)
 
 类型: Demo | 日期: 2026-06-27
 
@@ -289,7 +289,7 @@ media/case9.mp4
 - 复用角度：适合做复杂场景先解决 staging、timing 和 camera movement，再生成镜头的案例。
 - 视频预览:
 
-media/case21.mp4
+[![播放演示视频 — Case 21](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case21.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case21.mp4)
 
 类型: Demo | 日期: 2026-06-29
 
@@ -307,7 +307,7 @@ media/case21.mp4
 - 复用角度：适合做 Agentic Blender MCP + Seedance use case。
 - 视频预览:
 
-media/case10.mp4
+[![播放演示视频 — Case 10](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case10.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case10.mp4)
 
 类型: Integration | 日期: 2026-06-28
 
@@ -322,7 +322,7 @@ media/case10.mp4
 - 复用角度：适合做 Codex-assisted camera work case。
 - 视频预览:
 
-media/case11.mp4
+[![播放演示视频 — Case 11](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case11.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case11.mp4)
 
 类型: Integration | 日期: 2026-06-28
 
@@ -337,7 +337,7 @@ media/case11.mp4
 - 复用角度：适合做 agent 快速搭建镜头预演的短案例。
 - 视频预览:
 
-media/case22.mp4
+[![播放演示视频 — Case 22](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case22.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case22.mp4)
 
 类型: Integration | 日期: 2026-06-29
 
@@ -355,9 +355,9 @@ media/case22.mp4
 - 复用角度：适合做可复现 prompt/source case。
 - 视频预览:
 
-media/case13.mp4
+[![播放演示视频 — Case 13](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case13.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case13.mp4)
 
-media/case13.jpg
+![参考图像 — Case 13](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case13.jpg)
 
 类型: Tutorial | 日期: 2026-06-27
 
@@ -372,7 +372,7 @@ media/case13.jpg
 - 复用角度：适合做 beginner motion-source case。
 - 视频预览:
 
-media/case14.mp4
+[![播放演示视频 — Case 14](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case14.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case14.mp4)
 
 类型: Tutorial | 日期: 2026-06-27
 
@@ -387,7 +387,7 @@ media/case14.mp4
 - 复用角度：适合做 reference adherence 调参案例。
 - 视频预览:
 
-media/case23.mp4
+[![播放演示视频 — Case 23](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case23.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case23.mp4)
 
 类型: Tutorial | 日期: 2026-06-28
 
@@ -402,7 +402,7 @@ media/case23.mp4
 - 复用角度：适合做 physical previs / toy reference 的轻量替代案例。
 - 视频预览:
 
-media/case24.mp4
+[![播放演示视频 — Case 24](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case24.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case24.mp4)
 
 类型: Demo | 日期: 2026-06-26
 
@@ -417,7 +417,7 @@ media/case24.mp4
 - 复用角度：适合做“prompt 失败时用 reference 兜底”的案例。
 - 视频预览:
 
-media/case26.mp4
+[![播放演示视频 — Case 26](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case26.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case26.mp4)
 
 类型: Demo | 日期: 2026-06-28
 
@@ -432,7 +432,7 @@ media/case26.mp4
 - 复用角度：适合做 Blender/参考视频的稳定性 checklist。
 - 视频预览:
 
-media/case27.mp4
+[![播放演示视频 — Case 27](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case27.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case27.mp4)
 
 类型: Tutorial | 日期: 2026-06-26
 
@@ -450,7 +450,7 @@ media/case27.mp4
 - 复用角度：适合做 multi-agent creative pipeline 候选。
 - 视频预览:
 
-media/case15.mp4
+[![播放演示视频 — Case 15](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case15.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case15.mp4)
 
 类型: Integration | 日期: 2026-06-24
 
@@ -465,7 +465,7 @@ media/case15.mp4
 - 复用角度：适合做 Blender MCP + style transfer 主案例。
 - 视频预览:
 
-media/case16.mp4
+[![播放演示视频 — Case 16](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case16.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case16.mp4)
 
 类型: Integration | 日期: 2026-06-27
 
@@ -480,7 +480,7 @@ media/case16.mp4
 - 复用角度：适合作为 anime/render pipeline case。
 - 视频预览:
 
-media/case17.mp4
+[![播放演示视频 — Case 17](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case17.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case17.mp4)
 
 类型: Integration | 日期: 2026-06-25
 
@@ -495,7 +495,7 @@ media/case17.mp4
 - 复用角度：适合做 FBX/Mixamo 动画参考流程。
 - 视频预览:
 
-media/case18.mp4
+[![播放演示视频 — Case 18](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case18.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case18.mp4)
 
 类型: Integration | 日期: 2026-06-25
 
@@ -513,7 +513,7 @@ media/case18.mp4
 - 复用角度：适合做 reference-only variant 候选。
 - 视频预览:
 
-media/case20.mp4
+[![播放演示视频 — Case 20](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case20.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case20.mp4)
 
 类型: Limit | 日期: 2026-06-27
 
@@ -528,7 +528,7 @@ media/case20.mp4
 - 复用角度：适合做 reference video troubleshooting 与 prompt reinforcement 案例。
 - 视频预览:
 
-media/case25.mp4
+[![播放演示视频 — Case 25](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case25.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case25.mp4)
 
 类型: Limit | 日期: 2026-06-27
 
@@ -543,22 +543,28 @@ media/case25.mp4
 - 复用角度：适合做 cloth physics / complex motion stress test 案例。
 - 视频预览:
 
-media/case28.mp4
+[![播放演示视频 — Case 28](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case28.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case28.mp4)
 
 类型: Limit | 日期: 2026-06-26
 
 ---
 
+<a id="related-repositories"></a>
+## 🔗 相关仓库
+
+- [查看 Seedance 2.0 提示词](https://github.com/Evolink-AI/awesome-seedance-2.0-prompts)
+- [安装 Seedance 2 Agent Skill](https://github.com/Evolink-AI/seedance2-video-gen-skill-for-openclaw)
+- [查看 GPT Image 2 到 Seedance 2 工作流](https://github.com/Evolink-AI/GPT-Image-2-Seedance2-Workflow)
+
 <a id="acknowledge"></a>
 ## 🙏 致谢
 
-This repository was inspired by creators who publicly shared Blender + Seedance workflows, tests, prompts, reference videos, and production notes.
+感谢所有公开分享 Blender + Seedance 工作流、测试、提示词、参考视频和制作笔记的创作者，他们的实践启发了这个仓库。
 
 [@noman23761](https://x.com/noman23761), [@reidhannaford](https://x.com/reidhannaford), [@JMSvid](https://x.com/JMSvid), [@DiabloNemesis](https://x.com/DiabloNemesis), [@koldo2k](https://x.com/koldo2k), [@SamJWasserman](https://x.com/SamJWasserman), [@akiyoshisan](https://x.com/akiyoshisan), [@6_KAKUU](https://x.com/6_KAKUU), [@aidoga_lab](https://x.com/aidoga_lab), [@tanabe_fragm](https://x.com/tanabe_fragm), [@techhalla](https://x.com/techhalla), [@restofart](https://x.com/restofart), [@Viggle_PINOC](https://x.com/Viggle_PINOC), [@magneticskiff](https://x.com/magneticskiff), [@JoshDaws](https://x.com/JoshDaws), [@kan_mi_no9](https://x.com/kan_mi_no9), [@gcduncombe](https://x.com/gcduncombe), [@tea_story_hoshi](https://x.com/tea_story_hoshi), [@craftcapitallab](https://x.com/craftcapitallab), [@fatboypink](https://x.com/fatboypink)
 
-*We cannot guarantee that every case is attributed to the original creator. If anything needs to be corrected, please contact us and we will update it.*
+*我们无法保证每个案例都准确归属于最初的创作者。如有需要更正之处，请联系我们，我们会及时更新。*
 
-Have a Blender + Seedance workflow to add? [Open a use case issue](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/issues/new?template=use-case.yml) with the [issue template file](.github/ISSUE_TEMPLATE/use-case.yml), or open a pull request with the [PR template](.github/PULL_REQUEST_TEMPLATE.md).
+想补充 Blender + Seedance 工作流？可以[提交 use case issue](https://github.com/Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases/issues/new?template=use-case.yml)，参考 [issue 模板](.github/ISSUE_TEMPLATE/use-case.yml)；也可以使用 [PR 模板](.github/PULL_REQUEST_TEMPLATE.md)提交 pull request。
 
-[![Star History Chart](https://api.star-history.com/svg?repos=cheercheung/Awesome-Blender-Seedance-Workflow-Usecases&type=Date)](https://www.star-history.com/#cheercheung/Awesome-Blender-Seedance-Workflow-Usecases&Date)
-
+[![Star History Chart](https://api.star-history.com/svg?repos=Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases&type=Date)](https://www.star-history.com/#Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases&Date)

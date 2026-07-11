@@ -1,7 +1,7 @@
 # GitHub About Metadata
 
 These fields are the intended GitHub repository About settings for
-`cheercheung/Awesome-Blender-Seedance-Workflow-Usecases`.
+`Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases`.
 
 ## Description
 
@@ -9,7 +9,7 @@ Curated Blender + Seedance workflows for AI filmmaking: previs, camera control, 
 
 ## Website
 
-https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases#quick-start
+https://github.com/Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases#quick-start
 
 ## Topics
 
@@ -34,9 +34,9 @@ https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases#quick-
 Requires an account with repository settings permission.
 
 ```bash
-gh repo edit cheercheung/Awesome-Blender-Seedance-Workflow-Usecases \
+gh repo edit Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases \
   --description "Curated Blender + Seedance workflows for AI filmmaking: previs, camera control, Blender MCP, reference video, and agent-guided use cases." \
-  --homepage "https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases#quick-start" \
+  --homepage "https://github.com/Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases#quick-start" \
   --add-topic blender \
   --add-topic seedance \
   --add-topic seedance-2 \

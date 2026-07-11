@@ -17,7 +17,7 @@
       "limitations": 3
     },
     "cta_status": "primary CTA set to https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=metadata&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=curated_json",
-    "publication_status": "existing target repository; push to cheercheung/Awesome-Blender-Seedance-Workflow-Usecases approved after local verification; no new repository creation approved",
+    "publication_status": "existing target repository; push to Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases approved after local verification; no new repository creation approved",
     "audit": "docs/usecase-originality-audit.md",
     "video_source_map": "data/usecase-video-sources.json"
   },

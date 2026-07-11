@@ -7,7 +7,13 @@
 - Owner-provided video source map: `data/usecase-video-sources.json`
 - Manual originality audit: `docs/usecase-originality-audit.md`
 - GitHub About metadata proposal: `docs/github-about.md`
-- Downloaded public media: `media/caseN.mp4`
+- Local source media: `media/caseN.mp4`
+- Public media origin: R2 under `github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/`
+- Media inventory: [`docs/media-type-inventory.md`](media-type-inventory.md)
+- R2 origin audit: [`docs/r2-upload-report.md`](r2-upload-report.md)
+- Video poster report: [`docs/video-poster-report.md`](video-poster-report.md)
+
+`scripts/generate_repo.py` is a legacy scaffold generator, not the recurring-update entry point. Do not run it during weekly updates: its original source package does not contain all 10 current language translations. Weekly runs update curated data and English first, then apply and audit language-specific translations without overwriting existing localized prose.
 
 ## Current State
 
@@ -28,17 +34,31 @@ Each public case must include:
 - Creator attribution
 - Bold usage takeaway
 - Source-grounded notes
-- Local media links when the source data exposes media
-- Direct GitHub attachment video URLs when the owner-provided video map exposes playable previews
+- R2-hosted reference images when the source data exposes media
+- R2-hosted poster frames linked to playable R2 video URLs
 - `Type: ... | Date: YYYY-MM-DD`
 
 Never invent prompts, results, benchmark claims, availability, pricing, or creator attribution.
 Do not re-add removed candidates without updating the audit file.
 
+## Recurring Update Contract
+
+- Detailed contract: [`docs/weekly-update-contract.md`](weekly-update-contract.md)
+- Readiness actions: [`github-repo-review-action-list.md`](../github-repo-review-action-list.md)
+- Schedule: every Monday at 11:00 Asia/Shanghai.
+- Candidate window: the seven days ending at the collector's fixed `collected_at` timestamp.
+- Selection cap: at most 10 `high_confidence_update` cases; never fill the cap with weak items.
+- Exclusions: prompt-only posts, promotion-only posts, reposts, duplicates, unverifiable claims, and candidates that still need human judgment.
+- Existing public anchors are a recorded legacy namespace. Preserve the current 25 case numbers and append new cases contiguously from `Case 29`.
+- Update English first, pass the English gate, then update all 10 localized READMEs with real visible-text translation.
+- A modification run succeeds only after audit, commit, push to `main`, and remote readback. A low-quality week may end as a verified no-op with counts and reasons.
+- Run-local curation and audit artifacts stay under `.codex/usecase-update-loop/` and must not be committed.
+
 ## Validation
 
 ```bash
 python3 scripts/verify_repo.py
+python3 "${CODEX_HOME:-$HOME/.codex}/skills/model-repo-pipeline/bundled-skills/usecase-update-loop/scripts/verify_usecase_update.py" --repo .
 git diff --check
 ```
 

@@ -4,11 +4,13 @@ from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
+R2_MEDIA_BASE = 'https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media'
+R2_BANNER_URL = 'https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/images/banner.png'
 FILES = ['README.md', 'README_es.md', 'README_pt.md', 'README_ja.md', 'README_ko.md', 'README_de.md', 'README_fr.md', 'README_tr.md', 'README_zh-TW.md', 'README_zh-CN.md', 'README_ru.md']
-EXPECTED_CASES = 25
+EXPECTED_CASES = None
 EXPECTED_IMAGES = ['images/banner.png']
 EXPECTED_VIDEO_LABELS = ['case1', 'case2', 'case3', 'case4', 'case5', 'case6', 'case8', 'case9', 'case10', 'case11', 'case13', 'case14', 'case15', 'case16', 'case17', 'case18', 'case19', 'case20', 'case21', 'case22', 'case23', 'case24', 'case25', 'case26', 'case27', 'case28']
-EXPECTED_README_CTAS = ['https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=banner', 'https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=use_on_evolink_badge', 'https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=mcp_skill_badge', 'https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=agent_workflow_badge', 'https://evolink.ai/signup?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=quick_start_api_key']
+EXPECTED_README_CTAS = ['https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=banner', 'https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=use_on_evolink_badge', 'https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=mcp_skill_badge', 'https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=agent_workflow_badge', 'https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key']
 EXPECTED_ISSUE_CONTACT = 'https://evolink.ai?utm_source=github&utm_medium=issue_template&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=contact_link'
 UTM_CAMPAIGN = 'awesome-blender-seedance-workflow-usecases'
 
@@ -16,6 +18,7 @@ def fail(msg):
     raise SystemExit(f"FAIL: {msg}")
 
 curated = json.loads((ROOT / "blender-seedance-usecase-curated.json").read_text())
+EXPECTED_CASES = len(curated["items"])
 if curated["metadata"].get("selected_count") != EXPECTED_CASES:
     fail("curated selected_count does not match README case count")
 expected_labels = [str(item["case"]) for item in curated["items"]]
@@ -26,6 +29,8 @@ for file in FILES:
     if not p.exists():
         fail(f"missing {file}")
     text = p.read_text()
+    if R2_BANNER_URL not in text:
+        fail(f"{file} missing configured shared R2 banner")
     anchors = re.findall(r'^<a id="case-([0-9]+)"></a>', text, re.M)
     heads = re.findall(r'^### Case ([0-9]+): \[', text, re.M)
     if len(anchors) != EXPECTED_CASES:
@@ -36,7 +41,7 @@ for file in FILES:
         fail(f"{file} contains duplicate case anchors")
     if set(anchors) != expected_label_set:
         fail(f"{file} anchors do not match curated case labels")
-    if "## 📊" not in text or "## ⚡" not in text or "## 📑" not in text or "## 🙏" not in text:
+    if "## 📊" not in text or "## ⚡" not in text or "## 📑" not in text or '<a id="related-repositories"></a>' not in text or "## 🙏" not in text:
         fail(f"{file} missing required usecase sections")
     if text.count("| Date: ") + text.count("| Fecha: ") + text.count("| Data: ") + text.count("| Datum: ") + text.count("| Tarih: ") + text.count("| 日期: ") + text.count("| Дата: ") < EXPECTED_CASES:
         fail(f"{file} missing Type/Date metadata lines")
@@ -53,7 +58,7 @@ for img in EXPECTED_IMAGES:
     if not (ROOT / img).exists():
         fail(f"missing {img}")
 
-for required in ["LICENSE", "CONTRIBUTING.md", "docs/maintenance.md", ".github/PULL_REQUEST_TEMPLATE.md", ".github/ISSUE_TEMPLATE/config.yml", ".github/ISSUE_TEMPLATE/use-case.yml", "blender-seedance-usecase-curated.json", "data/usecase-video-sources.json", "images/banner.png"]:
+for required in ["LICENSE", "CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "SECURITY.md", "docs/maintenance.md", "docs/media-type-inventory.md", "docs/r2-upload-report.md", "docs/video-poster-report.md", ".github/PULL_REQUEST_TEMPLATE.md", ".github/ISSUE_TEMPLATE/config.yml", ".github/ISSUE_TEMPLATE/use-case.yml", "blender-seedance-usecase-curated.json", "data/usecase-video-sources.json", "images/banner.png"]:
     if not (ROOT / required).exists():
         fail(f"missing {required}")
 
@@ -89,8 +94,15 @@ for item in curated["items"]:
 
 for file in FILES:
     text = (ROOT / file).read_text()
-    for row in video_sources["items"]:
-        if row["attachment_url"] not in text:
-            fail(f"{file} missing direct video attachment URL {row['case_label']}")
+    if re.search(r'^media/[^\s]+$', text, re.M):
+        fail(f"{file} still exposes repository-local bare media paths")
+    video_names = re.findall(re.escape(R2_MEDIA_BASE) + r'/(case\d+)\.mp4', text)
+    poster_names = re.findall(re.escape(R2_MEDIA_BASE) + r'/posters/(case\d+)\.jpg', text)
+    if len(video_names) != 24:
+        fail(f"{file} has {len(video_names)} R2 video links, expected 24")
+    if sorted(video_names) != sorted(poster_names):
+        fail(f"{file} R2 video and poster sets differ")
+    if f"{R2_MEDIA_BASE}/case13.jpg" not in text:
+        fail(f"{file} missing R2 reference image for case13")
 
-print(f"PASS: {len(FILES)} README files, {EXPECTED_CASES} cases each, {len(media_paths)} media files linked, {len(video_sources['items'])} direct video URLs embedded")
+print(f"PASS: {len(FILES)} README files, {EXPECTED_CASES} cases each, 24 R2 video/poster pairs per README, {len(media_paths)} source media files inventoried")

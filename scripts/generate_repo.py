@@ -16,7 +16,7 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "data" / "primary-use-case-posts.json"
 REPO = "Awesome-Blender-Seedance-Workflow-Usecases"
-OWNER = "cheercheung"
+OWNER = "Evolink-AI"
 MODEL = "Blender + Seedance"
 MODEL_ID = "seedance-2.0-reference-to-video"
 EVOLINK_SCHEME = "https"
@@ -25,6 +25,14 @@ EVOLINK_HOST = f"{EVOLINK_SCHEME}://{EVOLINK_DOMAIN}"
 CTA_PATH = "/cookbook/blender-to-video"
 UTM_CAMPAIGN = "awesome-blender-seedance-workflow-usecases"
 RAW_MEDIA_BASE = f"https://github.com/{OWNER}/{REPO}/raw/main/"
+R2_MEDIA_BASE = (
+    "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/"
+    f"github-repo-media/{REPO}/media"
+)
+R2_BANNER_URL = (
+    "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/"
+    f"github-repo-media/{REPO}/images/banner.png"
+)
 BANNER_SOURCE = ROOT / "images" / "banner.png"
 
 
@@ -45,7 +53,7 @@ CTA_URLS = {
     "maintenance": evolink_url(CTA_PATH, medium="docs", content="maintenance_primary_cta"),
     "metadata": evolink_url(CTA_PATH, medium="metadata", content="curated_json"),
     "issue_contact": evolink_url("", medium="issue_template", content="contact_link"),
-    "api_key_quick_start": evolink_url("/signup", medium="readme", content="quick_start_api_key"),
+    "api_key_quick_start": evolink_url("/dashboard/keys", medium="readme", content="api_key"),
 }
 
 LANGS = [
@@ -1227,17 +1235,45 @@ def media_notes(record: dict, lang: str) -> str:
         "zh-TW": "影片預覽",
         "ru": "Предпросмотр видео",
     }[lang]
-    video_urls = [VIDEO_ATTACHMENT_BY_LOCAL_MEDIA[path] for path in links if path in VIDEO_ATTACHMENT_BY_LOCAL_MEDIA]
-    case_url = VIDEO_ATTACHMENT_BY_CASE_LABEL.get(f"case{record['case']}")
-    if case_url and case_url not in video_urls:
-        video_urls.append(case_url)
-    if not video_urls:
-        return ""
+    play_label = {
+        "en": "Play demo video",
+        "es": "Reproducir video de demostración",
+        "pt": "Reproduzir vídeo de demonstração",
+        "ja": "デモ動画を再生",
+        "ko": "데모 동영상 재생",
+        "de": "Demovideo abspielen",
+        "fr": "Lire la vidéo de démonstration",
+        "tr": "Demo videosunu oynat",
+        "zh-CN": "播放演示视频",
+        "zh-TW": "播放示範影片",
+        "ru": "Воспроизвести демонстрационное видео",
+    }[lang]
+    image_label = {
+        "en": "Reference image",
+        "es": "Imagen de referencia",
+        "pt": "Imagem de referência",
+        "ja": "参照画像",
+        "ko": "참조 이미지",
+        "de": "Referenzbild",
+        "fr": "Image de référence",
+        "tr": "Referans görseli",
+        "zh-CN": "参考图像",
+        "zh-TW": "參考圖片",
+        "ru": "Референсное изображение",
+    }[lang]
+    if not links:
+        return f"- {preview_label}:\n\nPreview unavailable: the original public media is no longer accessible."
     parts = []
     parts.append(f"- {preview_label}:")
     parts.append("")
-    for url in video_urls:
-        parts.append(url)
+    for path in links:
+        name = Path(path).name
+        url = f"{R2_MEDIA_BASE}/{name}"
+        if name.lower().endswith(".mp4"):
+            poster = f"{R2_MEDIA_BASE}/posters/{Path(name).stem}.jpg"
+            parts.append(f"[![{play_label} — Case {record['case']}]({poster})]({url})")
+        else:
+            parts.append(f"![{image_label} — Case {record['case']}]({url})")
         parts.append("")
     return "\n".join(parts).rstrip()
 
@@ -1318,7 +1354,7 @@ def video_source_records(records: list[dict]) -> list[dict]:
 def render_badges(img_path: str) -> str:
     return f"""<div align="center">
 
-<a href="{CTA_URLS['banner']}"><img src="{img_path}" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="{CTA_URLS['banner']}"><img src="{R2_BANNER_URL}" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
 [![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)]({CTA_URLS['use_on_evolink']})
@@ -1484,7 +1520,7 @@ def render_cases(labels: dict, items: list[dict], lang: str) -> str:
     return "\n".join(chunks).rstrip()
 
 
-def render_ack(labels: dict, records: list[dict]) -> str:
+def render_ack(labels: dict, records: list[dict], lang: str) -> str:
     creators = []
     seen = set()
     for record in records:
@@ -1492,18 +1528,87 @@ def render_ack(labels: dict, records: list[dict]) -> str:
             seen.add(record["author"])
             creators.append(f"[{record['author']}]({record['author_url']})")
     creator_line = ", ".join(creators)
+    intro = {
+        "en": "This repository was inspired by creators who publicly shared Blender + Seedance workflows, tests, prompts, reference videos, and production notes.",
+        "es": "Este repositorio se inspira en quienes compartieron públicamente flujos, pruebas, prompts, videos de referencia y notas de producción de Blender + Seedance.",
+        "pt": "Este repositório foi inspirado por criadores que compartilharam publicamente fluxos, testes, prompts, vídeos de referência e notas de produção de Blender + Seedance.",
+        "ja": "このリポジトリは、Blender + Seedance のワークフロー、検証、プロンプト、参照動画、制作メモを公開したクリエイターの知見から着想を得ています。",
+        "ko": "이 저장소는 Blender + Seedance 워크플로, 테스트, 프롬프트, 참조 영상, 제작 노트를 공개한 크리에이터들의 작업에서 영감을 받았습니다.",
+        "de": "Dieses Repository wurde von Kreativen inspiriert, die Blender- und Seedance-Workflows, Tests, Prompts, Referenzvideos und Produktionsnotizen öffentlich geteilt haben.",
+        "fr": "Ce dépôt s'inspire des créateurs qui ont partagé publiquement des workflows Blender + Seedance, des tests, des prompts, des vidéos de référence et des notes de production.",
+        "tr": "Bu depo, Blender + Seedance iş akışlarını, testleri, promptları, referans videolarını ve prodüksiyon notlarını herkese açık biçimde paylaşan üreticilerden ilham aldı.",
+        "zh-CN": "感谢所有公开分享 Blender + Seedance 工作流、测试、提示词、参考视频和制作笔记的创作者，他们的实践启发了这个仓库。",
+        "zh-TW": "感謝所有公開分享 Blender + Seedance 工作流程、測試、提示詞、參考影片和製作筆記的創作者，他們的實踐啟發了這個儲存庫。",
+        "ru": "Этот репозиторий создан благодаря авторам, которые открыто делились рабочими процессами Blender + Seedance, тестами, промптами, референсными видео и производственными заметками.",
+    }[lang]
+    correction = {
+        "en": "We cannot guarantee that every case is attributed to the original creator. If anything needs to be corrected, please contact us and we will update it.",
+        "es": "No podemos garantizar que cada caso esté atribuido al creador original. Si algo debe corregirse, contáctanos y lo actualizaremos.",
+        "pt": "Não podemos garantir que todos os casos estejam atribuídos ao criador original. Se algo precisar de correção, entre em contato e atualizaremos.",
+        "ja": "すべてのケースが最初の制作者に正しく帰属していることは保証できません。修正が必要な場合はご連絡ください。更新します。",
+        "ko": "모든 사례가 최초 제작자에게 정확히 귀속되었다고 보장할 수는 없습니다. 수정이 필요하면 알려 주세요. 반영하겠습니다.",
+        "de": "Wir können nicht garantieren, dass jeder Fall dem ursprünglichen Urheber zugeordnet ist. Bitte kontaktiere uns bei Korrekturbedarf; wir aktualisieren den Eintrag.",
+        "fr": "Nous ne pouvons pas garantir que chaque cas soit attribué au créateur d'origine. Si une correction est nécessaire, contactez-nous et nous la mettrons à jour.",
+        "tr": "Her vakanın ilk üreticiye doğru biçimde atfedildiğini garanti edemeyiz. Düzeltilmesi gereken bir şey varsa bize ulaşın; güncelleyelim.",
+        "zh-CN": "我们无法保证每个案例都准确归属于最初的创作者。如有需要更正之处，请联系我们，我们会及时更新。",
+        "zh-TW": "我們無法保證每個案例都準確歸屬於最初的創作者。如有需要更正之處，請聯絡我們，我們會及時更新。",
+        "ru": "Мы не можем гарантировать, что каждый кейс указан за первоначальным автором. Если требуется исправление, свяжитесь с нами, и мы обновим запись.",
+    }[lang]
+    contribute = {
+        "en": "Have a Blender + Seedance workflow to add? [Open a use case issue]({issue}) with the [issue template file](.github/ISSUE_TEMPLATE/use-case.yml), or open a pull request with the [PR template](.github/PULL_REQUEST_TEMPLATE.md).",
+        "es": "¿Quieres añadir un flujo de Blender + Seedance? [Abre una incidencia de caso de uso]({issue}) con el [archivo de plantilla](.github/ISSUE_TEMPLATE/use-case.yml), o envía un pull request con la [plantilla de PR](.github/PULL_REQUEST_TEMPLATE.md).",
+        "pt": "Quer adicionar um fluxo Blender + Seedance? [Abra uma issue de caso de uso]({issue}) com o [arquivo de modelo](.github/ISSUE_TEMPLATE/use-case.yml), ou envie um pull request usando o [modelo de PR](.github/PULL_REQUEST_TEMPLATE.md).",
+        "ja": "Blender + Seedance のワークフローを追加したい場合は、[ユースケース Issue]({issue}) を[専用テンプレート](.github/ISSUE_TEMPLATE/use-case.yml)から作成するか、[PR テンプレート](.github/PULL_REQUEST_TEMPLATE.md)を使ってプルリクエストを送ってください。",
+        "ko": "Blender + Seedance 워크플로를 추가하려면 [사용 사례 이슈]({issue})를 [이슈 템플릿](.github/ISSUE_TEMPLATE/use-case.yml)으로 열거나 [PR 템플릿](.github/PULL_REQUEST_TEMPLATE.md)을 사용해 풀 리퀘스트를 보내 주세요.",
+        "de": "Du möchtest einen Blender- und Seedance-Workflow ergänzen? [Erstelle ein Use-Case-Issue]({issue}) mit der [Issue-Vorlage](.github/ISSUE_TEMPLATE/use-case.yml) oder öffne einen Pull Request mit der [PR-Vorlage](.github/PULL_REQUEST_TEMPLATE.md).",
+        "fr": "Vous souhaitez ajouter un workflow Blender + Seedance ? [Ouvrez une issue de cas d'usage]({issue}) avec le [modèle d'issue](.github/ISSUE_TEMPLATE/use-case.yml), ou proposez une pull request avec le [modèle de PR](.github/PULL_REQUEST_TEMPLATE.md).",
+        "tr": "Bir Blender + Seedance iş akışı mı eklemek istiyorsunuz? [Kullanım örneği issue'su açın]({issue}) ve [issue şablonunu](.github/ISSUE_TEMPLATE/use-case.yml) kullanın ya da [PR şablonuyla](.github/PULL_REQUEST_TEMPLATE.md) bir pull request gönderin.",
+        "zh-CN": "想补充 Blender + Seedance 工作流？请使用[案例 Issue 模板]({issue})提交，或通过 [PR 模板](.github/PULL_REQUEST_TEMPLATE.md)发起拉取请求。",
+        "zh-TW": "想補充 Blender + Seedance 工作流程？請使用[案例 Issue 範本]({issue})提交，或透過 [PR 範本](.github/PULL_REQUEST_TEMPLATE.md)發起拉取請求。",
+        "ru": "Хотите добавить рабочий процесс Blender + Seedance? [Создайте issue с кейсом]({issue}) по [шаблону issue](.github/ISSUE_TEMPLATE/use-case.yml) или откройте pull request по [шаблону PR](.github/PULL_REQUEST_TEMPLATE.md).",
+    }[lang].format(issue=f"https://github.com/{OWNER}/{REPO}/issues/new?template=use-case.yml")
     return f"""<a id="acknowledge"></a>
 ## 🙏 {labels["ack"]}
 
-This repository was inspired by creators who publicly shared Blender + Seedance workflows, tests, prompts, reference videos, and production notes.
+{intro}
 
 {creator_line}
 
-*We cannot guarantee that every case is attributed to the original creator. If anything needs to be corrected, please contact us and we will update it.*
+*{correction}*
 
-Have a Blender + Seedance workflow to add? [Open a use case issue](https://github.com/{OWNER}/{REPO}/issues/new?template=use-case.yml) with the [issue template file](.github/ISSUE_TEMPLATE/use-case.yml), or open a pull request with the [PR template](.github/PULL_REQUEST_TEMPLATE.md).
+{contribute}
 
 [![Star History Chart](https://api.star-history.com/svg?repos={OWNER}/{REPO}&type=Date)](https://www.star-history.com/#{OWNER}/{REPO}&Date)"""
+
+
+def render_related(lang: str) -> str:
+    heading = {
+        "en": "Related Repositories", "es": "Repositorios relacionados", "pt": "Repositórios relacionados",
+        "ja": "関連リポジトリ", "ko": "관련 저장소", "de": "Verwandte Repositories",
+        "fr": "Dépôts associés", "tr": "İlgili depolar", "zh-CN": "相关仓库",
+        "zh-TW": "相關儲存庫", "ru": "Связанные репозитории",
+    }[lang]
+    descriptions = {
+        "en": ("Browse Seedance 2.0 prompts", "Install the Seedance 2 agent skill", "Explore the GPT Image 2 to Seedance 2 workflow"),
+        "es": ("Explora prompts de Seedance 2.0", "Instala la skill de agente Seedance 2", "Explora el flujo GPT Image 2 a Seedance 2"),
+        "pt": ("Explore prompts do Seedance 2.0", "Instale a skill de agente Seedance 2", "Explore o fluxo GPT Image 2 para Seedance 2"),
+        "ja": ("Seedance 2.0 プロンプトを見る", "Seedance 2 エージェントスキルをインストール", "GPT Image 2 から Seedance 2 のワークフローを見る"),
+        "ko": ("Seedance 2.0 프롬프트 보기", "Seedance 2 에이전트 스킬 설치", "GPT Image 2에서 Seedance 2로 이어지는 워크플로 보기"),
+        "de": ("Seedance-2.0-Prompts ansehen", "Seedance-2-Agent-Skill installieren", "GPT-Image-2-zu-Seedance-2-Workflow ansehen"),
+        "fr": ("Voir les prompts Seedance 2.0", "Installer le skill agent Seedance 2", "Explorer le workflow GPT Image 2 vers Seedance 2"),
+        "tr": ("Seedance 2.0 promptlarını incele", "Seedance 2 agent skillini kur", "GPT Image 2'den Seedance 2'ye iş akışını incele"),
+        "zh-CN": ("查看 Seedance 2.0 提示词", "安装 Seedance 2 Agent Skill", "查看 GPT Image 2 到 Seedance 2 工作流"),
+        "zh-TW": ("查看 Seedance 2.0 提示詞", "安裝 Seedance 2 Agent Skill", "查看 GPT Image 2 到 Seedance 2 工作流程"),
+        "ru": ("Посмотреть промпты Seedance 2.0", "Установить агентский навык Seedance 2", "Изучить процесс GPT Image 2 → Seedance 2"),
+    }[lang]
+    urls = (
+        "https://github.com/Evolink-AI/awesome-seedance-2.0-prompts",
+        "https://github.com/Evolink-AI/seedance2-video-gen-skill-for-openclaw",
+        "https://github.com/Evolink-AI/GPT-Image-2-Seedance2-Workflow",
+    )
+    lines = [f'<a id="related-repositories"></a>', f"## 🔗 {heading}", ""]
+    lines.extend(f"- [{label}]({url})" for label, url in zip(descriptions, urls))
+    return "\n".join(lines)
 
 
 def render_readme(lang: str, filename: str, img_path: str, items: list[dict], records: list[dict]) -> str:
@@ -1515,7 +1620,8 @@ def render_readme(lang: str, filename: str, img_path: str, items: list[dict], re
         render_quick(labels, lang),
         render_menu(labels, records, lang),
         render_cases(labels, items, lang),
-        render_ack(labels, records),
+        render_related(lang),
+        render_ack(labels, records, lang),
         "",
     ]
     return "\n\n".join(parts)
@@ -1611,7 +1717,11 @@ def write_static_files(records: list[dict]) -> None:
             - Owner-provided video source map: `data/usecase-video-sources.json`
             - Manual originality audit: `docs/usecase-originality-audit.md`
             - GitHub About metadata proposal: `docs/github-about.md`
-            - Downloaded public media: `media/caseN.mp4`
+            - Local source media: `media/caseN.mp4`
+            - Public media origin: R2 under `github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/`
+            - Media inventory: `docs/media-type-inventory.md`
+            - R2 origin audit: `docs/r2-upload-report.md`
+            - Video poster report: `docs/video-poster-report.md`
 
             ## Current State
 
@@ -1632,17 +1742,27 @@ def write_static_files(records: list[dict]) -> None:
             - Creator attribution
             - Bold usage takeaway
             - Source-grounded notes
-            - Local media links when the source data exposes media
-            - Direct GitHub attachment video URLs when the owner-provided video map exposes playable previews
+            - R2-hosted reference images when the source data exposes media
+            - R2-hosted poster frames linked to playable R2 video URLs
             - `Type: ... | Date: YYYY-MM-DD`
 
             Never invent prompts, results, benchmark claims, availability, pricing, or creator attribution.
             Do not re-add removed candidates without updating the audit file.
 
+            ## Recurring Update Contract
+
+            - Detailed contract: `docs/weekly-update-contract.md`
+            - Schedule: every Monday at 11:00 Asia/Shanghai.
+            - Candidate window: seven days ending at the fixed collector timestamp.
+            - Selection cap: at most 10 high-confidence cases.
+            - Existing public anchors are a recorded legacy namespace; append new cases from Case 29.
+            - A modification run succeeds only after audit, commit, push to `main`, and remote readback.
+
             ## Validation
 
             ```bash
             python3 scripts/verify_repo.py
+            python3 "${{CODEX_HOME:-$HOME/.codex}}/skills/model-repo-pipeline/bundled-skills/usecase-update-loop/scripts/verify_usecase_update.py" --repo .
             git diff --check
             ```
 
@@ -1765,8 +1885,10 @@ from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
+R2_MEDIA_BASE = {R2_MEDIA_BASE!r}
+R2_BANNER_URL = {R2_BANNER_URL!r}
 FILES = {[filename for _, filename, _, _ in LANGS]!r}
-EXPECTED_CASES = {len(records)}
+EXPECTED_CASES = None
 EXPECTED_IMAGES = {sorted({img for _, _, _, img in LANGS})!r}
 EXPECTED_VIDEO_LABELS = {[label for label, _ in VIDEO_SOURCE_ROWS]!r}
 EXPECTED_README_CTAS = {[
@@ -1783,6 +1905,7 @@ def fail(msg):
     raise SystemExit(f"FAIL: {{msg}}")
 
 curated = json.loads((ROOT / "blender-seedance-usecase-curated.json").read_text())
+EXPECTED_CASES = len(curated["items"])
 if curated["metadata"].get("selected_count") != EXPECTED_CASES:
     fail("curated selected_count does not match README case count")
 expected_labels = [str(item["case"]) for item in curated["items"]]
@@ -1793,6 +1916,8 @@ for file in FILES:
     if not p.exists():
         fail(f"missing {{file}}")
     text = p.read_text()
+    if R2_BANNER_URL not in text:
+        fail(f"{{file}} missing configured shared R2 banner")
     anchors = re.findall(r'^<a id="case-([0-9]+)"></a>', text, re.M)
     heads = re.findall(r'^### Case ([0-9]+): \\[', text, re.M)
     if len(anchors) != EXPECTED_CASES:
@@ -1803,7 +1928,7 @@ for file in FILES:
         fail(f"{{file}} contains duplicate case anchors")
     if set(anchors) != expected_label_set:
         fail(f"{{file}} anchors do not match curated case labels")
-    if "## 📊" not in text or "## ⚡" not in text or "## 📑" not in text or "## 🙏" not in text:
+    if "## 📊" not in text or "## ⚡" not in text or "## 📑" not in text or '<a id="related-repositories"></a>' not in text or "## 🙏" not in text:
         fail(f"{{file}} missing required usecase sections")
     if text.count("| Date: ") + text.count("| Fecha: ") + text.count("| Data: ") + text.count("| Datum: ") + text.count("| Tarih: ") + text.count("| 日期: ") + text.count("| Дата: ") < EXPECTED_CASES:
         fail(f"{{file}} missing Type/Date metadata lines")
@@ -1820,7 +1945,7 @@ for img in EXPECTED_IMAGES:
     if not (ROOT / img).exists():
         fail(f"missing {{img}}")
 
-for required in ["LICENSE", "CONTRIBUTING.md", "docs/maintenance.md", ".github/PULL_REQUEST_TEMPLATE.md", ".github/ISSUE_TEMPLATE/config.yml", ".github/ISSUE_TEMPLATE/use-case.yml", "blender-seedance-usecase-curated.json", "data/usecase-video-sources.json", "images/banner.png"]:
+for required in ["LICENSE", "CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "SECURITY.md", "docs/maintenance.md", "docs/media-type-inventory.md", "docs/r2-upload-report.md", "docs/video-poster-report.md", ".github/PULL_REQUEST_TEMPLATE.md", ".github/ISSUE_TEMPLATE/config.yml", ".github/ISSUE_TEMPLATE/use-case.yml", "blender-seedance-usecase-curated.json", "data/usecase-video-sources.json", "images/banner.png"]:
     if not (ROOT / required).exists():
         fail(f"missing {{required}}")
 
@@ -1856,11 +1981,18 @@ for item in curated["items"]:
 
 for file in FILES:
     text = (ROOT / file).read_text()
-    for row in video_sources["items"]:
-        if row["attachment_url"] not in text:
-            fail(f"{{file}} missing direct video attachment URL {{row['case_label']}}")
+    if re.search(r'^media/[^\s]+$', text, re.M):
+        fail(f"{{file}} still exposes repository-local bare media paths")
+    video_names = re.findall(re.escape(R2_MEDIA_BASE) + r'/(case\d+)\.mp4', text)
+    poster_names = re.findall(re.escape(R2_MEDIA_BASE) + r'/posters/(case\d+)\.jpg', text)
+    if len(video_names) != 24:
+        fail(f"{{file}} has {{len(video_names)}} R2 video links, expected 24")
+    if sorted(video_names) != sorted(poster_names):
+        fail(f"{{file}} R2 video and poster sets differ")
+    if f"{{R2_MEDIA_BASE}}/case13.jpg" not in text:
+        fail(f"{{file}} missing R2 reference image for case13")
 
-print(f"PASS: {{len(FILES)}} README files, {{EXPECTED_CASES}} cases each, {{len(media_paths)}} media files linked, {{len(video_sources['items'])}} direct video URLs embedded")
+print(f"PASS: {{len(FILES)}} README files, {{EXPECTED_CASES}} cases each, 24 R2 video/poster pairs per README, {{len(media_paths)}} source media files inventoried")
 '''
     path = ROOT / "scripts" / "verify_repo.py"
     path.write_text(script)
@@ -1885,7 +2017,7 @@ def main() -> None:
             "tier_counts": dict(Counter(record["quality_tier"] for record in records)),
             "category_counts": dict(Counter(record["category"] for record in records)),
             "cta_status": f"primary CTA set to {CTA_URLS['metadata']}",
-            "publication_status": "existing target repository; push to cheercheung/Awesome-Blender-Seedance-Workflow-Usecases approved after local verification; no new repository creation approved",
+            "publication_status": "existing target repository; push to Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases approved after local verification; no new repository creation approved",
             "audit": "docs/usecase-originality-audit.md",
             "video_source_map": "data/usecase-video-sources.json",
         },

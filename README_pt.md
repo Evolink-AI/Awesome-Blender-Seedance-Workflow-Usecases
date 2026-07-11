@@ -1,11 +1,11 @@
 <div align="center">
 
-<a href="https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=banner"><img src="images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/images/banner.png" alt="Banner do repositório de casos de uso de Blender + Seedance" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=use_on_evolink_badge)
+[![Usar no EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=use_on_evolink_badge)
 [![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Cookbook-orange)](https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=mcp_skill_badge)
-[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Guide-blue)](https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=agent_workflow_badge)
+[![Fluxo com agentes](https://img.shields.io/badge/Agent_Workflow-Guide-blue)](https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=agent_workflow_badge)
 
 [![English](https://img.shields.io/badge/English-111111)](README.md)
 [![Español](https://img.shields.io/badge/Espa%C3%B1ol-ffb703)](README_es.md)
@@ -21,7 +21,7 @@
 
 </div>
 
-## 🍌 Introduction
+## 🍌 Introdução
 
 Repositório de casos de uso Blender + Seedance.
 
@@ -29,29 +29,29 @@ Repositório de casos de uso Blender + Seedance.
 
 A coleção vem dos dados X/Twitter fornecidos pelo proprietário. Cada caso aponta para o post original e o criador.
 
-Comece pelo cookbook Blender-to-video da EvoLink e use o Quick Start abaixo como referência local do workflow.
+Comece pelo guia Blender-to-video da EvoLink e use o início rápido abaixo como referência local do fluxo.
 
-## 📊 Overview
+## 📊 Visão geral
 
-- **25 casos Blender + Seedance selecionados** a partir de posts públicos de criadores no dataset fornecido pelo proprietário.
-- Cobre controle de câmera, previs no Blender, blocking de múltiplos personagens, coreografia de ação, Blender MCP, blockouts assistidos por Codex/Claude, referências FBX/Mixamo, ComfyUI/style transfer e limites conhecidos.
+- **25 casos Blender + Seedance selecionados** a partir de publicações de criadores no conjunto de dados fornecido pelo proprietário.
+- Cobre controle de câmera, previsualização no Blender, bloqueio de múltiplos personagens, coreografia de ação, Blender MCP, bloqueios assistidos por Codex/Claude, referências FBX/Mixamo, ComfyUI, transferência de estilo e limites conhecidos.
 - Cada caso inclui fonte original, crédito ao criador, resumo acionável, tipo de evidência e data de publicação.
 - A lista pública foi reconstruída a partir da auditoria de 35 candidatos e dos novos links solicitados até 25 casos primários.
-- Use este repo para avaliar workflows práticos e depois direcionar usuários ao cookbook Blender-to-video da EvoLink.
+- Use este repositório para avaliar fluxos práticos e depois direcionar usuários ao guia Blender-to-video da EvoLink.
 
 > [!NOTE]
 > A coleção prioriza evidência concreta: passos, vídeos de referência, uso de agente/MCP, restrições reproduzíveis e limites claros.
 
 <a id="quick-start"></a>
-## ⚡ Quick Start
+## ⚡ Início rápido
 
 Configure primeiro o controle local do Blender; depois instale as skills EvoLink que o agente vai chamar.
 
 ### 1. Instale o Blender MCP
 
-Siga o guia oficial de setup do Blender MCP, abra o Blender e confirme que o agente consegue se conectar ao servidor Blender MCP antes de gerar referências.
+Siga o guia oficial de configuração do Blender MCP, abra o Blender e confirme que o agente consegue se conectar ao servidor Blender MCP antes de gerar referências.
 
-- Setup oficial: [Blender MCP setup](https://projects.blender.org/lab/blender_mcp/wiki/Setup)
+- Configuração oficial: [Configurar Blender MCP](https://projects.blender.org/lab/blender_mcp/wiki/Setup)
 
 ### 2. Instale as skills EvoLink
 
@@ -62,9 +62,9 @@ npm i evolink-seedance
 npm i evolink-topaz-video-upscale
 ```
 
-### 3. [Obtenha uma API key](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)
+### 3. [Obtenha uma chave de API](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)
 
-Crie uma API key da EvoLink na sua conta e exponha essa chave ao runtime do agente.
+Crie uma chave de API da EvoLink na sua conta e exponha essa chave ao ambiente de execução do agente.
 
 ```bash
 export EVOLINK_API_KEY="<your-evolink-api-key>"
@@ -72,493 +72,499 @@ export EVOLINK_API_KEY="<your-evolink-api-key>"
 
 ### 4. Execute dentro do seu agente
 
-Com MCP, skills e API key prontos, peça ao agente para criar um blockout no Blender, exportar o vídeo de referência, gerar com Seedance e fazer upscale do resultado quando necessário.
+Com MCP, skills e a chave de API prontos, peça ao agente para criar um bloqueio no Blender, exportar o vídeo de referência, gerar com Seedance e ampliar o resultado quando necessário.
 
 ```text
 Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.
 ```
 
 > [!NOTE]
-> A página de setup do Blender MCP é a fonte principal para os detalhes de instalação no Blender.
+> A página de configuração do Blender MCP é a fonte principal para os detalhes de instalação no Blender.
 
 ## 📑 Menu
 
 | Seção | Casos |
 |---|---|
-| [🎥 Camera Control & Previs / Controle de câmera e previs](#camera-control-previs) | Case 1, 2, 3, 4, 5 |
-| [🎬 Character & Action Blocking / Bloqueio de personagens e ação](#character-action-blocking) | Case 6, 8, 9, 21 |
-| [🤖 Agentic Blender MCP / Blender MCP com agentes](#agentic-blender-mcp) | Case 10, 11, 22 |
-| [🧩 Reference, Prompt & Multi-Input Mapping / Referências, prompts e múltiplas entradas](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27 |
-| [🛠️ Production Pipelines & Toolchains / Pipelines e ferramentas de produção](#production-pipelines-toolchains) | Case 15, 16, 17, 18 |
-| [🧪 Limits, Tests & Troubleshooting / Limites, testes e diagnóstico](#limits-tests-troubleshooting) | Case 20, 25, 28 |
-| [🙏 Agradecimentos](#acknowledge) | Credits and correction policy |
+| [🎥 Controle de câmera e previsualização](#camera-control-previs) | Case 1, 2, 3, 4, 5 |
+| [🎬 Bloqueio de personagens e ação](#character-action-blocking) | Case 6, 8, 9, 21 |
+| [🤖 Blender MCP com agentes](#agentic-blender-mcp) | Case 10, 11, 22 |
+| [🧩 Referências, prompts e mapeamento de múltiplas entradas](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27 |
+| [🛠️ Pipelines e cadeias de ferramentas de produção](#production-pipelines-toolchains) | Case 15, 16, 17, 18 |
+| [🧪 Limites, testes e solução de problemas](#limits-tests-troubleshooting) | Case 20, 25, 28 |
+| [🙏 Agradecimentos](#acknowledge) | Créditos e política de correções |
 
 <a id="camera-control-previs"></a>
-### 🎥 Camera Control & Previs / Controle de câmera e previs
+### 🎥 Controle de câmera e previsualização
 
 | Caso | O que mostra | Tipo |
 |---|---|---|
-| [Blender Blockout as Seedance Motion Reference](#case-1) | A merged direction workflow: use the full gray-box method from the original case, then push it into action-previs timing, speed, shake, and spatial choreography before Seedance generation. | Demo |
-| [Camera Blocking with Midjourney Start Frame](#case-2) | A compact precision-camera recipe: Blender supplies the camera move, Midjourney supplies the start frame, and Seedance follows the motion reference. | Demo |
-| [ComfyUI Camera Control with Blender Previs](#case-3) | A ComfyUI control case where Blender previz is combined with separate upright and upside-down reference frames to test motion adherence. | Demo |
-| [Viewport Preview to Realistic Start Frame](#case-4) | A short viewport-preview tutorial: block out the scene, export the preview, turn the first frame realistic, then provide both references to Seedance. | Demo |
-| [One Reference Video, Multiple Worlds](#case-5) | A style/world-variation case where the same Blender reference video drives different generated worlds in Seedance. | Demo |
+| [Blockout do Blender como referência de movimento para o Seedance](#case-1) | Um fluxo de direção combinado: use todo o método de gray box do caso original e leve-o ao timing, à velocidade, ao tremor e à coreografia espacial da previs de ação antes da geração no Seedance. | Demo |
+| [Bloqueio de câmera com quadro inicial do Midjourney](#case-2) | Uma receita compacta de câmera precisa: o Blender fornece o movimento de câmera, o Midjourney fornece o quadro inicial e o Seedance segue a referência de movimento. | Demo |
+| [Controle de câmera no ComfyUI com previs do Blender](#case-3) | Um caso de controle no ComfyUI em que a previs do Blender é combinada com quadros de referência separados, um normal e outro invertido, para testar a fidelidade ao movimento. | Demo |
+| [Da prévia do viewport a um quadro inicial realista](#case-4) | Um tutorial curto de prévia no viewport: faça o blockout da cena, exporte a prévia, torne o primeiro quadro realista e forneça as duas referências ao Seedance. | Demo |
+| [Um vídeo de referência, vários mundos](#case-5) | Um caso de variação de estilo e mundo em que o mesmo vídeo de referência do Blender conduz diferentes mundos gerados no Seedance. | Demo |
 
 <a id="character-action-blocking"></a>
-### 🎬 Character & Action Blocking / Bloqueio de personagens e ação
+### 🎬 Bloqueio de personagens e ação
 
 | Caso | O que mostra | Tipo |
 |---|---|---|
-| [Multi-Character Dialogue with Matched Poses](#case-6) | A dialogue-shot workflow where Blender is used to match character poses and camera motion before Seedance generates the performed scene. | Demo |
-| [Handheld Follow Camera through Space](#case-8) | A handheld-follow case where Blender controls how a character travels through space and Seedance carries the gritty camera move into the final video. | Demo |
-| [Camera and Character Blocking for Tactical Action](#case-9) | A tactical blocking case where Blender directs camera orbit, lens choice, cover positions, gunfire beats, and character movement before generation. | Demo |
-| [Ambush Scene Previs Beyond a Simple Camera Move](#case-21) | An ambush-scene case showing how Blender previs can solve staging, timing, and camera movement before Seedance generates the shot. | Demo |
+| [Diálogo com vários personagens e poses correspondentes](#case-6) | Um fluxo para cenas de diálogo em que o Blender é usado para alinhar as poses dos personagens e o movimento da câmera antes de o Seedance gerar a cena encenada. | Demo |
+| [Câmera de acompanhamento portátil através do espaço](#case-8) | Um caso de acompanhamento com câmera na mão em que o Blender controla o deslocamento do personagem e o Seedance leva o movimento de câmera áspero ao vídeo final. | Demo |
+| [Bloqueio de câmera e personagens para ação tática](#case-9) | Um caso de bloqueio tático em que o Blender dirige a órbita da câmera, a escolha da lente, as posições de cobertura, os momentos de disparo e o movimento dos personagens antes da geração. | Demo |
+| [Previs de emboscada além de um simples movimento de câmera](#case-21) | Um caso de emboscada que mostra como a previs no Blender pode resolver encenação, timing e movimento de câmera antes de o Seedance gerar a tomada. | Demo |
 
 <a id="agentic-blender-mcp"></a>
-### 🤖 Agentic Blender MCP / Blender MCP com agentes
+### 🤖 Blender MCP com agentes
 
 | Caso | O que mostra | Tipo |
 |---|---|---|
-| [Codex + Blender MCP Reference Video Workflow](#case-10) | An agentic Blender MCP case where Codex builds a simple 3D market, cat motion, camera framing, and an MP4 reference for Seedance. | Integration |
-| [Codex-Built Architecture and Camera Work](#case-11) | A Codex-assisted beginner case where architecture and camera work are generated in Blender and then tested as Seedance reference motion. | Integration |
-| [Claude-Built Blender MCP Previs in Minutes](#case-22) | A fast agentic-previs case where Claude uses Blender MCP to build a shot reference in two to three minutes. | Integration |
+| [Fluxo de vídeo de referência com Codex + Blender MCP](#case-10) | Um caso de Blender MCP com agentes em que o Codex cria um mercado 3D simples, o movimento de um gato, o enquadramento e uma referência MP4 para o Seedance. | Integration |
+| [Arquitetura e trabalho de câmera criados pelo Codex](#case-11) | Um caso para iniciantes assistido pelo Codex em que a arquitetura e o trabalho de câmera são gerados no Blender e depois testados como referência de movimento para o Seedance. | Integration |
+| [Previs no Blender MCP criada pelo Claude em minutos](#case-22) | Um caso rápido de previs com agentes em que o Claude usa o Blender MCP para criar uma referência de tomada em dois ou três minutos. | Integration |
 
 <a id="reference-prompt-multi-input-mapping"></a>
-### 🧩 Reference, Prompt & Multi-Input Mapping / Referências, prompts e múltiplas entradas
+### 🧩 Referências, prompts e mapeamento de múltiplas entradas
 
 | Caso | O que mostra | Tipo |
 |---|---|---|
-| [Reproducible Seedance Prompt with Blender Reference](#case-13) | A merged reproducibility and troubleshooting case: the setup spells out the reference-video conditions, while the paired test records where camera/rhythm control worked and foot motion failed. | Tutorial |
-| [Mixamo Motion as Beginner Blender Reference](#case-14) | A beginner-friendly motion-source case: use Mixamo motion in Blender as the controllable movement base before sending the reference to Seedance. | Tutorial |
-| [Position-Only Reference Control for a Faster Scene](#case-23) | A reference-weighting case: keep the reference useful for positions while letting the prompt recover speed and dynamism. | Tutorial |
-| [Physical Toy Reference Instead of 3D Software](#case-24) | A physical-reference case: use toys as quick motion and staging references when opening Blender is too much overhead. | Demo |
-| [Reference Control for a Specific Failed Prompt Scene](#case-26) | A control fallback case: when prompt-only generation fails, use a reference to force the scene even if some dynamism is reduced. | Demo |
-| [Character Proportion and Simple Background Tips](#case-27) | A stability checklist case: match character proportions beyond height and simplify any background that does not need precise alignment. | Tutorial |
+| [Prompt reproduzível do Seedance com referência do Blender](#case-13) | Um caso combinado de reprodutibilidade e diagnóstico: a configuração detalha as condições do vídeo de referência, enquanto o teste pareado registra onde o controle de câmera e ritmo funcionou e onde o movimento dos pés falhou. | Tutorial |
+| [Movimento do Mixamo como referência do Blender para iniciantes](#case-14) | Um caso de fonte de movimento acessível a iniciantes: use o movimento do Mixamo no Blender como base controlável antes de enviar a referência ao Seedance. | Tutorial |
+| [Controle de referência apenas por posição para uma cena mais rápida](#case-23) | Um caso de ponderação da referência: mantenha a referência útil para posições e deixe o prompt recuperar velocidade e dinamismo. | Tutorial |
+| [Brinquedo físico como referência em vez de software 3D](#case-24) | Um caso de referência física: use brinquedos como referências rápidas de movimento e encenação quando abrir o Blender der trabalho demais. | Demo |
+| [Controle por referência para uma cena específica em que o prompt falhou](#case-26) | Uma alternativa de controle: quando a geração somente por prompt falhar, use uma referência para forçar a cena, mesmo com alguma redução de dinamismo. | Demo |
+| [Dicas de proporção de personagens e fundos simples](#case-27) | Um caso em formato de checklist de estabilidade: alinhe as proporções do personagem além da altura e simplifique qualquer fundo que não precise de correspondência precisa. | Tutorial |
 
 <a id="production-pipelines-toolchains"></a>
-### 🛠️ Production Pipelines & Toolchains / Pipelines e ferramentas de produção
+### 🛠️ Pipelines e cadeias de ferramentas de produção
 
 | Caso | O que mostra | Tipo |
 |---|---|---|
-| [Hermes, Krea, ComfyUI and Blender MCP Stack](#case-15) | A multi-tool agent pipeline where Hermes installs and connects Krea, ComfyUI, Blender MCP, and Seedance to produce both image and physical references. | Integration |
-| [Blender MCP Viewport to Seedance Style Transfer](#case-16) | A viewport-to-style-transfer case: Blender MCP provides camera and element control, then Seedance/Magnific add texture and lighting. | Integration |
-| [Blender Previz to Anime Seedance Render](#case-17) | A 3D-previs-to-anime case showing how camera moves and motion can be preserved while Seedance changes the render style. | Integration |
-| [FBX Clay Pass with Claude-Keyframed Camera](#case-18) | An FBX clay-pass workflow where Blender imports the motion, Claude helps keyframe camera moves, and the rendered pass becomes Seedance reference video. | Integration |
+| [Stack com Hermes, Krea, ComfyUI e Blender MCP](#case-15) | Um pipeline de agentes com várias ferramentas em que o Hermes instala e conecta Krea, ComfyUI, Blender MCP e Seedance para produzir referências visuais e físicas. | Integration |
+| [Do viewport do Blender MCP à transferência de estilo no Seedance](#case-16) | Um caso do viewport à transferência de estilo: o Blender MCP controla a câmera e os elementos; depois, Seedance e Magnific adicionam textura e iluminação. | Integration |
+| [Da previs do Blender à renderização anime no Seedance](#case-17) | Um caso de previs 3D para anime que mostra como preservar os movimentos de câmera e a ação enquanto o Seedance altera o estilo de renderização. | Integration |
+| [Clay pass FBX com câmera keyframed pelo Claude](#case-18) | Um fluxo de clay pass FBX em que o Blender importa o movimento, o Claude ajuda a criar keyframes de câmera e o passe renderizado se torna o vídeo de referência do Seedance. | Integration |
 
 <a id="limits-tests-troubleshooting"></a>
-### 🧪 Limits, Tests & Troubleshooting / Limites, testes e diagnóstico
+### 🧪 Limites, testes e solução de problemas
 
 | Caso | O que mostra | Tipo |
 |---|---|---|
-| [Reference-Only Blender Blockout without Start Frame](#case-20) | A no-start-frame variant showing that Blender blockout plus detailed environment references can work when the workflow cannot rely on a starter frame. | Limit |
-| [Toy Reference Prompt Reinforcement and NG Example](#case-25) | A troubleshooting case showing why reference videos often need prompt reinforcement instead of raw imitation. | Limit |
-| [Cloth Physics Stress Test with Blender and Seedance](#case-28) | A cloth-physics stress test showing where Blender-guided Seedance can work but still needs iteration for difficult motion. | Limit |
+| [Blockout do Blender somente com referência e sem quadro inicial](#case-20) | Uma variante sem quadro inicial que mostra que o blockout do Blender e referências detalhadas do ambiente podem funcionar quando o fluxo não pode depender de uma imagem inicial. | Limit |
+| [Reforço de prompt com brinquedo de referência e exemplo malsucedido](#case-25) | Um caso de diagnóstico que mostra por que vídeos de referência frequentemente precisam de reforço no prompt em vez de imitação direta. | Limit |
+| [Teste de estresse de física de tecidos com Blender e Seedance](#case-28) | Um teste de estresse de física de tecidos que mostra onde o Seedance guiado pelo Blender funciona, mas ainda exige iteração em movimentos difíceis. | Limit |
 
 <a id="camera-control-previs-cases"></a>
-## 🎥 Camera Control & Previs / Controle de câmera e previs
+## 🎥 Controle de câmera e previsualização
 
 <a id="case-1"></a>
-### Case 1: [Blender Blockout as Seedance Motion Reference](https://x.com/noman23761/status/2071534020014563328) (by [@noman23761](https://x.com/noman23761))
+### Case 1: [Blockout do Blender como referência de movimento para o Seedance](https://x.com/noman23761/status/2071534020014563328) (by [@noman23761](https://x.com/noman23761))
 
-**A merged direction workflow: use the full gray-box method from the original case, then push it into action-previs timing, speed, shake, and spatial choreography before Seedance generation.**
+**Um fluxo de direção combinado: use todo o método de gray box do caso original e leve-o ao timing, à velocidade, ao tremor e à coreografia espacial da previs de ação antes da geração no Seedance.**
 
-- Notas da fonte: Merged with former case 7: together these sources show the full gray-box workflow and the action-previs variant with rough timing, speed, shake, and spatial choreography.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: Mesclado com o antigo caso 7: juntas, essas fontes mostram todo o fluxo de gray box e a variante de previs de ação com timing aproximado, velocidade, tremor e coreografia espacial.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case1.mp4
+[![Reproduzir vídeo de demonstração — Caso 1](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case1.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case1.mp4)
 
 Tipo: Demo | Data: 2026-06-29
 
 ---
 
 <a id="case-2"></a>
-### Case 2: [Camera Blocking with Midjourney Start Frame](https://x.com/reidhannaford/status/2069074506849685773) (by [@reidhannaford](https://x.com/reidhannaford))
+### Case 2: [Bloqueio de câmera com quadro inicial do Midjourney](https://x.com/reidhannaford/status/2069074506849685773) (by [@reidhannaford](https://x.com/reidhannaford))
 
-**A compact precision-camera recipe: Blender supplies the camera move, Midjourney supplies the start frame, and Seedance follows the motion reference.**
+**Uma receita compacta de câmera precisa: o Blender fornece o movimento de câmera, o Midjourney fornece o quadro inicial e o Seedance segue a referência de movimento.**
 
-- Notas da fonte: The source gives a clear three-step workflow and reports that the generated video tracks the Blender camera move closely.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: A fonte apresenta um fluxo claro de três etapas e relata que o vídeo gerado acompanha de perto o movimento de câmera do Blender.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case2.mp4
+[![Reproduzir vídeo de demonstração — Caso 2](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case2.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case2.mp4)
 
 Tipo: Demo | Data: 2026-06-22
 
 ---
 
 <a id="case-3"></a>
-### Case 3: [ComfyUI Camera Control with Blender Previs](https://x.com/JMSvid/status/2070258132840796579) (by [@JMSvid](https://x.com/JMSvid))
+### Case 3: [Controle de câmera no ComfyUI com previs do Blender](https://x.com/JMSvid/status/2070258132840796579) (by [@JMSvid](https://x.com/JMSvid))
 
-**A ComfyUI control case where Blender previz is combined with separate upright and upside-down reference frames to test motion adherence.**
+**Um caso de controle no ComfyUI em que a previs do Blender é combinada com quadros de referência separados, um normal e outro invertido, para testar a fidelidade ao movimento.**
 
-- Notas da fonte: The case is useful because it combines Blender previz with multiple still references inside a ComfyUI-style control setup.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: O caso é útil porque combina a previs do Blender com várias referências estáticas em uma configuração de controle ao estilo do ComfyUI.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case3.mp4
+[![Reproduzir vídeo de demonstração — Caso 3](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case3.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case3.mp4)
 
 Tipo: Demo | Data: 2026-06-25
 
 ---
 
 <a id="case-4"></a>
-### Case 4: [Viewport Preview to Realistic Start Frame](https://x.com/DiabloNemesis/status/2070441923706503380) (by [@DiabloNemesis](https://x.com/DiabloNemesis))
+### Case 4: [Da prévia do viewport a um quadro inicial realista](https://x.com/DiabloNemesis/status/2070441923706503380) (by [@DiabloNemesis](https://x.com/DiabloNemesis))
 
-**A short viewport-preview tutorial: block out the scene, export the preview, turn the first frame realistic, then provide both references to Seedance.**
+**Um tutorial curto de prévia no viewport: faça o blockout da cena, exporte a prévia, torne o primeiro quadro realista e forneça as duas referências ao Seedance.**
 
-- Notas da fonte: The post gives a concise workflow with concrete artifacts: viewport preview, first-frame image, and Seedance reference video. The duplicate case 29 media was removed so the public case shows only one copy of the same video.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: A publicação apresenta um fluxo conciso com artefatos concretos: prévia do viewport, imagem do primeiro quadro e vídeo de referência do Seedance. A mídia duplicada do caso 29 foi removida para que o caso público mostre apenas uma cópia do mesmo vídeo.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case4.mp4
+[![Reproduzir vídeo de demonstração — Caso 4](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case4.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case4.mp4)
 
 Tipo: Demo | Data: 2026-06-26
 
 ---
 
 <a id="case-5"></a>
-### Case 5: [One Reference Video, Multiple Worlds](https://x.com/koldo2k/status/2071307945002815967) (by [@koldo2k](https://x.com/koldo2k))
+### Case 5: [Um vídeo de referência, vários mundos](https://x.com/koldo2k/status/2071307945002815967) (by [@koldo2k](https://x.com/koldo2k))
 
-**A style/world-variation case where the same Blender reference video drives different generated worlds in Seedance.**
+**Um caso de variação de estilo e mundo em que o mesmo vídeo de referência do Blender conduz diferentes mundos gerados no Seedance.**
 
-- Notas da fonte: The source is useful because it separates motion control from world/style variation using the same reference video.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: A fonte é útil porque separa o controle de movimento da variação de mundo e estilo usando o mesmo vídeo de referência.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case5.mp4
+[![Reproduzir vídeo de demonstração — Caso 5](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case5.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case5.mp4)
 
 Tipo: Demo | Data: 2026-06-28
 
 ---
 
 <a id="character-action-blocking-cases"></a>
-## 🎬 Character & Action Blocking / Bloqueio de personagens e ação
+## 🎬 Bloqueio de personagens e ação
 
 <a id="case-6"></a>
-### Case 6: [Multi-Character Dialogue with Matched Poses](https://x.com/reidhannaford/status/2069420552394043625) (by [@reidhannaford](https://x.com/reidhannaford))
+### Case 6: [Diálogo com vários personagens e poses correspondentes](https://x.com/reidhannaford/status/2069420552394043625) (by [@reidhannaford](https://x.com/reidhannaford))
 
-**A dialogue-shot workflow where Blender is used to match character poses and camera motion before Seedance generates the performed scene.**
+**Um fluxo para cenas de diálogo em que o Blender é usado para alinhar as poses dos personagens e o movimento da câmera antes de o Seedance gerar a cena encenada.**
 
-- Notas da fonte: The source adds multi-character dialogue and pose matching, making it distinct from single-character camera-control demos.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: A fonte acrescenta diálogo com vários personagens e correspondência de poses, distinguindo-se das demos de controle de câmera com um único personagem.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case6.mp4
+[![Reproduzir vídeo de demonstração — Caso 6](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case6.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case6.mp4)
 
 Tipo: Demo | Data: 2026-06-23
 
 ---
 
 <a id="case-8"></a>
-### Case 8: [Handheld Follow Camera through Space](https://x.com/reidhannaford/status/2070507963429671062) (by [@reidhannaford](https://x.com/reidhannaford))
+### Case 8: [Câmera de acompanhamento portátil através do espaço](https://x.com/reidhannaford/status/2070507963429671062) (by [@reidhannaford](https://x.com/reidhannaford))
 
-**A handheld-follow case where Blender controls how a character travels through space and Seedance carries the gritty camera move into the final video.**
+**Um caso de acompanhamento com câmera na mão em que o Blender controla o deslocamento do personagem e o Seedance leva o movimento de câmera áspero ao vídeo final.**
 
-- Notas da fonte: The source moves the character through the scene while the camera follows, which makes it useful for handheld movement shots.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: A fonte move o personagem pela cena enquanto a câmera o acompanha, o que a torna útil para tomadas em movimento com câmera na mão.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-Preview unavailable: the original GitHub attachment is no longer publicly accessible.
+Prévia indisponível: o anexo original do GitHub não está mais acessível publicamente.
 
 Tipo: Demo | Data: 2026-06-26
 
 ---
 
 <a id="case-9"></a>
-### Case 9: [Camera and Character Blocking for Tactical Action](https://x.com/SamJWasserman/status/2070742850095230991) (by [@SamJWasserman](https://x.com/SamJWasserman))
+### Case 9: [Bloqueio de câmera e personagens para ação tática](https://x.com/SamJWasserman/status/2070742850095230991) (by [@SamJWasserman](https://x.com/SamJWasserman))
 
-**A tactical blocking case where Blender directs camera orbit, lens choice, cover positions, gunfire beats, and character movement before generation.**
+**Um caso de bloqueio tático em que o Blender dirige a órbita da câmera, a escolha da lente, as posições de cobertura, os momentos de disparo e o movimento dos personagens antes da geração.**
 
-- Notas da fonte: The source shows simultaneous camera and character blocking, which is stronger than a simple camera-only reference.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: A fonte mostra bloqueio simultâneo de câmera e personagens, uma referência mais forte do que um simples movimento de câmera.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case9.mp4
+[![Reproduzir vídeo de demonstração — Caso 9](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case9.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case9.mp4)
 
 Tipo: Demo | Data: 2026-06-27
 
 ---
 
 <a id="case-21"></a>
-### Case 21: [Ambush Scene Previs Beyond a Simple Camera Move](https://x.com/reidhannaford/status/2071595581508563168) (by [@reidhannaford](https://x.com/reidhannaford))
+### Case 21: [Previs de emboscada além de um simples movimento de câmera](https://x.com/reidhannaford/status/2071595581508563168) (by [@reidhannaford](https://x.com/reidhannaford))
 
-**An ambush-scene case showing how Blender previs can solve staging, timing, and camera movement before Seedance generates the shot.**
+**Um caso de emboscada que mostra como a previs no Blender pode resolver encenação, timing e movimento de câmera antes de o Seedance gerar a tomada.**
 
-- Notas da fonte: Requested as case 21. Kept as a distinct Reid Hannaford example because it pushes the workflow beyond a simple camera move into scene staging.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: Solicitado como caso 21. Mantido como exemplo distinto de Reid Hannaford porque leva o fluxo além de um simples movimento de câmera até a encenação.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case21.mp4
+[![Reproduzir vídeo de demonstração — Caso 21](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case21.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case21.mp4)
 
 Tipo: Demo | Data: 2026-06-29
 
 ---
 
 <a id="agentic-blender-mcp-cases"></a>
-## 🤖 Agentic Blender MCP / Blender MCP com agentes
+## 🤖 Blender MCP com agentes
 
 <a id="case-10"></a>
-### Case 10: [Codex + Blender MCP Reference Video Workflow](https://x.com/akiyoshisan/status/2071081230108660199) (by [@akiyoshisan](https://x.com/akiyoshisan))
+### Case 10: [Fluxo de vídeo de referência com Codex + Blender MCP](https://x.com/akiyoshisan/status/2071081230108660199) (by [@akiyoshisan](https://x.com/akiyoshisan))
 
-**An agentic Blender MCP case where Codex builds a simple 3D market, cat motion, camera framing, and an MP4 reference for Seedance.**
+**Um caso de Blender MCP com agentes em que o Codex cria um mercado 3D simples, o movimento de um gato, o enquadramento e uma referência MP4 para o Seedance.**
 
-- Notas da fonte: The author says the test was inspired by another creator, but the described scene, motion, camera, and export process are their own experiment.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: O autor diz que o teste foi inspirado por outro criador, mas a cena, o movimento, a câmera e o processo de exportação descritos são de seu próprio experimento.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case10.mp4
+[![Reproduzir vídeo de demonstração — Caso 10](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case10.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case10.mp4)
 
 Tipo: Integration | Data: 2026-06-28
 
 ---
 
 <a id="case-11"></a>
-### Case 11: [Codex-Built Architecture and Camera Work](https://x.com/6_KAKUU/status/2071051063663452374) (by [@6_KAKUU](https://x.com/6_KAKUU))
+### Case 11: [Arquitetura e trabalho de câmera criados pelo Codex](https://x.com/6_KAKUU/status/2071051063663452374) (by [@6_KAKUU](https://x.com/6_KAKUU))
 
-**A Codex-assisted beginner case where architecture and camera work are generated in Blender and then tested as Seedance reference motion.**
+**Um caso para iniciantes assistido pelo Codex em que a arquitetura e o trabalho de câmera são gerados no Blender e depois testados como referência de movimento para o Seedance.**
 
-- Notas da fonte: The post is valuable as a beginner Codex workflow: the user delegates architecture and camera work to Codex before Seedance.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: A publicação é valiosa como fluxo de Codex para iniciantes: o usuário delega ao Codex a arquitetura e o trabalho de câmera antes do Seedance.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case11.mp4
+[![Reproduzir vídeo de demonstração — Caso 11](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case11.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case11.mp4)
 
 Tipo: Integration | Data: 2026-06-28
 
 ---
 
 <a id="case-22"></a>
-### Case 22: [Claude-Built Blender MCP Previs in Minutes](https://x.com/JoshDaws/status/2071401550845481090) (by [@JoshDaws](https://x.com/JoshDaws))
+### Case 22: [Previs no Blender MCP criada pelo Claude em minutos](https://x.com/JoshDaws/status/2071401550845481090) (by [@JoshDaws](https://x.com/JoshDaws))
 
-**A fast agentic-previs case where Claude uses Blender MCP to build a shot reference in two to three minutes.**
+**Um caso rápido de previs com agentes em que o Claude usa o Blender MCP para criar uma referência de tomada em dois ou três minutos.**
 
-- Notas da fonte: Requested as case 22. Kept because it demonstrates speed and agent control rather than manual Blender work.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: Solicitado como caso 22. Mantido porque demonstra velocidade e controle por agente, em vez de trabalho manual no Blender.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case22.mp4
+[![Reproduzir vídeo de demonstração — Caso 22](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case22.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case22.mp4)
 
 Tipo: Integration | Data: 2026-06-29
 
 ---
 
 <a id="reference-prompt-multi-input-mapping-cases"></a>
-## 🧩 Reference, Prompt & Multi-Input Mapping / Referências, prompts e múltiplas entradas
+## 🧩 Referências, prompts e mapeamento de múltiplas entradas
 
 <a id="case-13"></a>
-### Case 13: [Reproducible Seedance Prompt with Blender Reference](https://x.com/aidoga_lab/status/2070864815275585913) (by [@aidoga_lab](https://x.com/aidoga_lab))
+### Case 13: [Prompt reproduzível do Seedance com referência do Blender](https://x.com/aidoga_lab/status/2070864815275585913) (by [@aidoga_lab](https://x.com/aidoga_lab))
 
-**A merged reproducibility and troubleshooting case: the setup spells out the reference-video conditions, while the paired test records where camera/rhythm control worked and foot motion failed.**
+**Um caso combinado de reprodutibilidade e diagnóstico: a configuração detalha as condições do vídeo de referência, enquanto o teste pareado registra onde o controle de câmera e ritmo funcionou e onde o movimento dos pés falhou.**
 
-- Notas da fonte: Merged with former case 19: the pair keeps both the reproducible setup and the limitation note about foot sliding.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: Mesclado com o antigo caso 19: o par preserva tanto a configuração reproduzível quanto a observação de limitação sobre o deslizamento dos pés.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case13.mp4
+[![Reproduzir vídeo de demonstração — Caso 13](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case13.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case13.mp4)
 
-media/case13.jpg
+![Imagem de referência — Caso 13](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case13.jpg)
 
 Tipo: Tutorial | Data: 2026-06-27
 
 ---
 
 <a id="case-14"></a>
-### Case 14: [Mixamo Motion as Beginner Blender Reference](https://x.com/tanabe_fragm/status/2070685291183243459) (by [@tanabe_fragm](https://x.com/tanabe_fragm))
+### Case 14: [Movimento do Mixamo como referência do Blender para iniciantes](https://x.com/tanabe_fragm/status/2070685291183243459) (by [@tanabe_fragm](https://x.com/tanabe_fragm))
 
-**A beginner-friendly motion-source case: use Mixamo motion in Blender as the controllable movement base before sending the reference to Seedance.**
+**Um caso de fonte de movimento acessível a iniciantes: use o movimento do Mixamo no Blender como base controlável antes de enviar a referência ao Seedance.**
 
-- Notas da fonte: The source is useful for beginners because it names Mixamo as a practical motion source for Blender reference videos.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: A fonte é útil para iniciantes porque apresenta o Mixamo como uma fonte prática de movimento para vídeos de referência do Blender.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case14.mp4
+[![Reproduzir vídeo de demonstração — Caso 14](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case14.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case14.mp4)
 
 Tipo: Tutorial | Data: 2026-06-27
 
 ---
 
 <a id="case-23"></a>
-### Case 23: [Position-Only Reference Control for a Faster Scene](https://x.com/kan_mi_no9/status/2071380621214224403) (by [@kan_mi_no9](https://x.com/kan_mi_no9))
+### Case 23: [Controle de referência apenas por posição para uma cena mais rápida](https://x.com/kan_mi_no9/status/2071380621214224403) (by [@kan_mi_no9](https://x.com/kan_mi_no9))
 
-**A reference-weighting case: keep the reference useful for positions while letting the prompt recover speed and dynamism.**
+**Um caso de ponderação da referência: mantenha a referência útil para posições e deixe o prompt recuperar velocidade e dinamismo.**
 
-- Notas da fonte: Requested as case 23. Kept with the paired kan_mi_no9 test as a distinct reference-control variant.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: Solicitado como caso 23. Mantido com o teste pareado de kan_mi_no9 como uma variante distinta de controle por referência.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case23.mp4
+[![Reproduzir vídeo de demonstração — Caso 23](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case23.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case23.mp4)
 
 Tipo: Tutorial | Data: 2026-06-28
 
 ---
 
 <a id="case-24"></a>
-### Case 24: [Physical Toy Reference Instead of 3D Software](https://x.com/gcduncombe/status/2070617538745229546) (by [@gcduncombe](https://x.com/gcduncombe))
+### Case 24: [Brinquedo físico como referência em vez de software 3D](https://x.com/gcduncombe/status/2070617538745229546) (by [@gcduncombe](https://x.com/gcduncombe))
 
-**A physical-reference case: use toys as quick motion and staging references when opening Blender is too much overhead.**
+**Um caso de referência física: use brinquedos como referências rápidas de movimento e encenação quando abrir o Blender der trabalho demais.**
 
-- Notas da fonte: Requested as case 24. Kept because it expands the reference-video idea beyond software-only previs.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: Solicitado como caso 24. Mantido porque amplia a ideia de vídeo de referência para além da previs feita apenas com software.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case24.mp4
+[![Reproduzir vídeo de demonstração — Caso 24](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case24.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case24.mp4)
 
 Tipo: Demo | Data: 2026-06-26
 
 ---
 
 <a id="case-26"></a>
-### Case 26: [Reference Control for a Specific Failed Prompt Scene](https://x.com/kan_mi_no9/status/2071168235022827587) (by [@kan_mi_no9](https://x.com/kan_mi_no9))
+### Case 26: [Controle por referência para uma cena específica em que o prompt falhou](https://x.com/kan_mi_no9/status/2071168235022827587) (by [@kan_mi_no9](https://x.com/kan_mi_no9))
 
-**A control fallback case: when prompt-only generation fails, use a reference to force the scene even if some dynamism is reduced.**
+**Uma alternativa de controle: quando a geração somente por prompt falhar, use uma referência para forçar a cena, mesmo com alguma redução de dinamismo.**
 
-- Notas da fonte: Requested as case 26. Kept as the practical counterpart to the later kan_mi_no9 variation case.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: Solicitado como caso 26. Mantido como contraparte prática do caso posterior de variação de kan_mi_no9.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case26.mp4
+[![Reproduzir vídeo de demonstração — Caso 26](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case26.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case26.mp4)
 
 Tipo: Demo | Data: 2026-06-28
 
 ---
 
 <a id="case-27"></a>
-### Case 27: [Character Proportion and Simple Background Tips](https://x.com/craftcapitallab/status/2070512271391068287) (by [@craftcapitallab](https://x.com/craftcapitallab))
+### Case 27: [Dicas de proporção de personagens e fundos simples](https://x.com/craftcapitallab/status/2070512271391068287) (by [@craftcapitallab](https://x.com/craftcapitallab))
 
-**A stability checklist case: match character proportions beyond height and simplify any background that does not need precise alignment.**
+**Um caso em formato de checklist de estabilidade: alinhe as proporções do personagem além da altura e simplifique qualquer fundo que não precise de correspondência precisa.**
 
-- Notas da fonte: Requested as case 27. Kept because it offers specific, reusable setup advice.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: Solicitado como caso 27. Mantido porque oferece orientações de configuração específicas e reutilizáveis.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case27.mp4
+[![Reproduzir vídeo de demonstração — Caso 27](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case27.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case27.mp4)
 
 Tipo: Tutorial | Data: 2026-06-26
 
 ---
 
 <a id="production-pipelines-toolchains-cases"></a>
-## 🛠️ Production Pipelines & Toolchains / Pipelines e ferramentas de produção
+## 🛠️ Pipelines e cadeias de ferramentas de produção
 
 <a id="case-15"></a>
-### Case 15: [Hermes, Krea, ComfyUI and Blender MCP Stack](https://x.com/SamJWasserman/status/2069656428437225826) (by [@SamJWasserman](https://x.com/SamJWasserman))
+### Case 15: [Stack com Hermes, Krea, ComfyUI e Blender MCP](https://x.com/SamJWasserman/status/2069656428437225826) (by [@SamJWasserman](https://x.com/SamJWasserman))
 
-**A multi-tool agent pipeline where Hermes installs and connects Krea, ComfyUI, Blender MCP, and Seedance to produce both image and physical references.**
+**Um pipeline de agentes com várias ferramentas em que o Hermes instala e conecta Krea, ComfyUI, Blender MCP e Seedance para produzir referências visuais e físicas.**
 
-- Notas da fonte: The case demonstrates a broader agent-built creative stack, not just manual Blender previs.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: O caso demonstra um stack criativo mais amplo construído por agentes, e não apenas previs manual no Blender.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case15.mp4
+[![Reproduzir vídeo de demonstração — Caso 15](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case15.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case15.mp4)
 
 Tipo: Integration | Data: 2026-06-24
 
 ---
 
 <a id="case-16"></a>
-### Case 16: [Blender MCP Viewport to Seedance Style Transfer](https://x.com/techhalla/status/2070814203435274715) (by [@techhalla](https://x.com/techhalla))
+### Case 16: [Do viewport do Blender MCP à transferência de estilo no Seedance](https://x.com/techhalla/status/2070814203435274715) (by [@techhalla](https://x.com/techhalla))
 
-**A viewport-to-style-transfer case: Blender MCP provides camera and element control, then Seedance/Magnific add texture and lighting.**
+**Um caso do viewport à transferência de estilo: o Blender MCP controla a câmera e os elementos; depois, Seedance e Magnific adicionam textura e iluminação.**
 
-- Notas da fonte: This is the stronger techhalla source because it explains the viewport animation and downstream style/lighting step.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: Esta é a fonte mais forte de techhalla porque explica a animação no viewport e a etapa posterior de estilo e iluminação.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case16.mp4
+[![Reproduzir vídeo de demonstração — Caso 16](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case16.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case16.mp4)
 
 Tipo: Integration | Data: 2026-06-27
 
 ---
 
 <a id="case-17"></a>
-### Case 17: [Blender Previz to Anime Seedance Render](https://x.com/restofart/status/2070086939756159368) (by [@restofart](https://x.com/restofart))
+### Case 17: [Da previs do Blender à renderização anime no Seedance](https://x.com/restofart/status/2070086939756159368) (by [@restofart](https://x.com/restofart))
 
-**A 3D-previs-to-anime case showing how camera moves and motion can be preserved while Seedance changes the render style.**
+**Um caso de previs 3D para anime que mostra como preservar os movimentos de câmera e a ação enquanto o Seedance altera o estilo de renderização.**
 
-- Notas da fonte: The source directly frames the workflow as Blender 3D previz transformed into an anime render while keeping camera motion.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: A fonte enquadra diretamente o fluxo como uma previs 3D do Blender transformada em renderização anime, preservando o movimento de câmera.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case17.mp4
+[![Reproduzir vídeo de demonstração — Caso 17](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case17.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case17.mp4)
 
 Tipo: Integration | Data: 2026-06-25
 
 ---
 
 <a id="case-18"></a>
-### Case 18: [FBX Clay Pass with Claude-Keyframed Camera](https://x.com/Viggle_PINOC/status/2070183934265012392) (by [@Viggle_PINOC](https://x.com/Viggle_PINOC))
+### Case 18: [Clay pass FBX com câmera keyframed pelo Claude](https://x.com/Viggle_PINOC/status/2070183934265012392) (by [@Viggle_PINOC](https://x.com/Viggle_PINOC))
 
-**An FBX clay-pass workflow where Blender imports the motion, Claude helps keyframe camera moves, and the rendered pass becomes Seedance reference video.**
+**Um fluxo de clay pass FBX em que o Blender importa o movimento, o Claude ajuda a criar keyframes de câmera e o passe renderizado se torna o vídeo de referência do Seedance.**
 
-- Notas da fonte: The source gives a specific FBX-to-clay-pass process and includes camera keyframing before reference export.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: A fonte apresenta um processo específico de FBX para clay pass e inclui keyframes de câmera antes da exportação da referência.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case18.mp4
+[![Reproduzir vídeo de demonstração — Caso 18](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case18.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case18.mp4)
 
 Tipo: Integration | Data: 2026-06-25
 
 ---
 
 <a id="limits-tests-troubleshooting-cases"></a>
-## 🧪 Limits, Tests & Troubleshooting / Limites, testes e diagnóstico
+## 🧪 Limites, testes e solução de problemas
 
 <a id="case-20"></a>
-### Case 20: [Reference-Only Blender Blockout without Start Frame](https://x.com/magneticskiff/status/2070711034793361559) (by [@magneticskiff](https://x.com/magneticskiff))
+### Case 20: [Blockout do Blender somente com referência e sem quadro inicial](https://x.com/magneticskiff/status/2070711034793361559) (by [@magneticskiff](https://x.com/magneticskiff))
 
-**A no-start-frame variant showing that Blender blockout plus detailed environment references can work when the workflow cannot rely on a starter frame.**
+**Uma variante sem quadro inicial que mostra que o blockout do Blender e referências detalhadas do ambiente podem funcionar quando o fluxo não pode depender de uma imagem inicial.**
 
-- Notas da fonte: This case covers an important variant where reference images replace the usual start-frame dependency.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: Este caso cobre uma variante importante em que imagens de referência substituem a dependência usual de um quadro inicial.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case20.mp4
+[![Reproduzir vídeo de demonstração — Caso 20](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case20.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case20.mp4)
 
 Tipo: Limit | Data: 2026-06-27
 
 ---
 
 <a id="case-25"></a>
-### Case 25: [Toy Reference Prompt Reinforcement and NG Example](https://x.com/tea_story_hoshi/status/2071002538703479089) (by [@tea_story_hoshi](https://x.com/tea_story_hoshi))
+### Case 25: [Reforço de prompt com brinquedo de referência e exemplo malsucedido](https://x.com/tea_story_hoshi/status/2071002538703479089) (by [@tea_story_hoshi](https://x.com/tea_story_hoshi))
 
-**A troubleshooting case showing why reference videos often need prompt reinforcement instead of raw imitation.**
+**Um caso de diagnóstico que mostra por que vídeos de referência frequentemente precisam de reforço no prompt em vez de imitação direta.**
 
-- Notas da fonte: Requested as case 25. Kept because it includes both working examples and a failed comparison.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: Solicitado como caso 25. Mantido porque inclui exemplos funcionais e uma comparação malsucedida.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case25.mp4
+[![Reproduzir vídeo de demonstração — Caso 25](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case25.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case25.mp4)
 
 Tipo: Limit | Data: 2026-06-27
 
 ---
 
 <a id="case-28"></a>
-### Case 28: [Cloth Physics Stress Test with Blender and Seedance](https://x.com/fatboypink/status/2070577334701473800) (by [@fatboypink](https://x.com/fatboypink))
+### Case 28: [Teste de estresse de física de tecidos com Blender e Seedance](https://x.com/fatboypink/status/2070577334701473800) (by [@fatboypink](https://x.com/fatboypink))
 
-**A cloth-physics stress test showing where Blender-guided Seedance can work but still needs iteration for difficult motion.**
+**Um teste de estresse de física de tecidos que mostra onde o Seedance guiado pelo Blender funciona, mas ainda exige iteração em movimentos difíceis.**
 
-- Notas da fonte: Requested as case 28. Kept as a concrete limitation/stress-test case.
-- Audit status: kept after manual duplicate and originality review.
+- Notas da fonte: Solicitado como caso 28. Mantido como um caso concreto de limitação e teste de estresse.
+- Status da auditoria: mantido após revisão manual de duplicidade e originalidade.
 - Prévia do vídeo:
 
-media/case28.mp4
+[![Reproduzir vídeo de demonstração — Caso 28](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case28.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case28.mp4)
 
 Tipo: Limit | Data: 2026-06-26
 
 ---
 
+<a id="related-repositories"></a>
+## 🔗 Repositórios relacionados
+
+- [Explore prompts do Seedance 2.0](https://github.com/Evolink-AI/awesome-seedance-2.0-prompts)
+- [Instale a skill de agente Seedance 2](https://github.com/Evolink-AI/seedance2-video-gen-skill-for-openclaw)
+- [Explore o fluxo GPT Image 2 para Seedance 2](https://github.com/Evolink-AI/GPT-Image-2-Seedance2-Workflow)
+
 <a id="acknowledge"></a>
 ## 🙏 Agradecimentos
 
-This repository was inspired by creators who publicly shared Blender + Seedance workflows, tests, prompts, reference videos, and production notes.
+Este repositório foi inspirado por criadores que compartilharam publicamente fluxos de Blender + Seedance, testes, prompts, vídeos de referência e notas de produção.
 
 [@noman23761](https://x.com/noman23761), [@reidhannaford](https://x.com/reidhannaford), [@JMSvid](https://x.com/JMSvid), [@DiabloNemesis](https://x.com/DiabloNemesis), [@koldo2k](https://x.com/koldo2k), [@SamJWasserman](https://x.com/SamJWasserman), [@akiyoshisan](https://x.com/akiyoshisan), [@6_KAKUU](https://x.com/6_KAKUU), [@aidoga_lab](https://x.com/aidoga_lab), [@tanabe_fragm](https://x.com/tanabe_fragm), [@techhalla](https://x.com/techhalla), [@restofart](https://x.com/restofart), [@Viggle_PINOC](https://x.com/Viggle_PINOC), [@magneticskiff](https://x.com/magneticskiff), [@JoshDaws](https://x.com/JoshDaws), [@kan_mi_no9](https://x.com/kan_mi_no9), [@gcduncombe](https://x.com/gcduncombe), [@tea_story_hoshi](https://x.com/tea_story_hoshi), [@craftcapitallab](https://x.com/craftcapitallab), [@fatboypink](https://x.com/fatboypink)
 
-*We cannot guarantee that every case is attributed to the original creator. If anything needs to be corrected, please contact us and we will update it.*
+*Não podemos garantir que todos os casos estejam atribuídos ao criador original. Se algo precisar de correção, entre em contato e nós o atualizaremos.*
 
-Have a Blender + Seedance workflow to add? [Open a use case issue](https://github.com/cheercheung/Awesome-Blender-Seedance-Workflow-Usecases/issues/new?template=use-case.yml) with the [issue template file](.github/ISSUE_TEMPLATE/use-case.yml), or open a pull request with the [PR template](.github/PULL_REQUEST_TEMPLATE.md).
+Tem um fluxo de Blender + Seedance para adicionar? [Abra uma issue de caso de uso](https://github.com/Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases/issues/new?template=use-case.yml) com o [arquivo de template da issue](.github/ISSUE_TEMPLATE/use-case.yml), ou abra um pull request com o [template de PR](.github/PULL_REQUEST_TEMPLATE.md).
 
-[![Star History Chart](https://api.star-history.com/svg?repos=cheercheung/Awesome-Blender-Seedance-Workflow-Usecases&type=Date)](https://www.star-history.com/#cheercheung/Awesome-Blender-Seedance-Workflow-Usecases&Date)
-
+[![Gráfico do histórico de estrelas](https://api.star-history.com/svg?repos=Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases&type=Date)](https://www.star-history.com/#Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases&Date)
