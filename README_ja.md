@@ -36,7 +36,7 @@ Blender + Seedanceのユースケース集です。
 - **Blender + Seedanceの選定事例25件**を、所有者提供のソースデータセットに含まれる公開クリエイター投稿から選定しました。
 - カメラ制御、Blenderプリビズ、複数キャラクターのブロッキング、アクションの振り付け、Blender MCP、Codex／Claude支援のブロックアウト、FBX／Mixamo参照、ComfyUI／スタイル変換、既知の制限を扱います。
 - 各事例には、元ソース、クリエイター表記、簡潔な要点、証拠タイプ、公開日が含まれます。
-- 公開リストは、35件の候補監査と追加依頼された新規リンクを基に、25件の主要事例へ再構成しました。
+- 公開リストは35件の候補監査から始まり、現在は定期更新ループで監査済みの週次追加7件を含みます。
 - このリポジトリで実践的なワークフローを確認し、セットアップと実行にはEvoLinkのBlender-to-videoクックブックを利用してください。
 
 > [!NOTE]
@@ -85,12 +85,12 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 | セクション | ケース |
 |---|---|
-| [🎥 カメラ制御とプリビズ](#camera-control-previs) | Case 1, 2, 3, 4, 5 |
-| [🎬 キャラクターとアクションのブロッキング](#character-action-blocking) | Case 6, 8, 9, 21 |
-| [🤖 エージェント型Blender MCP](#agentic-blender-mcp) | Case 10, 11, 22 |
-| [🧩 参照、プロンプト、複数入力の対応付け](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27 |
-| [🛠️ 制作パイプラインとツールチェーン](#production-pipelines-toolchains) | Case 15, 16, 17, 18 |
-| [🧪 制限、検証、トラブルシューティング](#limits-tests-troubleshooting) | Case 20, 25, 28 |
+| [🎥 カメラ制御とプリビズ](#camera-control-previs) | Case 1, 2, 3, 4, 5, 29 |
+| [🎬 キャラクターとアクションのブロッキング](#character-action-blocking) | Case 6, 8, 9, 21, 32 |
+| [🤖 エージェント型Blender MCP](#agentic-blender-mcp) | Case 10, 11, 22, 34 |
+| [🧩 参照、プロンプト、複数入力の対応付け](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27, 35 |
+| [🛠️ 制作パイプラインとツールチェーン](#production-pipelines-toolchains) | Case 15, 16, 17, 18, 30 |
+| [🧪 制限、検証、トラブルシューティング](#limits-tests-troubleshooting) | Case 20, 25, 28, 31, 33 |
 | [🙏 謝辞](#acknowledge) | クレジットと訂正ポリシー |
 
 <a id="camera-control-previs"></a>
@@ -103,6 +103,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Blenderプリビズを使ったComfyUIカメラ制御](#case-3) | Blenderプリビズに正位置と上下反転の参照フレームを別々に組み合わせ、動きへの追従性を検証するComfyUI制御事例です。 | Demo |
 | [ビューポートプレビューからリアルな開始フレームへ](#case-4) | 短いビューポートプレビューのチュートリアルです。シーンをブロックアウトし、プレビューを書き出し、最初のフレームをリアルにしてから、両方の参照をSeedanceに渡します。 | Demo |
 | [1本の参照動画から複数の世界を生成](#case-5) | 同じBlender参照動画を使って、Seedanceで異なる世界観を生成するスタイル／世界観バリエーションの事例です。 | Demo |
+| [会話に同期したiPhoneカメラのプリビズ](#case-29) | iPhoneで駆動したBlenderカメラパスを会話に合わせ、その音声付きプリビズと2枚の画像をSeedanceに渡してショット設計に使います。 | Integration |
+
 
 <a id="character-action-blocking"></a>
 ### 🎬 キャラクターとアクションのブロッキング
@@ -113,6 +115,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [空間を移動するハンドヘルド追従カメラ](#case-8) | Blenderでキャラクターの空間移動を制御し、Seedanceが荒々しいカメラワークを最終動画に引き継ぐハンドヘルド追従の事例です。 | Demo |
 | [タクティカルアクション向けのカメラとキャラクターのブロッキング](#case-9) | 生成前にBlenderでカメラの旋回、レンズ選択、遮蔽物の位置、銃撃のタイミング、キャラクター移動を演出するタクティカルブロッキングの事例です。 | Demo |
 | [単純なカメラ移動を超えた待ち伏せシーンのプリビズ](#case-21) | Seedanceでショットを生成する前に、Blenderプリビズでステージング、タイミング、カメラ移動を解決できることを示す待ち伏せシーンの事例です。 | Demo |
+| [障害物付き屋上パルクールチェイス](#case-32) | Seedanceが直線的な走りに寄りやすいときは、障害物とのやり取りや回避ビートを含むBlenderパルクールプリビズを先に作ります。 | Demo |
+
 
 <a id="agentic-blender-mcp"></a>
 ### 🤖 エージェント型Blender MCP
@@ -122,6 +126,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Codex + Blender MCPによる参照動画ワークフロー](#case-10) | Codexが簡単な3D市場、猫の動き、カメラ構図、Seedance用のMP4参照を構築するエージェント型Blender MCPの事例です。 | Integration |
 | [Codexで構築する建築とカメラワーク](#case-11) | Codexの支援でBlender内に建築とカメラワークを生成し、Seedanceの参照モーションとして検証する初心者向け事例です。 | Integration |
 | [Claudeで数分以内に作るBlender MCPプリビズ](#case-22) | ClaudeがBlender MCPを使い、2〜3分でショット参照を構築する高速なエージェント型プリビズの事例です。 | Integration |
+| [FableスキルをCodexへ移植](#case-34) | エージェントにBlender参照動画スキルを作らせてCodexへ移植し、プロンプトなしでSeedanceが動きを整えられるか試します。 | Integration |
+
 
 <a id="reference-prompt-multi-input-mapping"></a>
 ### 🧩 参照、プロンプト、複数入力の対応付け
@@ -134,6 +140,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [3Dソフトウェアの代わりに実物のおもちゃを参照](#case-24) | 物理参照の事例です。Blenderを開く負担が大きい場合に、おもちゃを素早い動きとステージングの参照として使います。 | Demo |
 | [プロンプトで失敗した特定シーンの参照制御](#case-26) | 制御の代替策を示す事例です。プロンプトだけの生成に失敗したら、多少の躍動感を犠牲にしても参照を使ってシーンを成立させます。 | Demo |
 | [キャラクター比率とシンプルな背景のヒント](#case-27) | 安定性チェックリストの事例です。身長だけでなくキャラクター全体の比率を合わせ、厳密な位置合わせが不要な背景は簡略化します。 | Tutorial |
+| [マネキンモーキャプとスタイル入力フレーム](#case-35) | 硬いBlenderやマネキンの動きソースでタイミングを固定しつつ、入力フレーム設計でSeedanceの最終スタイルと布の挙動を誘導します。 | Demo |
+
 
 <a id="production-pipelines-toolchains"></a>
 ### 🛠️ 制作パイプラインとツールチェーン
@@ -144,6 +152,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Blender MCPビューポートからSeedanceへのスタイル変換](#case-16) | ビューポートからスタイル変換へ進む事例です。Blender MCPでカメラと要素を制御し、Seedance／Magnificでテクスチャとライティングを加えます。 | Integration |
 | [BlenderプリビズからSeedanceのアニメ調レンダーへ](#case-17) | Seedanceでレンダースタイルを変えながら、カメラ移動とモーションを維持できることを示す3Dプリビズからアニメへの事例です。 | Integration |
 | [Claudeでキーフレーム設定したカメラを使うFBXクレイパス](#case-18) | Blenderでモーションを読み込み、Claudeがカメラ移動のキーフレーム設定を支援し、レンダリングしたクレイパスをSeedance参照動画にするFBXワークフローです。 | Integration |
+| [Fableが組んだダンス参照パイプライン](#case-30) | プロンプトだけでは粗い動きになりやすいとき、エージェントにキャラ設計とBlender振付コードを任せ、15秒のダンス参照をSeedanceへ渡します。 | Integration |
+
 
 <a id="limits-tests-troubleshooting"></a>
 ### 🧪 制限、検証、トラブルシューティング
@@ -153,6 +163,10 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [開始フレームなしの参照専用Blenderブロックアウト](#case-20) | 開始フレームを利用できないワークフローでも、Blenderブロックアウトと詳細な環境参照を組み合わせれば機能することを示す、開始フレームなしのバリエーションです。 | Limit |
 | [おもちゃ参照のプロンプト補強とNG例](#case-25) | 参照動画をそのまま模倣させるのではなく、プロンプトによる補強が必要になる理由を示すトラブルシューティング事例です。 | Limit |
 | [BlenderとSeedanceによる布物理のストレステスト](#case-28) | Blenderで誘導したSeedanceが機能する範囲と、難しい動きでは反復調整が必要なことを示す布物理のストレステストです。 | Limit |
+| [黒フレームでつなぐキーフレーム補正](#case-31) | 荒いBlender参照の中割りまでSeedanceが機械的に真似するときは、キーポーズだけ残して間を黒フレームにします。 | Tutorial |
+| [複雑シーンでのモーション不一致テスト](#case-33) | ラフシーンのMCPレンダーは制約テストとして扱うべきで、複雑なBlenderシーンは複数回のSeedance試行でも意図した動きからずれることがあります。 | Limit |
+
+
 
 <a id="camera-control-previs-cases"></a>
 ## 🎥 カメラ制御とプリビズ
@@ -232,6 +246,20 @@ Type: Demo | Date: 2026-06-28
 
 ---
 
+
+<a id="case-29"></a>
+### Case 29: [会話に同期したiPhoneカメラのプリビズ](https://x.com/CoffeeVectors/status/2076397975853551924) （作者：[@CoffeeVectors](https://x.com/CoffeeVectors)）
+
+**iPhoneで駆動したBlenderカメラパスを会話に合わせ、その音声付きプリビズと2枚の画像をSeedanceに渡してショット設計に使います。**
+
+- ソースメモ: ソースでは、iPhoneで駆動したBlenderカメラを会話に合わせ、その音声付きプリビズを2枚の静止画と一緒にSeedance 2へ渡しています。
+- 動画プレビュー:
+
+[![動画プレビュー — Case 29](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case29.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case29.mp4)
+
+Type: Integration | Date: 2026-07-12
+
+---
 <a id="character-action-blocking-cases"></a>
 ## 🎬 キャラクターとアクションのブロッキング
 
@@ -295,6 +323,20 @@ Type: Demo | Date: 2026-06-29
 
 ---
 
+
+<a id="case-32"></a>
+### Case 32: [障害物付き屋上パルクールチェイス](https://x.com/moframe2026/status/2075203485604470965) （作者：[@moframe2026](https://x.com/moframe2026)）
+
+**Seedanceが直線的な走りに寄りやすいときは、障害物とのやり取りや回避ビートを含むBlenderパルクールプリビズを先に作ります。**
+
+- ソースメモ: 作者はBlender製のパルクールプリビズを動画参照に使い、単なる走りではなく障害物利用と回避の流れを補うためにBlenderが必要だったと書いています。
+- 動画プレビュー:
+
+[![動画プレビュー — Case 32](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case32.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case32.mp4)
+
+Type: Demo | Date: 2026-07-09
+
+---
 <a id="agentic-blender-mcp-cases"></a>
 ## 🤖 エージェント型Blender MCP
 
@@ -343,6 +385,20 @@ Type: Integration | Date: 2026-06-29
 
 ---
 
+
+<a id="case-34"></a>
+### Case 34: [FableスキルをCodexへ移植](https://x.com/mugi_AI_Art/status/2074259600342163846) （作者：[@mugi_AI_Art](https://x.com/mugi_AI_Art)）
+
+**エージェントにBlender参照動画スキルを作らせてCodexへ移植し、プロンプトなしでSeedanceが動きを整えられるか試します。**
+
+- ソースメモ: 作者はFableにBlender参照動画スキルを作らせてCodexへ移植し、ラフモデリングの参照からプロンプトなしでSeedance生成を行っています。
+- 動画プレビュー:
+
+[![動画プレビュー — Case 34](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case34.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case34.mp4)
+
+Type: Integration | Date: 2026-07-06
+
+---
 <a id="reference-prompt-multi-input-mapping-cases"></a>
 ## 🧩 参照、プロンプト、複数入力の対応付け
 
@@ -438,6 +494,20 @@ Type: Tutorial | Date: 2026-06-26
 
 ---
 
+
+<a id="case-35"></a>
+### Case 35: [マネキンモーキャプとスタイル入力フレーム](https://x.com/fatboypink/status/2074087401887039740) （作者：[@fatboypink](https://x.com/fatboypink)）
+
+**硬いBlenderやマネキンの動きソースでタイミングを固定しつつ、入力フレーム設計でSeedanceの最終スタイルと布の挙動を誘導します。**
+
+- ソースメモ: 作者は、硬いマネキン由来のモーションがタイミングを担当しつつ、手描きの入力フレームが狙ったスタイルと布の動きを引き戻したと説明しています。
+- 動画プレビュー:
+
+[![動画プレビュー — Case 35](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case35.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case35.mp4)
+
+Type: Demo | Date: 2026-07-06
+
+---
 <a id="production-pipelines-toolchains-cases"></a>
 ## 🛠️ 制作パイプラインとツールチェーン
 
@@ -501,6 +571,20 @@ Type: Integration | Date: 2026-06-25
 
 ---
 
+
+<a id="case-30"></a>
+### Case 30: [Fableが組んだダンス参照パイプライン](https://x.com/ryo05m/status/2076284841457521043) （作者：[@ryo05m](https://x.com/ryo05m)）
+
+**プロンプトだけでは粗い動きになりやすいとき、エージェントにキャラ設計とBlender振付コードを任せ、15秒のダンス参照をSeedanceへ渡します。**
+
+- ソースメモ: 作者は、Seedream 5 Proでキャラ設計、Blenderで15秒のマネキンダンス、Seedance 2.0で動きとカメラ参照という3段階を明記しています。
+- 動画プレビュー:
+
+[![動画プレビュー — Case 30](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case30.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case30.mp4)
+
+Type: Integration | Date: 2026-07-12
+
+---
 <a id="limits-tests-troubleshooting-cases"></a>
 ## 🧪 制限、検証、トラブルシューティング
 
@@ -556,6 +640,34 @@ Type: Limit | Date: 2026-06-26
 - [Seedance 2 エージェントスキルをインストール](https://github.com/Evolink-AI/seedance2-video-gen-skill-for-openclaw)
 - [GPT Image 2 から Seedance 2 のワークフローを見る](https://github.com/Evolink-AI/GPT-Image-2-Seedance2-Workflow)
 
+
+<a id="case-31"></a>
+### Case 31: [黒フレームでつなぐキーフレーム補正](https://x.com/thechriscooper/status/2076092824102240411) （作者：[@thechriscooper](https://x.com/thechriscooper)）
+
+**荒いBlender参照の中割りまでSeedanceが機械的に真似するときは、キーポーズだけ残して間を黒フレームにします。**
+
+- ソースメモ: 作者によると、荒いBlenderアニメーション全体をそのまま渡すとSeedanceがぎこちない中割りまで複製しましたが、キーフレームと黒フレームを交互にするとブロッキングを保ったまま動きが滑らかになりました。
+- 動画プレビュー:
+
+[![動画プレビュー — Case 31](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case31.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case31.mp4)
+
+Type: Tutorial | Date: 2026-07-11
+
+---
+
+<a id="case-33"></a>
+### Case 33: [複雑シーンでのモーション不一致テスト](https://x.com/sonicpower1970/status/2074322339391824012) （作者：[@sonicpower1970](https://x.com/sonicpower1970)）
+
+**ラフシーンのMCPレンダーは制約テストとして扱うべきで、複雑なBlenderシーンは複数回のSeedance試行でも意図した動きからずれることがあります。**
+
+- ソースメモ: この続報では、作者のClaude→Blender→Seedanceテストにおいて、およそ4テイク試しても複雑なシーンでは意図した動きに合わなかったと報告しています。
+- 動画プレビュー:
+
+[![動画プレビュー — Case 33](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case33.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case33.mp4)
+
+Type: Limit | Date: 2026-07-07
+
+---
 <a id="acknowledge"></a>
 ## 🙏 謝辞
 

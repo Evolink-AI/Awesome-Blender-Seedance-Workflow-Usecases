@@ -33,7 +33,7 @@ Blender + Seedance 使用案例仓库。
 
 ## 📊 Overview
 
-- **25 个精选 Blender + Seedance 案例**，来自用户提供数据集中公开创作者帖子。
+- **32 个 Blender + Seedance 精选案例**，来自公开创作者帖子和通过审计的每周增量更新。
 - 覆盖相机控制、Blender previs、多角色 blocking、动作编排、Blender MCP、Codex/Claude 辅助 blockout、FBX/Mixamo 参考、ComfyUI/style transfer 和已知限制。
 - 每个案例都包含原始来源、创作者署名、简明 takeaway、证据类型和发布日期。
 - 公开列表基于 35 个候选审计结果和这次新增链接，重建为 25 个主案例。
@@ -85,12 +85,12 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 | 章节 | 案例 |
 |---|---|
-| [🎥 Camera Control & Previs / 相机控制与预演](#camera-control-previs) | Case 1, 2, 3, 4, 5 |
-| [🎬 Character & Action Blocking / 角色与动作 blocking](#character-action-blocking) | Case 6, 8, 9, 21 |
-| [🤖 Agentic Blender MCP / Agent 辅助 Blender MCP](#agentic-blender-mcp) | Case 10, 11, 22 |
-| [🧩 Reference, Prompt & Multi-Input Mapping / 参考、prompt 与多输入映射](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27 |
-| [🛠️ Production Pipelines & Toolchains / 生产管线与工具链](#production-pipelines-toolchains) | Case 15, 16, 17, 18 |
-| [🧪 Limits, Tests & Troubleshooting / 限制、测试与排查](#limits-tests-troubleshooting) | Case 20, 25, 28 |
+| [🎥 Camera Control & Previs / 相机控制与预演](#camera-control-previs) | Case 1, 2, 3, 4, 5, 29 |
+| [🎬 Character & Action Blocking / 角色与动作 blocking](#character-action-blocking) | Case 6, 8, 9, 21, 32 |
+| [🤖 Agentic Blender MCP / Agent 辅助 Blender MCP](#agentic-blender-mcp) | Case 10, 11, 22, 34 |
+| [🧩 Reference, Prompt & Multi-Input Mapping / 参考、prompt 与多输入映射](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27, 35 |
+| [🛠️ Production Pipelines & Toolchains / 生产管线与工具链](#production-pipelines-toolchains) | Case 15, 16, 17, 18, 30 |
+| [🧪 Limits, Tests & Troubleshooting / 限制、测试与排查](#limits-tests-troubleshooting) | Case 20, 25, 28, 31, 33 |
 | [🙏 致谢](#acknowledge) | Credits and correction policy |
 
 <a id="camera-control-previs"></a>
@@ -103,6 +103,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Blender previz + Comfy + 三输入控制](#case-3) | ComfyUI 控制案例：Blender previz 搭配 upright/upside-down 参考帧，测试 Seedance 的运动遵循能力。 | Demo |
 | [Viewport preview 导出后进 Seedance](#case-4) | Viewport preview 教程：blockout 场景、导出预览、把首帧转成真实图，再把两类参考交给 Seedance。 | Demo |
 | [同一 reference video 生成不同世界](#case-5) | 同一参考视频生成不同世界：用同一段 Blender reference 锁定运动，再让 Seedance 改变世界和风格。 | Demo |
+| [iPhone 驱动的对话节奏相机预演](#case-29) | 先用 iPhone 驱动 Blender 相机并按对白定节奏，再把带音频的预演和两张图一起交给 Seedance 做镜头规划。 | Integration |
+
 
 <a id="character-action-blocking"></a>
 ### 🎬 Character & Action Blocking / 角色与动作 blocking
@@ -113,6 +115,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [手持跟拍 + 角色绕车运动](#case-8) | 手持跟拍：Blender 控制角色穿越空间和相机跟随，Seedance 把这种粗粝跟拍感带到最终视频。 | Demo |
 | [角色 blocking + 相机 blocking 同时控制](#case-9) | 战术动作 blocking：在生成前用 Blender 规划相机环绕、镜头、掩体位置、枪火节奏和角色移动。 | Demo |
 | [伏击场景 previs + Seedance 动作调度](#case-21) | 伏击场景案例：先用 Blender previs 解决 staging、timing 和 camera movement，再交给 Seedance 生成镜头。 | Demo |
+| [带障碍互动的屋顶跑酷追逐](#case-32) | 当 Seedance 容易把动作退化成直线奔跑时，可以先用 Blender 跑酷预演补足障碍互动和闪避节奏。 | Demo |
+
 
 <a id="agentic-blender-mcp"></a>
 ### 🤖 Agentic Blender MCP / Agent 辅助 Blender MCP
@@ -122,6 +126,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Codex + Blender MCP 生成场景/动作/参照视频](#case-10) | Agentic Blender MCP 案例：Codex 生成简易市场、猫的动作、相机构图，并导出给 Seedance 的 MP4 参考。 | Integration |
 | [Codex 生成 Blender 建筑和 camera work 后送 Seedance](#case-11) | Codex 辅助新手案例：建筑和 camera work 由 Codex 在 Blender 中生成，再测试 Seedance 参考运动。 | Integration |
 | [Claude 用 Blender MCP 几分钟生成 previs](#case-22) | 快速 agentic previs 案例：Claude 通过 Blender MCP 在 2-3 分钟内搭出镜头参考。 | Integration |
+| [Fable 技能移植到 Codex 的参考视频流](#case-34) | 可以先让 agent 生出 Blender 参考视频技能，再移植到 Codex，验证 Seedance 是否能在零提示词前提下把动作进一步修顺。 | Integration |
+
 
 <a id="reference-prompt-multi-input-mapping"></a>
 ### 🧩 Reference, Prompt & Multi-Input Mapping / 参考、prompt 与多输入映射
@@ -134,6 +140,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [用实体玩具替代 3D 软件做参考](#case-24) | 实体参考案例：当不想打开 Blender 时，用玩具快速拍摄运动和 staging 参考。 | Demo |
 | [用参考控制修复 prompt 反复失败的场景](#case-26) | 控制兜底案例：prompt-only 反复失败时，用 reference 强制场景成立，即使会损失部分动态。 | Demo |
 | [角色比例与简化背景的稳定性技巧](#case-27) | 稳定性 checklist：角色比例不只看头身，还要匹配手脚体积；无须对齐的背景尽量简化。 | Tutorial |
+| [人偶动捕配合风格化输入帧](#case-35) | 可以先用偏僵硬的人偶或 Blender 动作源锁节奏，再通过输入帧设计把 Seedance 的风格和布料表现拉回来。 | Demo |
+
 
 <a id="production-pipelines-toolchains"></a>
 ### 🛠️ Production Pipelines & Toolchains / 生产管线与工具链
@@ -144,6 +152,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Blender MCP viewport animation + Seedance/Magnific texture/lighting](#case-16) | Viewport 到风格化案例：Blender MCP 提供相机和元素控制，再用 Seedance/Magnific 加纹理和光照。 | Integration |
 | [Blender 3D previz → Seedance anime render](#case-17) | 3D previz 到动画渲染：用 Seedance 改变画面风格，同时保留 Blender 里的相机运动和动作。 | Integration |
 | [FBX clay model + Claude keyframe + Seedance refs](#case-18) | FBX clay pass 流程：Blender 导入动作，Claude 辅助关键帧相机，渲染后的 clay pass 成为 Seedance 参考视频。 | Integration |
+| [Fable 编排的舞蹈参考视频流水线](#case-30) | 当纯提示词难以描述舞步时，可以让 agent 负责角色设计和 Blender 编舞代码，再把 15 秒舞蹈参考交给 Seedance。 | Integration |
+
 
 <a id="limits-tests-troubleshooting"></a>
 ### 🧪 Limits, Tests & Troubleshooting / 限制、测试与排查
@@ -153,6 +163,10 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [不用 start frame 的 Blender blockout reference](#case-20) | 无起始帧变体：当不能依赖 starter frame 时，用 Blender blockout 加详细环境参考也能工作。 | Limit |
 | [玩具参考 + prompt 补强 + NG 对照](#case-25) | 排查案例：参考视频通常需要 prompt 补强，不能只让模型机械照搬。 | Limit |
 | [Blender + Seedance 布料物理压力测试](#case-28) | 布料物理压力测试：Blender-guided Seedance 可用，但复杂运动仍需要多轮迭代。 | Limit |
+| [黑帧隔开的关键帧节奏修正法](#case-31) | 如果粗糙的 Blender 参考让 Seedance 连僵硬的中间帧都照搬，就保留关键姿势并把中间帧全部压成黑帧。 | Tutorial |
+| [复杂场景动作失配测试](#case-33) | 把粗场景 MCP 渲染当作限制测试来看：即使反复多次，复杂 Blender 场景在 Seedance 里仍可能偏离预期动作。 | Limit |
+
+
 
 <a id="camera-control-previs-cases"></a>
 ## 🎥 Camera Control & Previs / 相机控制与预演
@@ -232,6 +246,20 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 ---
 
+
+<a id="case-29"></a>
+### Case 29: [iPhone 驱动的对话节奏相机预演](https://x.com/CoffeeVectors/status/2076397975853551924) (by [@CoffeeVectors](https://x.com/CoffeeVectors))
+
+**先用 iPhone 驱动 Blender 相机并按对白定节奏，再把带音频的预演和两张图一起交给 Seedance 做镜头规划。**
+
+- 来源笔记: 原帖用 iPhone 驱动 Blender 相机并按对白卡节奏，再把带音频的预演和两张静态图一起送进 Seedance 2。
+- 视频预览:
+
+[![视频预览 — Case 29](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case29.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case29.mp4)
+
+类型: Integration | 日期: 2026-07-12
+
+---
 <a id="character-action-blocking-cases"></a>
 ## 🎬 Character & Action Blocking / 角色与动作 blocking
 
@@ -295,6 +323,20 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 ---
 
+
+<a id="case-32"></a>
+### Case 32: [带障碍互动的屋顶跑酷追逐](https://x.com/moframe2026/status/2075203485604470965) (by [@moframe2026](https://x.com/moframe2026))
+
+**当 Seedance 容易把动作退化成直线奔跑时，可以先用 Blender 跑酷预演补足障碍互动和闪避节奏。**
+
+- 来源笔记: 作者把 Blender 跑酷预演当成视频参考，并明确说如果没有这层参考，动作会更容易塌成单纯奔跑。
+- 视频预览:
+
+[![视频预览 — Case 32](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case32.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case32.mp4)
+
+类型: Demo | 日期: 2026-07-09
+
+---
 <a id="agentic-blender-mcp-cases"></a>
 ## 🤖 Agentic Blender MCP / Agent 辅助 Blender MCP
 
@@ -343,6 +385,20 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 ---
 
+
+<a id="case-34"></a>
+### Case 34: [Fable 技能移植到 Codex 的参考视频流](https://x.com/mugi_AI_Art/status/2074259600342163846) (by [@mugi_AI_Art](https://x.com/mugi_AI_Art))
+
+**可以先让 agent 生出 Blender 参考视频技能，再移植到 Codex，验证 Seedance 是否能在零提示词前提下把动作进一步修顺。**
+
+- 来源笔记: 作者先让 Fable 产出 Blender 参考视频技能，再移植进 Codex，并在粗模参考基础上做了“零提示词”的 Seedance 生成。
+- 视频预览:
+
+[![视频预览 — Case 34](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case34.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case34.mp4)
+
+类型: Integration | 日期: 2026-07-06
+
+---
 <a id="reference-prompt-multi-input-mapping-cases"></a>
 ## 🧩 Reference, Prompt & Multi-Input Mapping / 参考、prompt 与多输入映射
 
@@ -438,6 +494,20 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 ---
 
+
+<a id="case-35"></a>
+### Case 35: [人偶动捕配合风格化输入帧](https://x.com/fatboypink/status/2074087401887039740) (by [@fatboypink](https://x.com/fatboypink))
+
+**可以先用偏僵硬的人偶或 Blender 动作源锁节奏，再通过输入帧设计把 Seedance 的风格和布料表现拉回来。**
+
+- 来源笔记: 作者说动作节奏来自偏僵硬的人偶动捕，但手绘输入帧依然把最终风格和布料摆动拉回到想要的方向。
+- 视频预览:
+
+[![视频预览 — Case 35](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case35.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case35.mp4)
+
+类型: Demo | 日期: 2026-07-06
+
+---
 <a id="production-pipelines-toolchains-cases"></a>
 ## 🛠️ Production Pipelines & Toolchains / 生产管线与工具链
 
@@ -501,6 +571,20 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 ---
 
+
+<a id="case-30"></a>
+### Case 30: [Fable 编排的舞蹈参考视频流水线](https://x.com/ryo05m/status/2076284841457521043) (by [@ryo05m](https://x.com/ryo05m))
+
+**当纯提示词难以描述舞步时，可以让 agent 负责角色设计和 Blender 编舞代码，再把 15 秒舞蹈参考交给 Seedance。**
+
+- 来源笔记: 作者明确写了 3 步：Seedream 5 Pro 做角色、Blender 做 15 秒舞蹈人偶、Seedance 2.0 吃动作和镜头参考。
+- 视频预览:
+
+[![视频预览 — Case 30](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case30.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case30.mp4)
+
+类型: Integration | 日期: 2026-07-12
+
+---
 <a id="limits-tests-troubleshooting-cases"></a>
 ## 🧪 Limits, Tests & Troubleshooting / 限制、测试与排查
 
@@ -556,6 +640,34 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 - [安装 Seedance 2 Agent Skill](https://github.com/Evolink-AI/seedance2-video-gen-skill-for-openclaw)
 - [查看 GPT Image 2 到 Seedance 2 工作流](https://github.com/Evolink-AI/GPT-Image-2-Seedance2-Workflow)
 
+
+<a id="case-31"></a>
+### Case 31: [黑帧隔开的关键帧节奏修正法](https://x.com/thechriscooper/status/2076092824102240411) (by [@thechriscooper](https://x.com/thechriscooper))
+
+**如果粗糙的 Blender 参考让 Seedance 连僵硬的中间帧都照搬，就保留关键姿势并把中间帧全部压成黑帧。**
+
+- 来源笔记: 作者说 Seedance 会把粗糙 Blender 动画连同僵硬过渡一起照抄，而“关键帧-黑帧-关键帧”能保住 blocking 但让成片更顺。
+- 视频预览:
+
+[![视频预览 — Case 31](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case31.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case31.mp4)
+
+类型: Tutorial | 日期: 2026-07-11
+
+---
+
+<a id="case-33"></a>
+### Case 33: [复杂场景动作失配测试](https://x.com/sonicpower1970/status/2074322339391824012) (by [@sonicpower1970](https://x.com/sonicpower1970))
+
+**把粗场景 MCP 渲染当作限制测试来看：即使反复多次，复杂 Blender 场景在 Seedance 里仍可能偏离预期动作。**
+
+- 来源笔记: 这条后续测试明确写到：在作者的 Claude→Blender→Seedance 流程里，复杂场景试了约四次后，动作仍然对不齐。
+- 视频预览:
+
+[![视频预览 — Case 33](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case33.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case33.mp4)
+
+类型: Limit | 日期: 2026-07-07
+
+---
 <a id="acknowledge"></a>
 ## 🙏 致谢
 

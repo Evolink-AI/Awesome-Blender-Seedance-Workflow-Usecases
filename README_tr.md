@@ -85,12 +85,12 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 | Bölüm | Vakalar |
 |---|---|
-| [🎥 Kamera Kontrolü ve Ön İzleme](#camera-control-previs) | Case 1, 2, 3, 4, 5 |
-| [🎬 Karakter ve Eylem Engelleme](#character-action-blocking) | Case 6, 8, 9, 21 |
-| [🤖 Ajan Blender MCP](#agentic-blender-mcp) | Case 10, 11, 22 |
-| [🧩 Referans, Bilgi İstemi ve Çoklu Giriş Eşlemesi](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27 |
-| [🛠️ Üretim Boru Hatları ve Takım Zincirleri](#production-pipelines-toolchains) | Case 15, 16, 17, 18 |
-| [🧪 Sınırlar, Testler ve Sorun Giderme](#limits-tests-troubleshooting) | Case 20, 25, 28 |
+| [🎥 Kamera Kontrolü ve Ön İzleme](#camera-control-previs) | Case 1, 2, 3, 4, 5, 29 |
+| [🎬 Karakter ve Eylem Engelleme](#character-action-blocking) | Case 6, 8, 9, 21, 32 |
+| [🤖 Ajan Blender MCP](#agentic-blender-mcp) | Case 10, 11, 22, 34 |
+| [🧩 Referans, Bilgi İstemi ve Çoklu Giriş Eşlemesi](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27, 35 |
+| [🛠️ Üretim Boru Hatları ve Takım Zincirleri](#production-pipelines-toolchains) | Case 15, 16, 17, 18, 30 |
+| [🧪 Sınırlar, Testler ve Sorun Giderme](#limits-tests-troubleshooting) | Case 20, 25, 28, 31, 33 |
 | [🙏 Teşekkür](#acknowledge) | Katkılar ve düzeltme politikası |
 
 <a id="camera-control-previs"></a>
@@ -103,6 +103,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [ComfyUI Blender Ön İzleme ile Kamera Kontrolü](#case-3) | Hareket uyumunu test etmek için Blender previz'in ayrı dik ve baş aşağı referans çerçeveleriyle birleştirildiği bir ComfyUI kontrol durumu. | Demo |
 | [Gerçekçi Başlangıç Çerçevesine Görüntüleme Önizlemesi](#case-4) | Kısa bir görüntü alanı önizleme eğitimi: sahneyi kapatın, önizlemeyi dışa aktarın, ilk kareyi gerçekçi hale getirin, ardından Seedance'ye her iki referansı da sağlayın. | Demo |
 | [Tek Referans Videosu, Çoklu Dünya](#case-5) | Aynı Blender referans videosunun Seedance'de farklı oluşturulmuş dünyaları yönlendirdiği bir stil/dünya varyasyonu durumu. | Demo |
+| [Diyaloğa senkron iPhone kamera previsuali](#case-29) | iPhone ile sürülen ve diyaloğa senkronlanan bir Blender kamera geçişi kullanın; ardından bu sesli previsuali ve iki görseli çekim planı için Seedance'a verin. | Integration |
+
 
 <a id="character-action-blocking"></a>
 ### 🎬 Karakter ve Aksiyon Engelleme
@@ -113,6 +115,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Uzayda Elde Taşınabilir Takip Kamerası](#case-8) | Blender'nin bir karakterin uzayda nasıl seyahat ettiğini kontrol ettiği ve Seedance'nin cesur kamera hareketini son videoya taşıdığı, elde taşınır takip vakası. | Demo |
 | [Taktik Eylem için Kamera ve Karakter Engelleme](#case-9) | Blender'nin kamera yörüngesini, lens seçimini, siper pozisyonlarını, silah sesi vuruşlarını ve karakter hareketini nesilden önce yönlendirdiği taktiksel bir engelleme durumu. | Demo |
 | [Basit Kamera Hareketinin Ötesinde Pusu Sahnesi Öngörülüyor](#case-21) | Blender previs'in, Seedance çekimi oluşturmadan önce sahnelemeyi, zamanlamayı ve kamera hareketini nasıl çözebildiğini gösteren bir pusu sahnesi vakası. | Demo |
+| [Engelli çatı parkur kovalamacası](#case-32) | Seedance eylemi düz bir koşuya indirgediğinde, engel etkileşimleri ve kaçınma vuruşları içeren bir Blender parkur previsuali kurun. | Demo |
+
 
 <a id="agentic-blender-mcp"></a>
 ### 🤖 Ajan Blender MCP
@@ -122,6 +126,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Codex + Blender MCP Referans Video İş Akışı](#case-10) | Codex'nin basit bir 3D pazar, kedi hareketi, kamera çerçevelemesi ve Seedance için bir MP4 referansı oluşturduğu etkili bir Blender MCP durumu. | Integration |
 | [Codex-Yapı Mimarisi ve Kamera Çalışması](#case-11) | Mimarinin ve kamera çalışmasının Blender'de oluşturulduğu ve ardından Seedance referans hareketi olarak test edildiği, Codex destekli başlangıç seviyesi vakası. | Integration |
 | [Claude-Dahili Blender MCP Dakikalar İçinde Ön Görünüm](#case-22) | Claude'nin iki ila üç dakika içinde bir atış referansı oluşturmak için Blender MCP'yi kullandığı hızlı bir ajansal ön izleme durumu. | Integration |
+| [Fable skill'inin Codex'e taşınması](#case-34) | Bir agente Blender referans-video skill'ini kurdurun, bunu Codex'e taşıyın ve Seedance'ın hiç prompt olmadan hareketi temizleyip temizleyemediğini test edin. | Integration |
+
 
 <a id="reference-prompt-multi-input-mapping"></a>
 ### 🧩 Referans, Bilgi İstemi ve Çoklu Giriş Eşleme
@@ -134,6 +140,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [3D Yazılımı Yerine Fiziksel Oyuncak Referansı](#case-24) | Fiziksel referans durumu: Blender'yi açmak çok fazla yük getirdiğinde oyuncakları hızlı hareket ve sahneleme referansları olarak kullanın. | Demo |
 | [Belirli Başarısız Bir İstem Sahnesi için Referans Kontrolü](#case-26) | Bir kontrol geri dönüş durumu: Yalnızca bilgi istemi oluşturma başarısız olduğunda, bir miktar dinamizm azalmış olsa bile sahneyi zorlamak için bir referans kullanın. | Demo |
 | [Karakter Oranı ve Basit Arka Plan İpuçları](#case-27) | Bir stabilite kontrol listesi örneği: karakter oranlarını yüksekliğin ötesinde eşleştirin ve hassas hizalama gerektirmeyen tüm arka planları basitleştirin. | Tutorial |
+| [Stilize kare ile manken mocap](#case-35) | Zamanlamayı kilitlemek için sert bir Blender ya da manken hareket kaynağı kullanın; ardından giriş karesi tasarımıyla Seedance'ın nihai stilini ve kumaş davranışını yönlendirin. | Demo |
+
 
 <a id="production-pipelines-toolchains"></a>
 ### 🛠️ Üretim Boru Hatları ve Takım Zincirleri
@@ -144,6 +152,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Blender MCP Seedance Stil Aktarımına Görünüm](#case-16) | Görüntü alanından stile aktarım durumu: Blender MCP kamera ve öğe kontrolü sağlar, ardından Seedance/Magnific doku ve aydınlatma ekler. | Integration |
 | [Blender Anime Önizleme Seedance Oluşturma](#case-17) | Seedance oluşturma stilini değiştirirken kamera hareketlerinin ve hareketin nasıl korunabileceğini gösteren bir 3D anime öncesi durumu. | Integration |
 | [FBX Claude-Anahtar Çerçeveli Kamerayla Kil Geçişi](#case-18) | Blender'nin hareketi içe aktardığı, Claude'nin ana kare kamera hareketlerine yardımcı olduğu ve oluşturulan geçişin Seedance referans videosu haline geldiği FBX kil geçiş iş akışı. | Integration |
+| [Fable ile kurgulanmış dans referans hattı](#case-30) | Hareket yalnızca prompt ile kaba kalıyorsa, karakter tasarımını ve Blender koreografi kodunu bir agente bırakın ve 15 saniyelik dans referansını Seedance'a taşıyın. | Integration |
+
 
 <a id="limits-tests-troubleshooting"></a>
 ### 🧪 Sınırlar, Testler ve Sorun Giderme
@@ -153,6 +163,10 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Yalnızca Referans Blender Başlangıç Çerçevesi Olmadan Bloklama](#case-20) | Blender engellemenin yanı sıra ayrıntılı ortam referanslarının olduğunu gösteren, başlangıç çerçevesi olmayan bir varyant, iş akışı bir başlangıç çerçevesine dayanamadığında işe yarayabilir. | Limit |
 | [Oyuncak Referans İstemi Takviyesi ve NG Örneği](#case-25) | Referans videolarının neden genellikle ham taklit yerine anında pekiştirmeye ihtiyaç duyduğunu gösteren bir sorun giderme örneği. | Limit |
 | [Blender ve Seedance](#case-28) ile Kumaş Fiziği Stres Testi | Blender kılavuzlu Seedance'nin nerede çalışabileceğini ancak yine de zor hareketler için yinelenmesi gerektiğini gösteren bir kumaş fiziği stres testi. | Limit |
+| [Siyah kareli keyframe zamanlama düzeltmesi](#case-31) | Kaba Blender referansı Seedance'ın robotik ara hareketleri kopyalamasına yol açıyorsa, ana pozları koruyun ve aradaki kareleri siyaha çevirin. | Tutorial |
+| [Karmaşık sahnede hareket sapması testi](#case-33) | Kaba sahne MCP renderlarını bir limit testi olarak görün; karmaşık Blender sahneleri birden çok Seedance denemesinden sonra bile hedeflenen hareketten sapabilir. | Limit |
+
+
 
 <a id="camera-control-previs-cases"></a>
 ## 🎥 Kamera Kontrolü ve Ön İzleme
@@ -232,6 +246,20 @@ Tür: Demo | Tarih: 2026-06-28
 
 ---
 
+
+<a id="case-29"></a>
+### Case 29: [Diyaloğa senkron iPhone kamera previsuali](https://x.com/CoffeeVectors/status/2076397975853551924) (tarafından [@CoffeeVectors](https://x.com/CoffeeVectors))
+
+**iPhone ile sürülen ve diyaloğa senkronlanan bir Blender kamera geçişi kullanın; ardından bu sesli previsuali ve iki görseli çekim planı için Seedance'a verin.**
+
+- Kaynak notları: Kaynak, iPhone ile sürülen ve diyaloğa senkronlanan bir Blender kamerayı kullanıyor; ardından bu sesli previsuali iki durağan görselle birlikte Seedance 2'ye gönderiyor.
+- Video önizlemesi:
+
+[![Video önizlemesi — Case 29](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case29.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case29.mp4)
+
+Tür: Integration | Tarih: 2026-07-12
+
+---
 <a id="character-action-blocking-cases"></a>
 ## 🎬 Karakter ve Aksiyon Engelleme
 
@@ -295,6 +323,20 @@ Tür: Demo | Tarih: 2026-06-29
 
 ---
 
+
+<a id="case-32"></a>
+### Case 32: [Engelli çatı parkur kovalamacası](https://x.com/moframe2026/status/2075203485604470965) (tarafından [@moframe2026](https://x.com/moframe2026))
+
+**Seedance eylemi düz bir koşuya indirgediğinde, engel etkileşimleri ve kaçınma vuruşları içeren bir Blender parkur previsuali kurun.**
+
+- Kaynak notları: Yazar, Blender parkur previsualini video referansı olarak kullandığını ve Blender'ın basit koşunun ötesine geçen engel kullanımı ile kaçınma akışını eklemek için gerekli olduğunu söylüyor.
+- Video önizlemesi:
+
+[![Video önizlemesi — Case 32](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case32.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case32.mp4)
+
+Tür: Demo | Tarih: 2026-07-09
+
+---
 <a id="agentic-blender-mcp-cases"></a>
 ## 🤖 Ajan Blender MCP
 
@@ -343,6 +385,20 @@ Tür: Integration | Tarih: 2026-06-29
 
 ---
 
+
+<a id="case-34"></a>
+### Case 34: [Fable skill'inin Codex'e taşınması](https://x.com/mugi_AI_Art/status/2074259600342163846) (tarafından [@mugi_AI_Art](https://x.com/mugi_AI_Art))
+
+**Bir agente Blender referans-video skill'ini kurdurun, bunu Codex'e taşıyın ve Seedance'ın hiç prompt olmadan hareketi temizleyip temizleyemediğini test edin.**
+
+- Kaynak notları: Yazar, Fable'ın Blender referans-video skill'i oluşturmasını sağladı, bunu Codex'e taşıdı ve kaba modellenmiş referanslardan prompt kullanmadan Seedance üretimi yaptı.
+- Video önizlemesi:
+
+[![Video önizlemesi — Case 34](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case34.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case34.mp4)
+
+Tür: Integration | Tarih: 2026-07-06
+
+---
 <a id="reference-prompt-multi-input-mapping-cases"></a>
 ## 🧩 Referans, Bilgi İstemi ve Çoklu Giriş Eşleme
 
@@ -438,6 +494,20 @@ Tür: Tutorial | Tarih: 2026-06-26
 
 ---
 
+
+<a id="case-35"></a>
+### Case 35: [Stilize kare ile manken mocap](https://x.com/fatboypink/status/2074087401887039740) (tarafından [@fatboypink](https://x.com/fatboypink))
+
+**Zamanlamayı kilitlemek için sert bir Blender ya da manken hareket kaynağı kullanın; ardından giriş karesi tasarımıyla Seedance'ın nihai stilini ve kumaş davranışını yönlendirin.**
+
+- Kaynak notları: Yazar, sert manken mocap'inin hareket zamanlamasını verdiğini; elde çizilmiş giriş karesinin ise Seedance'ı istenen stil ve kumaş hareketine doğru ittiğini söylüyor.
+- Video önizlemesi:
+
+[![Video önizlemesi — Case 35](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case35.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case35.mp4)
+
+Tür: Demo | Tarih: 2026-07-06
+
+---
 <a id="production-pipelines-toolchains-cases"></a>
 ## 🛠️ Üretim Boru Hatları ve Takım Zincirleri
 
@@ -501,6 +571,20 @@ Tür: Integration | Tarih: 2026-06-25
 
 ---
 
+
+<a id="case-30"></a>
+### Case 30: [Fable ile kurgulanmış dans referans hattı](https://x.com/ryo05m/status/2076284841457521043) (tarafından [@ryo05m](https://x.com/ryo05m))
+
+**Hareket yalnızca prompt ile kaba kalıyorsa, karakter tasarımını ve Blender koreografi kodunu bir agente bırakın ve 15 saniyelik dans referansını Seedance'a taşıyın.**
+
+- Kaynak notları: Yazar üç adımı açıkça veriyor: karakter için Seedream 5 Pro, 15 saniyelik manken dansı için Blender ve hareket ile kamera referansı için Seedance 2.0.
+- Video önizlemesi:
+
+[![Video önizlemesi — Case 30](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case30.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case30.mp4)
+
+Tür: Integration | Tarih: 2026-07-12
+
+---
 <a id="limits-tests-troubleshooting-cases"></a>
 ## 🧪 Sınırlar, Testler ve Sorun Giderme
 
@@ -556,6 +640,34 @@ Tür: Limit | Tarih: 2026-06-26
 - [Seedance 2 ajan skill'ini yükleyin](https://github.com/Evolink-AI/seedance2-video-gen-skill-for-openclaw)
 - [GPT Image 2'den Seedance 2'ye iş akışını keşfedin](https://github.com/Evolink-AI/GPT-Image-2-Seedance2-Workflow)
 
+
+<a id="case-31"></a>
+### Case 31: [Siyah kareli keyframe zamanlama düzeltmesi](https://x.com/thechriscooper/status/2076092824102240411) (tarafından [@thechriscooper](https://x.com/thechriscooper))
+
+**Kaba Blender referansı Seedance'ın robotik ara hareketleri kopyalamasına yol açıyorsa, ana pozları koruyun ve aradaki kareleri siyaha çevirin.**
+
+- Kaynak notları: Yazar, Seedance'ın kaba Blender animasyonunu fazla kelimesi kelimesine kopyaladığını; keyframe-siyah-keyframe düzeninin ise blocking'i koruyup hareketi yumuşattığını söylüyor.
+- Video önizlemesi:
+
+[![Video önizlemesi — Case 31](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case31.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case31.mp4)
+
+Tür: Tutorial | Tarih: 2026-07-11
+
+---
+
+<a id="case-33"></a>
+### Case 33: [Karmaşık sahnede hareket sapması testi](https://x.com/sonicpower1970/status/2074322339391824012) (tarafından [@sonicpower1970](https://x.com/sonicpower1970))
+
+**Kaba sahne MCP renderlarını bir limit testi olarak görün; karmaşık Blender sahneleri birden çok Seedance denemesinden sonra bile hedeflenen hareketten sapabilir.**
+
+- Kaynak notları: Bu devam gönderisi, yazarın Claude→Blender→Seedance testinde yaklaşık dört denemeden sonra bile karmaşık sahnelerin hedeflenen hareketi yakalayamadığını bildiriyor.
+- Video önizlemesi:
+
+[![Video önizlemesi — Case 33](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case33.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case33.mp4)
+
+Tür: Limit | Tarih: 2026-07-07
+
+---
 <a id="acknowledge"></a>
 ## 🙏 Teşekkür
 

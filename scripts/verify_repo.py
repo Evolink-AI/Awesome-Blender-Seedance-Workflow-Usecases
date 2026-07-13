@@ -1,28 +1,69 @@
 #!/usr/bin/env python3
 import json
-from pathlib import Path
 import re
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-R2_MEDIA_BASE = 'https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media'
-R2_BANNER_URL = 'https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/images/banner.png'
-FILES = ['README.md', 'README_es.md', 'README_pt.md', 'README_ja.md', 'README_ko.md', 'README_de.md', 'README_fr.md', 'README_tr.md', 'README_zh-TW.md', 'README_zh-CN.md', 'README_ru.md']
-EXPECTED_CASES = None
-EXPECTED_IMAGES = ['images/banner.png']
-EXPECTED_VIDEO_LABELS = ['case1', 'case2', 'case3', 'case4', 'case5', 'case6', 'case8', 'case9', 'case10', 'case11', 'case13', 'case14', 'case15', 'case16', 'case17', 'case18', 'case19', 'case20', 'case21', 'case22', 'case23', 'case24', 'case25', 'case26', 'case27', 'case28']
-EXPECTED_README_CTAS = ['https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=banner', 'https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=use_on_evolink_badge', 'https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=mcp_skill_badge', 'https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=agent_workflow_badge', 'https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key']
-EXPECTED_ISSUE_CONTACT = 'https://evolink.ai?utm_source=github&utm_medium=issue_template&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=contact_link'
-UTM_CAMPAIGN = 'awesome-blender-seedance-workflow-usecases'
+R2_MEDIA_BASE = "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media"
+R2_BANNER_URL = "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/images/banner.png"
+FILES = [
+    "README.md",
+    "README_es.md",
+    "README_pt.md",
+    "README_ja.md",
+    "README_ko.md",
+    "README_de.md",
+    "README_fr.md",
+    "README_tr.md",
+    "README_zh-TW.md",
+    "README_zh-CN.md",
+    "README_ru.md",
+]
+EXPECTED_README_CTAS = [
+    "https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=banner",
+    "https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=use_on_evolink_badge",
+    "https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=mcp_skill_badge",
+    "https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=agent_workflow_badge",
+    "https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key",
+]
+EXPECTED_ISSUE_CONTACT = "https://evolink.ai?utm_source=github&utm_medium=issue_template&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=contact_link"
+UTM_CAMPAIGN = "awesome-blender-seedance-workflow-usecases"
+URL_RE = re.compile(r"^https?://")
 
-def fail(msg):
+
+def fail(msg: str) -> None:
     raise SystemExit(f"FAIL: {msg}")
 
+
 curated = json.loads((ROOT / "blender-seedance-usecase-curated.json").read_text())
+video_sources = json.loads((ROOT / "data" / "usecase-video-sources.json").read_text())
 EXPECTED_CASES = len(curated["items"])
 if curated["metadata"].get("selected_count") != EXPECTED_CASES:
     fail("curated selected_count does not match README case count")
-expected_labels = [str(item["case"]) for item in curated["items"]]
-expected_label_set = set(expected_labels)
+
+expected_label_set = {str(item["case"]) for item in curated["items"]}
+preview_map = {}
+for row in video_sources["items"]:
+    case_label = str(row.get("case_label") or "").strip()
+    public_case = row.get("public_case")
+    usage = str(row.get("usage") or "").strip()
+    if not case_label and isinstance(public_case, int):
+        case_label = f"case{public_case}"
+    if not case_label:
+        fail("video source row missing case label")
+    local_media = row.get("local_media")
+    r2_video_url = str(row.get("r2_video_url") or "").strip()
+    r2_poster_url = str(row.get("r2_poster_url") or "").strip()
+    if usage in {"standalone_public_case", "weekly_r2_video_only"} and (local_media or r2_video_url):
+        preview_map[case_label] = {
+            "video_url": r2_video_url or f"{R2_MEDIA_BASE}/{case_label}.mp4",
+            "poster_url": r2_poster_url or f"{R2_MEDIA_BASE}/posters/{case_label}.jpg",
+        }
+    if local_media is not None and local_media and not (ROOT / local_media).exists():
+        fail(f"missing video source local media {local_media}")
+    attachment = str(row.get("attachment_url") or "").strip()
+    if attachment and not URL_RE.search(attachment):
+        fail(f"unexpected attachment URL for {case_label}")
 
 for file in FILES:
     p = ROOT / file
@@ -53,12 +94,36 @@ for file in FILES:
     for url in re.findall(r'https://evolink\.ai[^\s)>"`]+', text):
         if "utm_source=github" not in url or "utm_medium=readme" not in url or f"utm_campaign={UTM_CAMPAIGN}" not in url:
             fail(f"{file} has EvoLink URL without required README UTM: {url}")
+    if re.search(r'^media/[^\s]+$', text, re.M):
+        fail(f"{file} still exposes repository-local bare media paths")
+    for case_label, urls in preview_map.items():
+        if urls["video_url"] not in text:
+            fail(f"{file} missing public video URL for {case_label}")
+        if urls["poster_url"] not in text:
+            fail(f"{file} missing public poster URL for {case_label}")
+    if f"{R2_MEDIA_BASE}/case13.jpg" not in text:
+        fail(f"{file} missing R2 reference image for case13")
 
-for img in EXPECTED_IMAGES:
+for img in ["images/banner.png"]:
     if not (ROOT / img).exists():
         fail(f"missing {img}")
 
-for required in ["LICENSE", "CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "SECURITY.md", "docs/maintenance.md", "docs/media-type-inventory.md", "docs/r2-upload-report.md", "docs/video-poster-report.md", ".github/PULL_REQUEST_TEMPLATE.md", ".github/ISSUE_TEMPLATE/config.yml", ".github/ISSUE_TEMPLATE/use-case.yml", "blender-seedance-usecase-curated.json", "data/usecase-video-sources.json", "images/banner.png"]:
+for required in [
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md",
+    "SECURITY.md",
+    "docs/maintenance.md",
+    "docs/media-type-inventory.md",
+    "docs/r2-upload-report.md",
+    "docs/video-poster-report.md",
+    ".github/PULL_REQUEST_TEMPLATE.md",
+    ".github/ISSUE_TEMPLATE/config.yml",
+    ".github/ISSUE_TEMPLATE/use-case.yml",
+    "blender-seedance-usecase-curated.json",
+    "data/usecase-video-sources.json",
+    "images/banner.png",
+]:
     if not (ROOT / required).exists():
         fail(f"missing {required}")
 
@@ -70,20 +135,11 @@ for rel in ["docs/maintenance.md", ".github/ISSUE_TEMPLATE/config.yml", "blender
 if EXPECTED_ISSUE_CONTACT not in (ROOT / ".github" / "ISSUE_TEMPLATE" / "config.yml").read_text():
     fail("issue template config missing tracked EvoLink contact URL")
 
-video_sources = json.loads((ROOT / "data" / "usecase-video-sources.json").read_text())
-if video_sources["metadata"].get("source_rows") != len(EXPECTED_VIDEO_LABELS):
-    fail("video source row count does not match expected workbook rows")
-video_labels = [row["case_label"] for row in video_sources["items"]]
-if video_labels != EXPECTED_VIDEO_LABELS:
-    fail("video source labels do not match expected workbook order")
+if video_sources["metadata"].get("source_rows") != len(video_sources["items"]):
+    fail("video source row count metadata does not match actual rows")
+video_labels = [str(row.get("case_label") or "") for row in video_sources["items"]]
 if len(set(video_labels)) != len(video_labels):
     fail("video source labels contain duplicates")
-for row in video_sources["items"]:
-    rel = row.get("local_media")
-    if rel is not None and not (ROOT / rel).exists():
-        fail(f"missing video source local media {rel}")
-    if not row.get("attachment_url", "").startswith("https://github.com/user-attachments/assets/"):
-        fail(f"unexpected attachment URL for {row.get('case_label')}")
 
 media_paths = []
 for item in curated["items"]:
@@ -92,17 +148,4 @@ for item in curated["items"]:
         if not (ROOT / rel).exists():
             fail(f"missing local media {rel}")
 
-for file in FILES:
-    text = (ROOT / file).read_text()
-    if re.search(r'^media/[^\s]+$', text, re.M):
-        fail(f"{file} still exposes repository-local bare media paths")
-    video_names = re.findall(re.escape(R2_MEDIA_BASE) + r'/(case\d+)\.mp4', text)
-    poster_names = re.findall(re.escape(R2_MEDIA_BASE) + r'/posters/(case\d+)\.jpg', text)
-    if len(video_names) != 24:
-        fail(f"{file} has {len(video_names)} R2 video links, expected 24")
-    if sorted(video_names) != sorted(poster_names):
-        fail(f"{file} R2 video and poster sets differ")
-    if f"{R2_MEDIA_BASE}/case13.jpg" not in text:
-        fail(f"{file} missing R2 reference image for case13")
-
-print(f"PASS: {len(FILES)} README files, {EXPECTED_CASES} cases each, 24 R2 video/poster pairs per README, {len(media_paths)} source media files inventoried")
+print(f"PASS: {len(FILES)} README files, {EXPECTED_CASES} cases each, {len(preview_map)} public video previews per README, {len(media_paths)} tracked local source media files")

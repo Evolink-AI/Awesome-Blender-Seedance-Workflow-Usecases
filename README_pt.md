@@ -33,10 +33,10 @@ Comece pelo guia Blender-to-video da EvoLink e use o início rápido abaixo como
 
 ## 📊 Visão geral
 
-- **25 casos Blender + Seedance selecionados** a partir de publicações de criadores no conjunto de dados fornecido pelo proprietário.
+- **32 casos Blender + Seedance selecionados** a partir de posts públicos de criadores e de adições semanais auditadas.
 - Cobre controle de câmera, previsualização no Blender, bloqueio de múltiplos personagens, coreografia de ação, Blender MCP, bloqueios assistidos por Codex/Claude, referências FBX/Mixamo, ComfyUI, transferência de estilo e limites conhecidos.
 - Cada caso inclui fonte original, crédito ao criador, resumo acionável, tipo de evidência e data de publicação.
-- A lista pública foi reconstruída a partir da auditoria de 35 candidatos e dos novos links solicitados até 25 casos primários.
+- A lista pública começou na auditoria de 35 candidatos e agora inclui 7 adições semanais auditadas do loop recorrente de atualização.
 - Use este repositório para avaliar fluxos práticos e depois direcionar usuários ao guia Blender-to-video da EvoLink.
 
 > [!NOTE]
@@ -85,12 +85,12 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 | Seção | Casos |
 |---|---|
-| [🎥 Controle de câmera e previsualização](#camera-control-previs) | Case 1, 2, 3, 4, 5 |
-| [🎬 Bloqueio de personagens e ação](#character-action-blocking) | Case 6, 8, 9, 21 |
-| [🤖 Blender MCP com agentes](#agentic-blender-mcp) | Case 10, 11, 22 |
-| [🧩 Referências, prompts e mapeamento de múltiplas entradas](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27 |
-| [🛠️ Pipelines e cadeias de ferramentas de produção](#production-pipelines-toolchains) | Case 15, 16, 17, 18 |
-| [🧪 Limites, testes e solução de problemas](#limits-tests-troubleshooting) | Case 20, 25, 28 |
+| [🎥 Controle de câmera e previsualização](#camera-control-previs) | Case 1, 2, 3, 4, 5, 29 |
+| [🎬 Bloqueio de personagens e ação](#character-action-blocking) | Case 6, 8, 9, 21, 32 |
+| [🤖 Blender MCP com agentes](#agentic-blender-mcp) | Case 10, 11, 22, 34 |
+| [🧩 Referências, prompts e mapeamento de múltiplas entradas](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27, 35 |
+| [🛠️ Pipelines e cadeias de ferramentas de produção](#production-pipelines-toolchains) | Case 15, 16, 17, 18, 30 |
+| [🧪 Limites, testes e solução de problemas](#limits-tests-troubleshooting) | Case 20, 25, 28, 31, 33 |
 | [🙏 Agradecimentos](#acknowledge) | Créditos e política de correções |
 
 <a id="camera-control-previs"></a>
@@ -103,6 +103,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Controle de câmera no ComfyUI com previs do Blender](#case-3) | Um caso de controle no ComfyUI em que a previs do Blender é combinada com quadros de referência separados, um normal e outro invertido, para testar a fidelidade ao movimento. | Demo |
 | [Da prévia do viewport a um quadro inicial realista](#case-4) | Um tutorial curto de prévia no viewport: faça o blockout da cena, exporte a prévia, torne o primeiro quadro realista e forneça as duas referências ao Seedance. | Demo |
 | [Um vídeo de referência, vários mundos](#case-5) | Um caso de variação de estilo e mundo em que o mesmo vídeo de referência do Blender conduz diferentes mundos gerados no Seedance. | Demo |
+| [Previs de câmera com iPhone sincronizada ao diálogo](#case-29) | Use um passe de câmera do Blender guiado por iPhone e sincronizado com o diálogo, depois envie essa previs com áudio e duas imagens para o Seedance planejar a tomada. | Integration |
+
 
 <a id="character-action-blocking"></a>
 ### 🎬 Bloqueio de personagens e ação
@@ -113,6 +115,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Câmera de acompanhamento portátil através do espaço](#case-8) | Um caso de acompanhamento com câmera na mão em que o Blender controla o deslocamento do personagem e o Seedance leva o movimento de câmera áspero ao vídeo final. | Demo |
 | [Bloqueio de câmera e personagens para ação tática](#case-9) | Um caso de bloqueio tático em que o Blender dirige a órbita da câmera, a escolha da lente, as posições de cobertura, os momentos de disparo e o movimento dos personagens antes da geração. | Demo |
 | [Previs de emboscada além de um simples movimento de câmera](#case-21) | Um caso de emboscada que mostra como a previs no Blender pode resolver encenação, timing e movimento de câmera antes de o Seedance gerar a tomada. | Demo |
+| [Perseguição de parkour no telhado com obstáculos](#case-32) | Monte uma previs de parkour no Blender com interações com obstáculos e batidas de evasão quando o Seedance tende a reduzir a ação a uma corrida reta. | Demo |
+
 
 <a id="agentic-blender-mcp"></a>
 ### 🤖 Blender MCP com agentes
@@ -122,6 +126,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Fluxo de vídeo de referência com Codex + Blender MCP](#case-10) | Um caso de Blender MCP com agentes em que o Codex cria um mercado 3D simples, o movimento de um gato, o enquadramento e uma referência MP4 para o Seedance. | Integration |
 | [Arquitetura e trabalho de câmera criados pelo Codex](#case-11) | Um caso para iniciantes assistido pelo Codex em que a arquitetura e o trabalho de câmera são gerados no Blender e depois testados como referência de movimento para o Seedance. | Integration |
 | [Previs no Blender MCP criada pelo Claude em minutos](#case-22) | Um caso rápido de previs com agentes em que o Claude usa o Blender MCP para criar uma referência de tomada em dois ou três minutos. | Integration |
+| [Skill do Fable portada para o Codex](#case-34) | Peça para um agente construir a skill de vídeo de referência no Blender, portar para o Codex e testar se o Seedance consegue limpar o movimento sem usar prompt algum. | Integration |
+
 
 <a id="reference-prompt-multi-input-mapping"></a>
 ### 🧩 Referências, prompts e mapeamento de múltiplas entradas
@@ -134,6 +140,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Brinquedo físico como referência em vez de software 3D](#case-24) | Um caso de referência física: use brinquedos como referências rápidas de movimento e encenação quando abrir o Blender der trabalho demais. | Demo |
 | [Controle por referência para uma cena específica em que o prompt falhou](#case-26) | Uma alternativa de controle: quando a geração somente por prompt falhar, use uma referência para forçar a cena, mesmo com alguma redução de dinamismo. | Demo |
 | [Dicas de proporção de personagens e fundos simples](#case-27) | Um caso em formato de checklist de estabilidade: alinhe as proporções do personagem além da altura e simplifique qualquer fundo que não precise de correspondência precisa. | Tutorial |
+| [Mocap de manequim com quadro estilizado](#case-35) | Use uma fonte rígida de movimento do Blender ou de manequim para travar o timing e depois guie o estilo final e o comportamento do tecido no Seedance por meio do quadro de entrada. | Demo |
+
 
 <a id="production-pipelines-toolchains"></a>
 ### 🛠️ Pipelines e cadeias de ferramentas de produção
@@ -144,6 +152,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Do viewport do Blender MCP à transferência de estilo no Seedance](#case-16) | Um caso do viewport à transferência de estilo: o Blender MCP controla a câmera e os elementos; depois, Seedance e Magnific adicionam textura e iluminação. | Integration |
 | [Da previs do Blender à renderização anime no Seedance](#case-17) | Um caso de previs 3D para anime que mostra como preservar os movimentos de câmera e a ação enquanto o Seedance altera o estilo de renderização. | Integration |
 | [Clay pass FBX com câmera keyframed pelo Claude](#case-18) | Um fluxo de clay pass FBX em que o Blender importa o movimento, o Claude ajuda a criar keyframes de câmera e o passe renderizado se torna o vídeo de referência do Seedance. | Integration |
+| [Pipeline de referência de dança orquestrado com Fable](#case-30) | Deixe um agente desenhar o personagem, gerar o código de coreografia no Blender e passar a referência de dança de 15 segundos ao Seedance quando o movimento por prompt for vago demais. | Integration |
+
 
 <a id="limits-tests-troubleshooting"></a>
 ### 🧪 Limites, testes e solução de problemas
@@ -153,6 +163,10 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Blockout do Blender somente com referência e sem quadro inicial](#case-20) | Uma variante sem quadro inicial que mostra que o blockout do Blender e referências detalhadas do ambiente podem funcionar quando o fluxo não pode depender de uma imagem inicial. | Limit |
 | [Reforço de prompt com brinquedo de referência e exemplo malsucedido](#case-25) | Um caso de diagnóstico que mostra por que vídeos de referência frequentemente precisam de reforço no prompt em vez de imitação direta. | Limit |
 | [Teste de estresse de física de tecidos com Blender e Seedance](#case-28) | Um teste de estresse de física de tecidos que mostra onde o Seedance guiado pelo Blender funciona, mas ainda exige iteração em movimentos difíceis. | Limit |
+| [Correção de timing com quadros pretos entre keyframes](#case-31) | Quando uma referência bruta do Blender faz o Seedance copiar movimentos robóticos entre poses, mantenha as poses-chave e escureça os quadros intermediários. | Tutorial |
+| [Teste de desencontro de movimento em cena complexa](#case-33) | Trate renders MCP de cena bruta como um teste de limite: cenas complexas no Blender ainda podem se desviar do movimento pretendido mesmo após várias tomadas no Seedance. | Limit |
+
+
 
 <a id="camera-control-previs-cases"></a>
 ## 🎥 Controle de câmera e previsualização
@@ -232,6 +246,20 @@ Tipo: Demo | Data: 2026-06-28
 
 ---
 
+
+<a id="case-29"></a>
+### Case 29: [Previs de câmera com iPhone sincronizada ao diálogo](https://x.com/CoffeeVectors/status/2076397975853551924) (por [@CoffeeVectors](https://x.com/CoffeeVectors))
+
+**Use um passe de câmera do Blender guiado por iPhone e sincronizado com o diálogo, depois envie essa previs com áudio e duas imagens para o Seedance planejar a tomada.**
+
+- Notas da fonte: A fonte usa um passe de câmera do Blender guiado por iPhone e sincronizado com o diálogo, depois envia essa previs com áudio ao Seedance 2 junto com duas imagens fixas.
+- Prévia de vídeo:
+
+[![Prévia de vídeo — Case 29](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case29.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case29.mp4)
+
+Tipo: Integration | Data: 2026-07-12
+
+---
 <a id="character-action-blocking-cases"></a>
 ## 🎬 Bloqueio de personagens e ação
 
@@ -295,6 +323,20 @@ Tipo: Demo | Data: 2026-06-29
 
 ---
 
+
+<a id="case-32"></a>
+### Case 32: [Perseguição de parkour no telhado com obstáculos](https://x.com/moframe2026/status/2075203485604470965) (por [@moframe2026](https://x.com/moframe2026))
+
+**Monte uma previs de parkour no Blender com interações com obstáculos e batidas de evasão quando o Seedance tende a reduzir a ação a uma corrida reta.**
+
+- Notas da fonte: O autor usa uma previs de parkour do Blender como referência de vídeo e diz que o Blender foi necessário para acrescentar obstáculos e fluxo de desvio além de uma corrida simples.
+- Prévia de vídeo:
+
+[![Prévia de vídeo — Case 32](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case32.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case32.mp4)
+
+Tipo: Demo | Data: 2026-07-09
+
+---
 <a id="agentic-blender-mcp-cases"></a>
 ## 🤖 Blender MCP com agentes
 
@@ -343,6 +385,20 @@ Tipo: Integration | Data: 2026-06-29
 
 ---
 
+
+<a id="case-34"></a>
+### Case 34: [Skill do Fable portada para o Codex](https://x.com/mugi_AI_Art/status/2074259600342163846) (por [@mugi_AI_Art](https://x.com/mugi_AI_Art))
+
+**Peça para um agente construir a skill de vídeo de referência no Blender, portar para o Codex e testar se o Seedance consegue limpar o movimento sem usar prompt algum.**
+
+- Notas da fonte: O autor fez o Fable construir uma skill de vídeo de referência no Blender, portou essa skill para o Codex e então executou uma geração no Seedance sem prompt a partir de referências modeladas de forma bruta.
+- Prévia de vídeo:
+
+[![Prévia de vídeo — Case 34](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case34.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case34.mp4)
+
+Tipo: Integration | Data: 2026-07-06
+
+---
 <a id="reference-prompt-multi-input-mapping-cases"></a>
 ## 🧩 Referências, prompts e mapeamento de múltiplas entradas
 
@@ -438,6 +494,20 @@ Tipo: Tutorial | Data: 2026-06-26
 
 ---
 
+
+<a id="case-35"></a>
+### Case 35: [Mocap de manequim com quadro estilizado](https://x.com/fatboypink/status/2074087401887039740) (por [@fatboypink](https://x.com/fatboypink))
+
+**Use uma fonte rígida de movimento do Blender ou de manequim para travar o timing e depois guie o estilo final e o comportamento do tecido no Seedance por meio do quadro de entrada.**
+
+- Notas da fonte: O autor diz que um mocap rígido de manequim guiou o timing do movimento, enquanto o quadro desenhado à mão ainda empurrou o Seedance para o estilo e o movimento do tecido desejados.
+- Prévia de vídeo:
+
+[![Prévia de vídeo — Case 35](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case35.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case35.mp4)
+
+Tipo: Demo | Data: 2026-07-06
+
+---
 <a id="production-pipelines-toolchains-cases"></a>
 ## 🛠️ Pipelines e cadeias de ferramentas de produção
 
@@ -501,6 +571,20 @@ Tipo: Integration | Data: 2026-06-25
 
 ---
 
+
+<a id="case-30"></a>
+### Case 30: [Pipeline de referência de dança orquestrado com Fable](https://x.com/ryo05m/status/2076284841457521043) (por [@ryo05m](https://x.com/ryo05m))
+
+**Deixe um agente desenhar o personagem, gerar o código de coreografia no Blender e passar a referência de dança de 15 segundos ao Seedance quando o movimento por prompt for vago demais.**
+
+- Notas da fonte: O autor descreve três passos: Seedream 5 Pro para o personagem, Blender para uma dança de manequim de 15 segundos e Seedance 2.0 para a passagem final de referência de movimento e câmera.
+- Prévia de vídeo:
+
+[![Prévia de vídeo — Case 30](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case30.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case30.mp4)
+
+Tipo: Integration | Data: 2026-07-12
+
+---
 <a id="limits-tests-troubleshooting-cases"></a>
 ## 🧪 Limites, testes e solução de problemas
 
@@ -556,6 +640,34 @@ Tipo: Limit | Data: 2026-06-26
 - [Instale a skill de agente Seedance 2](https://github.com/Evolink-AI/seedance2-video-gen-skill-for-openclaw)
 - [Explore o fluxo GPT Image 2 para Seedance 2](https://github.com/Evolink-AI/GPT-Image-2-Seedance2-Workflow)
 
+
+<a id="case-31"></a>
+### Case 31: [Correção de timing com quadros pretos entre keyframes](https://x.com/thechriscooper/status/2076092824102240411) (por [@thechriscooper](https://x.com/thechriscooper))
+
+**Quando uma referência bruta do Blender faz o Seedance copiar movimentos robóticos entre poses, mantenha as poses-chave e escureça os quadros intermediários.**
+
+- Notas da fonte: O autor diz que o Seedance copiava a animação bruta do Blender de forma literal demais, enquanto o padrão keyframe-preto-keyframe-preto manteve o blocking e suavizou o movimento.
+- Prévia de vídeo:
+
+[![Prévia de vídeo — Case 31](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case31.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case31.mp4)
+
+Tipo: Tutorial | Data: 2026-07-11
+
+---
+
+<a id="case-33"></a>
+### Case 33: [Teste de desencontro de movimento em cena complexa](https://x.com/sonicpower1970/status/2074322339391824012) (por [@sonicpower1970](https://x.com/sonicpower1970))
+
+**Trate renders MCP de cena bruta como um teste de limite: cenas complexas no Blender ainda podem se desviar do movimento pretendido mesmo após várias tomadas no Seedance.**
+
+- Notas da fonte: Este acompanhamento relata que, mesmo depois de cerca de quatro tomadas, cenas complexas ainda não correspondiam ao movimento pretendido no teste Claude→Blender→Seedance do autor.
+- Prévia de vídeo:
+
+[![Prévia de vídeo — Case 33](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case33.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case33.mp4)
+
+Tipo: Limit | Data: 2026-07-07
+
+---
 <a id="acknowledge"></a>
 ## 🙏 Agradecimentos
 

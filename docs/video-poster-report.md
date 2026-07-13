@@ -1,8 +1,9 @@
 # Video Poster Extraction Report
 
-- Generated: 2026-07-11T16:22:14.278968+00:00
-- Videos: 25
-- Extraction: `ffmpeg -ss 0.5 -frames:v 1 -q:v 3`
+- Generated: 2026-07-13T03:43:10.510814+00:00
+- Local videos: 25
+- Remote-only videos: 7
+- Extraction: `ffmpeg -ss 0.5 -frames:v 1 -q:v 3` for local videos; remote-only rows keep their uploaded R2 poster URL.
 - Result: `PASS`
 
 | Video | Duration | Dimensions | Poster | Poster bytes |
@@ -32,3 +33,10 @@
 | `media/case5.mp4` | 11.169s | 1920x1080 | `media/posters/case5.jpg` | 83435 |
 | `media/case6.mp4` | 36.053s | 1920x2160 | `media/posters/case6.jpg` | 153566 |
 | `media/case9.mp4` | 15.125s | 1080x1920 | `media/posters/case9.jpg` | 111409 |
+| `case29 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case29.jpg` | remote |
+| `case30 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case30.jpg` | remote |
+| `case31 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case31.jpg` | remote |
+| `case32 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case32.jpg` | remote |
+| `case33 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case33.jpg` | remote |
+| `case34 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case34.jpg` | remote |
+| `case35 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case35.jpg` | remote |

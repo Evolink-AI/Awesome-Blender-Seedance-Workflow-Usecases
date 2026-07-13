@@ -36,7 +36,7 @@ Blender + Seedance 유스케이스 저장소입니다.
 - 소유자가 제공한 공개 제작자 게시물 데이터에서 **25개의 Blender + Seedance 사례**를 선별했습니다.
 - 카메라 제어, Blender 프리비즈, 다중 캐릭터 블로킹, 액션 안무, Blender MCP, Codex/Claude 지원 블록아웃, FBX/Mixamo 레퍼런스, ComfyUI/스타일 전환, 알려진 한계를 다룹니다.
 - 각 사례에는 원본 출처, 제작자 표기, 간결한 핵심 요점, 증거 유형, 게시일이 포함됩니다.
-- 공개 목록은 35개 후보 감사와 요청된 신규 링크를 반영해 25개 주요 사례로 재구성했습니다.
+- 공개 목록은 35개 후보 감사에서 시작했고, 지금은 반복 업데이트 루프에서 검증된 주간 추가 7건을 포함합니다.
 - 실제 워크플로를 검토한 뒤 설정과 실행은 EvoLink Blender-to-video 쿡북을 이용하세요.
 
 > [!NOTE]
@@ -85,12 +85,12 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 | 섹션 | 사례 |
 |---|---|
-| [🎥 카메라 제어와 프리비즈](#camera-control-previs) | Case 1, 2, 3, 4, 5 |
-| [🎬 캐릭터와 액션 블로킹](#character-action-blocking) | Case 6, 8, 9, 21 |
-| [🤖 에이전트 기반 Blender MCP](#agentic-blender-mcp) | Case 10, 11, 22 |
-| [🧩 레퍼런스, 프롬프트 및 다중 입력 매핑](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27 |
-| [🛠️ 제작 파이프라인과 툴체인](#production-pipelines-toolchains) | Case 15, 16, 17, 18 |
-| [🧪 한계, 테스트 및 문제 해결](#limits-tests-troubleshooting) | Case 20, 25, 28 |
+| [🎥 카메라 제어와 프리비즈](#camera-control-previs) | Case 1, 2, 3, 4, 5, 29 |
+| [🎬 캐릭터와 액션 블로킹](#character-action-blocking) | Case 6, 8, 9, 21, 32 |
+| [🤖 에이전트 기반 Blender MCP](#agentic-blender-mcp) | Case 10, 11, 22, 34 |
+| [🧩 레퍼런스, 프롬프트 및 다중 입력 매핑](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27, 35 |
+| [🛠️ 제작 파이프라인과 툴체인](#production-pipelines-toolchains) | Case 15, 16, 17, 18, 30 |
+| [🧪 한계, 테스트 및 문제 해결](#limits-tests-troubleshooting) | Case 20, 25, 28, 31, 33 |
 | [🙏 감사의 말](#acknowledge) | 크레딧 및 정정 정책 |
 
 <a id="camera-control-previs"></a>
@@ -103,6 +103,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Blender 프리비즈를 활용한 ComfyUI 카메라 제어](#case-3) | Blender 프리비즈에 정방향과 상하 반전 레퍼런스 프레임을 각각 결합해 모션 추종성을 시험한 ComfyUI 제어 사례입니다. | Demo |
 | [뷰포트 프리뷰에서 사실적인 시작 프레임으로](#case-4) | 짧은 뷰포트 프리뷰 튜토리얼입니다. 장면을 블록아웃하고 프리뷰를 내보낸 뒤 첫 프레임을 사실적으로 바꾸고 두 레퍼런스를 모두 Seedance에 제공합니다. | Demo |
 | [하나의 레퍼런스 비디오로 여러 세계 만들기](#case-5) | 동일한 Blender 레퍼런스 비디오로 Seedance에서 서로 다른 세계를 생성한 스타일·세계 변형 사례입니다. | Demo |
+| [대사에 맞춘 iPhone 카메라 프리비즈](#case-29) | iPhone으로 구동한 Blender 카메라 패스를 대사에 맞춘 뒤, 그 오디오 포함 프리비즈와 두 장의 이미지를 Seedance에 넣어 쇼트 계획에 사용합니다. | Integration |
+
 
 <a id="character-action-blocking"></a>
 ### 🎬 캐릭터와 액션 블로킹
@@ -113,6 +115,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [공간을 가로지르는 핸드헬드 추적 카메라](#case-8) | Blender로 캐릭터가 공간을 이동하는 방식을 제어하고 Seedance가 거친 카메라 움직임을 최종 비디오에 반영하는 핸드헬드 추적 사례입니다. | Demo |
 | [전술 액션을 위한 카메라 및 캐릭터 블로킹](#case-9) | 생성 전에 Blender로 카메라 궤도, 렌즈 선택, 엄폐 위치, 총격 타이밍, 캐릭터 움직임을 연출한 전술 블로킹 사례입니다. | Demo |
 | [단순한 카메라 이동을 넘어선 매복 장면 프리비즈](#case-21) | Seedance가 숏을 생성하기 전에 Blender 프리비즈로 장면 구성, 타이밍, 카메라 움직임을 해결하는 매복 장면 사례입니다. | Demo |
+| [장애물이 있는 옥상 파쿠르 추격](#case-32) | Seedance가 직선 달리기로 단순화될 때는 장애물 상호작용과 회피 비트를 포함한 Blender 파쿠르 프리비즈를 먼저 만듭니다. | Demo |
+
 
 <a id="agentic-blender-mcp"></a>
 ### 🤖 에이전트 기반 Blender MCP
@@ -122,6 +126,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Codex + Blender MCP 레퍼런스 비디오 워크플로](#case-10) | Codex가 간단한 3D 시장, 고양이 움직임, 카메라 구도, Seedance용 MP4 레퍼런스를 제작한 에이전트형 Blender MCP 사례입니다. | Integration |
 | [Codex로 구축한 건축 및 카메라 워크](#case-11) | Codex의 도움으로 Blender에서 건축과 카메라 워크를 생성한 뒤 Seedance 레퍼런스 모션으로 시험한 초보자 사례입니다. | Integration |
 | [Claude로 몇 분 만에 제작한 Blender MCP 프리비즈](#case-22) | Claude가 Blender MCP를 사용해 2~3분 안에 숏 레퍼런스를 제작한 빠른 에이전트형 프리비즈 사례입니다. | Integration |
+| [Fable 스킬을 Codex로 이식](#case-34) | 에이전트에게 Blender 레퍼런스 비디오 스킬을 만들게 하고 Codex로 옮긴 뒤, 프롬프트 없이도 Seedance가 움직임을 정리할 수 있는지 확인합니다. | Integration |
+
 
 <a id="reference-prompt-multi-input-mapping"></a>
 ### 🧩 레퍼런스, 프롬프트 및 다중 입력 매핑
@@ -134,6 +140,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [3D 소프트웨어 대신 실물 장난감을 레퍼런스로 활용](#case-24) | 실물 레퍼런스 사례입니다. Blender를 여는 부담이 클 때 장난감을 빠른 모션 및 장면 구성 레퍼런스로 활용합니다. | Demo |
 | [프롬프트 생성에 실패한 특정 장면을 위한 레퍼런스 제어](#case-26) | 제어 대안을 보여 주는 사례입니다. 프롬프트만으로 생성에 실패하면 일부 역동성이 줄더라도 레퍼런스를 사용해 장면을 구현합니다. | Demo |
 | [캐릭터 비율 및 단순한 배경 팁](#case-27) | 안정성 체크리스트 사례입니다. 키뿐 아니라 캐릭터 전체 비율을 맞추고 정밀한 정렬이 필요 없는 배경은 단순화합니다. | Tutorial |
+| [마네킹 모캡과 스타일 프레임 조합](#case-35) | 딱딱한 Blender나 마네킹 모션 소스로 타이밍을 고정하고, 입력 프레임 디자인으로 Seedance의 최종 스타일과 천 움직임을 조정합니다. | Demo |
+
 
 <a id="production-pipelines-toolchains"></a>
 ### 🛠️ 제작 파이프라인과 툴체인
@@ -144,6 +152,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Blender MCP 뷰포트에서 Seedance로 스타일 전환](#case-16) | 뷰포트에서 스타일 전환으로 이어지는 사례입니다. Blender MCP가 카메라와 요소를 제어하고 Seedance/Magnific이 텍스처와 조명을 추가합니다. | Integration |
 | [Blender 프리비즈에서 Seedance 애니메이션 렌더로](#case-17) | Seedance가 렌더 스타일을 바꾸면서도 카메라 움직임과 모션을 유지하는 3D 프리비즈-애니메이션 사례입니다. | Integration |
 | [Claude가 키프레임을 설정한 카메라를 활용한 FBX 클레이 패스](#case-18) | Blender가 모션을 가져오고 Claude가 카메라 움직임의 키프레임 설정을 도우며 렌더링한 클레이 패스를 Seedance 레퍼런스 비디오로 사용하는 FBX 워크플로입니다. | Integration |
+| [Fable이 짠 댄스 레퍼런스 파이프라인](#case-30) | 프롬프트만으로는 동작이 거칠 때 에이전트에게 캐릭터 설계와 Blender 안무 코드를 맡기고 15초 댄스 레퍼런스를 Seedance에 넘깁니다. | Integration |
+
 
 <a id="limits-tests-troubleshooting"></a>
 ### 🧪 한계, 테스트 및 문제 해결
@@ -153,6 +163,10 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [시작 프레임 없는 레퍼런스 전용 Blender 블록아웃](#case-20) | 시작 프레임에 의존할 수 없는 워크플로에서도 Blender 블록아웃과 상세한 환경 레퍼런스를 결합하면 작동할 수 있음을 보여 주는 변형 사례입니다. | Limit |
 | [장난감 레퍼런스 프롬프트 보강 및 실패 사례](#case-25) | 레퍼런스 비디오를 그대로 모방시키기보다 프롬프트 보강이 필요한 이유를 보여 주는 문제 해결 사례입니다. | Limit |
 | [Blender와 Seedance를 활용한 천 물리 스트레스 테스트](#case-28) | Blender로 유도한 Seedance가 작동하는 범위와 어려운 움직임에서는 반복 조정이 필요함을 보여 주는 천 물리 스트레스 테스트입니다. | Limit |
+| [블랙 프레임 키프레임 타이밍 보정](#case-31) | 거친 Blender 레퍼런스가 중간 동작까지 로봇처럼 복제되면 키 포즈만 남기고 사이 프레임을 검게 처리합니다. | Tutorial |
+| [복잡한 장면에서의 모션 불일치 테스트](#case-33) | 거친 장면 MCP 렌더는 한계 테스트로 봐야 하며, 복잡한 Blender 장면은 여러 번의 Seedance 시도 뒤에도 의도한 움직임에서 벗어날 수 있습니다. | Limit |
+
+
 
 <a id="camera-control-previs-cases"></a>
 ## 🎥 카메라 제어와 프리비즈
@@ -232,6 +246,20 @@ Type: Demo | Date: 2026-06-28
 
 ---
 
+
+<a id="case-29"></a>
+### Case 29: [대사에 맞춘 iPhone 카메라 프리비즈](https://x.com/CoffeeVectors/status/2076397975853551924) (작성자: [@CoffeeVectors](https://x.com/CoffeeVectors))
+
+**iPhone으로 구동한 Blender 카메라 패스를 대사에 맞춘 뒤, 그 오디오 포함 프리비즈와 두 장의 이미지를 Seedance에 넣어 쇼트 계획에 사용합니다.**
+
+- 소스 메모: 소스는 iPhone으로 구동한 Blender 카메라를 대사에 맞춘 뒤 그 오디오 포함 프리비즈를 두 장의 정지 이미지와 함께 Seedance 2에 전달합니다.
+- 비디오 미리보기:
+
+[![비디오 미리보기 — Case 29](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case29.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case29.mp4)
+
+Type: Integration | Date: 2026-07-12
+
+---
 <a id="character-action-blocking-cases"></a>
 ## 🎬 캐릭터와 액션 블로킹
 
@@ -295,6 +323,20 @@ Type: Demo | Date: 2026-06-29
 
 ---
 
+
+<a id="case-32"></a>
+### Case 32: [장애물이 있는 옥상 파쿠르 추격](https://x.com/moframe2026/status/2075203485604470965) (작성자: [@moframe2026](https://x.com/moframe2026))
+
+**Seedance가 직선 달리기로 단순화될 때는 장애물 상호작용과 회피 비트를 포함한 Blender 파쿠르 프리비즈를 먼저 만듭니다.**
+
+- 소스 메모: 작성자는 Blender 파쿠르 프리비즈를 비디오 레퍼런스로 사용했고, 단순한 달리기 이상으로 장애물 활용과 회피 흐름을 넣기 위해 Blender가 필요했다고 말합니다.
+- 비디오 미리보기:
+
+[![비디오 미리보기 — Case 32](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case32.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case32.mp4)
+
+Type: Demo | Date: 2026-07-09
+
+---
 <a id="agentic-blender-mcp-cases"></a>
 ## 🤖 에이전트 기반 Blender MCP
 
@@ -343,6 +385,20 @@ Type: Integration | Date: 2026-06-29
 
 ---
 
+
+<a id="case-34"></a>
+### Case 34: [Fable 스킬을 Codex로 이식](https://x.com/mugi_AI_Art/status/2074259600342163846) (작성자: [@mugi_AI_Art](https://x.com/mugi_AI_Art))
+
+**에이전트에게 Blender 레퍼런스 비디오 스킬을 만들게 하고 Codex로 옮긴 뒤, 프롬프트 없이도 Seedance가 움직임을 정리할 수 있는지 확인합니다.**
+
+- 소스 메모: 작성자는 Fable이 Blender 레퍼런스 비디오 스킬을 만들게 한 뒤 이를 Codex로 옮기고, 거친 모델 레퍼런스에서 프롬프트 없이 Seedance 생성을 실행했습니다.
+- 비디오 미리보기:
+
+[![비디오 미리보기 — Case 34](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case34.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case34.mp4)
+
+Type: Integration | Date: 2026-07-06
+
+---
 <a id="reference-prompt-multi-input-mapping-cases"></a>
 ## 🧩 레퍼런스, 프롬프트 및 다중 입력 매핑
 
@@ -438,6 +494,20 @@ Type: Tutorial | Date: 2026-06-26
 
 ---
 
+
+<a id="case-35"></a>
+### Case 35: [마네킹 모캡과 스타일 프레임 조합](https://x.com/fatboypink/status/2074087401887039740) (작성자: [@fatboypink](https://x.com/fatboypink))
+
+**딱딱한 Blender나 마네킹 모션 소스로 타이밍을 고정하고, 입력 프레임 디자인으로 Seedance의 최종 스타일과 천 움직임을 조정합니다.**
+
+- 소스 메모: 작성자는 딱딱한 마네킹 모캡이 움직임 타이밍을 담당했지만 손으로 그린 입력 프레임이 원하는 스타일과 천 움직임을 끝까지 밀어 주었다고 설명합니다.
+- 비디오 미리보기:
+
+[![비디오 미리보기 — Case 35](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case35.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case35.mp4)
+
+Type: Demo | Date: 2026-07-06
+
+---
 <a id="production-pipelines-toolchains-cases"></a>
 ## 🛠️ 제작 파이프라인과 툴체인
 
@@ -501,6 +571,20 @@ Type: Integration | Date: 2026-06-25
 
 ---
 
+
+<a id="case-30"></a>
+### Case 30: [Fable이 짠 댄스 레퍼런스 파이프라인](https://x.com/ryo05m/status/2076284841457521043) (작성자: [@ryo05m](https://x.com/ryo05m))
+
+**프롬프트만으로는 동작이 거칠 때 에이전트에게 캐릭터 설계와 Blender 안무 코드를 맡기고 15초 댄스 레퍼런스를 Seedance에 넘깁니다.**
+
+- 소스 메모: 작성자는 Seedream 5 Pro로 캐릭터 설계, Blender로 15초 마네킹 댄스, Seedance 2.0으로 모션과 카메라 레퍼런스를 넣는 3단계를 명시했습니다.
+- 비디오 미리보기:
+
+[![비디오 미리보기 — Case 30](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case30.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case30.mp4)
+
+Type: Integration | Date: 2026-07-12
+
+---
 <a id="limits-tests-troubleshooting-cases"></a>
 ## 🧪 한계, 테스트 및 문제 해결
 
@@ -556,6 +640,34 @@ Type: Limit | Date: 2026-06-26
 - [Seedance 2 에이전트 스킬 설치](https://github.com/Evolink-AI/seedance2-video-gen-skill-for-openclaw)
 - [GPT Image 2에서 Seedance 2로 이어지는 워크플로 보기](https://github.com/Evolink-AI/GPT-Image-2-Seedance2-Workflow)
 
+
+<a id="case-31"></a>
+### Case 31: [블랙 프레임 키프레임 타이밍 보정](https://x.com/thechriscooper/status/2076092824102240411) (작성자: [@thechriscooper](https://x.com/thechriscooper))
+
+**거친 Blender 레퍼런스가 중간 동작까지 로봇처럼 복제되면 키 포즈만 남기고 사이 프레임을 검게 처리합니다.**
+
+- 소스 메모: 작성자에 따르면 거친 Blender 애니메이션 전체를 넣으면 Seedance가 어색한 중간 동작까지 그대로 복제했지만, 키프레임-블랙-키프레임 패턴은 블로킹을 유지하면서 움직임을 더 부드럽게 만들었습니다.
+- 비디오 미리보기:
+
+[![비디오 미리보기 — Case 31](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case31.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case31.mp4)
+
+Type: Tutorial | Date: 2026-07-11
+
+---
+
+<a id="case-33"></a>
+### Case 33: [복잡한 장면에서의 모션 불일치 테스트](https://x.com/sonicpower1970/status/2074322339391824012) (작성자: [@sonicpower1970](https://x.com/sonicpower1970))
+
+**거친 장면 MCP 렌더는 한계 테스트로 봐야 하며, 복잡한 Blender 장면은 여러 번의 Seedance 시도 뒤에도 의도한 움직임에서 벗어날 수 있습니다.**
+
+- 소스 메모: 이 후속 보고는 작성자의 Claude→Blender→Seedance 테스트에서 약 네 번 시도한 뒤에도 복잡한 장면이 의도한 움직임에 맞지 않았다고 말합니다.
+- 비디오 미리보기:
+
+[![비디오 미리보기 — Case 33](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case33.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case33.mp4)
+
+Type: Limit | Date: 2026-07-07
+
+---
 <a id="acknowledge"></a>
 ## 🙏 감사의 말
 

@@ -1,8 +1,8 @@
 # Official Case Inventory
 
-- Generated: 2026-07-11T16:22:27.069814+00:00
+- Generated: 2026-07-13T03:35:00Z
 - Source of truth: `blender-seedance-usecase-curated.json`
-- Public cases: 25
+- Public cases: 32
 - Numbering policy: recorded legacy namespace; new cases append contiguously from Case 29
 
 | Case | Category | Type | Date | Creator | Source | Media |
@@ -32,3 +32,10 @@
 | 26 | `reference-prompt` | Demo | 2026-06-28 | [@kan_mi_no9](https://x.com/kan_mi_no9) | [Open source](https://x.com/kan_mi_no9/status/2071168235022827587) | `media/case26.mp4` |
 | 27 | `reference-prompt` | Tutorial | 2026-06-26 | [@craftcapitallab](https://x.com/craftcapitallab) | [Open source](https://x.com/craftcapitallab/status/2070512271391068287) | `media/case27.mp4` |
 | 28 | `limitations` | Limit | 2026-06-26 | [@fatboypink](https://x.com/fatboypink) | [Open source](https://x.com/fatboypink/status/2070577334701473800) | `media/case28.mp4` |
+| 29 | `camera-control` | Integration | 2026-07-12 | [@CoffeeVectors](https://x.com/CoffeeVectors) | [Open source](https://x.com/CoffeeVectors/status/2076397975853551924) | none |
+| 30 | `production-pipeline` | Integration | 2026-07-12 | [@ryo05m](https://x.com/ryo05m) | [Open source](https://x.com/ryo05m/status/2076284841457521043) | none |
+| 31 | `limitations` | Tutorial | 2026-07-11 | [@thechriscooper](https://x.com/thechriscooper) | [Open source](https://x.com/thechriscooper/status/2076092824102240411) | none |
+| 32 | `character-action` | Demo | 2026-07-09 | [@moframe2026](https://x.com/moframe2026) | [Open source](https://x.com/moframe2026/status/2075203485604470965) | none |
+| 33 | `limitations` | Limit | 2026-07-07 | [@sonicpower1970](https://x.com/sonicpower1970) | [Open source](https://x.com/sonicpower1970/status/2074322339391824012) | none |
+| 34 | `agentic-mcp` | Integration | 2026-07-06 | [@mugi_AI_Art](https://x.com/mugi_AI_Art) | [Open source](https://x.com/mugi_AI_Art/status/2074259600342163846) | none |
+| 35 | `reference-prompt` | Demo | 2026-07-06 | [@fatboypink](https://x.com/fatboypink) | [Open source](https://x.com/fatboypink/status/2074087401887039740) | none |

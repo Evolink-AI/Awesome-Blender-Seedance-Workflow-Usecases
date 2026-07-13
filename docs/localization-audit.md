@@ -1,21 +1,21 @@
 # Localization Audit
 
-- English case count: 25
+- English case count: 32
 - Localized README count: 10
 - Status: PASS
 
 | Locale | Cases | Exact English titles | Exact English takeaways | English UI leaks | Status |
 |---|---:|---:|---:|---|---|
-| `de` | 25 | 0 | 0 | none | PASS |
-| `es` | 25 | 0 | 0 | none | PASS |
-| `fr` | 25 | 0 | 0 | none | PASS |
-| `ja` | 25 | 0 | 0 | none | PASS |
-| `ko` | 25 | 0 | 0 | none | PASS |
-| `pt` | 25 | 0 | 0 | none | PASS |
-| `ru` | 25 | 0 | 0 | none | PASS |
-| `tr` | 25 | 0 | 0 | none | PASS |
-| `zh-CN` | 25 | 0 | 0 | none | PASS |
-| `zh-TW` | 25 | 0 | 0 | none | PASS |
+| `de` | 32 | 0 | 0 | none | PASS |
+| `es` | 32 | 0 | 0 | none | PASS |
+| `fr` | 32 | 0 | 0 | none | PASS |
+| `ja` | 32 | 0 | 0 | none | PASS |
+| `ko` | 32 | 0 | 0 | none | PASS |
+| `pt` | 32 | 0 | 0 | none | PASS |
+| `ru` | 32 | 0 | 0 | none | PASS |
+| `tr` | 32 | 0 | 0 | none | PASS |
+| `zh-CN` | 32 | 0 | 0 | none | PASS |
+| `zh-TW` | 32 | 0 | 0 | none | PASS |
 
 ## Findings
 
