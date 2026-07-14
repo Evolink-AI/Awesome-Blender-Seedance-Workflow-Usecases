@@ -1,11 +1,10 @@
 <div align="center">
 
-<a href="https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
+<a href="https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=banner&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=readme_banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/images/banner.png" alt="Blender + Seedance usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Use on EvoLink](https://img.shields.io/badge/Use_on-EvoLink-black)](https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=use_on_evolink_badge)
-[![MCP + Skill](https://img.shields.io/badge/MCP_%2B_Skill-Cookbook-orange)](https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=mcp_skill_badge)
-[![Agent Workflow](https://img.shields.io/badge/Agent_Workflow-Guide-blue)](https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=agent_workflow_badge)
+[![Try Blender Workflow](https://img.shields.io/badge/Try-Blender_Workflow-black)](https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=badge&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=model_try)
+[![Get API Key](https://img.shields.io/badge/Get-API_Key-blue)](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=badge&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)
 
 [![English](https://img.shields.io/badge/English-111111)](README.md)
 [![Español](https://img.shields.io/badge/Espa%C3%B1ol-ffb703)](README_es.md)
@@ -36,7 +35,7 @@ Beginnen Sie mit dem EvoLink Blender-zu-Video-Kochbuch und verwenden Sie dann de
 - **32 ausgewählte Blender- + Seedance-Fälle** aus öffentlichen Creator-Posts und geprüften wiederkehrenden Wochen-Updates.
 - Behandelt Kamerasteuerung, Blender Previs, Multi-Character-Blocking, Action-Choreografie, Blender MCP, Codex/Claude-unterstützte Blockouts, FBX/Mixamo-Referenzen, ComfyUI/Style-Transfer und bekannte Einschränkungen.
 - Jeder Fall enthält die Originalquelle, die Nennung des Urhebers, eine prägnante Zusammenfassung, die Art des Beweismittels und das Veröffentlichungsdatum.
-- Die öffentliche Liste wurde aus der Prüfung von 35 Kandidaten und den angeforderten neuen Links als 25 Hauptfälle neu aufgebaut.
+- Die öffentliche Liste begann mit der Prüfung von 35 Kandidaten und enthält jetzt 7 auditiert hinzugefügte Wochenfälle aus dem wiederkehrenden Update-Loop.
 - Verwenden Sie dieses Repo, um praktische Arbeitsabläufe zu überprüfen, und senden Sie Benutzer dann zur Einrichtung und Ausführung an das EvoLink Blender-to-Video-Kochbuch.
 
 > [!NOTE]
@@ -73,6 +72,25 @@ export EVOLINK_API_KEY="<your-evolink-api-key>"
 ### 4. Führen Sie es in Ihrem Agenten aus
 
 Nachdem MCP, Skills und API-Schlüssel bereit sind, bitten Sie Ihren Agenten, einen Blender-Blockout zu erstellen, das Referenzvideo zu exportieren, mit Seedance zu generieren und den fertigen Clip bei Bedarf hochzuskalieren.
+
+Bevor Sie eine direkte Anfrage senden, prüfen Sie Ihren Schlüssel unter [API-Schlüssel abrufen](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key). Wenn Sie einen direkten API-Fallback benötigen, senden Sie den Blender-Referenz-Workflow an `POST https://api.evolink.ai/v1/videos/generations`:
+
+```bash
+curl --request POST \
+  --url https://api.evolink.ai/v1/videos/generations \
+  --header "Authorization: Bearer ${EVOLINK_API_KEY}" \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "model": "seedance-2.0-reference-to-video",
+    "prompt": "Use the Blender blockout video as the motion guide, keep the camera path, and preserve the staged timing.",
+    "video_urls": ["https://example.com/blender-blockout.mp4"],
+    "image_urls": ["https://example.com/first-frame.jpg"],
+    "duration": 5,
+    "quality": "720p",
+    "aspect_ratio": "16:9",
+    "generate_audio": true
+  }'
+```
 
 ```text
 Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.

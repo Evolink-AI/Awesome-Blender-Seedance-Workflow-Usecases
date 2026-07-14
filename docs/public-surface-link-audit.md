@@ -1,10 +1,10 @@
 # Public Surface Link Audit
 
-- Generated: 2026-07-13T03:43:15.355534+00:00
+- Generated: 2026-07-14T15:16:04.535450+00:00
 - Public files: 26
-- Extracted link occurrences: 4241
-- Unique external URLs checked: 178
-- Manual/bot-protection warnings: 2
+- Extracted link occurrences: 4274
+- Unique external URLs checked: 182
+- Manual/bot-protection warnings: 10
 - P0/P1 failures: 0
 - Result: `PASS`
 
@@ -16,16 +16,21 @@
 
 | URL | Status | Final URL | Type | Disposition |
 |---|---:|---|---|---|
-| https://api.star-history.com/svg?repos=Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases&type=Date | 500 | https://api.star-history.com/svg?repos=evolink-ai%2Fawesome-blender-seedance-workflow-usecases&type=Date | `text/plain` | `manual-external-endpoint` |
+| https://api.evolink.ai/v1/videos/generations | 404 | https://api.evolink.ai/v1/videos/generations | `application/json` | `fail` |
+| https://api.evolink.ai/v1/videos/generations`: | 404 | https://api.evolink.ai/v1/videos/generations`: | `application/json` | `fail` |
+| https://api.evolink.ai/v1/videos/generations`로 | 0 | https://api.evolink.ai/v1/videos/generations`로 | `` | `fail` |
+| https://api.evolink.ai/v1/videos/generations`： | 0 | https://api.evolink.ai/v1/videos/generations`： | `` | `fail` |
+| https://api.star-history.com/svg?repos=Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases&type=Date | 503 | https://api.star-history.com/svg?repos=evolink-ai%2Fawesome-blender-seedance-workflow-usecases&type=Date | `text/plain` | `manual-external-endpoint` |
+| https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=badge&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=model_try | 200 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=badge&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=model_try | `text/html` | `pass` |
+| https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=banner&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=readme_banner | 200 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=banner&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=readme_banner | `text/html` | `pass` |
 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=docs&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=maintenance_primary_cta | 200 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=docs&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=maintenance_primary_cta | `text/html` | `pass` |
-| https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=agent_workflow_badge | 200 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=agent_workflow_badge | `text/html` | `pass` |
-| https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=banner | 200 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=banner | `text/html` | `pass` |
-| https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=mcp_skill_badge | 200 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=mcp_skill_badge | `text/html` | `pass` |
-| https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=use_on_evolink_badge | 200 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=use_on_evolink_badge | `text/html` | `pass` |
+| https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=badge&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key | 200 | https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=badge&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key | `text/html` | `pass` |
 | https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key | 200 | https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key | `text/html` | `pass` |
-| https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/5e4146ed9d20474ba6040479411fce46.mp4 | 206 | https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/5e4146ed9d20474ba6040479411fce46.mp4 | `video/mp4` | `pass` |
-| https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/a61fa3851b0d4c8b8ad8ec82081998bf.mp4 | 206 | https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/a61fa3851b0d4c8b8ad8ec82081998bf.mp4 | `video/mp4` | `pass` |
-| https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/b35f41e735fe42539f822b6249f2ce68.mp4 | 206 | https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/b35f41e735fe42539f822b6249f2ce68.mp4 | `video/mp4` | `pass` |
+| https://example.com/blender-blockout.mp4 | 404 | https://example.com/blender-blockout.mp4 | `text/html` | `fail` |
+| https://example.com/first-frame.jpg | 404 | https://example.com/first-frame.jpg | `text/html` | `fail` |
+| https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/5e4146ed9d20474ba6040479411fce46.mp4 | 404 | https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/5e4146ed9d20474ba6040479411fce46.mp4 | `text/html` | `fail` |
+| https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/a61fa3851b0d4c8b8ad8ec82081998bf.mp4 | 404 | https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/a61fa3851b0d4c8b8ad8ec82081998bf.mp4 | `text/html` | `fail` |
+| https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/b35f41e735fe42539f822b6249f2ce68.mp4 | 404 | https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/b35f41e735fe42539f822b6249f2ce68.mp4 | `text/html` | `fail` |
 | https://github.com/Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases#quick-start | 206 | https://github.com/Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases#quick-start | `text/html` | `pass` |
 | https://github.com/Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases/issues/new?template=use-case.yml | 206 | https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FEvolink-AI%2FAwesome-Blender-Seedance-Workflow-Usecases%2Fissues%2Fnew%3Ftemplate%3Duse-case.yml | `text/html` | `pass` |
 | https://github.com/Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases/security/advisories/new | 206 | https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FEvolink-AI%2FAwesome-Blender-Seedance-Workflow-Usecases%2Fsecurity%2Fadvisories%2Fnew | `text/html` | `pass` |
@@ -37,17 +42,16 @@
 | https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-ef476f | 200 | https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-ef476f | `image/svg+xml` | `pass` |
 | https://img.shields.io/badge/%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87-8338ec | 200 | https://img.shields.io/badge/%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87-8338ec | `image/svg+xml` | `pass` |
 | https://img.shields.io/badge/%ED%95%9C%EA%B5%AD%EC%96%B4-4ea8de | 200 | https://img.shields.io/badge/%ED%95%9C%EA%B5%AD%EC%96%B4-4ea8de | `image/svg+xml` | `pass` |
-| https://img.shields.io/badge/Agent_Workflow-Guide-blue | 200 | https://img.shields.io/badge/Agent_Workflow-Guide-blue | `image/svg+xml` | `pass` |
 | https://img.shields.io/badge/Deutsch-f4a261 | 200 | https://img.shields.io/badge/Deutsch-f4a261 | `image/svg+xml` | `pass` |
 | https://img.shields.io/badge/English-111111 | 200 | https://img.shields.io/badge/English-111111 | `image/svg+xml` | `pass` |
 | https://img.shields.io/badge/Espa%C3%B1ol-ffb703 | 200 | https://img.shields.io/badge/Espa%C3%B1ol-ffb703 | `image/svg+xml` | `pass` |
 | https://img.shields.io/badge/Fran%C3%A7ais-e76f51 | 200 | https://img.shields.io/badge/Fran%C3%A7ais-e76f51 | `image/svg+xml` | `pass` |
+| https://img.shields.io/badge/Get-API_Key-blue | 200 | https://img.shields.io/badge/Get-API_Key-blue | `image/svg+xml` | `pass` |
 | https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg | 200 | https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg | `image/svg+xml` | `pass` |
-| https://img.shields.io/badge/MCP_%2B_Skill-Cookbook-orange | 200 | https://img.shields.io/badge/MCP_%2B_Skill-Cookbook-orange | `image/svg+xml` | `pass` |
 | https://img.shields.io/badge/Portugu%C3%AAs-2a9d8f | 200 | https://img.shields.io/badge/Portugu%C3%AAs-2a9d8f | `image/svg+xml` | `pass` |
 | https://img.shields.io/badge/T%C3%BCrk%C3%A7e-d62828 | 200 | https://img.shields.io/badge/T%C3%BCrk%C3%A7e-d62828 | `image/svg+xml` | `pass` |
-| https://img.shields.io/badge/Use_on-EvoLink-black | 200 | https://img.shields.io/badge/Use_on-EvoLink-black | `image/svg+xml` | `pass` |
-| https://projects.blender.org/lab/blender_mcp/wiki/Setup | 403 | https://projects.blender.org/lab/blender_mcp/wiki/Setup | `text/html` | `manual-external-endpoint` |
+| https://img.shields.io/badge/Try-Blender_Workflow-black | 200 | https://img.shields.io/badge/Try-Blender_Workflow-black | `image/svg+xml` | `pass` |
+| https://projects.blender.org/lab/blender_mcp/wiki/Setup | 200 | https://projects.blender.org/lab/blender_mcp/wiki/Setup | `text/html` | `pass` |
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/images/banner.png | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/images/banner.png | `image/png` | `pass` |
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case1.mp4 | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case1.mp4 | `video/mp4` | `pass` |
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case10.mp4 | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case10.mp4 | `video/mp4` | `pass` |

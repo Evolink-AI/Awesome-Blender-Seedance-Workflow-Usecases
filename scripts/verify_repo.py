@@ -20,10 +20,9 @@ FILES = [
     "README_ru.md",
 ]
 EXPECTED_README_CTAS = [
-    "https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=banner",
-    "https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=use_on_evolink_badge",
-    "https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=mcp_skill_badge",
-    "https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=agent_workflow_badge",
+    "https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=banner&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=readme_banner",
+    "https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=badge&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=model_try",
+    "https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=badge&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key",
     "https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key",
 ]
 EXPECTED_ISSUE_CONTACT = "https://evolink.ai?utm_source=github&utm_medium=issue_template&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=contact_link"
@@ -92,8 +91,10 @@ for file in FILES:
         if expected_cta not in text:
             fail(f"{file} missing primary CTA link {expected_cta}")
     for url in re.findall(r'https://evolink\.ai[^\s)>"`]+', text):
-        if "utm_source=github" not in url or "utm_medium=readme" not in url or f"utm_campaign={UTM_CAMPAIGN}" not in url:
+        if "utm_source=github" not in url or f"utm_campaign={UTM_CAMPAIGN}" not in url:
             fail(f"{file} has EvoLink URL without required README UTM: {url}")
+        if not any(medium in url for medium in ("utm_medium=readme", "utm_medium=badge", "utm_medium=banner")):
+            fail(f"{file} has EvoLink URL without approved README medium: {url}")
     if re.search(r'^media/[^\s]+$', text, re.M):
         fail(f"{file} still exposes repository-local bare media paths")
     for case_label, urls in preview_map.items():
