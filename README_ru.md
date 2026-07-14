@@ -92,6 +92,8 @@ curl --request POST \
   }'
 ```
 
+Если вы сейчас передаёте этот workflow агенту, сначала проверьте тот же ключ через [Получить API-ключ](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key).
+
 ```text
 Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.
 ```

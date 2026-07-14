@@ -92,6 +92,8 @@ curl --request POST \
   }'
 ```
 
+이 워크플로를 곧바로 에이전트에 넘길 예정이라면 먼저 같은 키를 [API 키 받기](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)에서 확인하세요.
+
 ```text
 Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.
 ```
