@@ -61,7 +61,7 @@ npm i evolink-seedance
 npm i evolink-topaz-video-upscale
 ```
 
-### 3. [Obtenir une clé API](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)
+### 3. [Obtenir une clé API](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)
 
 Créez une clé API EvoLink depuis votre compte, puis exposez-la à l’environnement d’exécution de l'agent.
 
@@ -73,7 +73,7 @@ export EVOLINK_API_KEY="<your-evolink-api-key>"
 
 Une fois MCP, les skills et la clé API prêts, demandez à l'agent de créer un blocking Blender, d'exporter la vidéo de référence, de générer avec Seedance et d'agrandir le clip final si nécessaire.
 
-Avant d’envoyer une requête directe, vérifiez votre clé via [Obtenir une clé API](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key). Si vous avez besoin d’un repli API direct, envoyez le workflow de référence Blender à `POST https://api.evolink.ai/v1/videos/generations` :
+Avant d’envoyer une requête directe, vérifiez votre clé via [Obtenir une clé API](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key). Si vous avez besoin d’un repli API direct, envoyez le workflow de référence Blender à `POST https://api.evolink.ai/v1/videos/generations` :
 
 ```bash
 curl --request POST \
@@ -92,7 +92,7 @@ curl --request POST \
   }'
 ```
 
-Si vous allez confier ce workflow à un agent, vérifiez d’abord la même clé via [Obtenir une clé API](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key).
+Si vous allez confier ce workflow à un agent, vérifiez d’abord la même clé via [Obtenir une clé API](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key).
 
 ```text
 Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.

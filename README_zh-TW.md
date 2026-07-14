@@ -61,7 +61,7 @@ npm i evolink-seedance
 npm i evolink-topaz-video-upscale
 ```
 
-### 3. [取得 API key](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)
+### 3. [取得 API key](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)
 
 在 EvoLink 帳號裡建立 API key，然後把它暴露給 agent runtime。
 
@@ -73,7 +73,7 @@ export EVOLINK_API_KEY="<your-evolink-api-key>"
 
 MCP、skills 和 API key 都準備好之後，就可以讓 agent 建立 Blender blockout、匯出參考影片、呼叫 Seedance 生成，並在需要時用 Topaz 放大最終影片。
 
-送出直接請求前，請先到 [取得 API key](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key) 確認金鑰可用。如果你需要直接 API fallback，可以把 Blender 參考工作流提交到 `POST https://api.evolink.ai/v1/videos/generations`：
+送出直接請求前，請先到 [取得 API key](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key) 確認金鑰可用。如果你需要直接 API fallback，可以把 Blender 參考工作流提交到 `POST https://api.evolink.ai/v1/videos/generations`：
 
 ```bash
 curl --request POST \
@@ -92,7 +92,7 @@ curl --request POST \
   }'
 ```
 
-如果你接下來就要把這套流程交給 agent 跑，先到 [取得 API key](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key) 再確認一次同一把金鑰。
+如果你接下來就要把這套流程交給 agent 跑，先到 [取得 API key](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key) 再確認一次同一把金鑰。
 
 ```text
 Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.

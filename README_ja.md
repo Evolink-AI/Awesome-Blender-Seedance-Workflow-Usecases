@@ -61,7 +61,7 @@ npm i evolink-seedance
 npm i evolink-topaz-video-upscale
 ```
 
-### 3. [APIキーを取得](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)
+### 3. [APIキーを取得](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)
 
 EvoLinkアカウントでAPIキーを作成し、エージェントのランタイムで利用できるようにします。
 
@@ -73,7 +73,7 @@ export EVOLINK_API_KEY="<your-evolink-api-key>"
 
 MCP、スキル、APIキーの準備ができたら、エージェントにBlenderブロックアウトの作成、参照動画の書き出し、Seedanceでの生成、必要に応じた最終クリップのTopazアップスケーリングを依頼します。
 
-直接リクエストを送る前に、[APIキーを取得](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key) でキーを確認してください。直接 API のフォールバックが必要な場合は、Blender 参照ワークフローを `POST https://api.evolink.ai/v1/videos/generations` に送信します。
+直接リクエストを送る前に、[APIキーを取得](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key) でキーを確認してください。直接 API のフォールバックが必要な場合は、Blender 参照ワークフローを `POST https://api.evolink.ai/v1/videos/generations` に送信します。
 
 ```bash
 curl --request POST \
@@ -92,7 +92,7 @@ curl --request POST \
   }'
 ```
 
-このワークフローをそのままエージェントに渡す前に、同じキーを [APIキーを取得](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key) で確認してください。
+このワークフローをそのままエージェントに渡す前に、同じキーを [APIキーを取得](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key) で確認してください。
 
 ```text
 Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.

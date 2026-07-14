@@ -1,8 +1,8 @@
 # Public Surface Link Audit
 
-- Generated: 2026-07-14T15:16:04.535450+00:00
+- Generated: 2026-07-14T15:18:36.046507+00:00
 - Public files: 26
-- Extracted link occurrences: 4274
+- Extracted link occurrences: 4296
 - Unique external URLs checked: 182
 - Manual/bot-protection warnings: 10
 - P0/P1 failures: 0

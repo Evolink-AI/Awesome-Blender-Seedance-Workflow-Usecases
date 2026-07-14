@@ -61,7 +61,7 @@ npm i evolink-seedance
 npm i evolink-topaz-video-upscale
 ```
 
-### 3. [API 키 받기](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)
+### 3. [API 키 받기](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)
 
 EvoLink 계정에서 API 키를 만들고 에이전트 런타임에서 사용할 수 있도록 설정합니다.
 
@@ -73,7 +73,7 @@ export EVOLINK_API_KEY="<your-evolink-api-key>"
 
 MCP, 스킬, API 키가 준비되면 에이전트에게 Blender 블록아웃 제작, 레퍼런스 비디오 내보내기, Seedance 생성, 필요할 경우 최종 클립 업스케일링을 요청합니다.
 
-직접 요청을 보내기 전에 [API 키 받기](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)에서 키를 확인하세요. 직접 API 폴백이 필요하면 Blender 레퍼런스 워크플로를 `POST https://api.evolink.ai/v1/videos/generations`로 보냅니다.
+직접 요청을 보내기 전에 [API 키 받기](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)에서 키를 확인하세요. 직접 API 폴백이 필요하면 Blender 레퍼런스 워크플로를 `POST https://api.evolink.ai/v1/videos/generations`로 보냅니다.
 
 ```bash
 curl --request POST \
@@ -92,7 +92,7 @@ curl --request POST \
   }'
 ```
 
-이 워크플로를 곧바로 에이전트에 넘길 예정이라면 먼저 같은 키를 [API 키 받기](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)에서 확인하세요.
+이 워크플로를 곧바로 에이전트에 넘길 예정이라면 먼저 같은 키를 [API 키 받기](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)에서 확인하세요.
 
 ```text
 Use Blender MCP to create a rough 5-second camera blockout for this shot, export it as a reference video, generate the final video with Seedance, then upscale the output with Topaz if the result is approved.
