@@ -1,8 +1,8 @@
 # Public Surface Link Audit
 
-- Generated: 2026-07-14T15:18:36.046507+00:00
+- Generated: 2026-07-14T15:22:13.762845+00:00
 - Public files: 26
-- Extracted link occurrences: 4296
+- Extracted link occurrences: 4318
 - Unique external URLs checked: 182
 - Manual/bot-protection warnings: 10
 - P0/P1 failures: 0
@@ -25,7 +25,7 @@
 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=banner&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=readme_banner | 200 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=banner&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=readme_banner | `text/html` | `pass` |
 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=docs&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=maintenance_primary_cta | 200 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=docs&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=maintenance_primary_cta | `text/html` | `pass` |
 | https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=badge&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key | 200 | https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=badge&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key | `text/html` | `pass` |
-| https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key | 200 | https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=readme&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key | `text/html` | `pass` |
+| https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key | 200 | https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key | `text/html` | `pass` |
 | https://example.com/blender-blockout.mp4 | 404 | https://example.com/blender-blockout.mp4 | `text/html` | `fail` |
 | https://example.com/first-frame.jpg | 404 | https://example.com/first-frame.jpg | `text/html` | `fail` |
 | https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/5e4146ed9d20474ba6040479411fce46.mp4 | 404 | https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/5e4146ed9d20474ba6040479411fce46.mp4 | `text/html` | `fail` |

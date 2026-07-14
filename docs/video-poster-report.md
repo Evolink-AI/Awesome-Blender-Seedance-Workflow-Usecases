@@ -1,6 +1,6 @@
 # Video Poster Extraction Report
 
-- Generated: 2026-07-13T03:43:10.510814+00:00
+- Generated: 2026-07-14T15:22:09.128901+00:00
 - Local videos: 25
 - Remote-only videos: 7
 - Extraction: `ffmpeg -ss 0.5 -frames:v 1 -q:v 3` for local videos; remote-only rows keep their uploaded R2 poster URL.
