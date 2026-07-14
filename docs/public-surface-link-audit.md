@@ -1,10 +1,10 @@
 # Public Surface Link Audit
 
-- Generated: 2026-07-14T15:22:13.762845+00:00
+- Generated: 2026-07-14T15:28:20.316114+00:00
 - Public files: 26
 - Extracted link occurrences: 4318
-- Unique external URLs checked: 182
-- Manual/bot-protection warnings: 10
+- Unique external URLs checked: 180
+- Manual/bot-protection warnings: 8
 - P0/P1 failures: 0
 - Result: `PASS`
 
@@ -20,14 +20,12 @@
 | https://api.evolink.ai/v1/videos/generations`: | 404 | https://api.evolink.ai/v1/videos/generations`: | `application/json` | `fail` |
 | https://api.evolink.ai/v1/videos/generations`로 | 0 | https://api.evolink.ai/v1/videos/generations`로 | `` | `fail` |
 | https://api.evolink.ai/v1/videos/generations`： | 0 | https://api.evolink.ai/v1/videos/generations`： | `` | `fail` |
-| https://api.star-history.com/svg?repos=Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases&type=Date | 503 | https://api.star-history.com/svg?repos=evolink-ai%2Fawesome-blender-seedance-workflow-usecases&type=Date | `text/plain` | `manual-external-endpoint` |
+| https://api.star-history.com/svg?repos=Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases&type=Date | 503 | https://api.star-history.com/svg?repos=Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases&type=Date | `text/plain` | `manual-external-endpoint` |
 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=badge&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=model_try | 200 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=badge&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=model_try | `text/html` | `pass` |
 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=banner&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=readme_banner | 200 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=banner&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=readme_banner | `text/html` | `pass` |
 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=docs&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=maintenance_primary_cta | 200 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=docs&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=maintenance_primary_cta | `text/html` | `pass` |
 | https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=badge&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key | 200 | https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=badge&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key | `text/html` | `pass` |
 | https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key | 200 | https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key | `text/html` | `pass` |
-| https://example.com/blender-blockout.mp4 | 404 | https://example.com/blender-blockout.mp4 | `text/html` | `fail` |
-| https://example.com/first-frame.jpg | 404 | https://example.com/first-frame.jpg | `text/html` | `fail` |
 | https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/5e4146ed9d20474ba6040479411fce46.mp4 | 404 | https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/5e4146ed9d20474ba6040479411fce46.mp4 | `text/html` | `fail` |
 | https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/a61fa3851b0d4c8b8ad8ec82081998bf.mp4 | 404 | https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/a61fa3851b0d4c8b8ad8ec82081998bf.mp4 | `text/html` | `fail` |
 | https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/b35f41e735fe42539f822b6249f2ce68.mp4 | 404 | https://files.evolink.ai/000BG2E93TVWN41W8S/videos/2026/07/10/b35f41e735fe42539f822b6249f2ce68.mp4 | `text/html` | `fail` |

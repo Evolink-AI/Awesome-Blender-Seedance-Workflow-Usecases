@@ -68,7 +68,7 @@ npm i evolink-topaz-video-upscale
 EvoLink 계정에서 API 키를 만들고 에이전트 런타임에서 사용할 수 있도록 설정합니다.
 
 ```bash
-export EVOLINK_API_KEY="<your-evolink-api-key>"
+export EVOLINK_API_KEY="paste_api_key_here"
 ```
 
 ### 4. 에이전트 안에서 실행
@@ -85,8 +85,8 @@ curl --request POST \
   --data '{
     "model": "seedance-2.0-reference-to-video",
     "prompt": "Use the Blender blockout video as the motion guide, keep the camera path, and preserve the staged timing.",
-    "video_urls": ["https://example.com/blender-blockout.mp4"],
-    "image_urls": ["https://example.com/first-frame.jpg"],
+    "video_urls": ["https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case29.mp4"],
+    "image_urls": ["https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case29.jpg"],
     "duration": 5,
     "quality": "720p",
     "aspect_ratio": "16:9",
