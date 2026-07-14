@@ -52,6 +52,8 @@ Blender + Seedanceのユースケース集です。
 
 - 公式セットアップ：[Blender MCPセットアップ](https://projects.blender.org/lab/blender_mcp/wiki/Setup)
 
+最初の実行可能なリクエストの前に、[APIキーを取得](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key) から EvoLink キーを取得してください。
+
 ### 2. EvoLinkスキルをインストール
 
 エージェントのワークスペースにSeedance生成スキルとTopazアップスケーリングスキルをインストールします。

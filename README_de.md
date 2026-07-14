@@ -52,6 +52,8 @@ Befolgen Sie die offizielle Blender MCP-Einrichtungsanleitung, öffnen Sie Blend
 
 - Offizielles Setup: [Blender MCP Setup](https://projects.blender.org/lab/blender_mcp/wiki/Setup)
 
+Holen Sie Ihren EvoLink-Schlüssel vor der ersten ausführbaren Anfrage unter [API-Schlüssel abrufen](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key).
+
 ### 2. Installieren Sie EvoLink-Skills
 
 Installieren Sie den Seedance-Generierungsskill und den Topaz-Upscaling-Skill im Agentenarbeitsbereich.

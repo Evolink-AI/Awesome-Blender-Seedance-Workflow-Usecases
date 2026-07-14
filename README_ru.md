@@ -52,6 +52,8 @@
 
 - Официальная настройка: [Blender MCP настройка](https://projects.blender.org/lab/blender_mcp/wiki/Setup)
 
+Перед первым исполняемым запросом получите ключ EvoLink через [Получить API-ключ](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key).
+
 ### 2. Установите навыки EvoLink
 
 Установите навык генерации Seedance и навык масштабирования Topaz в рабочую область агента.

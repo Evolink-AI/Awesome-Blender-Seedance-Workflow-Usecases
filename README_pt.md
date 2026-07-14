@@ -52,6 +52,8 @@ Siga o guia oficial de configuração do Blender MCP, abra o Blender e confirme 
 
 - Configuração oficial: [Configurar Blender MCP](https://projects.blender.org/lab/blender_mcp/wiki/Setup)
 
+Antes da primeira solicitação executável, obtenha sua chave EvoLink em [Obtenha uma chave de API](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key).
+
 ### 2. Instale as skills EvoLink
 
 Instale a skill de geração Seedance e a skill de upscale Topaz no workspace do agente.

@@ -52,6 +52,8 @@ Follow the official Blender MCP setup guide, open Blender, and make sure your ag
 
 - Official setup: [Blender MCP setup](https://projects.blender.org/lab/blender_mcp/wiki/Setup)
 
+Before the first runnable request, get your EvoLink key at [Get an API key](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key).
+
 ### 2. Install EvoLink skills
 
 Install the Seedance generation skill and the Topaz upscaling skill in the agent workspace.

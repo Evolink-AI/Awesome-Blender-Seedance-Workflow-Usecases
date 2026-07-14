@@ -52,6 +52,8 @@ Blender + Seedance 유스케이스 저장소입니다.
 
 - 공식 설정: [Blender MCP 설정](https://projects.blender.org/lab/blender_mcp/wiki/Setup)
 
+첫 실행 가능한 요청 전에 [API 키 받기](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key)에서 EvoLink 키를 준비하세요.
+
 ### 2. EvoLink 스킬 설치
 
 에이전트 워크스페이스에 Seedance 생성 스킬과 Topaz 업스케일링 스킬을 설치합니다.

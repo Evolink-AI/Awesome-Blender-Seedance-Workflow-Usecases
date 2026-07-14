@@ -52,6 +52,8 @@ Resmi Blender MCP kurulum kılavuzunu takip edin, Blender'yi açın ve referansl
 
 - Resmi kurulum: [Blender MCP kurulum](https://projects.blender.org/lab/blender_mcp/wiki/Setup)
 
+İlk çalıştırılabilir istekten önce EvoLink anahtarınızı [API anahtarı alın](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key) bağlantısından alın.
+
 ### 2. EvoLink becerilerini yükleyin
 
 Aracı çalışma alanına Seedance oluşturma becerisini ve Topaz yükseltme becerisini yükleyin.

@@ -52,6 +52,8 @@ Blender + Seedance 使用案例仓库。
 
 - 官方 setup: [Blender MCP setup](https://projects.blender.org/lab/blender_mcp/wiki/Setup)
 
+在第一条可执行请求之前，先到 [获取 API key](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=api_key) 准备好 EvoLink 密钥。
+
 ### 2. 安装 EvoLink skills
 
 在 agent workspace 里安装 Seedance 生成 skill 和 Topaz 视频放大 skill。
