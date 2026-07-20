@@ -1,9 +1,9 @@
 # Public Surface Link Audit
 
-- Generated: 2026-07-14T15:28:20.316114+00:00
+- Generated: 2026-07-20T03:37:42.030892+00:00
 - Public files: 26
-- Extracted link occurrences: 4318
-- Unique external URLs checked: 180
+- Extracted link occurrences: 4990
+- Unique external URLs checked: 205
 - Manual/bot-protection warnings: 8
 - P0/P1 failures: 0
 - Result: `PASS`
@@ -20,7 +20,7 @@
 | https://api.evolink.ai/v1/videos/generations`: | 404 | https://api.evolink.ai/v1/videos/generations`: | `application/json` | `fail` |
 | https://api.evolink.ai/v1/videos/generations`로 | 0 | https://api.evolink.ai/v1/videos/generations`로 | `` | `fail` |
 | https://api.evolink.ai/v1/videos/generations`： | 0 | https://api.evolink.ai/v1/videos/generations`： | `` | `fail` |
-| https://api.star-history.com/svg?repos=Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases&type=Date | 503 | https://api.star-history.com/svg?repos=Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases&type=Date | `text/plain` | `manual-external-endpoint` |
+| https://api.star-history.com/svg?repos=Evolink-AI/Awesome-Blender-Seedance-Workflow-Usecases&type=Date | 503 | https://api.star-history.com/svg?repos=evolink-ai%2Fawesome-blender-seedance-workflow-usecases&type=Date | `text/plain` | `manual-external-endpoint` |
 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=badge&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=model_try | 200 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=badge&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=model_try | `text/html` | `pass` |
 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=banner&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=readme_banner | 200 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=banner&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=readme_banner | `text/html` | `pass` |
 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=docs&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=maintenance_primary_cta | 200 | https://evolink.ai/cookbook/blender-to-video?utm_source=github&utm_medium=docs&utm_campaign=awesome-blender-seedance-workflow-usecases&utm_content=maintenance_primary_cta | `text/html` | `pass` |
@@ -82,7 +82,14 @@
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case33.mp4 | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case33.mp4 | `video/mp4` | `pass` |
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case34.mp4 | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case34.mp4 | `video/mp4` | `pass` |
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case35.mp4 | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case35.mp4 | `video/mp4` | `pass` |
+| https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case36.mp4 | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case36.mp4 | `video/mp4` | `pass` |
+| https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case37.mp4 | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case37.mp4 | `video/mp4` | `pass` |
+| https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case38.mp4 | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case38.mp4 | `video/mp4` | `pass` |
+| https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case39.mp4 | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case39.mp4 | `video/mp4` | `pass` |
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case4.mp4 | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case4.mp4 | `video/mp4` | `pass` |
+| https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case40.mp4 | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case40.mp4 | `video/mp4` | `pass` |
+| https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case41.mp4 | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case41.mp4 | `video/mp4` | `pass` |
+| https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case42.mp4 | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case42.mp4 | `video/mp4` | `pass` |
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case5.mp4 | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case5.mp4 | `video/mp4` | `pass` |
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case6.mp4 | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case6.mp4 | `video/mp4` | `pass` |
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case9.mp4 | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case9.mp4 | `video/mp4` | `pass` |
@@ -114,7 +121,14 @@
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case33.jpg | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case33.jpg | `image/jpeg` | `pass` |
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case34.jpg | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case34.jpg | `image/jpeg` | `pass` |
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case35.jpg | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case35.jpg | `image/jpeg` | `pass` |
+| https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case36.jpg | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case36.jpg | `image/jpeg` | `pass` |
+| https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case37.jpg | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case37.jpg | `image/jpeg` | `pass` |
+| https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case38.jpg | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case38.jpg | `image/jpeg` | `pass` |
+| https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case39.jpg | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case39.jpg | `image/jpeg` | `pass` |
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case4.jpg | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case4.jpg | `image/jpeg` | `pass` |
+| https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case40.jpg | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case40.jpg | `image/jpeg` | `pass` |
+| https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case41.jpg | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case41.jpg | `image/jpeg` | `pass` |
+| https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case42.jpg | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case42.jpg | `image/jpeg` | `pass` |
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case5.jpg | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case5.jpg | `image/jpeg` | `pass` |
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case6.jpg | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case6.jpg | `image/jpeg` | `pass` |
 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case9.jpg | 206 | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case9.jpg | `image/jpeg` | `pass` |
@@ -128,6 +142,8 @@
 | https://x.com/AIWarper/status/2070535586075885912 | 200 | https://x.com/AIWarper/status/2070535586075885912 | `text/html` | `pass` |
 | https://x.com/CoffeeVectors | 200 | https://x.com/CoffeeVectors | `text/html` | `pass` |
 | https://x.com/CoffeeVectors/status/2076397975853551924 | 200 | https://x.com/CoffeeVectors/status/2076397975853551924 | `text/html` | `pass` |
+| https://x.com/ComfyUI | 200 | https://x.com/ComfyUI | `text/html` | `pass` |
+| https://x.com/ComfyUI/status/2076746530258919858 | 200 | https://x.com/ComfyUI/status/2076746530258919858 | `text/html` | `pass` |
 | https://x.com/DiabloNemesis | 200 | https://x.com/DiabloNemesis | `text/html` | `pass` |
 | https://x.com/DiabloNemesis/status/2070441923706503380 | 200 | https://x.com/DiabloNemesis/status/2070441923706503380 | `text/html` | `pass` |
 | https://x.com/Flagiuss/status/2071335816190902624 | 200 | https://x.com/Flagiuss/status/2071335816190902624 | `text/html` | `pass` |
@@ -138,6 +154,10 @@
 | https://x.com/JoshDaws/status/2071401550845481090 | 200 | https://x.com/JoshDaws/status/2071401550845481090 | `text/html` | `pass` |
 | https://x.com/KimAkiyama81/status/2070266267051667505 | 200 | https://x.com/KimAkiyama81/status/2070266267051667505 | `text/html` | `pass` |
 | https://x.com/KimAkiyama81/status/2070668362229690789 | 200 | https://x.com/KimAkiyama81/status/2070668362229690789 | `text/html` | `pass` |
+| https://x.com/ObsceneSelene | 200 | https://x.com/ObsceneSelene | `text/html` | `pass` |
+| https://x.com/ObsceneSelene/status/2078025128672436354 | 200 | https://x.com/ObsceneSelene/status/2078025128672436354 | `text/html` | `pass` |
+| https://x.com/Ryota110034 | 200 | https://x.com/Ryota110034 | `text/html` | `pass` |
+| https://x.com/Ryota110034/status/2077289164694057203 | 200 | https://x.com/Ryota110034/status/2077289164694057203 | `text/html` | `pass` |
 | https://x.com/SamJWasserman | 200 | https://x.com/SamJWasserman | `text/html` | `pass` |
 | https://x.com/SamJWasserman/status/2069656428437225826 | 200 | https://x.com/SamJWasserman/status/2069656428437225826 | `text/html` | `pass` |
 | https://x.com/SamJWasserman/status/2070742850095230991 | 200 | https://x.com/SamJWasserman/status/2070742850095230991 | `text/html` | `pass` |
@@ -170,8 +190,12 @@
 | https://x.com/magneticskiff/status/2070711034793361559 | 200 | https://x.com/magneticskiff/status/2070711034793361559 | `text/html` | `pass` |
 | https://x.com/moframe2026 | 200 | https://x.com/moframe2026 | `text/html` | `pass` |
 | https://x.com/moframe2026/status/2075203485604470965 | 200 | https://x.com/moframe2026/status/2075203485604470965 | `text/html` | `pass` |
+| https://x.com/moframe2026/status/2077343109349007376 | 200 | https://x.com/moframe2026/status/2077343109349007376 | `text/html` | `pass` |
 | https://x.com/mugi_AI_Art | 200 | https://x.com/mugi_AI_Art | `text/html` | `pass` |
 | https://x.com/mugi_AI_Art/status/2074259600342163846 | 200 | https://x.com/mugi_AI_Art/status/2074259600342163846 | `text/html` | `pass` |
+| https://x.com/nemopi | 200 | https://x.com/nemopi | `text/html` | `pass` |
+| https://x.com/nemopi/status/2076877244832837890 | 200 | https://x.com/nemopi/status/2076877244832837890 | `text/html` | `pass` |
+| https://x.com/nemopi/status/2077741477565010406 | 200 | https://x.com/nemopi/status/2077741477565010406 | `text/html` | `pass` |
 | https://x.com/noman23761 | 200 | https://x.com/noman23761 | `text/html` | `pass` |
 | https://x.com/noman23761/status/2071534020014563328 | 200 | https://x.com/noman23761/status/2071534020014563328 | `text/html` | `pass` |
 | https://x.com/reidhannaford | 200 | https://x.com/reidhannaford | `text/html` | `pass` |
@@ -185,6 +209,7 @@
 | https://x.com/restofart/status/2070086939756159368 | 200 | https://x.com/restofart/status/2070086939756159368 | `text/html` | `pass` |
 | https://x.com/ryo05m | 200 | https://x.com/ryo05m | `text/html` | `pass` |
 | https://x.com/ryo05m/status/2076284841457521043 | 200 | https://x.com/ryo05m/status/2076284841457521043 | `text/html` | `pass` |
+| https://x.com/ryo05m/status/2078311133245804623 | 200 | https://x.com/ryo05m/status/2078311133245804623 | `text/html` | `pass` |
 | https://x.com/sonicpower1970 | 200 | https://x.com/sonicpower1970 | `text/html` | `pass` |
 | https://x.com/sonicpower1970/status/2074322339391824012 | 200 | https://x.com/sonicpower1970/status/2074322339391824012 | `text/html` | `pass` |
 | https://x.com/tanabe_fragm | 200 | https://x.com/tanabe_fragm | `text/html` | `pass` |

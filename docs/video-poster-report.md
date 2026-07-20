@@ -1,8 +1,8 @@
 # Video Poster Extraction Report
 
-- Generated: 2026-07-14T15:28:15.733133+00:00
+- Generated: 2026-07-20T03:37:25.318563+00:00
 - Local videos: 25
-- Remote-only videos: 7
+- Remote-only videos: 14
 - Extraction: `ffmpeg -ss 0.5 -frames:v 1 -q:v 3` for local videos; remote-only rows keep their uploaded R2 poster URL.
 - Result: `PASS`
 
@@ -40,3 +40,10 @@
 | `case33 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case33.jpg` | remote |
 | `case34 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case34.jpg` | remote |
 | `case35 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case35.jpg` | remote |
+| `case36 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case36.jpg` | remote |
+| `case37 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case37.jpg` | remote |
+| `case38 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case38.jpg` | remote |
+| `case39 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case39.jpg` | remote |
+| `case40 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case40.jpg` | remote |
+| `case41 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case41.jpg` | remote |
+| `case42 (remote only)` | remote | remote | `https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case42.jpg` | remote |

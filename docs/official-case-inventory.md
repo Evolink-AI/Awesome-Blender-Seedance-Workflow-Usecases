@@ -1,8 +1,8 @@
 # Official Case Inventory
 
-- Generated: 2026-07-13T03:35:00Z
+- Generated: 2026-07-20T03:28:41.475066+00:00
 - Source of truth: `blender-seedance-usecase-curated.json`
-- Public cases: 32
+- Public cases: 39
 - Numbering policy: recorded legacy namespace; new cases append contiguously from Case 29
 
 | Case | Category | Type | Date | Creator | Source | Media |
@@ -39,3 +39,10 @@
 | 33 | `limitations` | Limit | 2026-07-07 | [@sonicpower1970](https://x.com/sonicpower1970) | [Open source](https://x.com/sonicpower1970/status/2074322339391824012) | none |
 | 34 | `agentic-mcp` | Integration | 2026-07-06 | [@mugi_AI_Art](https://x.com/mugi_AI_Art) | [Open source](https://x.com/mugi_AI_Art/status/2074259600342163846) | none |
 | 35 | `reference-prompt` | Demo | 2026-07-06 | [@fatboypink](https://x.com/fatboypink) | [Open source](https://x.com/fatboypink/status/2074087401887039740) | none |
+| 36 | `reference-prompt` | Integration | 2026-07-18 | [@ryo05m](https://x.com/ryo05m) | [Open source](https://x.com/ryo05m/status/2078311133245804623) | none |
+| 37 | `camera-control` | Evaluation | 2026-07-17 | [@ObsceneSelene](https://x.com/ObsceneSelene) | [Open source](https://x.com/ObsceneSelene/status/2078025128672436354) | none |
+| 38 | `character-action` | Benchmark | 2026-07-16 | [@nemopi](https://x.com/nemopi) | [Open source](https://x.com/nemopi/status/2077741477565010406) | none |
+| 39 | `character-action` | Demo | 2026-07-15 | [@moframe2026](https://x.com/moframe2026) | [Open source](https://x.com/moframe2026/status/2077343109349007376) | none |
+| 40 | `agentic-mcp` | Integration | 2026-07-15 | [@Ryota110034](https://x.com/Ryota110034) | [Open source](https://x.com/Ryota110034/status/2077289164694057203) | none |
+| 41 | `limitations` | Limit | 2026-07-14 | [@nemopi](https://x.com/nemopi) | [Open source](https://x.com/nemopi/status/2076877244832837890) | none |
+| 42 | `camera-control` | Tutorial | 2026-07-13 | [@ComfyUI](https://x.com/ComfyUI) | [Open source](https://x.com/ComfyUI/status/2076746530258919858) | none |

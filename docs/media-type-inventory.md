@@ -1,9 +1,9 @@
 # Media Type Inventory
 
-- Generated: 2026-07-14T15:28:15.728199+00:00
+- Generated: 2026-07-20T03:37:25.306812+00:00
 - Repository: `Awesome-Blender-Seedance-Workflow-Usecases`
 - Local files: 61
-- Remote-only preview assets: 7
+- Remote-only preview assets: 14
 
 | Source | Type | Bytes | Public README usage | R2 URL |
 |---|---:|---:|---:|---|
@@ -75,3 +75,10 @@
 | `case33 (remote video only)` | `video/mp4` | 0 | yes | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case33.mp4 |
 | `case34 (remote video only)` | `video/mp4` | 0 | yes | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case34.mp4 |
 | `case35 (remote video only)` | `video/mp4` | 0 | yes | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case35.mp4 |
+| `case36 (remote video only)` | `video/mp4` | 0 | yes | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case36.mp4 |
+| `case37 (remote video only)` | `video/mp4` | 0 | yes | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case37.mp4 |
+| `case38 (remote video only)` | `video/mp4` | 0 | yes | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case38.mp4 |
+| `case39 (remote video only)` | `video/mp4` | 0 | yes | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case39.mp4 |
+| `case40 (remote video only)` | `video/mp4` | 0 | yes | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case40.mp4 |
+| `case41 (remote video only)` | `video/mp4` | 0 | yes | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case41.mp4 |
+| `case42 (remote video only)` | `video/mp4` | 0 | yes | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case42.mp4 |

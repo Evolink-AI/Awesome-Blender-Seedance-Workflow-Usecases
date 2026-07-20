@@ -107,12 +107,12 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 | 섹션 | 사례 |
 |---|---|
-| [🎥 카메라 제어와 프리비즈](#camera-control-previs) | Case 1, 2, 3, 4, 5, 29 |
-| [🎬 캐릭터와 액션 블로킹](#character-action-blocking) | Case 6, 8, 9, 21, 32 |
-| [🤖 에이전트 기반 Blender MCP](#agentic-blender-mcp) | Case 10, 11, 22, 34 |
-| [🧩 레퍼런스, 프롬프트 및 다중 입력 매핑](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27, 35 |
+| [🎥 카메라 제어와 프리비즈](#camera-control-previs) | Case 1, 2, 3, 4, 5, 29, 37, 42 |
+| [🎬 캐릭터와 액션 블로킹](#character-action-blocking) | Case 6, 8, 9, 21, 32, 38, 39 |
+| [🤖 에이전트 기반 Blender MCP](#agentic-blender-mcp) | Case 10, 11, 22, 34, 40 |
+| [🧩 레퍼런스, 프롬프트 및 다중 입력 매핑](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27, 35, 36 |
 | [🛠️ 제작 파이프라인과 툴체인](#production-pipelines-toolchains) | Case 15, 16, 17, 18, 30 |
-| [🧪 한계, 테스트 및 문제 해결](#limits-tests-troubleshooting) | Case 20, 25, 28, 31, 33 |
+| [🧪 한계, 테스트 및 문제 해결](#limits-tests-troubleshooting) | Case 20, 25, 28, 31, 33, 41 |
 | [🙏 감사의 말](#acknowledge) | 크레딧 및 정정 정책 |
 
 <a id="camera-control-previs"></a>
@@ -126,6 +126,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [뷰포트 프리뷰에서 사실적인 시작 프레임으로](#case-4) | 짧은 뷰포트 프리뷰 튜토리얼입니다. 장면을 블록아웃하고 프리뷰를 내보낸 뒤 첫 프레임을 사실적으로 바꾸고 두 레퍼런스를 모두 Seedance에 제공합니다. | Demo |
 | [하나의 레퍼런스 비디오로 여러 세계 만들기](#case-5) | 동일한 Blender 레퍼런스 비디오로 Seedance에서 서로 다른 세계를 생성한 스타일·세계 변형 사례입니다. | Demo |
 | [대사에 맞춘 iPhone 카메라 프리비즈](#case-29) | iPhone으로 구동한 Blender 카메라 패스를 대사에 맞춘 뒤, 그 오디오 포함 프리비즈와 두 장의 이미지를 Seedance에 넣어 쇼트 계획에 사용합니다. | Integration |
+| [Seedance용 포커스 전환과 깊이 테스트](#case-37) | 포커스 이동과 깊이 표현을 먼저 Blender에서 시험한 뒤 viewport 렌더와 캐릭터 시트로 Seedance가 그 카메라 언어를 유지하는지 확인합니다. | Evaluation |
+| [ComfyUI 공식 Blender 카메라 애니메이션 워크플로](#case-42) | 카메라 키프레임을 먼저 Blender에서 만들고 그 움직임 참조를 Seedance에 넘기면, 프롬프트 추정보다 의도한 카메라 제어를 우선할 수 있습니다. | Tutorial |
 
 
 <a id="character-action-blocking"></a>
@@ -138,6 +140,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [전술 액션을 위한 카메라 및 캐릭터 블로킹](#case-9) | 생성 전에 Blender로 카메라 궤도, 렌즈 선택, 엄폐 위치, 총격 타이밍, 캐릭터 움직임을 연출한 전술 블로킹 사례입니다. | Demo |
 | [단순한 카메라 이동을 넘어선 매복 장면 프리비즈](#case-21) | Seedance가 숏을 생성하기 전에 Blender 프리비즈로 장면 구성, 타이밍, 카메라 움직임을 해결하는 매복 장면 사례입니다. | Demo |
 | [장애물이 있는 옥상 파쿠르 추격](#case-32) | Seedance가 직선 달리기로 단순화될 때는 장애물 상호작용과 회피 비트를 포함한 Blender 파쿠르 프리비즈를 먼저 만듭니다. | Demo |
+| [16대 카메라 액션 컷 전달 벤치마크](#case-38) | 복잡한 액션 장면에서는 Blender로 카메라와 컷 경계를 먼저 정한 뒤, Seedance가 그 계획을 실제로 얼마나 유지하는지 계측합니다. | Benchmark |
+| [8인 캐릭터 오비트 샷용 Video REF](#case-39) | 긴 오비트 샷에서 여러 캐릭터의 일관성을 지켜야 한다면, 가벼운 Blender 프리비즈를 Seedance의 Video REF로 먼저 사용합니다. | Demo |
 
 
 <a id="agentic-blender-mcp"></a>
@@ -149,6 +153,7 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Codex로 구축한 건축 및 카메라 워크](#case-11) | Codex의 도움으로 Blender에서 건축과 카메라 워크를 생성한 뒤 Seedance 레퍼런스 모션으로 시험한 초보자 사례입니다. | Integration |
 | [Claude로 몇 분 만에 제작한 Blender MCP 프리비즈](#case-22) | Claude가 Blender MCP를 사용해 2~3분 안에 숏 레퍼런스를 제작한 빠른 에이전트형 프리비즈 사례입니다. | Integration |
 | [Fable 스킬을 Codex로 이식](#case-34) | 에이전트에게 Blender 레퍼런스 비디오 스킬을 만들게 하고 Codex로 옮긴 뒤, 프롬프트 없이도 Seedance가 움직임을 정리할 수 있는지 확인합니다. | Integration |
+| [ClaudeCode 러프 모델 참조 워크플로](#case-40) | ClaudeCode가 Blender MCP를 통해 먼저 러프 모델과 카메라 동선을 만들게 한 뒤, 그 참조를 Seedance에 넘겨 순수 프롬프트보다 더 목표 지향적인 장면 생성을 만듭니다. | Integration |
 
 
 <a id="reference-prompt-multi-input-mapping"></a>
@@ -163,6 +168,7 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [프롬프트 생성에 실패한 특정 장면을 위한 레퍼런스 제어](#case-26) | 제어 대안을 보여 주는 사례입니다. 프롬프트만으로 생성에 실패하면 일부 역동성이 줄더라도 레퍼런스를 사용해 장면을 구현합니다. | Demo |
 | [캐릭터 비율 및 단순한 배경 팁](#case-27) | 안정성 체크리스트 사례입니다. 키뿐 아니라 캐릭터 전체 비율을 맞추고 정밀한 정렬이 필요 없는 배경은 단순화합니다. | Tutorial |
 | [마네킹 모캡과 스타일 프레임 조합](#case-35) | 딱딱한 Blender나 마네킹 모션 소스로 타이밍을 고정하고, 입력 프레임 디자인으로 Seedance의 최종 스타일과 천 움직임을 조정합니다. | Demo |
+| [3D 마커 공간으로 인물과 카메라 고정](#case-36) | Blender 안에 위치와 방향 마커를 두고 그 참조를 Seedance에 넘기면, 인물의 자리·방향·카메라를 3D 공간에 묶은 채로 제어할 수 있습니다. | Integration |
 
 
 <a id="production-pipelines-toolchains"></a>
@@ -187,6 +193,7 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Blender와 Seedance를 활용한 천 물리 스트레스 테스트](#case-28) | Blender로 유도한 Seedance가 작동하는 범위와 어려운 움직임에서는 반복 조정이 필요함을 보여 주는 천 물리 스트레스 테스트입니다. | Limit |
 | [블랙 프레임 키프레임 타이밍 보정](#case-31) | 거친 Blender 레퍼런스가 중간 동작까지 로봇처럼 복제되면 키 포즈만 남기고 사이 프레임을 검게 처리합니다. | Tutorial |
 | [복잡한 장면에서의 모션 불일치 테스트](#case-33) | 거친 장면 MCP 렌더는 한계 테스트로 봐야 하며, 복잡한 Blender 장면은 여러 번의 Seedance 시도 뒤에도 의도한 움직임에서 벗어날 수 있습니다. | Limit |
+| [단순 프록시 블록이 세밀한 3D보다 낫다](#case-41) | 세밀한 Blender 지오메트리가 CG 느낌까지 남긴다면, 인물과 소품을 단순 프록시 블록으로 낮춰 Seedance가 외형이 아니라 레이아웃만 읽게 하세요. | Limit |
 
 
 
@@ -282,6 +289,32 @@ Type: Demo | Date: 2026-06-28
 Type: Integration | Date: 2026-07-12
 
 ---
+<a id="case-37"></a>
+### Case 37: [Seedance용 포커스 전환과 깊이 테스트](https://x.com/ObsceneSelene/status/2078025128672436354) (작성자: [@ObsceneSelene](https://x.com/ObsceneSelene))
+
+**포커스 이동과 깊이 표현을 먼저 Blender에서 시험한 뒤 viewport 렌더와 캐릭터 시트로 Seedance가 그 카메라 언어를 유지하는지 확인합니다.**
+
+- 소스 메모: 작성자는 Blender 장면의 포커스 전환이 Seedance에서도 살아남는지 실험했고, viewport 렌더와 캐릭터 시트가 원하는 깊이감을 유지했다고 말합니다.
+- 비디오 미리보기:
+
+[![비디오 미리보기 — Case 37](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case37.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case37.mp4)
+
+Type: Evaluation | Date: 2026-07-17
+
+---
+<a id="case-42"></a>
+### Case 42: [ComfyUI 공식 Blender 카메라 애니메이션 워크플로](https://x.com/ComfyUI/status/2076746530258919858) (작성자: [@ComfyUI](https://x.com/ComfyUI))
+
+**카메라 키프레임을 먼저 Blender에서 만들고 그 움직임 참조를 Seedance에 넘기면, 프롬프트 추정보다 의도한 카메라 제어를 우선할 수 있습니다.**
+
+- 소스 메모: ComfyUI 공식 게시물은 Blender 카메라 키프레임으로 이동, 회전, 프레이밍을 정한 뒤 Seedance가 최종 영상을 만든다고 설명합니다.
+- 비디오 미리보기:
+
+[![비디오 미리보기 — Case 42](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case42.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case42.mp4)
+
+Type: Tutorial | Date: 2026-07-13
+
+---
 <a id="character-action-blocking-cases"></a>
 ## 🎬 캐릭터와 액션 블로킹
 
@@ -359,6 +392,32 @@ Type: Demo | Date: 2026-06-29
 Type: Demo | Date: 2026-07-09
 
 ---
+<a id="case-38"></a>
+### Case 38: [16대 카메라 액션 컷 전달 벤치마크](https://x.com/nemopi/status/2077741477565010406) (작성자: [@nemopi](https://x.com/nemopi))
+
+**복잡한 액션 장면에서는 Blender로 카메라와 컷 경계를 먼저 정한 뒤, Seedance가 그 계획을 실제로 얼마나 유지하는지 계측합니다.**
+
+- 소스 메모: Blender 쪽은 키 높이 기준 블록 하나와 16개의 빠른 컷으로 축소되며, 게시물은 계획한 컷 경계의 약 73퍼센트가 ±0.6초 안에 들어왔다고 보고합니다.
+- 비디오 미리보기:
+
+[![비디오 미리보기 — Case 38](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case38.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case38.mp4)
+
+Type: Benchmark | Date: 2026-07-16
+
+---
+<a id="case-39"></a>
+### Case 39: [8인 캐릭터 오비트 샷용 Video REF](https://x.com/moframe2026/status/2077343109349007376) (작성자: [@moframe2026](https://x.com/moframe2026))
+
+**긴 오비트 샷에서 여러 캐릭터의 일관성을 지켜야 한다면, 가벼운 Blender 프리비즈를 Seedance의 Video REF로 먼저 사용합니다.**
+
+- 소스 메모: 작성자는 15초 오비트 상승 샷에 가벼운 Blender 프리비즈를 Video REF로 사용했고, 최종 채택되지 않은 테이크에서도 8명의 일관성이 끝까지 크게 무너지지 않았다고 말합니다.
+- 비디오 미리보기:
+
+[![비디오 미리보기 — Case 39](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case39.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case39.mp4)
+
+Type: Demo | Date: 2026-07-15
+
+---
 <a id="agentic-blender-mcp-cases"></a>
 ## 🤖 에이전트 기반 Blender MCP
 
@@ -419,6 +478,19 @@ Type: Integration | Date: 2026-06-29
 [![비디오 미리보기 — Case 34](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case34.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case34.mp4)
 
 Type: Integration | Date: 2026-07-06
+
+---
+<a id="case-40"></a>
+### Case 40: [ClaudeCode 러프 모델 참조 워크플로](https://x.com/Ryota110034/status/2077289164694057203) (작성자: [@Ryota110034](https://x.com/Ryota110034))
+
+**ClaudeCode가 Blender MCP를 통해 먼저 러프 모델과 카메라 동선을 만들게 한 뒤, 그 참조를 Seedance에 넘겨 순수 프롬프트보다 더 목표 지향적인 장면 생성을 만듭니다.**
+
+- 소스 메모: 작성자는 ClaudeCode를 Blender MCP에 연결해 러프 모델과 카메라 패스를 만든 다음, 그 참조를 Seedance에 넣어 더 정밀한 장면 생성을 시도합니다.
+- 비디오 미리보기:
+
+[![비디오 미리보기 — Case 40](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case40.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case40.mp4)
+
+Type: Integration | Date: 2026-07-15
 
 ---
 <a id="reference-prompt-multi-input-mapping-cases"></a>
@@ -528,6 +600,19 @@ Type: Tutorial | Date: 2026-06-26
 [![비디오 미리보기 — Case 35](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case35.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case35.mp4)
 
 Type: Demo | Date: 2026-07-06
+
+---
+<a id="case-36"></a>
+### Case 36: [3D 마커 공간으로 인물과 카메라 고정](https://x.com/ryo05m/status/2078311133245804623) (작성자: [@ryo05m](https://x.com/ryo05m))
+
+**Blender 안에 위치와 방향 마커를 두고 그 참조를 Seedance에 넘기면, 인물의 자리·방향·카메라를 3D 공간에 묶은 채로 제어할 수 있습니다.**
+
+- 소스 메모: 작성자는 Fable 5로 만든 Blender 공간에 위치와 방향 마커를 두고 그 참조를 Seedance에 넘겨 인물 배치, 방향, 카메라를 같은 공간에 묶어 둡니다。
+- 비디오 미리보기:
+
+[![비디오 미리보기 — Case 36](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case36.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case36.mp4)
+
+Type: Integration | Date: 2026-07-18
 
 ---
 <a id="production-pipelines-toolchains-cases"></a>
@@ -688,6 +773,19 @@ Type: Tutorial | Date: 2026-07-11
 [![비디오 미리보기 — Case 33](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case33.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case33.mp4)
 
 Type: Limit | Date: 2026-07-07
+
+---
+<a id="case-41"></a>
+### Case 41: [단순 프록시 블록이 세밀한 3D보다 낫다](https://x.com/nemopi/status/2076877244832837890) (작성자: [@nemopi](https://x.com/nemopi))
+
+**세밀한 Blender 지오메트리가 CG 느낌까지 남긴다면, 인물과 소품을 단순 프록시 블록으로 낮춰 Seedance가 외형이 아니라 레이아웃만 읽게 하세요.**
+
+- 소스 메모: 작성자는 세밀한 손과 소품이 CG 같은 요소를 남겼지만, 단순 프록시 블록은 같은 15카메라 컷 구조에서도 2D 결과를 훨씬 잘 유지했다고 설명합니다.
+- 비디오 미리보기:
+
+[![비디오 미리보기 — Case 41](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case41.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case41.mp4)
+
+Type: Limit | Date: 2026-07-14
 
 ---
 <a id="acknowledge"></a>

@@ -1,11 +1,11 @@
 # R2 Upload And Origin Audit
 
-- Generated: 2026-07-14T15:28:15.733011+00:00
+- Generated: 2026-07-20T03:37:25.318244+00:00
 - Bucket: `image`
 - Key prefix: `github-repo-media`
 - Public object prefix: `github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases`
-- Objects checked: 68
-- Passed: 68
+- Objects checked: 82
+- Passed: 82
 - Failed: 0
 - Result: `PASS`
 
@@ -79,3 +79,17 @@
 | `case33 remote video` | 206 | `video/mp4` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case33.mp4 |
 | `case34 remote video` | 206 | `video/mp4` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case34.mp4 |
 | `case35 remote video` | 206 | `video/mp4` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case35.mp4 |
+| `case36 remote video` | 206 | `video/mp4` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case36.mp4 |
+| `case36 remote poster` | 206 | `image/jpeg` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case36.jpg |
+| `case37 remote video` | 206 | `video/mp4` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case37.mp4 |
+| `case37 remote poster` | 206 | `image/jpeg` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case37.jpg |
+| `case38 remote video` | 206 | `video/mp4` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case38.mp4 |
+| `case38 remote poster` | 206 | `image/jpeg` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case38.jpg |
+| `case39 remote video` | 206 | `video/mp4` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case39.mp4 |
+| `case39 remote poster` | 206 | `image/jpeg` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case39.jpg |
+| `case40 remote video` | 206 | `video/mp4` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case40.mp4 |
+| `case40 remote poster` | 206 | `image/jpeg` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case40.jpg |
+| `case41 remote video` | 206 | `video/mp4` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case41.mp4 |
+| `case41 remote poster` | 206 | `image/jpeg` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case41.jpg |
+| `case42 remote video` | 206 | `video/mp4` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case42.mp4 |
+| `case42 remote poster` | 206 | `image/jpeg` | https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case42.jpg |

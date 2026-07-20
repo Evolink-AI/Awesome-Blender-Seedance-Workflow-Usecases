@@ -2,7 +2,7 @@
   "metadata": {
     "generated_at": "2026-07-13T03:35:00Z",
     "source_workbook": "Book1.xlsx",
-    "source_rows": 33,
+    "source_rows": 40,
     "localization_policy": "README files render R2 poster and video URLs directly. Legacy cases may keep repository-local media backups, but weekly additions keep new raw videos out of git and publish video/poster pairs from the repository R2 namespace."
   },
   "items": [
@@ -263,6 +263,83 @@
       "r2_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case35.mp4",
       "r2_poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case35.jpg",
       "public_case": 35,
+      "usage": "weekly_r2_video_only"
+    },
+    {
+      "case_label": "case36",
+      "attachment_url": "https://x.com/ryo05m/status/2078311133245804623/video/1",
+      "source_video_url": "https://video.twimg.com/amplify_video/2078311097971744768/vid/avc1/1920x1080/hWrOKVtPwJLxkftz.mp4?tag=29",
+      "local_media": null,
+      "poster_local": "media/posters/case36.jpg",
+      "r2_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case36.mp4",
+      "r2_poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case36.jpg",
+      "public_case": 36,
+      "usage": "weekly_r2_video_only"
+    },
+    {
+      "case_label": "case37",
+      "attachment_url": "https://x.com/ObsceneSelene/status/2078025128672436354/video/1",
+      "source_video_url": "https://video.twimg.com/amplify_video/2078021807723143168/vid/avc1/1920x2160/MJDz7P_3Dns3cqhv.mp4?tag=29",
+      "local_media": null,
+      "poster_local": "media/posters/case37.jpg",
+      "r2_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case37.mp4",
+      "r2_poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case37.jpg",
+      "public_case": 37,
+      "usage": "weekly_r2_video_only"
+    },
+    {
+      "case_label": "case38",
+      "attachment_url": "https://x.com/nemopi/status/2077741477565010406/video/1",
+      "source_video_url": "https://video.twimg.com/amplify_video/2077726307077795840/vid/avc1/1280x720/ZZgPao7g98CyoiE1.mp4?tag=29",
+      "local_media": null,
+      "poster_local": "media/posters/case38.jpg",
+      "r2_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case38.mp4",
+      "r2_poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case38.jpg",
+      "public_case": 38,
+      "usage": "weekly_r2_video_only"
+    },
+    {
+      "case_label": "case39",
+      "attachment_url": "https://x.com/moframe2026/status/2077343109349007376/video/1",
+      "source_video_url": "https://video.twimg.com/amplify_video/2077342799075381248/vid/avc1/3840x2160/xhyNWmjOG4VHeBf-.mp4?tag=28",
+      "local_media": null,
+      "poster_local": "media/posters/case39.jpg",
+      "r2_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case39.mp4",
+      "r2_poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case39.jpg",
+      "public_case": 39,
+      "usage": "weekly_r2_video_only"
+    },
+    {
+      "case_label": "case40",
+      "attachment_url": "https://x.com/Ryota110034/status/2077289164694057203/video/1",
+      "source_video_url": "https://video.twimg.com/amplify_video/2077289108838486016/vid/avc1/1280x720/ts0-pjFAe4mGO4Yk.mp4?tag=28",
+      "local_media": null,
+      "poster_local": "media/posters/case40.jpg",
+      "r2_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case40.mp4",
+      "r2_poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case40.jpg",
+      "public_case": 40,
+      "usage": "weekly_r2_video_only"
+    },
+    {
+      "case_label": "case41",
+      "attachment_url": "https://x.com/nemopi/status/2076877244832837890/video/1",
+      "source_video_url": "https://video.twimg.com/amplify_video/2076871149456404480/vid/avc1/1280x720/5wv4rG1dSlVm-p4g.mp4?tag=28",
+      "local_media": null,
+      "poster_local": "media/posters/case41.jpg",
+      "r2_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case41.mp4",
+      "r2_poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case41.jpg",
+      "public_case": 41,
+      "usage": "weekly_r2_video_only"
+    },
+    {
+      "case_label": "case42",
+      "attachment_url": "https://x.com/ComfyUI/status/2076746530258919858/video/1",
+      "source_video_url": "https://video.twimg.com/amplify_video/2076746458947313665/vid/avc1/720x1280/gZ-dszD21kIt9lCg.mp4?tag=14",
+      "local_media": null,
+      "poster_local": "media/posters/case42.jpg",
+      "r2_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case42.mp4",
+      "r2_poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case42.jpg",
+      "public_case": 42,
       "usage": "weekly_r2_video_only"
     }
   ]

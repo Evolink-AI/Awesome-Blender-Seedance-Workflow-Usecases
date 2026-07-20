@@ -32,10 +32,10 @@
 
 ## 📊 Обзор
 
-- **32 выбранных кейса Blender + Seedance** из публичных постов авторов и проверенных еженедельных дополнений.
+- **39 выбранных кейса Blender + Seedance** из публичных постов авторов и проверенных еженедельных дополнений.
 - Охватывает управление камерой, Blender предвидение, многосимвольную блокировку, хореографию действий, Blender MCP, Codex/Claude блокауты, FBX/Mixamo ссылки, ComfyUI/перенос стилей и известные ограничения.
 - В каждом случае указываются исходный источник, автор, краткий вывод, тип материала и дата публикации.
-- Публичный список начался с аудита 35 кандидатов и теперь включает 7 проверенных еженедельных добавлений из повторяющегося цикла обновления.
+- Публичный список начался с аудита 35 кандидатов и теперь включает 14 проверенных еженедельных добавлений из повторяющегося цикла обновления.
 - Используйте этот репозиторий для проверки практических рабочих процессов, а затем отправьте пользователей в кулинарную книгу EvoLink Blender для настройки и выполнения.
 
 > [!NOTE]
@@ -107,12 +107,12 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 | Раздел | Дела |
 |---|---|
-| [🎥 Управление камерой и просмотр](#camera-control-previs) | Case 1, 2, 3, 4, 5, 29 |
-| [🎬 Блокировка персонажей и действий](#character-action-blocking) | Case 6, 8, 9, 21, 32 |
-| [🤖 Агент Blender MCP](#agentic-blender-mcp) | Case 10, 11, 22, 34 |
-| [🧩 Ссылка, подсказка и сопоставление нескольких входов](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27, 35 |
+| [🎥 Управление камерой и просмотр](#camera-control-previs) | Case 1, 2, 3, 4, 5, 29, 37, 42 |
+| [🎬 Блокировка персонажей и действий](#character-action-blocking) | Case 6, 8, 9, 21, 32, 38, 39 |
+| [🤖 Агент Blender MCP](#agentic-blender-mcp) | Case 10, 11, 22, 34, 40 |
+| [🧩 Ссылка, подсказка и сопоставление нескольких входов](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27, 35, 36 |
 | [🛠️ Производственные конвейеры и цепочки инструментов](#production-pipelines-toolchains) | Case 15, 16, 17, 18, 30 |
-| [🧪 Ограничения, тесты и устранение неполадок](#limits-tests-troubleshooting) | Case 20, 25, 28, 31, 33 |
+| [🧪 Ограничения, тесты и устранение неполадок](#limits-tests-troubleshooting) | Case 20, 25, 28, 31, 33, 41 |
 | [🙏 Благодарности](#acknowledge) | Авторы и правила исправлений |
 
 <a id="camera-control-previs"></a>
@@ -126,6 +126,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Предварительный просмотр видового экрана до реалистичного начального кадра](#case-4) | Краткое руководство по предварительному просмотру в окне просмотра: заблокируйте сцену, экспортируйте предварительный просмотр, сделайте первый кадр реалистичным, затем предоставьте обе ссылки на Seedance. | Demo |
 | [Один справочный видеоролик, несколько миров](#case-5) | Случай изменения стиля/мира, когда одно и то же эталонное видео Blender управляет разными сгенерированными мирами в Seedance. | Demo |
 | [iPhone-превиз камеры в ритме диалога](#case-29) | Используйте проход камеры Blender, управляемый с iPhone и синхронизированный с диалогом, а затем передайте этот превиз со звуком и двумя изображениями в Seedance для планирования кадра. | Integration |
+| [Тест фокуса и глубины для Seedance](#case-37) | Сначала проверьте перевод фокуса и глубину в Blender, а затем используйте viewport-рендер и лист персонажа, чтобы понять, сохраняет ли Seedance этот язык камеры. | Evaluation |
+| [Официальный workflow ComfyUI с анимацией камеры Blender](#case-42) | Сначала расставьте keyframe камеры в Blender, а затем передайте это движение в Seedance, когда важнее точная операторская работа, чем догадки по промпту. | Tutorial |
 
 
 <a id="character-action-blocking"></a>
@@ -138,6 +140,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Блокировка камеры и персонажей для тактических действий](#case-9) | Случай тактической блокировки, в котором Blender управляет орбитой камеры, выбором объектива, позициями укрытий, ударами выстрелов и движением персонажа перед генерацией. | Demo |
 | [Предварительный просмотр сцены засады, помимо простого движения камеры](#case-21) | Случай со сценой из засады, показывающий, как превиз Blender может определять постановку, время и движение камеры до того, как Seedance сгенерирует кадр. | Demo |
 | [Паркур-погоня на крыше с препятствиями](#case-32) | Соберите в Blender паркур-превиз с взаимодействием с препятствиями и уклонениями, если Seedance иначе сводит сцену к прямому бегу. | Demo |
+| [Бенчмарк экшен-монтажа с 16 камерами](#case-38) | В сложной экшен-сцене сначала задайте камеры и границы склеек в Blender, а затем измерьте, какую часть этого плана реально удерживает Seedance. | Benchmark |
+| [Орбитальный кадр с восемью персонажами через Video REF](#case-39) | Если длинный орбитальный кадр должен удерживать несколько персонажей согласованными, сначала используйте легкую previs из Blender как Video REF для Seedance. | Demo |
 
 
 <a id="agentic-blender-mcp"></a>
@@ -149,6 +153,7 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Codex-Архитектура и операторская работа](#case-11) | Случай для начинающих с помощью Codex, в котором архитектура и операторская работа генерируются в Blender, а затем тестируются как эталонное движение Seedance. | Integration |
 | [Claude-Превиз Blender MCP создан за считанные минуты](#case-22) | Случай быстрого агентного превиза, когда Claude использует Blender MCP для создания эталона кадра за две-три минуты. | Integration |
 | [Скилл Fable, перенесенный в Codex](#case-34) | Поручите агенту собрать скилл референсного видео для Blender, перенесите его в Codex и проверьте, может ли Seedance доработать движение вообще без prompt-текста. | Integration |
+| [Workflow с грубой моделью и ClaudeCode](#case-40) | Пусть ClaudeCode через Blender MCP сначала соберет грубую модель и проход камеры, а затем используйте эту ссылку в Seedance, когда сцене нужен более точный контроль, чем у чистого промпта. | Integration |
 
 
 <a id="reference-prompt-multi-input-mapping"></a>
@@ -163,6 +168,7 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Управление ссылкой для конкретной сцены с неудачной подсказкой](#case-26) | Резервный вариант управления: если генерация только подсказок не удалась, используйте ссылку для принудительной активации сцены, даже если некоторый динамизм уменьшен. | Demo |
 | [Пропорции персонажа и простые советы по фону](#case-27) | Контрольный список стабильности: соблюдайте пропорции символов за пределами высоты и упрощайте любой фон, который не требует точного выравнивания. | Tutorial |
 | [Мокап манекена со стилизованным входным кадром](#case-35) | Используйте жесткий источник движения из Blender или от манекена для тайминга, а затем направляйте итоговый стиль и поведение ткани в Seedance через дизайн входного кадра. | Demo |
+| [3D-пространство с маркерами для персонажа и камеры](#case-36) | Разместите в Blender маркеры положения и направления, а затем передайте эту ссылку в Seedance, чтобы персонаж, его ориентация и камера оставались привязаны к 3D-пространству. | Integration |
 
 
 <a id="production-pipelines-toolchains"></a>
@@ -187,6 +193,7 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Стресс-тест по физике ткани с Blender и Seedance](#case-28) | Стресс-тест физики ткани, показывающий, где Seedance под управлением Blender может работать, но все равно требует итерации для сложных движений. | Limit |
 | [Исправление тайминга черными кадрами между ключами](#case-31) | Если грубый Blender-референс заставляет Seedance копировать роботические промежуточные движения, оставьте ключевые позы и затемните кадры между ними. | Tutorial |
 | [Тест рассинхрона движения в сложной сцене](#case-33) | Смотрите на MCP-рендер грубой сцены как на тест ограничения: сложные Blender-сцены могут уходить от задуманных движений даже после нескольких прогонов в Seedance. | Limit |
+| [Простые proxy-блоки лучше детализированного 3D](#case-41) | Если детализированная геометрия Blender переносит в финальный кадр лишний CG-вид, упростите персонажей и реквизит до proxy-блоков, чтобы Seedance считывал только layout, а не внешний вид. | Limit |
 
 
 
@@ -282,6 +289,32 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 Тип: Integration | Дата: 2026-07-12
 
 ---
+<a id="case-37"></a>
+### Case 37: [Тест фокуса и глубины для Seedance](https://x.com/ObsceneSelene/status/2078025128672436354) (от [@ObsceneSelene](https://x.com/ObsceneSelene))
+
+**Сначала проверьте перевод фокуса и глубину в Blender, а затем используйте viewport-рендер и лист персонажа, чтобы понять, сохраняет ли Seedance этот язык камеры.**
+
+- Примечания к источнику: Автор проверяет, переживут ли изменения фокуса из сцены Blender переход в Seedance, и говорит, что viewport-рендер вместе с листом персонажа сохранили нужное ощущение глубины.
+- Предварительный просмотр видео:
+
+[![Предварительный просмотр видео — Case 37](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case37.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case37.mp4)
+
+Тип: Evaluation | Дата: 2026-07-17
+
+---
+<a id="case-42"></a>
+### Case 42: [Официальный workflow ComfyUI с анимацией камеры Blender](https://x.com/ComfyUI/status/2076746530258919858) (от [@ComfyUI](https://x.com/ComfyUI))
+
+**Сначала расставьте keyframe камеры в Blender, а затем передайте это движение в Seedance, когда важнее точная операторская работа, чем догадки по промпту.**
+
+- Примечания к источнику: Официальный пост ComfyUI говорит, что keyframe камеры в Blender могут задать движение, вращение и кадрирование до того, как Seedance сделает финальное видео.
+- Предварительный просмотр видео:
+
+[![Предварительный просмотр видео — Case 42](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case42.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case42.mp4)
+
+Тип: Tutorial | Дата: 2026-07-13
+
+---
 <a id="character-action-blocking-cases"></a>
 ## 🎬 Блокировка персонажей и действий
 
@@ -359,6 +392,32 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 Тип: Demo | Дата: 2026-07-09
 
 ---
+<a id="case-38"></a>
+### Case 38: [Бенчмарк экшен-монтажа с 16 камерами](https://x.com/nemopi/status/2077741477565010406) (от [@nemopi](https://x.com/nemopi))
+
+**В сложной экшен-сцене сначала задайте камеры и границы склеек в Blender, а затем измерьте, какую часть этого плана реально удерживает Seedance.**
+
+- Примечания к источнику: Со стороны Blender остается один блок для ориентира роста и 16 быстрых склеек; в посте говорится, что около 73 процентов запланированных границ попали в диапазон плюс-минус 0,6 секунды.
+- Предварительный просмотр видео:
+
+[![Предварительный просмотр видео — Case 38](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case38.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case38.mp4)
+
+Тип: Benchmark | Дата: 2026-07-16
+
+---
+<a id="case-39"></a>
+### Case 39: [Орбитальный кадр с восемью персонажами через Video REF](https://x.com/moframe2026/status/2077343109349007376) (от [@moframe2026](https://x.com/moframe2026))
+
+**Если длинный орбитальный кадр должен удерживать несколько персонажей согласованными, сначала используйте легкую previs из Blender как Video REF для Seedance.**
+
+- Примечания к источнику: Автор использует легкую previs из Blender как Video REF для 15-секундного орбитального кадра и говорит, что даже неиспользованный дубль удержал всех восьмерых персонажей до конца.
+- Предварительный просмотр видео:
+
+[![Предварительный просмотр видео — Case 39](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case39.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case39.mp4)
+
+Тип: Demo | Дата: 2026-07-15
+
+---
 <a id="agentic-blender-mcp-cases"></a>
 ## 🤖 Агент Blender MCP
 
@@ -419,6 +478,19 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 [![Предварительный просмотр видео — Case 34](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case34.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case34.mp4)
 
 Тип: Integration | Дата: 2026-07-06
+
+---
+<a id="case-40"></a>
+### Case 40: [Workflow с грубой моделью и ClaudeCode](https://x.com/Ryota110034/status/2077289164694057203) (от [@Ryota110034](https://x.com/Ryota110034))
+
+**Пусть ClaudeCode через Blender MCP сначала соберет грубую модель и проход камеры, а затем используйте эту ссылку в Seedance, когда сцене нужен более точный контроль, чем у чистого промпта.**
+
+- Примечания к источнику: Автор связывает ClaudeCode с Blender MCP, создает грубую модель и проход камеры, а затем повторно использует эту ссылку в Seedance для более целевой генерации сцены.
+- Предварительный просмотр видео:
+
+[![Предварительный просмотр видео — Case 40](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case40.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case40.mp4)
+
+Тип: Integration | Дата: 2026-07-15
 
 ---
 <a id="reference-prompt-multi-input-mapping-cases"></a>
@@ -528,6 +600,19 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 [![Предварительный просмотр видео — Case 35](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case35.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case35.mp4)
 
 Тип: Demo | Дата: 2026-07-06
+
+---
+<a id="case-36"></a>
+### Case 36: [3D-пространство с маркерами для персонажа и камеры](https://x.com/ryo05m/status/2078311133245804623) (от [@ryo05m](https://x.com/ryo05m))
+
+**Разместите в Blender маркеры положения и направления, а затем передайте эту ссылку в Seedance, чтобы персонаж, его ориентация и камера оставались привязаны к 3D-пространству.**
+
+- Примечания к источнику: Автор собирает сцену Blender через Fable 5, ставит маркеры положения и направления и использует эту ссылку в Seedance, чтобы удерживать персонажа, его направление и камеру в одном пространстве.
+- Предварительный просмотр видео:
+
+[![Предварительный просмотр видео — Case 36](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case36.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case36.mp4)
+
+Тип: Integration | Дата: 2026-07-18
 
 ---
 <a id="production-pipelines-toolchains-cases"></a>
@@ -688,6 +773,19 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 [![Предварительный просмотр видео — Case 33](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case33.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case33.mp4)
 
 Тип: Limit | Дата: 2026-07-07
+
+---
+<a id="case-41"></a>
+### Case 41: [Простые proxy-блоки лучше детализированного 3D](https://x.com/nemopi/status/2076877244832837890) (от [@nemopi](https://x.com/nemopi))
+
+**Если детализированная геометрия Blender переносит в финальный кадр лишний CG-вид, упростите персонажей и реквизит до proxy-блоков, чтобы Seedance считывал только layout, а не внешний вид.**
+
+- Примечания к источнику: Автор говорит, что детализированные руки и реквизит протаскивали CG-подобные элементы, тогда как простые proxy-блоки заметно лучше сохраняли 2D-результат при той же 15-камерной структуре.
+- Предварительный просмотр видео:
+
+[![Предварительный просмотр видео — Case 41](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case41.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case41.mp4)
+
+Тип: Limit | Дата: 2026-07-14
 
 ---
 <a id="acknowledge"></a>

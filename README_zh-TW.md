@@ -32,10 +32,10 @@ Blender + Seedance 使用案例倉庫。
 
 ## 📊 Overview
 
-- **32 個 Blender + Seedance 精選案例**，來自公開創作者貼文和通過審計的每週增量更新。
+- **39 個 Blender + Seedance 精選案例**，來自公開創作者貼文和通過審計的每週增量更新。
 - 涵蓋相機控制、Blender previs、多角色 blocking、動作編排、Blender MCP、Codex/Claude 輔助 blockout、FBX/Mixamo 參考、ComfyUI/style transfer 和已知限制。
 - 每個案例都包含原始來源、創作者署名、簡明 takeaway、證據類型和發布日期。
-- 公開列表起點仍是 35 條候選審計，現在額外納入了 recurring update loop 審過的 7 條每週新增案例。
+- 公開列表起點仍是 35 條候選審計，現在額外納入了 recurring update loop 審過的 14 條每週新增案例。
 - 這個倉庫用於先展示真實工作流，再把使用者引導到 EvoLink Blender-to-video cookbook。
 
 > [!NOTE]
@@ -107,12 +107,12 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 
 | 章節 | 案例 |
 |---|---|
-| [🎥 Camera Control & Previs / 相機控制與預演](#camera-control-previs) | Case 1, 2, 3, 4, 5, 29 |
-| [🎬 Character & Action Blocking / 角色與動作 blocking](#character-action-blocking) | Case 6, 8, 9, 21, 32 |
-| [🤖 Agentic Blender MCP / Agent 輔助 Blender MCP](#agentic-blender-mcp) | Case 10, 11, 22, 34 |
-| [🧩 Reference, Prompt & Multi-Input Mapping / 參考、prompt 與多輸入映射](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27, 35 |
+| [🎥 Camera Control & Previs / 相機控制與預演](#camera-control-previs) | Case 1, 2, 3, 4, 5, 29, 37, 42 |
+| [🎬 Character & Action Blocking / 角色與動作 blocking](#character-action-blocking) | Case 6, 8, 9, 21, 32, 38, 39 |
+| [🤖 Agentic Blender MCP / Agent 輔助 Blender MCP](#agentic-blender-mcp) | Case 10, 11, 22, 34, 40 |
+| [🧩 Reference, Prompt & Multi-Input Mapping / 參考、prompt 與多輸入映射](#reference-prompt-multi-input-mapping) | Case 13, 14, 23, 24, 26, 27, 35, 36 |
 | [🛠️ Production Pipelines & Toolchains / 生產管線與工具鏈](#production-pipelines-toolchains) | Case 15, 16, 17, 18, 30 |
-| [🧪 Limits, Tests & Troubleshooting / 限制、測試與排查](#limits-tests-troubleshooting) | Case 20, 25, 28, 31, 33 |
+| [🧪 Limits, Tests & Troubleshooting / 限制、測試與排查](#limits-tests-troubleshooting) | Case 20, 25, 28, 31, 33, 41 |
 | [🙏 致謝](#acknowledge) | Credits and correction policy |
 
 <a id="camera-control-previs"></a>
@@ -126,6 +126,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Viewport preview 導出后进 Seedance](#case-4) | Viewport preview 教程：blockout 場景、導出預覽、把首幀轉成真實圖，再把两类參考交给 Seedance。 | Demo |
 | [同一 reference video 生成不同世界](#case-5) | 同一參考影片生成不同世界：用同一段 Blender reference 锁定运動，再让 Seedance 改变世界和风格。 | Demo |
 | [iPhone 驅動的對話節奏相機預演](#case-29) | 先用 iPhone 驅動 Blender 相機並按對話定節奏，再把帶音訊的預演和兩張圖一起交給 Seedance 做鏡頭規劃。 | Integration |
+| [把焦點轉移與景深測試送進 Seedance](#case-37) | 先在 Blender 裡測試焦點轉移和景深變化，再用 viewport render 加角色設定圖驗證 Seedance 是否能保住這類鏡頭語言。 | Evaluation |
+| [ComfyUI 官方 Blender 相機動畫工作流](#case-42) | 先在 Blender 裡給相機打關鍵幀，再把這層運動參考交給 Seedance，適合需要明確運鏡而不是靠 prompt 猜鏡頭的場景。 | Tutorial |
 
 
 <a id="character-action-blocking"></a>
@@ -138,6 +140,8 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [角色 blocking + 相机 blocking 同时控制](#case-9) | 战术動作 blocking：在生成前用 Blender 规划相机环绕、鏡头、掩体位置、枪火節奏和角色移動。 | Demo |
 | [伏击場景 previs + Seedance 動作调度](#case-21) | 伏击場景案例：先用 Blender previs 解决 staging、timing 和 camera movement，再交给 Seedance 生成鏡头。 | Demo |
 | [帶障礙互動的屋頂跑酷追逐](#case-32) | 當 Seedance 容易把動作退化成直線奔跑時，可以先用 Blender 跑酷預演補足障礙互動和閃避節奏。 | Demo |
+| [16 機位動作剪輯傳遞基準測試](#case-38) | 動作鏡頭複雜時，可以先用 Blender 鎖機位和剪輯邊界，再衡量 Seedance 實際保住了多少節奏，而不是預設它會一比一照搬。 | Benchmark |
+| [八角色環繞升空鏡頭的 Video REF](#case-39) | 當鏡頭要長時間環繞並同時維持多角色一致性時，可以先用輕量 Blender previs 當成 Seedance 的 Video REF。 | Demo |
 
 
 <a id="agentic-blender-mcp"></a>
@@ -149,6 +153,7 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Codex 生成 Blender 建筑和 camera work 后送 Seedance](#case-11) | Codex 辅助新手案例：建筑和 camera work 由 Codex 在 Blender 中生成，再测試 Seedance 參考运動。 | Integration |
 | [Claude 用 Blender MCP 几分钟生成 previs](#case-22) | 快速 agentic previs 案例：Claude 通过 Blender MCP 在 2-3 分钟内搭出鏡头參考。 | Integration |
 | [Fable 技能移植到 Codex 的參考影片流](#case-34) | 可以先讓 agent 產出 Blender 參考影片技能，再移植到 Codex，驗證 Seedance 是否能在零提示詞前提下把動作進一步修順。 | Integration |
+| [ClaudeCode 粗模參考工作流](#case-40) | 可以讓 ClaudeCode 透過 Blender MCP 先搭粗模和相機，再把這層參考交給 Seedance，提高特定物體與鏡頭生成的可控性。 | Integration |
 
 
 <a id="reference-prompt-multi-input-mapping"></a>
@@ -163,6 +168,7 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [用參考控制修複 prompt 反複失败的場景](#case-26) | 控制兜底案例：prompt-only 反複失败时，用 reference 强制場景成立，即使会损失部分動态。 | Demo |
 | [角色比例与簡化背景的稳定性技巧](#case-27) | 稳定性 checklist：角色比例不只看头身，还要匹配手脚体积；无须對齐的背景尽量簡化。 | Tutorial |
 | [人偶動捕配合風格化輸入幀](#case-35) | 可以先用偏僵硬的人偶或 Blender 動作源鎖節奏，再透過輸入幀設計把 Seedance 的風格和布料表現拉回來。 | Demo |
+| [用 3D 標記空間鎖定角色與相機控制](#case-36) | 可以先在 Blender 場景裡放置位置與朝向標記，再把這層參考交給 Seedance，讓角色站位、面向和相機方向都跟著 3D 空間走。 | Integration |
 
 
 <a id="production-pipelines-toolchains"></a>
@@ -187,6 +193,7 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 | [Blender + Seedance 布料物理压力测試](#case-28) | 布料物理压力测試：Blender-guided Seedance 可用，但複杂运動仍需要多轮迭代。 | Limit |
 | [黑幀隔開的關鍵幀節奏修正法](#case-31) | 如果粗糙的 Blender 參考讓 Seedance 連僵硬的中間幀都照搬，就保留關鍵姿勢並把中間幀全部壓成黑幀。 | Tutorial |
 | [複雜場景動作失配測試](#case-33) | 把粗場景 MCP 渲染當作限制測試來看：即使反覆多次，複雜 Blender 場景在 Seedance 裡仍可能偏離預期動作。 | Limit |
+| [簡單代理塊比細緻 3D 更好用](#case-41) | 如果細緻的 Blender 幾何把 CG 質感一併帶進成片，可以把人物和道具退回簡單代理塊，讓 Seedance 只讀佈局而不照搬外觀。 | Limit |
 
 
 
@@ -282,6 +289,32 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 類型: Integration | 日期: 2026-07-12
 
 ---
+<a id="case-37"></a>
+### Case 37: [把焦點轉移與景深測試送進 Seedance](https://x.com/ObsceneSelene/status/2078025128672436354) (by [@ObsceneSelene](https://x.com/ObsceneSelene))
+
+**先在 Blender 裡測試焦點轉移和景深變化，再用 viewport render 加角色設定圖驗證 Seedance 是否能保住這類鏡頭語言。**
+
+- 來源筆記: 作者測試 Blender 場景裡的焦點轉移能否傳進 Seedance，並說 viewport render 加角色設定圖保住了想要的景深表現。
+- 影片預覽:
+
+[![影片預覽 — Case 37](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case37.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case37.mp4)
+
+類型: Evaluation | 日期: 2026-07-17
+
+---
+<a id="case-42"></a>
+### Case 42: [ComfyUI 官方 Blender 相機動畫工作流](https://x.com/ComfyUI/status/2076746530258919858) (by [@ComfyUI](https://x.com/ComfyUI))
+
+**先在 Blender 裡給相機打關鍵幀，再把這層運動參考交給 Seedance，適合需要明確運鏡而不是靠 prompt 猜鏡頭的場景。**
+
+- 來源筆記: ComfyUI 官方帖子說明可以先在 Blender 裡給相機打關鍵幀，再讓 Seedance 接手最終影片的運動、旋轉和構圖。
+- 影片預覽:
+
+[![影片預覽 — Case 42](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case42.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case42.mp4)
+
+類型: Tutorial | 日期: 2026-07-13
+
+---
 <a id="character-action-blocking-cases"></a>
 ## 🎬 Character & Action Blocking / 角色與動作 blocking
 
@@ -359,6 +392,32 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 類型: Demo | 日期: 2026-07-09
 
 ---
+<a id="case-38"></a>
+### Case 38: [16 機位動作剪輯傳遞基準測試](https://x.com/nemopi/status/2077741477565010406) (by [@nemopi](https://x.com/nemopi))
+
+**動作鏡頭複雜時，可以先用 Blender 鎖機位和剪輯邊界，再衡量 Seedance 實際保住了多少節奏，而不是預設它會一比一照搬。**
+
+- 來源筆記: Blender 側只保留一個身高參考塊和 16 個快切，帖子記錄約 73% 的計畫剪輯邊界落在 ±0.6 秒內。
+- 影片預覽:
+
+[![影片預覽 — Case 38](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case38.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case38.mp4)
+
+類型: Benchmark | 日期: 2026-07-16
+
+---
+<a id="case-39"></a>
+### Case 39: [八角色環繞升空鏡頭的 Video REF](https://x.com/moframe2026/status/2077343109349007376) (by [@moframe2026](https://x.com/moframe2026))
+
+**當鏡頭要長時間環繞並同時維持多角色一致性時，可以先用輕量 Blender previs 當成 Seedance 的 Video REF。**
+
+- 來源筆記: 作者把輕量 Blender previs 當成 15 秒環繞升空鏡頭的 Video REF，並說明未採用的 take 也讓 8 個角色一路保持住了。
+- 影片預覽:
+
+[![影片預覽 — Case 39](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case39.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case39.mp4)
+
+類型: Demo | 日期: 2026-07-15
+
+---
 <a id="agentic-blender-mcp-cases"></a>
 ## 🤖 Agentic Blender MCP / Agent 輔助 Blender MCP
 
@@ -419,6 +478,19 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 [![影片預覽 — Case 34](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case34.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case34.mp4)
 
 類型: Integration | 日期: 2026-07-06
+
+---
+<a id="case-40"></a>
+### Case 40: [ClaudeCode 粗模參考工作流](https://x.com/Ryota110034/status/2077289164694057203) (by [@Ryota110034](https://x.com/Ryota110034))
+
+**可以讓 ClaudeCode 透過 Blender MCP 先搭粗模和相機，再把這層參考交給 Seedance，提高特定物體與鏡頭生成的可控性。**
+
+- 來源筆記: 作者把 ClaudeCode 接到 Blender MCP，先搭粗模和相機路徑，再把這層參考交給 Seedance 做更可控的場景生成。
+- 影片預覽:
+
+[![影片預覽 — Case 40](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case40.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case40.mp4)
+
+類型: Integration | 日期: 2026-07-15
 
 ---
 <a id="reference-prompt-multi-input-mapping-cases"></a>
@@ -528,6 +600,19 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 [![影片預覽 — Case 35](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case35.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case35.mp4)
 
 類型: Demo | 日期: 2026-07-06
+
+---
+<a id="case-36"></a>
+### Case 36: [用 3D 標記空間鎖定角色與相機控制](https://x.com/ryo05m/status/2078311133245804623) (by [@ryo05m](https://x.com/ryo05m))
+
+**可以先在 Blender 場景裡放置位置與朝向標記，再把這層參考交給 Seedance，讓角色站位、面向和相機方向都跟著 3D 空間走。**
+
+- 來源筆記: 作者先用 Fable 5 搭出 Blender 3D 空間，再放置位置和朝向標記，把這層參考送進 Seedance，讓角色位置、面向和鏡頭都跟著同一個空間走。
+- 影片預覽:
+
+[![影片預覽 — Case 36](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case36.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case36.mp4)
+
+類型: Integration | 日期: 2026-07-18
 
 ---
 <a id="production-pipelines-toolchains-cases"></a>
@@ -688,6 +773,19 @@ Use Blender MCP to create a rough 5-second camera blockout for this shot, export
 [![影片預覽 — Case 33](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case33.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case33.mp4)
 
 類型: Limit | 日期: 2026-07-07
+
+---
+<a id="case-41"></a>
+### Case 41: [簡單代理塊比細緻 3D 更好用](https://x.com/nemopi/status/2076877244832837890) (by [@nemopi](https://x.com/nemopi))
+
+**如果細緻的 Blender 幾何把 CG 質感一併帶進成片，可以把人物和道具退回簡單代理塊，讓 Seedance 只讀佈局而不照搬外觀。**
+
+- 來源筆記: 作者說細緻的手部和道具會把 CG 感一起帶進成片，而簡單代理塊在同樣的 15 機位結構下更能守住 2D 結果。
+- 影片預覽:
+
+[![影片預覽 — Case 41](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/posters/case41.jpg)](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/Awesome-Blender-Seedance-Workflow-Usecases/media/case41.mp4)
+
+類型: Limit | 日期: 2026-07-14
 
 ---
 <a id="acknowledge"></a>
